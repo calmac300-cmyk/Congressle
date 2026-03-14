@@ -51,6 +51,48 @@
         "Impeaching Bill Clinton": "A resolution impeaching William Jefferson Clinton, President of the United States, for high crimes and misdemeanors.",
         "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE.",
         "Welfare and Medicaid Reform Act": "A bill to provide for reconciliation pursuant to section 201(a)(1) of the concurrent resolution on the budget for fiscal year 1997."
+      },
+      "vote_display_names": {
+        "Affordable Health Care for America": "Affordable Care Act (2009)",
+        "Authorization of Force Against Iraq   1991": "Authorization for Gulf War (1991)",
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Defense of Marriage Act": "Defense of Marriage Act (1996)",
+        "Gramm Rudman Hollings Deficit Act 1985": "Gramm-Rudman-Hollings Balanced Budget Act (1985)",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "Iraq War Resolution   2002": "Iraq War Authorization (2002)",
+        "NAFTA": "NAFTA Ratification (1993)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Patriot Act": "USA PATRIOT Act (2001)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)",
+        "Airline Degregulation   1978": "Airline Deregulation Act (1978)",
+        "Confirm Robert Bork": "Confirmation of Robert Bork (1987)",
+        "Impeaching Bill Clinton": "Senate Impeachment Trial of Bill Clinton (1999)",
+        "Lewis Strauss Commerce Secretary": "Rejection of Lewis Strauss for Commerce Secretary (1959)",
+        "Welfare and Medicaid Reform Act": "Welfare Reform Act (1996)"
+      },
+      "vote_summaries": {
+        "Affordable Health Care for America": "The most sweeping overhaul of American healthcare since Medicare, expanding coverage to millions of uninsured Americans through insurance marketplaces and Medicaid expansion. Passed without a single Republican vote in the House or Senate and became the defining legislative battle of the Obama presidency.",
+        "Authorization of Force Against Iraq   1991": "Authorized President George H.W. Bush to use military force to expel Iraq from Kuwait following the invasion of August 1990. The vote was close in the Senate (52-47) and deeply divided Democrats \u2014 most voted against it. The subsequent Gulf War lasted 100 hours of ground combat and ended with a decisive coalition victory.",
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Defense of Marriage Act": "Defined marriage as exclusively between a man and a woman for federal purposes and allowed states to refuse recognition of same-sex marriages performed in other states. Passed overwhelmingly with bipartisan support and signed by President Clinton. Key provisions were struck down by the Supreme Court in United States v. Windsor (2013) and it was effectively superseded by Obergefell v. Hodges (2015).",
+        "Gramm Rudman Hollings Deficit Act 1985": "Established mandatory deficit reduction targets and automatic spending cuts (sequestration) if Congress failed to meet them \u2014 the first binding fiscal constraint on Congress in American history. Passed with broad bipartisan support in the context of Reagan-era deficit anxiety. Key provisions were later struck down by the Supreme Court and the targets were never fully met, but it established the framework for future budget battles.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "Iraq War Resolution   2002": "Authorized President George W. Bush to use military force against Iraq, citing the threat of weapons of mass destruction and alleged links to terrorism. Passed with significant bipartisan support \u2014 29 Democratic senators voted for it, including Hillary Clinton, John Kerry, and Joe Biden. No WMDs were found after the invasion, and the vote became politically toxic for Democrats who supported it.",
+        "NAFTA": "The North American Free Trade Agreement eliminated most tariffs on goods traded between the United States, Canada, and Mexico. Passed with more Republican than Democratic support despite being a Clinton administration priority \u2014 a majority of House Democrats voted against it. Labor unions bitterly opposed it as a threat to American manufacturing jobs; supporters argued it would create growth through expanded trade.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Patriot Act": "Passed just 45 days after the September 11 attacks, dramatically expanded surveillance and law enforcement powers to combat terrorism \u2014 including roving wiretaps, access to business records, and monitoring of 'lone wolf' suspects. Passed nearly unanimously in both chambers with minimal debate. Civil liberties groups warned of overreach; only one senator (Russ Feingold) voted against it.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
+        "Airline Degregulation   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Confirm Robert Bork": "The Senate's vote on Reagan's nomination of conservative jurist Robert Bork to the Supreme Court. Bork was rejected 42-58 after a fierce confirmation battle in which Democrats argued his originalist judicial philosophy threatened civil rights and privacy protections. His rejection transformed Supreme Court confirmations into major political battles and added 'borking' to the political lexicon.",
+        "Impeaching Bill Clinton": "The Senate trial following the House's impeachment of President Clinton on charges of perjury and obstruction of justice related to his affair with Monica Lewinsky. Clinton was acquitted on both articles, with neither receiving even a simple majority \u2014 let alone the two-thirds required for conviction. Ten Republican senators voted against conviction on at least one article.",
+        "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration.",
+        "Welfare and Medicaid Reform Act": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
       }
     },
     {
@@ -98,6 +140,42 @@
         "Confirm Robert Bork": "TO CONFIRM THE NOMINATION OF ROBERT H. BORK, OF THE DISTRICT OF COLUMBIA, TO BE AN ASSOCIATE JUSTICE OF THE SUPREME COURT.",
         "Impeaching Bill Clinton": "A resolution impeaching William Jefferson Clinton, President of the United States, for high crimes and misdemeanors.",
         "Welfare and Medicaid Reform Act": "A bill to provide for reconciliation pursuant to section 201(a)(1) of the concurrent resolution on the budget for fiscal year 1997."
+      },
+      "vote_display_names": {
+        "Affordable Health Care for America": "Affordable Care Act (2009)",
+        "Authorization of Force Against Iraq   1991": "Authorization for Gulf War (1991)",
+        "Defense of Marriage Act": "Defense of Marriage Act (1996)",
+        "Gramm Rudman Hollings Deficit Act 1985": "Gramm-Rudman-Hollings Balanced Budget Act (1985)",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "Iraq War Resolution   2002": "Iraq War Authorization (2002)",
+        "NAFTA": "NAFTA Ratification (1993)",
+        "Patriot Act": "USA PATRIOT Act (2001)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)",
+        "Airline Degregulation   1978": "Airline Deregulation Act (1978)",
+        "Confirm Robert Bork": "Confirmation of Robert Bork (1987)",
+        "Impeaching Bill Clinton": "Senate Impeachment Trial of Bill Clinton (1999)",
+        "Welfare and Medicaid Reform Act": "Welfare Reform Act (1996)"
+      },
+      "vote_summaries": {
+        "Affordable Health Care for America": "The most sweeping overhaul of American healthcare since Medicare, expanding coverage to millions of uninsured Americans through insurance marketplaces and Medicaid expansion. Passed without a single Republican vote in the House or Senate and became the defining legislative battle of the Obama presidency.",
+        "Authorization of Force Against Iraq   1991": "Authorized President George H.W. Bush to use military force to expel Iraq from Kuwait following the invasion of August 1990. The vote was close in the Senate (52-47) and deeply divided Democrats \u2014 most voted against it. The subsequent Gulf War lasted 100 hours of ground combat and ended with a decisive coalition victory.",
+        "Defense of Marriage Act": "Defined marriage as exclusively between a man and a woman for federal purposes and allowed states to refuse recognition of same-sex marriages performed in other states. Passed overwhelmingly with bipartisan support and signed by President Clinton. Key provisions were struck down by the Supreme Court in United States v. Windsor (2013) and it was effectively superseded by Obergefell v. Hodges (2015).",
+        "Gramm Rudman Hollings Deficit Act 1985": "Established mandatory deficit reduction targets and automatic spending cuts (sequestration) if Congress failed to meet them \u2014 the first binding fiscal constraint on Congress in American history. Passed with broad bipartisan support in the context of Reagan-era deficit anxiety. Key provisions were later struck down by the Supreme Court and the targets were never fully met, but it established the framework for future budget battles.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "Iraq War Resolution   2002": "Authorized President George W. Bush to use military force against Iraq, citing the threat of weapons of mass destruction and alleged links to terrorism. Passed with significant bipartisan support \u2014 29 Democratic senators voted for it, including Hillary Clinton, John Kerry, and Joe Biden. No WMDs were found after the invasion, and the vote became politically toxic for Democrats who supported it.",
+        "NAFTA": "The North American Free Trade Agreement eliminated most tariffs on goods traded between the United States, Canada, and Mexico. Passed with more Republican than Democratic support despite being a Clinton administration priority \u2014 a majority of House Democrats voted against it. Labor unions bitterly opposed it as a threat to American manufacturing jobs; supporters argued it would create growth through expanded trade.",
+        "Patriot Act": "Passed just 45 days after the September 11 attacks, dramatically expanded surveillance and law enforcement powers to combat terrorism \u2014 including roving wiretaps, access to business records, and monitoring of 'lone wolf' suspects. Passed nearly unanimously in both chambers with minimal debate. Civil liberties groups warned of overreach; only one senator (Russ Feingold) voted against it.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
+        "Airline Degregulation   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Confirm Robert Bork": "The Senate's vote on Reagan's nomination of conservative jurist Robert Bork to the Supreme Court. Bork was rejected 42-58 after a fierce confirmation battle in which Democrats argued his originalist judicial philosophy threatened civil rights and privacy protections. His rejection transformed Supreme Court confirmations into major political battles and added 'borking' to the political lexicon.",
+        "Impeaching Bill Clinton": "The Senate trial following the House's impeachment of President Clinton on charges of perjury and obstruction of justice related to his affair with Monica Lewinsky. Clinton was acquitted on both articles, with neither receiving even a simple majority \u2014 let alone the two-thirds required for conviction. Ten Republican senators voted against conviction on at least one article.",
+        "Welfare and Medicaid Reform Act": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
       }
     },
     {
@@ -143,6 +221,40 @@
         "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE.",
         "McCarthy Censure": "S. RES. 301.  BENNETT AMEND. CONDEMNING MC CARTHY FOR MAKING CERTAIN CHARGES AGAINST MEMBERS OF THE SELECT COMMITTEE TO STUDY CENSURE AFTER THE COMMITTEE HAD ISSUED ITS REPORT.",
         "Taft Hartley   Veto": "HR 3020.  PASSAGE OVER THE PRESIDENT'S VETO."
+      },
+      "vote_display_names": {
+        "AGRICULTURAL ADJUSTMENT ACT": "Agricultural Adjustment Act (1935)",
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Federal Reserve Act": "Federal Reserve Act (1913)",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration Act   1924": "Immigration Act of 1924 (Johnson-Reed Act)",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "Lend Lease Act": "Lend-Lease Act (1941)",
+        "McCarran Internal Security Act 1950": "McCarran Internal Security Act (1950)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Volstead Act": "Volstead Act (1919)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "22nd Amendment": "22nd Amendment (1947)",
+        "Lewis Strauss Commerce Secretary": "Rejection of Lewis Strauss for Commerce Secretary (1959)",
+        "McCarthy Censure": "Censure of Senator Joseph McCarthy (1954)",
+        "Taft Hartley   Veto": "Taft-Hartley Veto Override (1947)"
+      },
+      "vote_summaries": {
+        "AGRICULTURAL ADJUSTMENT ACT": "A cornerstone of FDR's New Deal that paid farmers to reduce production in order to raise crop prices during the Great Depression. Deeply controversial \u2014 opponents saw it as federal overreach into private farming, while supporters argued it was essential to rural recovery.",
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Federal Reserve Act": "Created the Federal Reserve System as the central bank of the United States, establishing a network of regional reserve banks overseen by a federal board. The culmination of a decade of debate following the Panic of 1907, it represented a compromise between those wanting a purely private central bank and those demanding full government control. The Fed remains the cornerstone of American monetary policy today.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration Act   1924": "Established strict national origin quotas that severely restricted immigration from Southern and Eastern Europe and effectively barred all immigration from Asia. Designed to preserve the ethnic composition of the existing American population, it reflected the nativist and eugenicist ideas prevalent at the time. The quotas remained in place until the Immigration and Nationality Act of 1965.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "Lend Lease Act": "Authorized the President to lend or lease war supplies to any nation whose defense was vital to American security, primarily aimed at supporting Britain before U.S. entry into World War II. Fiercely opposed by isolationists who saw it as a step toward involvement in the war. Roosevelt called it making America 'the arsenal of democracy.'",
+        "McCarran Internal Security Act 1950": "Required Communist organizations to register with the government, established the Subversive Activities Control Board, and authorized detention of suspected subversives during national emergencies. Passed over President Truman's veto during the height of Cold War anxiety, it reflected the era's intense fear of Communist infiltration. Many provisions were later struck down by the Supreme Court.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Volstead Act": "Provided the enforcement mechanism for the 18th Amendment, defining 'intoxicating liquors' and establishing penalties for their manufacture, sale, or transportation. Passed over President Wilson's veto. The act launched the Prohibition era, which lasted until 1933 \u2014 producing a massive black market, organized crime empires, and widespread disregard for the law.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "22nd Amendment": "Limited the presidency to two terms following Franklin Roosevelt's four consecutive elections. Passed by a Republican-controlled Congress largely as a reaction to FDR's long tenure. Ratified by the states in 1951.",
+        "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration.",
+        "McCarthy Censure": "The Senate voted 67-22 to censure Senator Joseph McCarthy of Wisconsin for conduct 'contrary to Senate traditions,' effectively ending his reign of anti-Communist investigations. The vote came after the Army-McCarthy hearings exposed his methods to a national television audience. McCarthy died three years later, largely marginalized, but McCarthyism had already permanently shaped American political culture.",
+        "Taft Hartley   Veto": "The Senate vote to override President Truman's veto of the Taft-Hartley Act, the most significant labor legislation since the Wagner Act. The override succeeded 68-25, with Southern Democrats providing the crucial margin against their own president. Truman's veto message, though overridden, became a political asset \u2014 he used it to rally labor support in his 1948 comeback election."
       }
     },
     {
@@ -188,6 +300,40 @@
         "Confirm Robert Bork": "TO CONFIRM THE NOMINATION OF ROBERT H. BORK, OF THE DISTRICT OF COLUMBIA, TO BE AN ASSOCIATE JUSTICE OF THE SUPREME COURT.",
         "Impeaching Bill Clinton": "A resolution impeaching William Jefferson Clinton, President of the United States, for high crimes and misdemeanors.",
         "Welfare and Medicaid Reform Act": "A bill to provide for reconciliation pursuant to section 201(a)(1) of the concurrent resolution on the budget for fiscal year 1997."
+      },
+      "vote_display_names": {
+        "Authorization of Force Against Iraq   1991": "Authorization for Gulf War (1991)",
+        "Defense of Marriage Act": "Defense of Marriage Act (1996)",
+        "Gramm Rudman Hollings Deficit Act 1985": "Gramm-Rudman-Hollings Balanced Budget Act (1985)",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "Iraq War Resolution   2002": "Iraq War Authorization (2002)",
+        "NAFTA": "NAFTA Ratification (1993)",
+        "Patriot Act": "USA PATRIOT Act (2001)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)",
+        "Airline Degregulation   1978": "Airline Deregulation Act (1978)",
+        "Confirm Robert Bork": "Confirmation of Robert Bork (1987)",
+        "Impeaching Bill Clinton": "Senate Impeachment Trial of Bill Clinton (1999)",
+        "Welfare and Medicaid Reform Act": "Welfare Reform Act (1996)"
+      },
+      "vote_summaries": {
+        "Authorization of Force Against Iraq   1991": "Authorized President George H.W. Bush to use military force to expel Iraq from Kuwait following the invasion of August 1990. The vote was close in the Senate (52-47) and deeply divided Democrats \u2014 most voted against it. The subsequent Gulf War lasted 100 hours of ground combat and ended with a decisive coalition victory.",
+        "Defense of Marriage Act": "Defined marriage as exclusively between a man and a woman for federal purposes and allowed states to refuse recognition of same-sex marriages performed in other states. Passed overwhelmingly with bipartisan support and signed by President Clinton. Key provisions were struck down by the Supreme Court in United States v. Windsor (2013) and it was effectively superseded by Obergefell v. Hodges (2015).",
+        "Gramm Rudman Hollings Deficit Act 1985": "Established mandatory deficit reduction targets and automatic spending cuts (sequestration) if Congress failed to meet them \u2014 the first binding fiscal constraint on Congress in American history. Passed with broad bipartisan support in the context of Reagan-era deficit anxiety. Key provisions were later struck down by the Supreme Court and the targets were never fully met, but it established the framework for future budget battles.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "Iraq War Resolution   2002": "Authorized President George W. Bush to use military force against Iraq, citing the threat of weapons of mass destruction and alleged links to terrorism. Passed with significant bipartisan support \u2014 29 Democratic senators voted for it, including Hillary Clinton, John Kerry, and Joe Biden. No WMDs were found after the invasion, and the vote became politically toxic for Democrats who supported it.",
+        "NAFTA": "The North American Free Trade Agreement eliminated most tariffs on goods traded between the United States, Canada, and Mexico. Passed with more Republican than Democratic support despite being a Clinton administration priority \u2014 a majority of House Democrats voted against it. Labor unions bitterly opposed it as a threat to American manufacturing jobs; supporters argued it would create growth through expanded trade.",
+        "Patriot Act": "Passed just 45 days after the September 11 attacks, dramatically expanded surveillance and law enforcement powers to combat terrorism \u2014 including roving wiretaps, access to business records, and monitoring of 'lone wolf' suspects. Passed nearly unanimously in both chambers with minimal debate. Civil liberties groups warned of overreach; only one senator (Russ Feingold) voted against it.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
+        "Airline Degregulation   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Confirm Robert Bork": "The Senate's vote on Reagan's nomination of conservative jurist Robert Bork to the Supreme Court. Bork was rejected 42-58 after a fierce confirmation battle in which Democrats argued his originalist judicial philosophy threatened civil rights and privacy protections. His rejection transformed Supreme Court confirmations into major political battles and added 'borking' to the political lexicon.",
+        "Impeaching Bill Clinton": "The Senate trial following the House's impeachment of President Clinton on charges of perjury and obstruction of justice related to his affair with Monica Lewinsky. Clinton was acquitted on both articles, with neither receiving even a simple majority \u2014 let alone the two-thirds required for conviction. Ten Republican senators voted against conviction on at least one article.",
+        "Welfare and Medicaid Reform Act": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
       }
     },
     {
@@ -233,6 +379,40 @@
         "Confirm Robert Bork": "TO CONFIRM THE NOMINATION OF ROBERT H. BORK, OF THE DISTRICT OF COLUMBIA, TO BE AN ASSOCIATE JUSTICE OF THE SUPREME COURT.",
         "Impeaching Bill Clinton": "A resolution impeaching William Jefferson Clinton, President of the United States, for high crimes and misdemeanors.",
         "Welfare and Medicaid Reform Act": "A bill to provide for reconciliation pursuant to section 201(a)(1) of the concurrent resolution on the budget for fiscal year 1997."
+      },
+      "vote_display_names": {
+        "Authorization of Force Against Iraq   1991": "Authorization for Gulf War (1991)",
+        "Defense of Marriage Act": "Defense of Marriage Act (1996)",
+        "Gramm Rudman Hollings Deficit Act 1985": "Gramm-Rudman-Hollings Balanced Budget Act (1985)",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "Iraq War Resolution   2002": "Iraq War Authorization (2002)",
+        "NAFTA": "NAFTA Ratification (1993)",
+        "Patriot Act": "USA PATRIOT Act (2001)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)",
+        "Airline Degregulation   1978": "Airline Deregulation Act (1978)",
+        "Confirm Robert Bork": "Confirmation of Robert Bork (1987)",
+        "Impeaching Bill Clinton": "Senate Impeachment Trial of Bill Clinton (1999)",
+        "Welfare and Medicaid Reform Act": "Welfare Reform Act (1996)"
+      },
+      "vote_summaries": {
+        "Authorization of Force Against Iraq   1991": "Authorized President George H.W. Bush to use military force to expel Iraq from Kuwait following the invasion of August 1990. The vote was close in the Senate (52-47) and deeply divided Democrats \u2014 most voted against it. The subsequent Gulf War lasted 100 hours of ground combat and ended with a decisive coalition victory.",
+        "Defense of Marriage Act": "Defined marriage as exclusively between a man and a woman for federal purposes and allowed states to refuse recognition of same-sex marriages performed in other states. Passed overwhelmingly with bipartisan support and signed by President Clinton. Key provisions were struck down by the Supreme Court in United States v. Windsor (2013) and it was effectively superseded by Obergefell v. Hodges (2015).",
+        "Gramm Rudman Hollings Deficit Act 1985": "Established mandatory deficit reduction targets and automatic spending cuts (sequestration) if Congress failed to meet them \u2014 the first binding fiscal constraint on Congress in American history. Passed with broad bipartisan support in the context of Reagan-era deficit anxiety. Key provisions were later struck down by the Supreme Court and the targets were never fully met, but it established the framework for future budget battles.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "Iraq War Resolution   2002": "Authorized President George W. Bush to use military force against Iraq, citing the threat of weapons of mass destruction and alleged links to terrorism. Passed with significant bipartisan support \u2014 29 Democratic senators voted for it, including Hillary Clinton, John Kerry, and Joe Biden. No WMDs were found after the invasion, and the vote became politically toxic for Democrats who supported it.",
+        "NAFTA": "The North American Free Trade Agreement eliminated most tariffs on goods traded between the United States, Canada, and Mexico. Passed with more Republican than Democratic support despite being a Clinton administration priority \u2014 a majority of House Democrats voted against it. Labor unions bitterly opposed it as a threat to American manufacturing jobs; supporters argued it would create growth through expanded trade.",
+        "Patriot Act": "Passed just 45 days after the September 11 attacks, dramatically expanded surveillance and law enforcement powers to combat terrorism \u2014 including roving wiretaps, access to business records, and monitoring of 'lone wolf' suspects. Passed nearly unanimously in both chambers with minimal debate. Civil liberties groups warned of overreach; only one senator (Russ Feingold) voted against it.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
+        "Airline Degregulation   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Confirm Robert Bork": "The Senate's vote on Reagan's nomination of conservative jurist Robert Bork to the Supreme Court. Bork was rejected 42-58 after a fierce confirmation battle in which Democrats argued his originalist judicial philosophy threatened civil rights and privacy protections. His rejection transformed Supreme Court confirmations into major political battles and added 'borking' to the political lexicon.",
+        "Impeaching Bill Clinton": "The Senate trial following the House's impeachment of President Clinton on charges of perjury and obstruction of justice related to his affair with Monica Lewinsky. Clinton was acquitted on both articles, with neither receiving even a simple majority \u2014 let alone the two-thirds required for conviction. Ten Republican senators voted against conviction on at least one article.",
+        "Welfare and Medicaid Reform Act": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
       }
     },
     {
@@ -278,6 +458,40 @@
         "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE.",
         "McCarthy Censure": "S. RES. 301.  BENNETT AMEND. CONDEMNING MC CARTHY FOR MAKING CERTAIN CHARGES AGAINST MEMBERS OF THE SELECT COMMITTEE TO STUDY CENSURE AFTER THE COMMITTEE HAD ISSUED ITS REPORT.",
         "Taft Hartley   Veto": "HR 3020.  PASSAGE OVER THE PRESIDENT'S VETO."
+      },
+      "vote_display_names": {
+        "AGRICULTURAL ADJUSTMENT ACT": "Agricultural Adjustment Act (1935)",
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration Act   1924": "Immigration Act of 1924 (Johnson-Reed Act)",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "Lend Lease Act": "Lend-Lease Act (1941)",
+        "McCarran Internal Security Act 1950": "McCarran Internal Security Act (1950)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Smoot Hawley": "Smoot-Hawley Tariff Act (1930)",
+        "TVA Creation": "Tennessee Valley Authority Act (1933)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "22nd Amendment": "22nd Amendment (1947)",
+        "Lewis Strauss Commerce Secretary": "Rejection of Lewis Strauss for Commerce Secretary (1959)",
+        "McCarthy Censure": "Censure of Senator Joseph McCarthy (1954)",
+        "Taft Hartley   Veto": "Taft-Hartley Veto Override (1947)"
+      },
+      "vote_summaries": {
+        "AGRICULTURAL ADJUSTMENT ACT": "A cornerstone of FDR's New Deal that paid farmers to reduce production in order to raise crop prices during the Great Depression. Deeply controversial \u2014 opponents saw it as federal overreach into private farming, while supporters argued it was essential to rural recovery.",
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration Act   1924": "Established strict national origin quotas that severely restricted immigration from Southern and Eastern Europe and effectively barred all immigration from Asia. Designed to preserve the ethnic composition of the existing American population, it reflected the nativist and eugenicist ideas prevalent at the time. The quotas remained in place until the Immigration and Nationality Act of 1965.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "Lend Lease Act": "Authorized the President to lend or lease war supplies to any nation whose defense was vital to American security, primarily aimed at supporting Britain before U.S. entry into World War II. Fiercely opposed by isolationists who saw it as a step toward involvement in the war. Roosevelt called it making America 'the arsenal of democracy.'",
+        "McCarran Internal Security Act 1950": "Required Communist organizations to register with the government, established the Subversive Activities Control Board, and authorized detention of suspected subversives during national emergencies. Passed over President Truman's veto during the height of Cold War anxiety, it reflected the era's intense fear of Communist infiltration. Many provisions were later struck down by the Supreme Court.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Smoot Hawley": "Raised tariffs on over 20,000 imported goods to record levels in an attempt to protect American industry during the early Depression. Over 1,000 economists signed a letter urging President Hoover to veto it. Triggered retaliatory tariffs from trading partners, contributed to a collapse in international trade, and is widely seen as having deepened the Great Depression.",
+        "TVA Creation": "Created the Tennessee Valley Authority to build dams, generate hydroelectric power, and develop the economically depressed Tennessee Valley region. One of the most ambitious projects of the New Deal, it brought electricity to rural areas that private utilities had ignored. Conservatives attacked it as government competition with private enterprise; supporters called it the model for regional economic development.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "22nd Amendment": "Limited the presidency to two terms following Franklin Roosevelt's four consecutive elections. Passed by a Republican-controlled Congress largely as a reaction to FDR's long tenure. Ratified by the states in 1951.",
+        "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration.",
+        "McCarthy Censure": "The Senate voted 67-22 to censure Senator Joseph McCarthy of Wisconsin for conduct 'contrary to Senate traditions,' effectively ending his reign of anti-Communist investigations. The vote came after the Army-McCarthy hearings exposed his methods to a national television audience. McCarthy died three years later, largely marginalized, but McCarthyism had already permanently shaped American political culture.",
+        "Taft Hartley   Veto": "The Senate vote to override President Truman's veto of the Taft-Hartley Act, the most significant labor legislation since the Wagner Act. The override succeeded 68-25, with Southern Democrats providing the crucial margin against their own president. Truman's veto message, though overridden, became a political asset \u2014 he used it to rally labor support in his 1948 comeback election."
       }
     },
     {
@@ -319,6 +533,36 @@
         "Airline Degregulation   1978": "TO PASS S. 2493.",
         "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE.",
         "McCarthy Censure": "S. RES. 301.  BENNETT AMEND. CONDEMNING MC CARTHY FOR MAKING CERTAIN CHARGES AGAINST MEMBERS OF THE SELECT COMMITTEE TO STUDY CENSURE AFTER THE COMMITTEE HAD ISSUED ITS REPORT."
+      },
+      "vote_display_names": {
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "Lend Lease Act": "Lend-Lease Act (1941)",
+        "McCarran Internal Security Act 1950": "McCarran Internal Security Act (1950)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Taft Hartley": "Taft-Hartley Act (1947)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)",
+        "Airline Degregulation   1978": "Airline Deregulation Act (1978)",
+        "Lewis Strauss Commerce Secretary": "Rejection of Lewis Strauss for Commerce Secretary (1959)",
+        "McCarthy Censure": "Censure of Senator Joseph McCarthy (1954)"
+      },
+      "vote_summaries": {
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "Lend Lease Act": "Authorized the President to lend or lease war supplies to any nation whose defense was vital to American security, primarily aimed at supporting Britain before U.S. entry into World War II. Fiercely opposed by isolationists who saw it as a step toward involvement in the war. Roosevelt called it making America 'the arsenal of democracy.'",
+        "McCarran Internal Security Act 1950": "Required Communist organizations to register with the government, established the Subversive Activities Control Board, and authorized detention of suspected subversives during national emergencies. Passed over President Truman's veto during the height of Cold War anxiety, it reflected the era's intense fear of Communist infiltration. Many provisions were later struck down by the Supreme Court.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Taft Hartley": "Significantly restricted the power of labor unions by banning closed shops, allowing states to pass right-to-work laws, and prohibiting certain strike tactics. Passed by a Republican Congress over President Truman's veto with the support of many Southern Democrats \u2014 one of the clearest examples of the conservative coalition at work. Organized labor called it the 'slave labor act' and has sought its repeal ever since.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
+        "Airline Degregulation   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration.",
+        "McCarthy Censure": "The Senate voted 67-22 to censure Senator Joseph McCarthy of Wisconsin for conduct 'contrary to Senate traditions,' effectively ending his reign of anti-Communist investigations. The vote came after the Army-McCarthy hearings exposed his methods to a national television audience. McCarthy died three years later, largely marginalized, but McCarthyism had already permanently shaped American political culture."
       }
     },
     {
@@ -360,6 +604,36 @@
         "Confirm Robert Bork": "TO CONFIRM THE NOMINATION OF ROBERT H. BORK, OF THE DISTRICT OF COLUMBIA, TO BE AN ASSOCIATE JUSTICE OF THE SUPREME COURT.",
         "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE.",
         "McCarthy Censure": "S. RES. 301.  BENNETT AMEND. CONDEMNING MC CARTHY FOR MAKING CERTAIN CHARGES AGAINST MEMBERS OF THE SELECT COMMITTEE TO STUDY CENSURE AFTER THE COMMITTEE HAD ISSUED ITS REPORT."
+      },
+      "vote_display_names": {
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Gramm Rudman Hollings Deficit Act 1985": "Gramm-Rudman-Hollings Balanced Budget Act (1985)",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "McCarran Internal Security Act 1950": "McCarran Internal Security Act (1950)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)",
+        "Airline Degregulation   1978": "Airline Deregulation Act (1978)",
+        "Confirm Robert Bork": "Confirmation of Robert Bork (1987)",
+        "Lewis Strauss Commerce Secretary": "Rejection of Lewis Strauss for Commerce Secretary (1959)",
+        "McCarthy Censure": "Censure of Senator Joseph McCarthy (1954)"
+      },
+      "vote_summaries": {
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Gramm Rudman Hollings Deficit Act 1985": "Established mandatory deficit reduction targets and automatic spending cuts (sequestration) if Congress failed to meet them \u2014 the first binding fiscal constraint on Congress in American history. Passed with broad bipartisan support in the context of Reagan-era deficit anxiety. Key provisions were later struck down by the Supreme Court and the targets were never fully met, but it established the framework for future budget battles.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "McCarran Internal Security Act 1950": "Required Communist organizations to register with the government, established the Subversive Activities Control Board, and authorized detention of suspected subversives during national emergencies. Passed over President Truman's veto during the height of Cold War anxiety, it reflected the era's intense fear of Communist infiltration. Many provisions were later struck down by the Supreme Court.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
+        "Airline Degregulation   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Confirm Robert Bork": "The Senate's vote on Reagan's nomination of conservative jurist Robert Bork to the Supreme Court. Bork was rejected 42-58 after a fierce confirmation battle in which Democrats argued his originalist judicial philosophy threatened civil rights and privacy protections. His rejection transformed Supreme Court confirmations into major political battles and added 'borking' to the political lexicon.",
+        "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration.",
+        "McCarthy Censure": "The Senate voted 67-22 to censure Senator Joseph McCarthy of Wisconsin for conduct 'contrary to Senate traditions,' effectively ending his reign of anti-Communist investigations. The vote came after the Army-McCarthy hearings exposed his methods to a national television audience. McCarthy died three years later, largely marginalized, but McCarthyism had already permanently shaped American political culture."
       }
     },
     {
@@ -399,6 +673,34 @@
         "Confirm Robert Bork": "TO CONFIRM THE NOMINATION OF ROBERT H. BORK, OF THE DISTRICT OF COLUMBIA, TO BE AN ASSOCIATE JUSTICE OF THE SUPREME COURT.",
         "Impeaching Bill Clinton": "A resolution impeaching William Jefferson Clinton, President of the United States, for high crimes and misdemeanors.",
         "Welfare and Medicaid Reform Act": "A bill to provide for reconciliation pursuant to section 201(a)(1) of the concurrent resolution on the budget for fiscal year 1997."
+      },
+      "vote_display_names": {
+        "Authorization of Force Against Iraq   1991": "Authorization for Gulf War (1991)",
+        "Defense of Marriage Act": "Defense of Marriage Act (1996)",
+        "Gramm Rudman Hollings Deficit Act 1985": "Gramm-Rudman-Hollings Balanced Budget Act (1985)",
+        "Iraq War Resolution   2002": "Iraq War Authorization (2002)",
+        "NAFTA": "NAFTA Ratification (1993)",
+        "Patriot Act": "USA PATRIOT Act (2001)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "War Powers Act   1973": "War Powers Resolution (1973)",
+        "Airline Degregulation   1978": "Airline Deregulation Act (1978)",
+        "Confirm Robert Bork": "Confirmation of Robert Bork (1987)",
+        "Impeaching Bill Clinton": "Senate Impeachment Trial of Bill Clinton (1999)",
+        "Welfare and Medicaid Reform Act": "Welfare Reform Act (1996)"
+      },
+      "vote_summaries": {
+        "Authorization of Force Against Iraq   1991": "Authorized President George H.W. Bush to use military force to expel Iraq from Kuwait following the invasion of August 1990. The vote was close in the Senate (52-47) and deeply divided Democrats \u2014 most voted against it. The subsequent Gulf War lasted 100 hours of ground combat and ended with a decisive coalition victory.",
+        "Defense of Marriage Act": "Defined marriage as exclusively between a man and a woman for federal purposes and allowed states to refuse recognition of same-sex marriages performed in other states. Passed overwhelmingly with bipartisan support and signed by President Clinton. Key provisions were struck down by the Supreme Court in United States v. Windsor (2013) and it was effectively superseded by Obergefell v. Hodges (2015).",
+        "Gramm Rudman Hollings Deficit Act 1985": "Established mandatory deficit reduction targets and automatic spending cuts (sequestration) if Congress failed to meet them \u2014 the first binding fiscal constraint on Congress in American history. Passed with broad bipartisan support in the context of Reagan-era deficit anxiety. Key provisions were later struck down by the Supreme Court and the targets were never fully met, but it established the framework for future budget battles.",
+        "Iraq War Resolution   2002": "Authorized President George W. Bush to use military force against Iraq, citing the threat of weapons of mass destruction and alleged links to terrorism. Passed with significant bipartisan support \u2014 29 Democratic senators voted for it, including Hillary Clinton, John Kerry, and Joe Biden. No WMDs were found after the invasion, and the vote became politically toxic for Democrats who supported it.",
+        "NAFTA": "The North American Free Trade Agreement eliminated most tariffs on goods traded between the United States, Canada, and Mexico. Passed with more Republican than Democratic support despite being a Clinton administration priority \u2014 a majority of House Democrats voted against it. Labor unions bitterly opposed it as a threat to American manufacturing jobs; supporters argued it would create growth through expanded trade.",
+        "Patriot Act": "Passed just 45 days after the September 11 attacks, dramatically expanded surveillance and law enforcement powers to combat terrorism \u2014 including roving wiretaps, access to business records, and monitoring of 'lone wolf' suspects. Passed nearly unanimously in both chambers with minimal debate. Civil liberties groups warned of overreach; only one senator (Russ Feingold) voted against it.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
+        "Airline Degregulation   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Confirm Robert Bork": "The Senate's vote on Reagan's nomination of conservative jurist Robert Bork to the Supreme Court. Bork was rejected 42-58 after a fierce confirmation battle in which Democrats argued his originalist judicial philosophy threatened civil rights and privacy protections. His rejection transformed Supreme Court confirmations into major political battles and added 'borking' to the political lexicon.",
+        "Impeaching Bill Clinton": "The Senate trial following the House's impeachment of President Clinton on charges of perjury and obstruction of justice related to his affair with Monica Lewinsky. Clinton was acquitted on both articles, with neither receiving even a simple majority \u2014 let alone the two-thirds required for conviction. Ten Republican senators voted against conviction on at least one article.",
+        "Welfare and Medicaid Reform Act": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
       }
     },
     {
@@ -436,6 +738,32 @@
         "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
         "Airline Degregulation   1978": "TO PASS S. 2493.",
         "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE."
+      },
+      "vote_display_names": {
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "McCarran Internal Security Act 1950": "McCarran Internal Security Act (1950)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Taft Hartley": "Taft-Hartley Act (1947)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)",
+        "Airline Degregulation   1978": "Airline Deregulation Act (1978)",
+        "Lewis Strauss Commerce Secretary": "Rejection of Lewis Strauss for Commerce Secretary (1959)"
+      },
+      "vote_summaries": {
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "McCarran Internal Security Act 1950": "Required Communist organizations to register with the government, established the Subversive Activities Control Board, and authorized detention of suspected subversives during national emergencies. Passed over President Truman's veto during the height of Cold War anxiety, it reflected the era's intense fear of Communist infiltration. Many provisions were later struck down by the Supreme Court.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Taft Hartley": "Significantly restricted the power of labor unions by banning closed shops, allowing states to pass right-to-work laws, and prohibiting certain strike tactics. Passed by a Republican Congress over President Truman's veto with the support of many Southern Democrats \u2014 one of the clearest examples of the conservative coalition at work. Organized labor called it the 'slave labor act' and has sought its repeal ever since.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
+        "Airline Degregulation   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration."
       }
     },
     {
@@ -459,6 +787,18 @@
         "Hold Jefferson Davis in Treason": "TO PASS A RESOLUTION PROVIDING THAT JEFFERSON DAVIS, LEADER OF THE LATE REBELLION, IS GUILTY OF TREASON AND WAS CHARGED BY PROCLAMATION OF PRESIDENT MAY 18, 1865, - RESOLVED THAT DAVIS BE HOLD IN CUSTODY AS A PRISONER, SUBJECT TO TRIAL ACCORDING TO LAWS.  (P. 3089)",
         "Re Admit Southern States": "TO PASS H. R. 1058.",
         "Andrew Johnson Impeachment": "TO ADOPT THE ORDER TO HAVE 11TH ARTICLE OF IMPEACHMENT READ FIRST, AND OTHER IN THE USUAL ORDER, THE QUESTION GUILTY OR NOT GUILTY BEING PUT ON EACH PART OF 11TH ARTICLE AND OTHER IN ORDER.  (P. 411-1)"
+      },
+      "vote_display_names": {
+        "Bland Allison Act": "Bland-Allison Act (1878)",
+        "Hold Jefferson Davis in Treason": "Jefferson Davis Treason Resolution (1866)",
+        "Re Admit Southern States": "Readmission of Southern States (1868)",
+        "Andrew Johnson Impeachment": "Impeachment of Andrew Johnson (1868)"
+      },
+      "vote_summaries": {
+        "Bland Allison Act": "Required the federal government to purchase and coin between $2-4 million in silver per month, partially restoring silver as legal tender. A victory for Western mining states and agrarian debtors who wanted cheaper money, it was vetoed by President Hayes but overridden by Congress. The first major political battle of the silver vs. gold currency wars that would define Gilded Age politics.",
+        "Hold Jefferson Davis in Treason": "A House resolution declaring that Jefferson Davis, former President of the Confederacy, should be tried for treason. Passed during Radical Reconstruction as Congress sought accountability for Confederate leadership. Davis was indicted but never tried \u2014 the charges were eventually dropped in 1869.",
+        "Re Admit Southern States": "Voted to readmit formerly Confederate states \u2014 Alabama, Arkansas, Florida, Georgia, Louisiana, North Carolina, and South Carolina \u2014 to congressional representation under the terms of Radical Reconstruction. Required the states to ratify the 14th Amendment and adopt new constitutions guaranteeing Black male suffrage. A defining vote of the Reconstruction era.",
+        "Andrew Johnson Impeachment": "The first presidential impeachment in American history, brought by Radical Republicans who accused Johnson of violating the Tenure of Office Act by attempting to remove Secretary of War Edwin Stanton. Johnson was acquitted in the Senate by a single vote, with several Republican senators breaking from their party to vote against conviction."
       }
     },
     {
@@ -498,6 +838,34 @@
         "Confirm Robert Bork": "TO CONFIRM THE NOMINATION OF ROBERT H. BORK, OF THE DISTRICT OF COLUMBIA, TO BE AN ASSOCIATE JUSTICE OF THE SUPREME COURT.",
         "Impeaching Bill Clinton": "A resolution impeaching William Jefferson Clinton, President of the United States, for high crimes and misdemeanors.",
         "Welfare and Medicaid Reform Act": "A bill to provide for reconciliation pursuant to section 201(a)(1) of the concurrent resolution on the budget for fiscal year 1997."
+      },
+      "vote_display_names": {
+        "Authorization of Force Against Iraq   1991": "Authorization for Gulf War (1991)",
+        "Defense of Marriage Act": "Defense of Marriage Act (1996)",
+        "Gramm Rudman Hollings Deficit Act 1985": "Gramm-Rudman-Hollings Balanced Budget Act (1985)",
+        "Iraq War Resolution   2002": "Iraq War Authorization (2002)",
+        "NAFTA": "NAFTA Ratification (1993)",
+        "Patriot Act": "USA PATRIOT Act (2001)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "War Powers Act   1973": "War Powers Resolution (1973)",
+        "Airline Degregulation   1978": "Airline Deregulation Act (1978)",
+        "Confirm Robert Bork": "Confirmation of Robert Bork (1987)",
+        "Impeaching Bill Clinton": "Senate Impeachment Trial of Bill Clinton (1999)",
+        "Welfare and Medicaid Reform Act": "Welfare Reform Act (1996)"
+      },
+      "vote_summaries": {
+        "Authorization of Force Against Iraq   1991": "Authorized President George H.W. Bush to use military force to expel Iraq from Kuwait following the invasion of August 1990. The vote was close in the Senate (52-47) and deeply divided Democrats \u2014 most voted against it. The subsequent Gulf War lasted 100 hours of ground combat and ended with a decisive coalition victory.",
+        "Defense of Marriage Act": "Defined marriage as exclusively between a man and a woman for federal purposes and allowed states to refuse recognition of same-sex marriages performed in other states. Passed overwhelmingly with bipartisan support and signed by President Clinton. Key provisions were struck down by the Supreme Court in United States v. Windsor (2013) and it was effectively superseded by Obergefell v. Hodges (2015).",
+        "Gramm Rudman Hollings Deficit Act 1985": "Established mandatory deficit reduction targets and automatic spending cuts (sequestration) if Congress failed to meet them \u2014 the first binding fiscal constraint on Congress in American history. Passed with broad bipartisan support in the context of Reagan-era deficit anxiety. Key provisions were later struck down by the Supreme Court and the targets were never fully met, but it established the framework for future budget battles.",
+        "Iraq War Resolution   2002": "Authorized President George W. Bush to use military force against Iraq, citing the threat of weapons of mass destruction and alleged links to terrorism. Passed with significant bipartisan support \u2014 29 Democratic senators voted for it, including Hillary Clinton, John Kerry, and Joe Biden. No WMDs were found after the invasion, and the vote became politically toxic for Democrats who supported it.",
+        "NAFTA": "The North American Free Trade Agreement eliminated most tariffs on goods traded between the United States, Canada, and Mexico. Passed with more Republican than Democratic support despite being a Clinton administration priority \u2014 a majority of House Democrats voted against it. Labor unions bitterly opposed it as a threat to American manufacturing jobs; supporters argued it would create growth through expanded trade.",
+        "Patriot Act": "Passed just 45 days after the September 11 attacks, dramatically expanded surveillance and law enforcement powers to combat terrorism \u2014 including roving wiretaps, access to business records, and monitoring of 'lone wolf' suspects. Passed nearly unanimously in both chambers with minimal debate. Civil liberties groups warned of overreach; only one senator (Russ Feingold) voted against it.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
+        "Airline Degregulation   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Confirm Robert Bork": "The Senate's vote on Reagan's nomination of conservative jurist Robert Bork to the Supreme Court. Bork was rejected 42-58 after a fierce confirmation battle in which Democrats argued his originalist judicial philosophy threatened civil rights and privacy protections. His rejection transformed Supreme Court confirmations into major political battles and added 'borking' to the political lexicon.",
+        "Impeaching Bill Clinton": "The Senate trial following the House's impeachment of President Clinton on charges of perjury and obstruction of justice related to his affair with Monica Lewinsky. Clinton was acquitted on both articles, with neither receiving even a simple majority \u2014 let alone the two-thirds required for conviction. Ten Republican senators voted against conviction on at least one article.",
+        "Welfare and Medicaid Reform Act": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
       }
     },
     {
@@ -533,6 +901,30 @@
         "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
         "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE.",
         "McCarthy Censure": "S. RES. 301.  BENNETT AMEND. CONDEMNING MC CARTHY FOR MAKING CERTAIN CHARGES AGAINST MEMBERS OF THE SELECT COMMITTEE TO STUDY CENSURE AFTER THE COMMITTEE HAD ISSUED ITS REPORT."
+      },
+      "vote_display_names": {
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "Lend Lease Act": "Lend-Lease Act (1941)",
+        "McCarran Internal Security Act 1950": "McCarran Internal Security Act (1950)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Taft Hartley": "Taft-Hartley Act (1947)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "Lewis Strauss Commerce Secretary": "Rejection of Lewis Strauss for Commerce Secretary (1959)",
+        "McCarthy Censure": "Censure of Senator Joseph McCarthy (1954)"
+      },
+      "vote_summaries": {
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "Lend Lease Act": "Authorized the President to lend or lease war supplies to any nation whose defense was vital to American security, primarily aimed at supporting Britain before U.S. entry into World War II. Fiercely opposed by isolationists who saw it as a step toward involvement in the war. Roosevelt called it making America 'the arsenal of democracy.'",
+        "McCarran Internal Security Act 1950": "Required Communist organizations to register with the government, established the Subversive Activities Control Board, and authorized detention of suspected subversives during national emergencies. Passed over President Truman's veto during the height of Cold War anxiety, it reflected the era's intense fear of Communist infiltration. Many provisions were later struck down by the Supreme Court.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Taft Hartley": "Significantly restricted the power of labor unions by banning closed shops, allowing states to pass right-to-work laws, and prohibiting certain strike tactics. Passed by a Republican Congress over President Truman's veto with the support of many Southern Democrats \u2014 one of the clearest examples of the conservative coalition at work. Organized labor called it the 'slave labor act' and has sought its repeal ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration.",
+        "McCarthy Censure": "The Senate voted 67-22 to censure Senator Joseph McCarthy of Wisconsin for conduct 'contrary to Senate traditions,' effectively ending his reign of anti-Communist investigations. The vote came after the Army-McCarthy hearings exposed his methods to a national television audience. McCarthy died three years later, largely marginalized, but McCarthyism had already permanently shaped American political culture."
       }
     },
     {
@@ -564,6 +956,26 @@
         "Airline Degregulation   1978": "TO PASS S. 2493.",
         "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE.",
         "McCarthy Censure": "S. RES. 301.  BENNETT AMEND. CONDEMNING MC CARTHY FOR MAKING CERTAIN CHARGES AGAINST MEMBERS OF THE SELECT COMMITTEE TO STUDY CENSURE AFTER THE COMMITTEE HAD ISSUED ITS REPORT."
+      },
+      "vote_display_names": {
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Gramm Rudman Hollings Deficit Act 1985": "Gramm-Rudman-Hollings Balanced Budget Act (1985)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "War Powers Act   1973": "War Powers Resolution (1973)",
+        "Airline Degregulation   1978": "Airline Deregulation Act (1978)",
+        "Lewis Strauss Commerce Secretary": "Rejection of Lewis Strauss for Commerce Secretary (1959)",
+        "McCarthy Censure": "Censure of Senator Joseph McCarthy (1954)"
+      },
+      "vote_summaries": {
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Gramm Rudman Hollings Deficit Act 1985": "Established mandatory deficit reduction targets and automatic spending cuts (sequestration) if Congress failed to meet them \u2014 the first binding fiscal constraint on Congress in American history. Passed with broad bipartisan support in the context of Reagan-era deficit anxiety. Key provisions were later struck down by the Supreme Court and the targets were never fully met, but it established the framework for future budget battles.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
+        "Airline Degregulation   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration.",
+        "McCarthy Censure": "The Senate voted 67-22 to censure Senator Joseph McCarthy of Wisconsin for conduct 'contrary to Senate traditions,' effectively ending his reign of anti-Communist investigations. The vote came after the Army-McCarthy hearings exposed his methods to a national television audience. McCarthy died three years later, largely marginalized, but McCarthyism had already permanently shaped American political culture."
       }
     },
     {
@@ -597,6 +1009,28 @@
         "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
         "Airline Degregulation   1978": "TO PASS S. 2493.",
         "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE."
+      },
+      "vote_display_names": {
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)",
+        "Airline Degregulation   1978": "Airline Deregulation Act (1978)",
+        "Lewis Strauss Commerce Secretary": "Rejection of Lewis Strauss for Commerce Secretary (1959)"
+      },
+      "vote_summaries": {
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
+        "Airline Degregulation   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration."
       }
     }
   ],
@@ -648,6 +1082,44 @@
         "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
         "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
         "Welfare and Medicaid Reform Act   1996": "Welfare and Medicaid Reform Act of 1996"
+      },
+      "vote_display_names": {
+        "Affordable Health Care for America": "Affordable Care Act (2009)",
+        "Airline Deregulation Act   1978": "Airline Deregulation Act (1978)",
+        "Authorization of Force Against Iraq   1991": "Authorization for Gulf War (1991)",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": "Clinton Impeachment Inquiry Authorization (1998)",
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Defense of Marriage Act": "Defense of Marriage Act (1996)",
+        "Designate MLK day as a National Holiday": "Martin Luther King Jr. Federal Holiday (1979)",
+        "Gramm Rudman Hollings Deficit Act 1985": "Gramm-Rudman-Hollings Balanced Budget Act (1985)",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "Iraq War Resolution   2002": "Iraq War Authorization (2002)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Patriot Act": "USA PATRIOT Act (2001)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)",
+        "Welfare and Medicaid Reform Act   1996": "Welfare Reform Act (1996)"
+      },
+      "vote_summaries": {
+        "Affordable Health Care for America": "The most sweeping overhaul of American healthcare since Medicare, expanding coverage to millions of uninsured Americans through insurance marketplaces and Medicaid expansion. Passed without a single Republican vote in the House or Senate and became the defining legislative battle of the Obama presidency.",
+        "Airline Deregulation Act   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Authorization of Force Against Iraq   1991": "Authorized President George H.W. Bush to use military force to expel Iraq from Kuwait following the invasion of August 1990. The vote was close in the Senate (52-47) and deeply divided Democrats \u2014 most voted against it. The subsequent Gulf War lasted 100 hours of ground combat and ended with a decisive coalition victory.",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": "Authorized the House Judiciary Committee to begin a formal impeachment inquiry into President Bill Clinton following the release of the Starr Report detailing his affair with Monica Lewinsky. The vote was largely along party lines, with most Democrats voting against the inquiry.",
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Defense of Marriage Act": "Defined marriage as exclusively between a man and a woman for federal purposes and allowed states to refuse recognition of same-sex marriages performed in other states. Passed overwhelmingly with bipartisan support and signed by President Clinton. Key provisions were struck down by the Supreme Court in United States v. Windsor (2013) and it was effectively superseded by Obergefell v. Hodges (2015).",
+        "Designate MLK day as a National Holiday": "Established the third Monday of January as a federal holiday honoring the Rev. Dr. Martin Luther King Jr. Legislation to create the holiday had been introduced every year since King's assassination in 1968 before finally passing. Opposition came primarily from fiscal conservatives and Southern members who objected to the cost or to King specifically.",
+        "Gramm Rudman Hollings Deficit Act 1985": "Established mandatory deficit reduction targets and automatic spending cuts (sequestration) if Congress failed to meet them \u2014 the first binding fiscal constraint on Congress in American history. Passed with broad bipartisan support in the context of Reagan-era deficit anxiety. Key provisions were later struck down by the Supreme Court and the targets were never fully met, but it established the framework for future budget battles.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "Iraq War Resolution   2002": "Authorized President George W. Bush to use military force against Iraq, citing the threat of weapons of mass destruction and alleged links to terrorism. Passed with significant bipartisan support \u2014 29 Democratic senators voted for it, including Hillary Clinton, John Kerry, and Joe Biden. No WMDs were found after the invasion, and the vote became politically toxic for Democrats who supported it.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Patriot Act": "Passed just 45 days after the September 11 attacks, dramatically expanded surveillance and law enforcement powers to combat terrorism \u2014 including roving wiretaps, access to business records, and monitoring of 'lone wolf' suspects. Passed nearly unanimously in both chambers with minimal debate. Civil liberties groups warned of overreach; only one senator (Russ Feingold) voted against it.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
+        "Welfare and Medicaid Reform Act   1996": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
       }
     },
     {
@@ -693,6 +1165,40 @@
         "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
         "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
         "Welfare and Medicaid Reform Act   1996": "Welfare and Medicaid Reform Act of 1996"
+      },
+      "vote_display_names": {
+        "Affordable Health Care for America": "Affordable Care Act (2009)",
+        "Airline Deregulation Act   1978": "Airline Deregulation Act (1978)",
+        "Authorization of Force Against Iraq   1991": "Authorization for Gulf War (1991)",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": "Clinton Impeachment Inquiry Authorization (1998)",
+        "Defense of Marriage Act": "Defense of Marriage Act (1996)",
+        "Designate MLK day as a National Holiday": "Martin Luther King Jr. Federal Holiday (1979)",
+        "Gramm Rudman Hollings Deficit Act 1985": "Gramm-Rudman-Hollings Balanced Budget Act (1985)",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "Iraq War Resolution   2002": "Iraq War Authorization (2002)",
+        "Patriot Act": "USA PATRIOT Act (2001)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)",
+        "Welfare and Medicaid Reform Act   1996": "Welfare Reform Act (1996)"
+      },
+      "vote_summaries": {
+        "Affordable Health Care for America": "The most sweeping overhaul of American healthcare since Medicare, expanding coverage to millions of uninsured Americans through insurance marketplaces and Medicaid expansion. Passed without a single Republican vote in the House or Senate and became the defining legislative battle of the Obama presidency.",
+        "Airline Deregulation Act   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Authorization of Force Against Iraq   1991": "Authorized President George H.W. Bush to use military force to expel Iraq from Kuwait following the invasion of August 1990. The vote was close in the Senate (52-47) and deeply divided Democrats \u2014 most voted against it. The subsequent Gulf War lasted 100 hours of ground combat and ended with a decisive coalition victory.",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": "Authorized the House Judiciary Committee to begin a formal impeachment inquiry into President Bill Clinton following the release of the Starr Report detailing his affair with Monica Lewinsky. The vote was largely along party lines, with most Democrats voting against the inquiry.",
+        "Defense of Marriage Act": "Defined marriage as exclusively between a man and a woman for federal purposes and allowed states to refuse recognition of same-sex marriages performed in other states. Passed overwhelmingly with bipartisan support and signed by President Clinton. Key provisions were struck down by the Supreme Court in United States v. Windsor (2013) and it was effectively superseded by Obergefell v. Hodges (2015).",
+        "Designate MLK day as a National Holiday": "Established the third Monday of January as a federal holiday honoring the Rev. Dr. Martin Luther King Jr. Legislation to create the holiday had been introduced every year since King's assassination in 1968 before finally passing. Opposition came primarily from fiscal conservatives and Southern members who objected to the cost or to King specifically.",
+        "Gramm Rudman Hollings Deficit Act 1985": "Established mandatory deficit reduction targets and automatic spending cuts (sequestration) if Congress failed to meet them \u2014 the first binding fiscal constraint on Congress in American history. Passed with broad bipartisan support in the context of Reagan-era deficit anxiety. Key provisions were later struck down by the Supreme Court and the targets were never fully met, but it established the framework for future budget battles.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "Iraq War Resolution   2002": "Authorized President George W. Bush to use military force against Iraq, citing the threat of weapons of mass destruction and alleged links to terrorism. Passed with significant bipartisan support \u2014 29 Democratic senators voted for it, including Hillary Clinton, John Kerry, and Joe Biden. No WMDs were found after the invasion, and the vote became politically toxic for Democrats who supported it.",
+        "Patriot Act": "Passed just 45 days after the September 11 attacks, dramatically expanded surveillance and law enforcement powers to combat terrorism \u2014 including roving wiretaps, access to business records, and monitoring of 'lone wolf' suspects. Passed nearly unanimously in both chambers with minimal debate. Civil liberties groups warned of overreach; only one senator (Russ Feingold) voted against it.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
+        "Welfare and Medicaid Reform Act   1996": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
       }
     },
     {
@@ -738,6 +1244,40 @@
         "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
         "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
         "Welfare and Medicaid Reform Act   1996": "Welfare and Medicaid Reform Act of 1996"
+      },
+      "vote_display_names": {
+        "Airline Deregulation Act   1978": "Airline Deregulation Act (1978)",
+        "Authorization of Force Against Iraq   1991": "Authorization for Gulf War (1991)",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": "Clinton Impeachment Inquiry Authorization (1998)",
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Defense of Marriage Act": "Defense of Marriage Act (1996)",
+        "Designate MLK day as a National Holiday": "Martin Luther King Jr. Federal Holiday (1979)",
+        "Gramm Rudman Hollings Deficit Act 1985": "Gramm-Rudman-Hollings Balanced Budget Act (1985)",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "McCarran Internal Security Act 1950": "McCarran Internal Security Act (1950)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)",
+        "Welfare and Medicaid Reform Act   1996": "Welfare Reform Act (1996)"
+      },
+      "vote_summaries": {
+        "Airline Deregulation Act   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Authorization of Force Against Iraq   1991": "Authorized President George H.W. Bush to use military force to expel Iraq from Kuwait following the invasion of August 1990. The vote was close in the Senate (52-47) and deeply divided Democrats \u2014 most voted against it. The subsequent Gulf War lasted 100 hours of ground combat and ended with a decisive coalition victory.",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": "Authorized the House Judiciary Committee to begin a formal impeachment inquiry into President Bill Clinton following the release of the Starr Report detailing his affair with Monica Lewinsky. The vote was largely along party lines, with most Democrats voting against the inquiry.",
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Defense of Marriage Act": "Defined marriage as exclusively between a man and a woman for federal purposes and allowed states to refuse recognition of same-sex marriages performed in other states. Passed overwhelmingly with bipartisan support and signed by President Clinton. Key provisions were struck down by the Supreme Court in United States v. Windsor (2013) and it was effectively superseded by Obergefell v. Hodges (2015).",
+        "Designate MLK day as a National Holiday": "Established the third Monday of January as a federal holiday honoring the Rev. Dr. Martin Luther King Jr. Legislation to create the holiday had been introduced every year since King's assassination in 1968 before finally passing. Opposition came primarily from fiscal conservatives and Southern members who objected to the cost or to King specifically.",
+        "Gramm Rudman Hollings Deficit Act 1985": "Established mandatory deficit reduction targets and automatic spending cuts (sequestration) if Congress failed to meet them \u2014 the first binding fiscal constraint on Congress in American history. Passed with broad bipartisan support in the context of Reagan-era deficit anxiety. Key provisions were later struck down by the Supreme Court and the targets were never fully met, but it established the framework for future budget battles.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "McCarran Internal Security Act 1950": "Required Communist organizations to register with the government, established the Subversive Activities Control Board, and authorized detention of suspected subversives during national emergencies. Passed over President Truman's veto during the height of Cold War anxiety, it reflected the era's intense fear of Communist infiltration. Many provisions were later struck down by the Supreme Court.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
+        "Welfare and Medicaid Reform Act   1996": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
       }
     },
     {
@@ -777,6 +1317,34 @@
         "TVA Creation": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 5081 (P.L. 17) A BILL CREATING THE TENN. VALLEY AUTHORITY AND PROVIDING FOR THE OPERATION OF THF THE MUSCLE SHOALS PROPERTIES.",
         "Taft Hartley": "HR 3020.  PASSAGE.",
         "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT."
+      },
+      "vote_display_names": {
+        "AGRICULTURAL ADJUSTMENT ACT": "Agricultural Adjustment Act (1935)",
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration Act   1924": "Immigration Act of 1924 (Johnson-Reed Act)",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "Lend Lease Act": "Lend-Lease Act (1941)",
+        "McCarran Internal Security Act 1950": "McCarran Internal Security Act (1950)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Smoot Hawley": "Smoot-Hawley Tariff Act (1930)",
+        "TVA Creation": "Tennessee Valley Authority Act (1933)",
+        "Taft Hartley": "Taft-Hartley Act (1947)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965"
+      },
+      "vote_summaries": {
+        "AGRICULTURAL ADJUSTMENT ACT": "A cornerstone of FDR's New Deal that paid farmers to reduce production in order to raise crop prices during the Great Depression. Deeply controversial \u2014 opponents saw it as federal overreach into private farming, while supporters argued it was essential to rural recovery.",
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration Act   1924": "Established strict national origin quotas that severely restricted immigration from Southern and Eastern Europe and effectively barred all immigration from Asia. Designed to preserve the ethnic composition of the existing American population, it reflected the nativist and eugenicist ideas prevalent at the time. The quotas remained in place until the Immigration and Nationality Act of 1965.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "Lend Lease Act": "Authorized the President to lend or lease war supplies to any nation whose defense was vital to American security, primarily aimed at supporting Britain before U.S. entry into World War II. Fiercely opposed by isolationists who saw it as a step toward involvement in the war. Roosevelt called it making America 'the arsenal of democracy.'",
+        "McCarran Internal Security Act 1950": "Required Communist organizations to register with the government, established the Subversive Activities Control Board, and authorized detention of suspected subversives during national emergencies. Passed over President Truman's veto during the height of Cold War anxiety, it reflected the era's intense fear of Communist infiltration. Many provisions were later struck down by the Supreme Court.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Smoot Hawley": "Raised tariffs on over 20,000 imported goods to record levels in an attempt to protect American industry during the early Depression. Over 1,000 economists signed a letter urging President Hoover to veto it. Triggered retaliatory tariffs from trading partners, contributed to a collapse in international trade, and is widely seen as having deepened the Great Depression.",
+        "TVA Creation": "Created the Tennessee Valley Authority to build dams, generate hydroelectric power, and develop the economically depressed Tennessee Valley region. One of the most ambitious projects of the New Deal, it brought electricity to rural areas that private utilities had ignored. Conservatives attacked it as government competition with private enterprise; supporters called it the model for regional economic development.",
+        "Taft Hartley": "Significantly restricted the power of labor unions by banning closed shops, allowing states to pass right-to-work laws, and prohibiting certain strike tactics. Passed by a Republican Congress over President Truman's veto with the support of many Southern Democrats \u2014 one of the clearest examples of the conservative coalition at work. Organized labor called it the 'slave labor act' and has sought its repeal ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted."
       }
     },
     {
@@ -816,6 +1384,34 @@
         "Taft Hartley": "HR 3020.  PASSAGE.",
         "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
         "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT."
+      },
+      "vote_display_names": {
+        "AGRICULTURAL ADJUSTMENT ACT": "Agricultural Adjustment Act (1935)",
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "Lend Lease Act": "Lend-Lease Act (1941)",
+        "McCarran Internal Security Act 1950": "McCarran Internal Security Act (1950)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Smoot Hawley": "Smoot-Hawley Tariff Act (1930)",
+        "TVA Creation": "Tennessee Valley Authority Act (1933)",
+        "Taft Hartley": "Taft-Hartley Act (1947)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)"
+      },
+      "vote_summaries": {
+        "AGRICULTURAL ADJUSTMENT ACT": "A cornerstone of FDR's New Deal that paid farmers to reduce production in order to raise crop prices during the Great Depression. Deeply controversial \u2014 opponents saw it as federal overreach into private farming, while supporters argued it was essential to rural recovery.",
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "Lend Lease Act": "Authorized the President to lend or lease war supplies to any nation whose defense was vital to American security, primarily aimed at supporting Britain before U.S. entry into World War II. Fiercely opposed by isolationists who saw it as a step toward involvement in the war. Roosevelt called it making America 'the arsenal of democracy.'",
+        "McCarran Internal Security Act 1950": "Required Communist organizations to register with the government, established the Subversive Activities Control Board, and authorized detention of suspected subversives during national emergencies. Passed over President Truman's veto during the height of Cold War anxiety, it reflected the era's intense fear of Communist infiltration. Many provisions were later struck down by the Supreme Court.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Smoot Hawley": "Raised tariffs on over 20,000 imported goods to record levels in an attempt to protect American industry during the early Depression. Over 1,000 economists signed a letter urging President Hoover to veto it. Triggered retaliatory tariffs from trading partners, contributed to a collapse in international trade, and is widely seen as having deepened the Great Depression.",
+        "TVA Creation": "Created the Tennessee Valley Authority to build dams, generate hydroelectric power, and develop the economically depressed Tennessee Valley region. One of the most ambitious projects of the New Deal, it brought electricity to rural areas that private utilities had ignored. Conservatives attacked it as government competition with private enterprise; supporters called it the model for regional economic development.",
+        "Taft Hartley": "Significantly restricted the power of labor unions by banning closed shops, allowing states to pass right-to-work laws, and prohibiting certain strike tactics. Passed by a Republican Congress over President Truman's veto with the support of many Southern Democrats \u2014 one of the clearest examples of the conservative coalition at work. Organized labor called it the 'slave labor act' and has sought its repeal ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it."
       }
     },
     {
@@ -855,6 +1451,34 @@
         "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
         "22nd Amendment": "H J RES 27.  PASSAGE.",
         "Taft Hartley   Veto": "HR 3020.  PASSAGE OVER THE PRESIDENT'S VETO."
+      },
+      "vote_display_names": {
+        "Airline Deregulation Act   1978": "Airline Deregulation Act (1978)",
+        "Designate MLK day as a National Holiday": "Martin Luther King Jr. Federal Holiday (1979)",
+        "Gramm Rudman Hollings Deficit Act 1985": "Gramm-Rudman-Hollings Balanced Budget Act (1985)",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "Lend Lease Act": "Lend-Lease Act (1941)",
+        "McCarran Internal Security Act 1950": "McCarran Internal Security Act (1950)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)",
+        "22nd Amendment": "22nd Amendment (1947)",
+        "Taft Hartley   Veto": "Taft-Hartley Veto Override (1947)"
+      },
+      "vote_summaries": {
+        "Airline Deregulation Act   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Designate MLK day as a National Holiday": "Established the third Monday of January as a federal holiday honoring the Rev. Dr. Martin Luther King Jr. Legislation to create the holiday had been introduced every year since King's assassination in 1968 before finally passing. Opposition came primarily from fiscal conservatives and Southern members who objected to the cost or to King specifically.",
+        "Gramm Rudman Hollings Deficit Act 1985": "Established mandatory deficit reduction targets and automatic spending cuts (sequestration) if Congress failed to meet them \u2014 the first binding fiscal constraint on Congress in American history. Passed with broad bipartisan support in the context of Reagan-era deficit anxiety. Key provisions were later struck down by the Supreme Court and the targets were never fully met, but it established the framework for future budget battles.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "Lend Lease Act": "Authorized the President to lend or lease war supplies to any nation whose defense was vital to American security, primarily aimed at supporting Britain before U.S. entry into World War II. Fiercely opposed by isolationists who saw it as a step toward involvement in the war. Roosevelt called it making America 'the arsenal of democracy.'",
+        "McCarran Internal Security Act 1950": "Required Communist organizations to register with the government, established the Subversive Activities Control Board, and authorized detention of suspected subversives during national emergencies. Passed over President Truman's veto during the height of Cold War anxiety, it reflected the era's intense fear of Communist infiltration. Many provisions were later struck down by the Supreme Court.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
+        "22nd Amendment": "Limited the presidency to two terms following Franklin Roosevelt's four consecutive elections. Passed by a Republican-controlled Congress largely as a reaction to FDR's long tenure. Ratified by the states in 1951.",
+        "Taft Hartley   Veto": "The Senate vote to override President Truman's veto of the Taft-Hartley Act, the most significant labor legislation since the Wagner Act. The override succeeded 68-25, with Southern Democrats providing the crucial margin against their own president. Truman's veto message, though overridden, became a political asset \u2014 he used it to rally labor support in his 1948 comeback election."
       }
     },
     {
@@ -892,6 +1516,32 @@
         "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
         "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
         "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT."
+      },
+      "vote_display_names": {
+        "Airline Deregulation Act   1978": "Airline Deregulation Act (1978)",
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Designate MLK day as a National Holiday": "Martin Luther King Jr. Federal Holiday (1979)",
+        "Gramm Rudman Hollings Deficit Act 1985": "Gramm-Rudman-Hollings Balanced Budget Act (1985)",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "McCarran Internal Security Act 1950": "McCarran Internal Security Act (1950)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)"
+      },
+      "vote_summaries": {
+        "Airline Deregulation Act   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Designate MLK day as a National Holiday": "Established the third Monday of January as a federal holiday honoring the Rev. Dr. Martin Luther King Jr. Legislation to create the holiday had been introduced every year since King's assassination in 1968 before finally passing. Opposition came primarily from fiscal conservatives and Southern members who objected to the cost or to King specifically.",
+        "Gramm Rudman Hollings Deficit Act 1985": "Established mandatory deficit reduction targets and automatic spending cuts (sequestration) if Congress failed to meet them \u2014 the first binding fiscal constraint on Congress in American history. Passed with broad bipartisan support in the context of Reagan-era deficit anxiety. Key provisions were later struck down by the Supreme Court and the targets were never fully met, but it established the framework for future budget battles.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "McCarran Internal Security Act 1950": "Required Communist organizations to register with the government, established the Subversive Activities Control Board, and authorized detention of suspected subversives during national emergencies. Passed over President Truman's veto during the height of Cold War anxiety, it reflected the era's intense fear of Communist infiltration. Many provisions were later struck down by the Supreme Court.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it."
       }
     },
     {
@@ -929,6 +1579,32 @@
         "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
         "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
         "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT."
+      },
+      "vote_display_names": {
+        "Airline Deregulation Act   1978": "Airline Deregulation Act (1978)",
+        "Authorization of Force Against Iraq   1991": "Authorization for Gulf War (1991)",
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Designate MLK day as a National Holiday": "Martin Luther King Jr. Federal Holiday (1979)",
+        "Gramm Rudman Hollings Deficit Act 1985": "Gramm-Rudman-Hollings Balanced Budget Act (1985)",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)"
+      },
+      "vote_summaries": {
+        "Airline Deregulation Act   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Authorization of Force Against Iraq   1991": "Authorized President George H.W. Bush to use military force to expel Iraq from Kuwait following the invasion of August 1990. The vote was close in the Senate (52-47) and deeply divided Democrats \u2014 most voted against it. The subsequent Gulf War lasted 100 hours of ground combat and ended with a decisive coalition victory.",
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Designate MLK day as a National Holiday": "Established the third Monday of January as a federal holiday honoring the Rev. Dr. Martin Luther King Jr. Legislation to create the holiday had been introduced every year since King's assassination in 1968 before finally passing. Opposition came primarily from fiscal conservatives and Southern members who objected to the cost or to King specifically.",
+        "Gramm Rudman Hollings Deficit Act 1985": "Established mandatory deficit reduction targets and automatic spending cuts (sequestration) if Congress failed to meet them \u2014 the first binding fiscal constraint on Congress in American history. Passed with broad bipartisan support in the context of Reagan-era deficit anxiety. Key provisions were later struck down by the Supreme Court and the targets were never fully met, but it established the framework for future budget battles.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it."
       }
     },
     {
@@ -966,6 +1642,32 @@
         "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
         "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
         "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT."
+      },
+      "vote_display_names": {
+        "Airline Deregulation Act   1978": "Airline Deregulation Act (1978)",
+        "Authorization of Force Against Iraq   1991": "Authorization for Gulf War (1991)",
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Designate MLK day as a National Holiday": "Martin Luther King Jr. Federal Holiday (1979)",
+        "Gramm Rudman Hollings Deficit Act 1985": "Gramm-Rudman-Hollings Balanced Budget Act (1985)",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Taiwan Relations Act": "Taiwan Relations Act (1979)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)"
+      },
+      "vote_summaries": {
+        "Airline Deregulation Act   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Authorization of Force Against Iraq   1991": "Authorized President George H.W. Bush to use military force to expel Iraq from Kuwait following the invasion of August 1990. The vote was close in the Senate (52-47) and deeply divided Democrats \u2014 most voted against it. The subsequent Gulf War lasted 100 hours of ground combat and ended with a decisive coalition victory.",
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Designate MLK day as a National Holiday": "Established the third Monday of January as a federal holiday honoring the Rev. Dr. Martin Luther King Jr. Legislation to create the holiday had been introduced every year since King's assassination in 1968 before finally passing. Opposition came primarily from fiscal conservatives and Southern members who objected to the cost or to King specifically.",
+        "Gramm Rudman Hollings Deficit Act 1985": "Established mandatory deficit reduction targets and automatic spending cuts (sequestration) if Congress failed to meet them \u2014 the first binding fiscal constraint on Congress in American history. Passed with broad bipartisan support in the context of Reagan-era deficit anxiety. Key provisions were later struck down by the Supreme Court and the targets were never fully met, but it established the framework for future budget battles.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it."
       }
     },
     {
@@ -1003,6 +1705,32 @@
         "Taft Hartley": "HR 3020.  PASSAGE.",
         "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
         "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT."
+      },
+      "vote_display_names": {
+        "AGRICULTURAL ADJUSTMENT ACT": "Agricultural Adjustment Act (1935)",
+        "Airline Deregulation Act   1978": "Airline Deregulation Act (1978)",
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "Lend Lease Act": "Lend-Lease Act (1941)",
+        "McCarran Internal Security Act 1950": "McCarran Internal Security Act (1950)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Taft Hartley": "Taft-Hartley Act (1947)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)"
+      },
+      "vote_summaries": {
+        "AGRICULTURAL ADJUSTMENT ACT": "A cornerstone of FDR's New Deal that paid farmers to reduce production in order to raise crop prices during the Great Depression. Deeply controversial \u2014 opponents saw it as federal overreach into private farming, while supporters argued it was essential to rural recovery.",
+        "Airline Deregulation Act   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "Lend Lease Act": "Authorized the President to lend or lease war supplies to any nation whose defense was vital to American security, primarily aimed at supporting Britain before U.S. entry into World War II. Fiercely opposed by isolationists who saw it as a step toward involvement in the war. Roosevelt called it making America 'the arsenal of democracy.'",
+        "McCarran Internal Security Act 1950": "Required Communist organizations to register with the government, established the Subversive Activities Control Board, and authorized detention of suspected subversives during national emergencies. Passed over President Truman's veto during the height of Cold War anxiety, it reflected the era's intense fear of Communist infiltration. Many provisions were later struck down by the Supreme Court.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Taft Hartley": "Significantly restricted the power of labor unions by banning closed shops, allowing states to pass right-to-work laws, and prohibiting certain strike tactics. Passed by a Republican Congress over President Truman's veto with the support of many Southern Democrats \u2014 one of the clearest examples of the conservative coalition at work. Organized labor called it the 'slave labor act' and has sought its repeal ever since.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it."
       }
     },
     {
@@ -1026,6 +1754,18 @@
         "Federal Elections Bill": "TO PASS H.R. 11045.  (P. 6940-2)",
         "Interstate Commerce Bill": "TO AGREE TO THE REPORT OF THE COMMITTEE OF CONFERENCE ON S. 1532 (24 STAT 379, APP 2/4/1887), THE INTERSTATE COMMERCE BILL.",
         "Pendelton Civil Service Act": "TO PASS S. 133, A BILL REGULATING AND IMPROVING THE U. S. CIVIL SERVICE.  (J.P. 163)"
+      },
+      "vote_display_names": {
+        "Bland Allison Act": "Bland-Allison Act (1878)",
+        "Federal Elections Bill": "Federal Elections Bill / Lodge Bill (1890)",
+        "Interstate Commerce Bill": "Interstate Commerce Act (1887)",
+        "Pendelton Civil Service Act": "Pendleton Civil Service Act (1883)"
+      },
+      "vote_summaries": {
+        "Bland Allison Act": "Required the federal government to purchase and coin between $2-4 million in silver per month, partially restoring silver as legal tender. A victory for Western mining states and agrarian debtors who wanted cheaper money, it was vetoed by President Hayes but overridden by Congress. The first major political battle of the silver vs. gold currency wars that would define Gilded Age politics.",
+        "Federal Elections Bill": "Would have authorized federal supervision of congressional elections to protect Black voters in the South from disenfranchisement. Passed the House but was killed in the Senate when silver-state Republicans traded their votes to secure Southern support for the Sherman Silver Purchase Act and McKinley Tariff. Its defeat effectively ended federal protection of Black voting rights until the 1960s.",
+        "Interstate Commerce Bill": "The first major federal regulation of the railroad industry, requiring that rates be 'reasonable and just' and creating the Interstate Commerce Commission to oversee compliance. Passed in response to widespread public outrage over discriminatory and monopolistic railroad pricing. Though initially weak in enforcement, it established the principle of federal regulation of private industry.",
+        "Pendelton Civil Service Act": "Established a merit-based federal civil service system, requiring competitive examinations for many government positions and ending the patronage 'spoils system' that had dominated federal hiring since Andrew Jackson. Passed in the aftermath of President Garfield's assassination by a disappointed office-seeker. Gradually expanded over subsequent decades to cover most federal employees."
       }
     },
     {
@@ -1055,6 +1795,24 @@
         "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
         "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
         "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT."
+      },
+      "vote_display_names": {
+        "Civil Rights Act   1957": "Civil Rights Act of 1957",
+        "Gun Control Act   1968": "Gun Control Act of 1968",
+        "Immigration and Nationality Act   1965": "Immigration and Nationality Act of 1965 (Hart-Celler Act)",
+        "McCarran Internal Security Act 1950": "McCarran Internal Security Act (1950)",
+        "National Defense Education Act": "National Defense Education Act (1958)",
+        "Voting Rights Act   1965": "Voting Rights Act of 1965",
+        "War Powers Act   1973": "War Powers Resolution (1973)"
+      },
+      "vote_summaries": {
+        "Civil Rights Act   1957": "The first federal civil rights legislation since Reconstruction, establishing a Civil Rights Division in the Justice Department and creating a Civil Rights Commission. Significantly weakened by Southern Democrats before passage \u2014 Strom Thurmond delivered the longest filibuster in Senate history (24 hours) in opposition. Still considered a landmark first step toward the stronger legislation of the 1960s.",
+        "Gun Control Act   1968": "Enacted in the aftermath of the assassinations of Robert F. Kennedy and Martin Luther King Jr., it prohibited mail-order sales of firearms, banned sales to felons and the mentally ill, and required federal licensing of gun dealers. The most significant federal gun legislation since 1938, it passed with strong bipartisan support despite NRA opposition.",
+        "Immigration and Nationality Act   1965": "Abolished the national-origin quota system established in 1924 and replaced it with a preference system based on skills and family reunification. Proponents said it would not significantly change the ethnic composition of the country \u2014 a prediction that proved spectacularly wrong as immigration from Latin America and Asia surged in subsequent decades. One of the most consequential pieces of legislation in American history.",
+        "McCarran Internal Security Act 1950": "Required Communist organizations to register with the government, established the Subversive Activities Control Board, and authorized detention of suspected subversives during national emergencies. Passed over President Truman's veto during the height of Cold War anxiety, it reflected the era's intense fear of Communist infiltration. Many provisions were later struck down by the Supreme Court.",
+        "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
+        "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
+        "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it."
       }
     }
   ]
