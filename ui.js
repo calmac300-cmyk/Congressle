@@ -452,7 +452,7 @@
     vDiv.querySelectorAll('.vote-row.has-tooltip').forEach(el => {
       el.addEventListener('mouseenter', e => {
         const tooltip = document.getElementById('map-tooltip');
-        tooltip.innerHTML = \`<div class="map-tooltip-title">About this vote</div>\${el.dataset.desc}\`;
+        tooltip.innerHTML = '<div class="map-tooltip-title">About this vote</div>' + el.dataset.desc;
         tooltip.classList.remove('hidden');
         moveTooltip(e);
       });
