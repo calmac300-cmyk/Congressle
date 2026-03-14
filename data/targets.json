@@ -93,7 +93,250 @@
         "Impeaching Bill Clinton": "The Senate trial following the House's impeachment of President Clinton on charges of perjury and obstruction of justice related to his affair with Monica Lewinsky. Clinton was acquitted on both articles, with neither receiving even a simple majority \u2014 let alone the two-thirds required for conviction. Ten Republican senators voted against conviction on at least one article.",
         "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration.",
         "Welfare and Medicaid Reform Act": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
-      }
+      },
+      "vote_dissent_scores": {
+        "Affordable Health Care for America": 0.1576,
+        "Authorization of Force Against Iraq   1991": 0.3192,
+        "Civil Rights Act   1957": 0.3098,
+        "Defense of Marriage Act": 0.2392,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.5652,
+        "Gun Control Act   1968": 0.2337,
+        "Immigration and Nationality Act   1965": 0.7891,
+        "Iraq War Resolution   2002": 0.656,
+        "NAFTA": 0.541,
+        "National Defense Education Act": 0.2515,
+        "Patriot Act": 0.0163,
+        "Taiwan Relations Act": 0.0406,
+        "Voting Rights Act   1965": 0.7572,
+        "War Powers Act   1973": 0.1114,
+        "Airline Degregulation   1978": 0.1339,
+        "Confirm Robert Bork": 0.1902,
+        "Impeaching Bill Clinton": 0.2,
+        "Lewis Strauss Commerce Secretary": 0.3365,
+        "Welfare and Medicaid Reform Act": 0.398
+      },
+      "vote_revealing_stats": {
+        "Affordable Health Care for America": "Voted with 100% of their party",
+        "Authorization of Force Against Iraq   1991": "Voted Nay \u2014 47 of 99 members agreed",
+        "Civil Rights Act   1957": "Voted Yea \u2014 72 of 90 members agreed",
+        "Defense of Marriage Act": "Voted Yea \u2014 85 of 99 members agreed",
+        "Gramm Rudman Hollings Deficit Act 1985": "Voted Nay against 50% of their party (23 of 46 party members)",
+        "Gun Control Act   1968": "Voted Yea \u2014 70 of 87 members agreed",
+        "Immigration and Nationality Act   1965": "Voted Nay against 22% of their party (15 of 67 party members)",
+        "Iraq War Resolution   2002": "Voted Nay against 42% of their party (21 of 50 party members)",
+        "NAFTA": "Voted Nay \u2014 38 of 99 members agreed",
+        "National Defense Education Act": "Voted Yea \u2014 62 of 88 members agreed",
+        "Patriot Act": "Voted with 98% of their party",
+        "Taiwan Relations Act": "Voted with 96% of their party",
+        "Voting Rights Act   1965": "Voted Nay against 27% of their party (18 of 66 party members)",
+        "War Powers Act   1973": "Voted Yea \u2014 75 of 93 members agreed",
+        "Airline Degregulation   1978": "Voted Yea \u2014 83 of 92 members agreed",
+        "Confirm Robert Bork": "Voted with 96% of their party",
+        "Impeaching Bill Clinton": "Voted with 100% of their party",
+        "Lewis Strauss Commerce Secretary": "Voted Nay \u2014 49 of 95 members agreed",
+        "Welfare and Medicaid Reform Act": "Voted Yea \u2014 74 of 98 members agreed"
+      },
+      "votes_by_interest": [
+        "Immigration and Nationality Act   1965",
+        "Voting Rights Act   1965",
+        "Iraq War Resolution   2002",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "NAFTA",
+        "Welfare and Medicaid Reform Act",
+        "Lewis Strauss Commerce Secretary",
+        "Authorization of Force Against Iraq   1991",
+        "Civil Rights Act   1957",
+        "National Defense Education Act",
+        "Defense of Marriage Act",
+        "Gun Control Act   1968",
+        "Impeaching Bill Clinton",
+        "Confirm Robert Bork",
+        "Affordable Health Care for America",
+        "Airline Degregulation   1978",
+        "War Powers Act   1973",
+        "Taiwan Relations Act",
+        "Patriot Act"
+      ],
+      "vote_minority_scores": {
+        "Affordable Health Care for America": 0.0,
+        "Authorization of Force Against Iraq   1991": 0.0,
+        "Civil Rights Act   1957": 0.0,
+        "Defense of Marriage Act": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.754,
+        "Iraq War Resolution   2002": 0.0,
+        "NAFTA": 0.0,
+        "National Defense Education Act": 0.0,
+        "Patriot Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.775,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.0,
+        "Confirm Robert Bork": 0.0,
+        "Impeaching Bill Clinton": 0.0,
+        "Lewis Strauss Commerce Secretary": 0.0,
+        "Welfare and Medicaid Reform Act": 0.0
+      },
+      "vote_overall_scores": {
+        "Affordable Health Care for America": 0.0,
+        "Authorization of Force Against Iraq   1991": 0.577,
+        "Civil Rights Act   1957": 0.0,
+        "Defense of Marriage Act": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.638,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.821,
+        "Iraq War Resolution   2002": 0.69,
+        "NAFTA": 0.616,
+        "National Defense Education Act": 0.0,
+        "Patriot Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.797,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.0,
+        "Confirm Robert Bork": 0.0,
+        "Impeaching Bill Clinton": 0.5,
+        "Lewis Strauss Commerce Secretary": 0.0,
+        "Welfare and Medicaid Reform Act": 0.0
+      },
+      "vote_party_context": {
+        "Affordable Health Care for America": {
+          "yea_total": 220,
+          "nay_total": 215,
+          "party_yea": 219,
+          "party_nay": 39
+        },
+        "Authorization of Force Against Iraq   1991": {
+          "yea_total": 250,
+          "nay_total": 183,
+          "party_yea": 86,
+          "party_nay": 179
+        },
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 121,
+          "party_nay": 109
+        },
+        "Defense of Marriage Act": {
+          "yea_total": 342,
+          "nay_total": 67,
+          "party_yea": 118,
+          "party_nay": 65
+        },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 271,
+          "nay_total": 154,
+          "party_yea": 119,
+          "party_nay": 132
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "Iraq War Resolution   2002": {
+          "yea_total": 296,
+          "nay_total": 133,
+          "party_yea": 81,
+          "party_nay": 126
+        },
+        "NAFTA": {
+          "yea_total": 61,
+          "nay_total": 38,
+          "party_yea": 27,
+          "party_nay": 28
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 152,
+          "party_nay": 34
+        },
+        "Patriot Act": {
+          "yea_total": 357,
+          "nay_total": 66,
+          "party_yea": 145,
+          "party_nay": 62
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 242,
+          "party_nay": 14
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 196,
+          "party_nay": 32
+        },
+        "Airline Degregulation   1978": {
+          "yea_total": 83,
+          "nay_total": 9,
+          "party_yea": 48,
+          "party_nay": 9
+        },
+        "Confirm Robert Bork": {
+          "yea_total": 42,
+          "nay_total": 58,
+          "party_yea": 2,
+          "party_nay": 52
+        },
+        "Impeaching Bill Clinton": {
+          "yea_total": 50,
+          "nay_total": 50,
+          "party_yea": 0,
+          "party_nay": 45
+        },
+        "Lewis Strauss Commerce Secretary": {
+          "yea_total": 46,
+          "nay_total": 49,
+          "party_yea": 15,
+          "party_nay": 48
+        },
+        "Welfare and Medicaid Reform Act": {
+          "yea_total": 74,
+          "nay_total": 24,
+          "party_yea": 23,
+          "party_nay": 23
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Immigration and Nationality Act   1965",
+        "Voting Rights Act   1965",
+        "Iraq War Resolution   2002",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "NAFTA",
+        "Authorization of Force Against Iraq   1991",
+        "Impeaching Bill Clinton",
+        "Affordable Health Care for America",
+        "Civil Rights Act   1957",
+        "Defense of Marriage Act",
+        "Gun Control Act   1968",
+        "National Defense Education Act",
+        "Patriot Act",
+        "Taiwan Relations Act",
+        "War Powers Act   1973",
+        "Airline Degregulation   1978",
+        "Confirm Robert Bork",
+        "Lewis Strauss Commerce Secretary",
+        "Welfare and Medicaid Reform Act"
+      ],
+      "most_revealing_vote": "Immigration and Nationality Act   1965"
     },
     {
       "icpsr": "4812",
@@ -176,7 +419,214 @@
         "Confirm Robert Bork": "The Senate's vote on Reagan's nomination of conservative jurist Robert Bork to the Supreme Court. Bork was rejected 42-58 after a fierce confirmation battle in which Democrats argued his originalist judicial philosophy threatened civil rights and privacy protections. His rejection transformed Supreme Court confirmations into major political battles and added 'borking' to the political lexicon.",
         "Impeaching Bill Clinton": "The Senate trial following the House's impeachment of President Clinton on charges of perjury and obstruction of justice related to his affair with Monica Lewinsky. Clinton was acquitted on both articles, with neither receiving even a simple majority \u2014 let alone the two-thirds required for conviction. Ten Republican senators voted against conviction on at least one article.",
         "Welfare and Medicaid Reform Act": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
-      }
+      },
+      "vote_dissent_scores": {
+        "Affordable Health Care for America": 0.1576,
+        "Authorization of Force Against Iraq   1991": 0.3192,
+        "Defense of Marriage Act": 0.7608,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.5652,
+        "Gun Control Act   1968": 0.2337,
+        "Immigration and Nationality Act   1965": 0.2109,
+        "Iraq War Resolution   2002": 0.656,
+        "NAFTA": 0.541,
+        "Patriot Act": 0.0163,
+        "Taiwan Relations Act": 0.0406,
+        "Voting Rights Act   1965": 0.2428,
+        "War Powers Act   1973": 0.1114,
+        "Airline Degregulation   1978": 0.8661,
+        "Confirm Robert Bork": 0.1902,
+        "Impeaching Bill Clinton": 0.2,
+        "Welfare and Medicaid Reform Act": 0.0
+      },
+      "vote_revealing_stats": {
+        "Affordable Health Care for America": "Voted with 100% of their party",
+        "Authorization of Force Against Iraq   1991": "Voted Nay \u2014 47 of 99 members agreed",
+        "Defense of Marriage Act": "Voted Nay against 30% of their party (14 of 46 party members)",
+        "Gramm Rudman Hollings Deficit Act 1985": "Voted Nay against 50% of their party (23 of 46 party members)",
+        "Gun Control Act   1968": "Voted Yea \u2014 70 of 87 members agreed",
+        "Immigration and Nationality Act   1965": "Voted Yea \u2014 76 of 94 members agreed",
+        "Iraq War Resolution   2002": "Voted Nay against 42% of their party (21 of 50 party members)",
+        "NAFTA": "Voted Nay \u2014 38 of 99 members agreed",
+        "Patriot Act": "Voted with 98% of their party",
+        "Taiwan Relations Act": "Voted with 96% of their party",
+        "Voting Rights Act   1965": "Voted Yea \u2014 77 of 96 members agreed",
+        "War Powers Act   1973": "Voted Yea \u2014 75 of 93 members agreed",
+        "Airline Degregulation   1978": "One of only 9 senators to vote Nay",
+        "Confirm Robert Bork": "Voted with 96% of their party",
+        "Impeaching Bill Clinton": "Voted with 100% of their party",
+        "Welfare and Medicaid Reform Act": ""
+      },
+      "votes_by_interest": [
+        "Airline Degregulation   1978",
+        "Defense of Marriage Act",
+        "Iraq War Resolution   2002",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "NAFTA",
+        "Authorization of Force Against Iraq   1991",
+        "Voting Rights Act   1965",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "Impeaching Bill Clinton",
+        "Confirm Robert Bork",
+        "Affordable Health Care for America",
+        "War Powers Act   1973",
+        "Taiwan Relations Act",
+        "Patriot Act",
+        "Welfare and Medicaid Reform Act"
+      ],
+      "vote_minority_scores": {
+        "Affordable Health Care for America": 0.0,
+        "Authorization of Force Against Iraq   1991": 0.0,
+        "Defense of Marriage Act": 0.645,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Iraq War Resolution   2002": 0.0,
+        "NAFTA": 0.0,
+        "Patriot Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.842,
+        "Confirm Robert Bork": 0.0,
+        "Impeaching Bill Clinton": 0.0,
+        "Welfare and Medicaid Reform Act": 0.0
+      },
+      "vote_overall_scores": {
+        "Affordable Health Care for America": 0.0,
+        "Authorization of Force Against Iraq   1991": 0.577,
+        "Defense of Marriage Act": 0.836,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.638,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Iraq War Resolution   2002": 0.69,
+        "NAFTA": 0.616,
+        "Patriot Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.902,
+        "Confirm Robert Bork": 0.0,
+        "Impeaching Bill Clinton": 0.5,
+        "Welfare and Medicaid Reform Act": 0.0
+      },
+      "vote_party_context": {
+        "Affordable Health Care for America": {
+          "yea_total": 220,
+          "nay_total": 215,
+          "party_yea": 219,
+          "party_nay": 39
+        },
+        "Authorization of Force Against Iraq   1991": {
+          "yea_total": 250,
+          "nay_total": 183,
+          "party_yea": 86,
+          "party_nay": 179
+        },
+        "Defense of Marriage Act": {
+          "yea_total": 342,
+          "nay_total": 67,
+          "party_yea": 118,
+          "party_nay": 65
+        },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 271,
+          "nay_total": 154,
+          "party_yea": 119,
+          "party_nay": 132
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "Iraq War Resolution   2002": {
+          "yea_total": 296,
+          "nay_total": 133,
+          "party_yea": 81,
+          "party_nay": 126
+        },
+        "NAFTA": {
+          "yea_total": 61,
+          "nay_total": 38,
+          "party_yea": 27,
+          "party_nay": 28
+        },
+        "Patriot Act": {
+          "yea_total": 357,
+          "nay_total": 66,
+          "party_yea": 145,
+          "party_nay": 62
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 242,
+          "party_nay": 14
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 196,
+          "party_nay": 32
+        },
+        "Airline Degregulation   1978": {
+          "yea_total": 83,
+          "nay_total": 9,
+          "party_yea": 48,
+          "party_nay": 9
+        },
+        "Confirm Robert Bork": {
+          "yea_total": 42,
+          "nay_total": 58,
+          "party_yea": 2,
+          "party_nay": 52
+        },
+        "Impeaching Bill Clinton": {
+          "yea_total": 50,
+          "nay_total": 50,
+          "party_yea": 0,
+          "party_nay": 45
+        },
+        "Welfare and Medicaid Reform Act": {
+          "yea_total": 74,
+          "nay_total": 24,
+          "party_yea": 23,
+          "party_nay": 23
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Airline Degregulation   1978",
+        "Defense of Marriage Act",
+        "Iraq War Resolution   2002",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "NAFTA",
+        "Authorization of Force Against Iraq   1991",
+        "Impeaching Bill Clinton",
+        "Affordable Health Care for America",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "Patriot Act",
+        "Taiwan Relations Act",
+        "Voting Rights Act   1965",
+        "War Powers Act   1973",
+        "Confirm Robert Bork",
+        "Welfare and Medicaid Reform Act"
+      ],
+      "most_revealing_vote": "Airline Degregulation   1978"
     },
     {
       "icpsr": "4227",
@@ -255,7 +705,202 @@
         "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration.",
         "McCarthy Censure": "The Senate voted 67-22 to censure Senator Joseph McCarthy of Wisconsin for conduct 'contrary to Senate traditions,' effectively ending his reign of anti-Communist investigations. The vote came after the Army-McCarthy hearings exposed his methods to a national television audience. McCarthy died three years later, largely marginalized, but McCarthyism had already permanently shaped American political culture.",
         "Taft Hartley   Veto": "The Senate vote to override President Truman's veto of the Taft-Hartley Act, the most significant labor legislation since the Wagner Act. The override succeeded 68-25, with Southern Democrats providing the crucial margin against their own president. Truman's veto message, though overridden, became a political asset \u2014 he used it to rally labor support in his 1948 comeback election."
-      }
+      },
+      "vote_dissent_scores": {
+        "AGRICULTURAL ADJUSTMENT ACT": 0.163,
+        "Civil Rights Act   1957": 0.3098,
+        "Federal Reserve Act": 0.1471,
+        "Gun Control Act   1968": 0.7663,
+        "Immigration Act   1924": 0.1212,
+        "Immigration and Nationality Act   1965": 0.7891,
+        "Lend Lease Act": 0.2601,
+        "McCarran Internal Security Act 1950": 0.1358,
+        "National Defense Education Act": 0.2515,
+        "Volstead Act": 0.2551,
+        "Voting Rights Act   1965": 0.2428,
+        "22nd Amendment": 0.5073,
+        "Lewis Strauss Commerce Secretary": 0.3365,
+        "McCarthy Censure": 0.1057,
+        "Taft Hartley   Veto": 0.5782
+      },
+      "vote_revealing_stats": {
+        "AGRICULTURAL ADJUSTMENT ACT": "Voted Yea \u2014 64 of 79 members agreed",
+        "Civil Rights Act   1957": "Voted Yea \u2014 72 of 90 members agreed",
+        "Federal Reserve Act": "Voted with 100% of their party",
+        "Gun Control Act   1968": "Voted Nay against 26% of their party (14 of 54 party members)",
+        "Immigration Act   1924": "Voted Yea \u2014 69 of 78 members agreed",
+        "Immigration and Nationality Act   1965": "Voted Nay against 22% of their party (15 of 67 party members)",
+        "Lend Lease Act": "Voted Yea \u2014 60 of 91 members agreed",
+        "McCarran Internal Security Act 1950": "Voted Yea \u2014 51 of 58 members agreed",
+        "National Defense Education Act": "Voted Yea \u2014 62 of 88 members agreed",
+        "Volstead Act": "Voted Yea \u2014 65 of 85 members agreed",
+        "Voting Rights Act   1965": "Voted Yea \u2014 77 of 96 members agreed",
+        "22nd Amendment": "Voted Nay \u2014 23 of 82 members agreed",
+        "Lewis Strauss Commerce Secretary": "Voted Nay \u2014 49 of 95 members agreed",
+        "McCarthy Censure": "Voted with 100% of their party",
+        "Taft Hartley   Veto": "Voted Nay \u2014 25 of 93 members agreed"
+      },
+      "votes_by_interest": [
+        "Immigration and Nationality Act   1965",
+        "Gun Control Act   1968",
+        "Taft Hartley   Veto",
+        "22nd Amendment",
+        "Lewis Strauss Commerce Secretary",
+        "Civil Rights Act   1957",
+        "Lend Lease Act",
+        "Volstead Act",
+        "National Defense Education Act",
+        "Voting Rights Act   1965",
+        "AGRICULTURAL ADJUSTMENT ACT",
+        "Federal Reserve Act",
+        "McCarran Internal Security Act 1950",
+        "Immigration Act   1924",
+        "McCarthy Censure"
+      ],
+      "vote_minority_scores": {
+        "AGRICULTURAL ADJUSTMENT ACT": 0.0,
+        "Civil Rights Act   1957": 0.0,
+        "Federal Reserve Act": 0.0,
+        "Gun Control Act   1968": 0.571,
+        "Immigration Act   1924": 0.0,
+        "Immigration and Nationality Act   1965": 0.754,
+        "Lend Lease Act": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.0,
+        "Volstead Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "22nd Amendment": 0.0,
+        "Lewis Strauss Commerce Secretary": 0.0,
+        "McCarthy Censure": 0.0,
+        "Taft Hartley   Veto": 0.0
+      },
+      "vote_overall_scores": {
+        "AGRICULTURAL ADJUSTMENT ACT": 0.0,
+        "Civil Rights Act   1957": 0.0,
+        "Federal Reserve Act": 0.0,
+        "Gun Control Act   1968": 0.555,
+        "Immigration Act   1924": 0.0,
+        "Immigration and Nationality Act   1965": 0.821,
+        "Lend Lease Act": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.0,
+        "Volstead Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "22nd Amendment": 0.72,
+        "Lewis Strauss Commerce Secretary": 0.0,
+        "McCarthy Censure": 0.0,
+        "Taft Hartley   Veto": 0.731
+      },
+      "vote_party_context": {
+        "AGRICULTURAL ADJUSTMENT ACT": {
+          "yea_total": 174,
+          "nay_total": 165,
+          "party_yea": 167,
+          "party_nay": 96
+        },
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 121,
+          "party_nay": 109
+        },
+        "Federal Reserve Act": {
+          "yea_total": 298,
+          "nay_total": 60,
+          "party_yea": 261,
+          "party_nay": 2
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration Act   1924": {
+          "yea_total": 323,
+          "nay_total": 71,
+          "party_yea": 160,
+          "party_nay": 41
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "Lend Lease Act": {
+          "yea_total": 336,
+          "nay_total": 55,
+          "party_yea": 235,
+          "party_nay": 7
+        },
+        "McCarran Internal Security Act 1950": {
+          "yea_total": 313,
+          "nay_total": 20,
+          "party_yea": 189,
+          "party_nay": 21
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 152,
+          "party_nay": 34
+        },
+        "Volstead Act": {
+          "yea_total": 175,
+          "nay_total": 55,
+          "party_yea": 95,
+          "party_nay": 38
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        },
+        "22nd Amendment": {
+          "yea_total": 59,
+          "nay_total": 23,
+          "party_yea": 15,
+          "party_nay": 26
+        },
+        "Lewis Strauss Commerce Secretary": {
+          "yea_total": 46,
+          "nay_total": 49,
+          "party_yea": 15,
+          "party_nay": 48
+        },
+        "McCarthy Censure": {
+          "yea_total": 64,
+          "nay_total": 23,
+          "party_yea": 46,
+          "party_nay": 0
+        },
+        "Taft Hartley   Veto": {
+          "yea_total": 68,
+          "nay_total": 25,
+          "party_yea": 20,
+          "party_nay": 22
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Immigration and Nationality Act   1965",
+        "Gun Control Act   1968",
+        "Taft Hartley   Veto",
+        "22nd Amendment",
+        "AGRICULTURAL ADJUSTMENT ACT",
+        "Civil Rights Act   1957",
+        "Federal Reserve Act",
+        "Immigration Act   1924",
+        "Lend Lease Act",
+        "McCarran Internal Security Act 1950",
+        "National Defense Education Act",
+        "Volstead Act",
+        "Voting Rights Act   1965",
+        "Lewis Strauss Commerce Secretary",
+        "McCarthy Censure"
+      ],
+      "most_revealing_vote": "Immigration and Nationality Act   1965"
     },
     {
       "icpsr": "10808",
@@ -334,7 +979,202 @@
         "Confirm Robert Bork": "The Senate's vote on Reagan's nomination of conservative jurist Robert Bork to the Supreme Court. Bork was rejected 42-58 after a fierce confirmation battle in which Democrats argued his originalist judicial philosophy threatened civil rights and privacy protections. His rejection transformed Supreme Court confirmations into major political battles and added 'borking' to the political lexicon.",
         "Impeaching Bill Clinton": "The Senate trial following the House's impeachment of President Clinton on charges of perjury and obstruction of justice related to his affair with Monica Lewinsky. Clinton was acquitted on both articles, with neither receiving even a simple majority \u2014 let alone the two-thirds required for conviction. Ten Republican senators voted against conviction on at least one article.",
         "Welfare and Medicaid Reform Act": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
-      }
+      },
+      "vote_dissent_scores": {
+        "Authorization of Force Against Iraq   1991": 0.3192,
+        "Defense of Marriage Act": 0.7608,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.4348,
+        "Gun Control Act   1968": 0.2337,
+        "Immigration and Nationality Act   1965": 0.2109,
+        "Iraq War Resolution   2002": 0.656,
+        "NAFTA": 0.459,
+        "Patriot Act": 0.0163,
+        "Taiwan Relations Act": 0.0406,
+        "Voting Rights Act   1965": 0.2428,
+        "War Powers Act   1973": 0.1114,
+        "Airline Degregulation   1978": 0.1339,
+        "Confirm Robert Bork": 0.1902,
+        "Impeaching Bill Clinton": 0.2,
+        "Welfare and Medicaid Reform Act": 0.602
+      },
+      "vote_revealing_stats": {
+        "Authorization of Force Against Iraq   1991": "Voted Nay \u2014 47 of 99 members agreed",
+        "Defense of Marriage Act": "Voted Nay against 30% of their party (14 of 46 party members)",
+        "Gramm Rudman Hollings Deficit Act 1985": "Voted Yea \u2014 61 of 92 members agreed",
+        "Gun Control Act   1968": "Voted Yea \u2014 70 of 87 members agreed",
+        "Immigration and Nationality Act   1965": "Voted Yea \u2014 76 of 94 members agreed",
+        "Iraq War Resolution   2002": "Voted Nay against 42% of their party (21 of 50 party members)",
+        "NAFTA": "Voted Yea against 49% of their party (27 of 55 party members)",
+        "Patriot Act": "Voted with 98% of their party",
+        "Taiwan Relations Act": "Voted with 96% of their party",
+        "Voting Rights Act   1965": "Voted Yea \u2014 77 of 96 members agreed",
+        "War Powers Act   1973": "Voted Yea \u2014 75 of 93 members agreed",
+        "Airline Degregulation   1978": "Voted Yea \u2014 83 of 92 members agreed",
+        "Confirm Robert Bork": "Voted with 96% of their party",
+        "Impeaching Bill Clinton": "Voted with 100% of their party",
+        "Welfare and Medicaid Reform Act": "Voted Nay against 50% of their party (23 of 46 party members)"
+      },
+      "votes_by_interest": [
+        "Defense of Marriage Act",
+        "Iraq War Resolution   2002",
+        "Welfare and Medicaid Reform Act",
+        "NAFTA",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Authorization of Force Against Iraq   1991",
+        "Voting Rights Act   1965",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "Impeaching Bill Clinton",
+        "Confirm Robert Bork",
+        "Airline Degregulation   1978",
+        "War Powers Act   1973",
+        "Taiwan Relations Act",
+        "Patriot Act"
+      ],
+      "vote_minority_scores": {
+        "Authorization of Force Against Iraq   1991": 0.0,
+        "Defense of Marriage Act": 0.645,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.526,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Iraq War Resolution   2002": 0.0,
+        "NAFTA": 0.509,
+        "Patriot Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.0,
+        "Confirm Robert Bork": 0.0,
+        "Impeaching Bill Clinton": 0.0,
+        "Welfare and Medicaid Reform Act": 0.5
+      },
+      "vote_overall_scores": {
+        "Authorization of Force Against Iraq   1991": 0.577,
+        "Defense of Marriage Act": 0.836,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Iraq War Resolution   2002": 0.69,
+        "NAFTA": 0.0,
+        "Patriot Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.0,
+        "Confirm Robert Bork": 0.0,
+        "Impeaching Bill Clinton": 0.5,
+        "Welfare and Medicaid Reform Act": 0.755
+      },
+      "vote_party_context": {
+        "Authorization of Force Against Iraq   1991": {
+          "yea_total": 250,
+          "nay_total": 183,
+          "party_yea": 86,
+          "party_nay": 179
+        },
+        "Defense of Marriage Act": {
+          "yea_total": 342,
+          "nay_total": 67,
+          "party_yea": 118,
+          "party_nay": 65
+        },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 271,
+          "nay_total": 154,
+          "party_yea": 119,
+          "party_nay": 132
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "Iraq War Resolution   2002": {
+          "yea_total": 296,
+          "nay_total": 133,
+          "party_yea": 81,
+          "party_nay": 126
+        },
+        "NAFTA": {
+          "yea_total": 61,
+          "nay_total": 38,
+          "party_yea": 27,
+          "party_nay": 28
+        },
+        "Patriot Act": {
+          "yea_total": 357,
+          "nay_total": 66,
+          "party_yea": 145,
+          "party_nay": 62
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 242,
+          "party_nay": 14
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 196,
+          "party_nay": 32
+        },
+        "Airline Degregulation   1978": {
+          "yea_total": 83,
+          "nay_total": 9,
+          "party_yea": 48,
+          "party_nay": 9
+        },
+        "Confirm Robert Bork": {
+          "yea_total": 42,
+          "nay_total": 58,
+          "party_yea": 2,
+          "party_nay": 52
+        },
+        "Impeaching Bill Clinton": {
+          "yea_total": 50,
+          "nay_total": 50,
+          "party_yea": 0,
+          "party_nay": 45
+        },
+        "Welfare and Medicaid Reform Act": {
+          "yea_total": 74,
+          "nay_total": 24,
+          "party_yea": 23,
+          "party_nay": 23
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Defense of Marriage Act",
+        "Welfare and Medicaid Reform Act",
+        "Iraq War Resolution   2002",
+        "Authorization of Force Against Iraq   1991",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "NAFTA",
+        "Impeaching Bill Clinton",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "Patriot Act",
+        "Taiwan Relations Act",
+        "Voting Rights Act   1965",
+        "War Powers Act   1973",
+        "Airline Degregulation   1978",
+        "Confirm Robert Bork"
+      ],
+      "most_revealing_vote": "Defense of Marriage Act"
     },
     {
       "icpsr": "9369",
@@ -413,7 +1253,202 @@
         "Confirm Robert Bork": "The Senate's vote on Reagan's nomination of conservative jurist Robert Bork to the Supreme Court. Bork was rejected 42-58 after a fierce confirmation battle in which Democrats argued his originalist judicial philosophy threatened civil rights and privacy protections. His rejection transformed Supreme Court confirmations into major political battles and added 'borking' to the political lexicon.",
         "Impeaching Bill Clinton": "The Senate trial following the House's impeachment of President Clinton on charges of perjury and obstruction of justice related to his affair with Monica Lewinsky. Clinton was acquitted on both articles, with neither receiving even a simple majority \u2014 let alone the two-thirds required for conviction. Ten Republican senators voted against conviction on at least one article.",
         "Welfare and Medicaid Reform Act": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
-      }
+      },
+      "vote_dissent_scores": {
+        "Authorization of Force Against Iraq   1991": 0.2172,
+        "Defense of Marriage Act": 0.0566,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.2548,
+        "Gun Control Act   1968": 0.8533,
+        "Immigration and Nationality Act   1965": 0.8266,
+        "Iraq War Resolution   2002": 0.1042,
+        "NAFTA": 0.7101,
+        "Patriot Act": 0.004,
+        "Taiwan Relations Act": 0.0523,
+        "Voting Rights Act   1965": 0.8833,
+        "War Powers Act   1973": 0.7031,
+        "Airline Degregulation   1978": 0.0391,
+        "Confirm Robert Bork": 0.3103,
+        "Impeaching Bill Clinton": 0.2545,
+        "Welfare and Medicaid Reform Act": 0.1095
+      },
+      "vote_revealing_stats": {
+        "Authorization of Force Against Iraq   1991": "Voted with 95% of their party",
+        "Defense of Marriage Act": "Voted with 100% of their party",
+        "Gramm Rudman Hollings Deficit Act 1985": "Voted Yea \u2014 61 of 92 members agreed",
+        "Gun Control Act   1968": "Voted Nay against 11% of their party (4 of 35 party members)",
+        "Immigration and Nationality Act   1965": "Voted Nay against 16% of their party (5 of 31 party members)",
+        "Iraq War Resolution   2002": "Voted with 98% of their party",
+        "NAFTA": "Voted Nay against 23% of their party (10 of 44 party members)",
+        "Patriot Act": "Voted with 100% of their party",
+        "Taiwan Relations Act": "Voted Yea \u2014 85 of 89 members agreed",
+        "Voting Rights Act   1965": "Voted Nay against 6% of their party (2 of 32 party members)",
+        "War Powers Act   1973": "Voted Nay against 37% of their party (15 of 41 party members)",
+        "Airline Degregulation   1978": "Voted with 100% of their party",
+        "Confirm Robert Bork": "Voted Yea \u2014 42 of 100 members agreed",
+        "Impeaching Bill Clinton": "Voted Yea \u2014 50 of 100 members agreed",
+        "Welfare and Medicaid Reform Act": "Voted with 98% of their party"
+      },
+      "votes_by_interest": [
+        "Voting Rights Act   1965",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "NAFTA",
+        "War Powers Act   1973",
+        "Confirm Robert Bork",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Impeaching Bill Clinton",
+        "Authorization of Force Against Iraq   1991",
+        "Welfare and Medicaid Reform Act",
+        "Iraq War Resolution   2002",
+        "Defense of Marriage Act",
+        "Taiwan Relations Act",
+        "Airline Degregulation   1978",
+        "Patriot Act"
+      ],
+      "vote_minority_scores": {
+        "Authorization of Force Against Iraq   1991": 0.0,
+        "Defense of Marriage Act": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Gun Control Act   1968": 0.503,
+        "Immigration and Nationality Act   1965": 0.922,
+        "Iraq War Resolution   2002": 0.0,
+        "NAFTA": 0.773,
+        "Patriot Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.83,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.0,
+        "Confirm Robert Bork": 0.0,
+        "Impeaching Bill Clinton": 0.0,
+        "Welfare and Medicaid Reform Act": 0.0
+      },
+      "vote_overall_scores": {
+        "Authorization of Force Against Iraq   1991": 0.0,
+        "Defense of Marriage Act": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Gun Control Act   1968": 0.555,
+        "Immigration and Nationality Act   1965": 0.821,
+        "Iraq War Resolution   2002": 0.0,
+        "NAFTA": 0.616,
+        "Patriot Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.797,
+        "War Powers Act   1973": 0.678,
+        "Airline Degregulation   1978": 0.0,
+        "Confirm Robert Bork": 0.58,
+        "Impeaching Bill Clinton": 0.0,
+        "Welfare and Medicaid Reform Act": 0.0
+      },
+      "vote_party_context": {
+        "Authorization of Force Against Iraq   1991": {
+          "yea_total": 250,
+          "nay_total": 183,
+          "party_yea": 164,
+          "party_nay": 3
+        },
+        "Defense of Marriage Act": {
+          "yea_total": 342,
+          "nay_total": 67,
+          "party_yea": 224,
+          "party_nay": 1
+        },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 271,
+          "nay_total": 154,
+          "party_yea": 154,
+          "party_nay": 24
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 73,
+          "party_nay": 72
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 118,
+          "party_nay": 10
+        },
+        "Iraq War Resolution   2002": {
+          "yea_total": 296,
+          "nay_total": 133,
+          "party_yea": 215,
+          "party_nay": 6
+        },
+        "NAFTA": {
+          "yea_total": 61,
+          "nay_total": 38,
+          "party_yea": 34,
+          "party_nay": 10
+        },
+        "Patriot Act": {
+          "yea_total": 357,
+          "nay_total": 66,
+          "party_yea": 211,
+          "party_nay": 3
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 105,
+          "party_nay": 41
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 112,
+          "party_nay": 23
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 87,
+          "party_nay": 103
+        },
+        "Airline Degregulation   1978": {
+          "yea_total": 83,
+          "nay_total": 9,
+          "party_yea": 34,
+          "party_nay": 0
+        },
+        "Confirm Robert Bork": {
+          "yea_total": 42,
+          "nay_total": 58,
+          "party_yea": 40,
+          "party_nay": 6
+        },
+        "Impeaching Bill Clinton": {
+          "yea_total": 50,
+          "nay_total": 50,
+          "party_yea": 50,
+          "party_nay": 5
+        },
+        "Welfare and Medicaid Reform Act": {
+          "yea_total": 74,
+          "nay_total": 24,
+          "party_yea": 51,
+          "party_nay": 1
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Immigration and Nationality Act   1965",
+        "Voting Rights Act   1965",
+        "NAFTA",
+        "Gun Control Act   1968",
+        "War Powers Act   1973",
+        "Confirm Robert Bork",
+        "Authorization of Force Against Iraq   1991",
+        "Defense of Marriage Act",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Iraq War Resolution   2002",
+        "Patriot Act",
+        "Taiwan Relations Act",
+        "Airline Degregulation   1978",
+        "Impeaching Bill Clinton",
+        "Welfare and Medicaid Reform Act"
+      ],
+      "most_revealing_vote": "Immigration and Nationality Act   1965"
     },
     {
       "icpsr": "4418",
@@ -492,7 +1527,202 @@
         "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration.",
         "McCarthy Censure": "The Senate voted 67-22 to censure Senator Joseph McCarthy of Wisconsin for conduct 'contrary to Senate traditions,' effectively ending his reign of anti-Communist investigations. The vote came after the Army-McCarthy hearings exposed his methods to a national television audience. McCarthy died three years later, largely marginalized, but McCarthyism had already permanently shaped American political culture.",
         "Taft Hartley   Veto": "The Senate vote to override President Truman's veto of the Taft-Hartley Act, the most significant labor legislation since the Wagner Act. The override succeeded 68-25, with Southern Democrats providing the crucial margin against their own president. Truman's veto message, though overridden, became a political asset \u2014 he used it to rally labor support in his 1948 comeback election."
-      }
+      },
+      "vote_dissent_scores": {
+        "AGRICULTURAL ADJUSTMENT ACT": 0.163,
+        "Civil Rights Act   1957": 0.6902,
+        "Gun Control Act   1968": 0.2337,
+        "Immigration Act   1924": 0.1212,
+        "Immigration and Nationality Act   1965": 0.7891,
+        "Lend Lease Act": 0.2601,
+        "McCarran Internal Security Act 1950": 0.1358,
+        "National Defense Education Act": 0.2515,
+        "Smoot Hawley": 0.292,
+        "TVA Creation": 0.1819,
+        "Voting Rights Act   1965": 0.7572,
+        "22nd Amendment": 0.5073,
+        "Lewis Strauss Commerce Secretary": 0.3365,
+        "McCarthy Censure": 0.1057,
+        "Taft Hartley   Veto": 0.5782
+      },
+      "vote_revealing_stats": {
+        "AGRICULTURAL ADJUSTMENT ACT": "Voted Yea \u2014 64 of 79 members agreed",
+        "Civil Rights Act   1957": "Voted Nay against 38% of their party (18 of 47 party members)",
+        "Gun Control Act   1968": "Voted Yea \u2014 70 of 87 members agreed",
+        "Immigration Act   1924": "Voted Yea \u2014 69 of 78 members agreed",
+        "Immigration and Nationality Act   1965": "Voted Nay against 22% of their party (15 of 67 party members)",
+        "Lend Lease Act": "Voted Yea \u2014 60 of 91 members agreed",
+        "McCarran Internal Security Act 1950": "Voted Yea \u2014 51 of 58 members agreed",
+        "National Defense Education Act": "Voted Yea \u2014 62 of 88 members agreed",
+        "Smoot Hawley": "Voted Nay \u2014 153 of 375 members agreed",
+        "TVA Creation": "Voted Yea \u2014 258 of 370 members agreed",
+        "Voting Rights Act   1965": "Voted Nay against 27% of their party (18 of 66 party members)",
+        "22nd Amendment": "Voted Nay \u2014 23 of 82 members agreed",
+        "Lewis Strauss Commerce Secretary": "Voted Nay \u2014 49 of 95 members agreed",
+        "McCarthy Censure": "Voted with 100% of their party",
+        "Taft Hartley   Veto": "Voted Nay \u2014 25 of 93 members agreed"
+      },
+      "votes_by_interest": [
+        "Immigration and Nationality Act   1965",
+        "Voting Rights Act   1965",
+        "Civil Rights Act   1957",
+        "Taft Hartley   Veto",
+        "22nd Amendment",
+        "Lewis Strauss Commerce Secretary",
+        "Smoot Hawley",
+        "Lend Lease Act",
+        "National Defense Education Act",
+        "Gun Control Act   1968",
+        "TVA Creation",
+        "AGRICULTURAL ADJUSTMENT ACT",
+        "McCarran Internal Security Act 1950",
+        "Immigration Act   1924",
+        "McCarthy Censure"
+      ],
+      "vote_minority_scores": {
+        "AGRICULTURAL ADJUSTMENT ACT": 0.0,
+        "Civil Rights Act   1957": 0.526,
+        "Gun Control Act   1968": 0.0,
+        "Immigration Act   1924": 0.0,
+        "Immigration and Nationality Act   1965": 0.754,
+        "Lend Lease Act": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.0,
+        "Smoot Hawley": 0.0,
+        "TVA Creation": 0.0,
+        "Voting Rights Act   1965": 0.775,
+        "22nd Amendment": 0.0,
+        "Lewis Strauss Commerce Secretary": 0.0,
+        "McCarthy Censure": 0.0,
+        "Taft Hartley   Veto": 0.0
+      },
+      "vote_overall_scores": {
+        "AGRICULTURAL ADJUSTMENT ACT": 0.0,
+        "Civil Rights Act   1957": 0.694,
+        "Gun Control Act   1968": 0.0,
+        "Immigration Act   1924": 0.0,
+        "Immigration and Nationality Act   1965": 0.821,
+        "Lend Lease Act": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.0,
+        "Smoot Hawley": 0.592,
+        "TVA Creation": 0.0,
+        "Voting Rights Act   1965": 0.797,
+        "22nd Amendment": 0.72,
+        "Lewis Strauss Commerce Secretary": 0.0,
+        "McCarthy Censure": 0.0,
+        "Taft Hartley   Veto": 0.731
+      },
+      "vote_party_context": {
+        "AGRICULTURAL ADJUSTMENT ACT": {
+          "yea_total": 174,
+          "nay_total": 165,
+          "party_yea": 167,
+          "party_nay": 96
+        },
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 121,
+          "party_nay": 109
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration Act   1924": {
+          "yea_total": 323,
+          "nay_total": 71,
+          "party_yea": 160,
+          "party_nay": 41
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "Lend Lease Act": {
+          "yea_total": 336,
+          "nay_total": 55,
+          "party_yea": 235,
+          "party_nay": 7
+        },
+        "McCarran Internal Security Act 1950": {
+          "yea_total": 313,
+          "nay_total": 20,
+          "party_yea": 189,
+          "party_nay": 21
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 152,
+          "party_nay": 34
+        },
+        "Smoot Hawley": {
+          "yea_total": 222,
+          "nay_total": 153,
+          "party_yea": 15,
+          "party_nay": 148
+        },
+        "TVA Creation": {
+          "yea_total": 258,
+          "nay_total": 112,
+          "party_yea": 257,
+          "party_nay": 29
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        },
+        "22nd Amendment": {
+          "yea_total": 59,
+          "nay_total": 23,
+          "party_yea": 15,
+          "party_nay": 26
+        },
+        "Lewis Strauss Commerce Secretary": {
+          "yea_total": 46,
+          "nay_total": 49,
+          "party_yea": 15,
+          "party_nay": 48
+        },
+        "McCarthy Censure": {
+          "yea_total": 64,
+          "nay_total": 23,
+          "party_yea": 46,
+          "party_nay": 0
+        },
+        "Taft Hartley   Veto": {
+          "yea_total": 68,
+          "nay_total": 25,
+          "party_yea": 20,
+          "party_nay": 22
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Immigration and Nationality Act   1965",
+        "Voting Rights Act   1965",
+        "Civil Rights Act   1957",
+        "Taft Hartley   Veto",
+        "22nd Amendment",
+        "Smoot Hawley",
+        "AGRICULTURAL ADJUSTMENT ACT",
+        "Gun Control Act   1968",
+        "Immigration Act   1924",
+        "Lend Lease Act",
+        "McCarran Internal Security Act 1950",
+        "National Defense Education Act",
+        "TVA Creation",
+        "Lewis Strauss Commerce Secretary",
+        "McCarthy Censure"
+      ],
+      "most_revealing_vote": "Immigration and Nationality Act   1965"
     },
     {
       "icpsr": "4851",
@@ -563,7 +1793,178 @@
         "Airline Degregulation   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
         "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration.",
         "McCarthy Censure": "The Senate voted 67-22 to censure Senator Joseph McCarthy of Wisconsin for conduct 'contrary to Senate traditions,' effectively ending his reign of anti-Communist investigations. The vote came after the Army-McCarthy hearings exposed his methods to a national television audience. McCarthy died three years later, largely marginalized, but McCarthyism had already permanently shaped American political culture."
-      }
+      },
+      "vote_dissent_scores": {
+        "Civil Rights Act   1957": 0.3098,
+        "Gun Control Act   1968": 0.2337,
+        "Immigration and Nationality Act   1965": 0.2109,
+        "Lend Lease Act": 0.2601,
+        "McCarran Internal Security Act 1950": 0.1358,
+        "National Defense Education Act": 0.2515,
+        "Taft Hartley": 0.6118,
+        "Taiwan Relations Act": 0.0406,
+        "Voting Rights Act   1965": 0.2428,
+        "War Powers Act   1973": 0.1114,
+        "Airline Degregulation   1978": 0.1339,
+        "Lewis Strauss Commerce Secretary": 0.3365,
+        "McCarthy Censure": 0.1057
+      },
+      "vote_revealing_stats": {
+        "Civil Rights Act   1957": "Voted Yea \u2014 72 of 90 members agreed",
+        "Gun Control Act   1968": "Voted Yea \u2014 70 of 87 members agreed",
+        "Immigration and Nationality Act   1965": "Voted Yea \u2014 76 of 94 members agreed",
+        "Lend Lease Act": "Voted Yea \u2014 60 of 91 members agreed",
+        "McCarran Internal Security Act 1950": "Voted Yea \u2014 51 of 58 members agreed",
+        "National Defense Education Act": "Voted Yea \u2014 62 of 88 members agreed",
+        "Taft Hartley": "Voted Nay against 48% of their party (86 of 181 party members)",
+        "Taiwan Relations Act": "Voted with 96% of their party",
+        "Voting Rights Act   1965": "Voted Yea \u2014 77 of 96 members agreed",
+        "War Powers Act   1973": "Voted Yea \u2014 75 of 93 members agreed",
+        "Airline Degregulation   1978": "Voted Yea \u2014 83 of 92 members agreed",
+        "Lewis Strauss Commerce Secretary": "Voted Nay \u2014 49 of 95 members agreed",
+        "McCarthy Censure": "Voted with 100% of their party"
+      },
+      "votes_by_interest": [
+        "Taft Hartley",
+        "Lewis Strauss Commerce Secretary",
+        "Civil Rights Act   1957",
+        "Lend Lease Act",
+        "National Defense Education Act",
+        "Voting Rights Act   1965",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "McCarran Internal Security Act 1950",
+        "Airline Degregulation   1978",
+        "War Powers Act   1973",
+        "McCarthy Censure",
+        "Taiwan Relations Act"
+      ],
+      "vote_minority_scores": {
+        "Civil Rights Act   1957": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Lend Lease Act": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.0,
+        "Taft Hartley": 0.525,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.0,
+        "Lewis Strauss Commerce Secretary": 0.0,
+        "McCarthy Censure": 0.0
+      },
+      "vote_overall_scores": {
+        "Civil Rights Act   1957": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Lend Lease Act": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.0,
+        "Taft Hartley": 0.742,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.0,
+        "Lewis Strauss Commerce Secretary": 0.0,
+        "McCarthy Censure": 0.0
+      },
+      "vote_party_context": {
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 121,
+          "party_nay": 109
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "Lend Lease Act": {
+          "yea_total": 336,
+          "nay_total": 55,
+          "party_yea": 235,
+          "party_nay": 7
+        },
+        "McCarran Internal Security Act 1950": {
+          "yea_total": 313,
+          "nay_total": 20,
+          "party_yea": 189,
+          "party_nay": 21
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 152,
+          "party_nay": 34
+        },
+        "Taft Hartley": {
+          "yea_total": 308,
+          "nay_total": 107,
+          "party_yea": 95,
+          "party_nay": 86
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 242,
+          "party_nay": 14
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 196,
+          "party_nay": 32
+        },
+        "Airline Degregulation   1978": {
+          "yea_total": 83,
+          "nay_total": 9,
+          "party_yea": 48,
+          "party_nay": 9
+        },
+        "Lewis Strauss Commerce Secretary": {
+          "yea_total": 46,
+          "nay_total": 49,
+          "party_yea": 15,
+          "party_nay": 48
+        },
+        "McCarthy Censure": {
+          "yea_total": 64,
+          "nay_total": 23,
+          "party_yea": 46,
+          "party_nay": 0
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Taft Hartley",
+        "Civil Rights Act   1957",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "Lend Lease Act",
+        "McCarran Internal Security Act 1950",
+        "National Defense Education Act",
+        "Taiwan Relations Act",
+        "Voting Rights Act   1965",
+        "War Powers Act   1973",
+        "Airline Degregulation   1978",
+        "Lewis Strauss Commerce Secretary",
+        "McCarthy Censure"
+      ],
+      "most_revealing_vote": "Taft Hartley"
     },
     {
       "icpsr": "8883",
@@ -634,7 +2035,178 @@
         "Confirm Robert Bork": "The Senate's vote on Reagan's nomination of conservative jurist Robert Bork to the Supreme Court. Bork was rejected 42-58 after a fierce confirmation battle in which Democrats argued his originalist judicial philosophy threatened civil rights and privacy protections. His rejection transformed Supreme Court confirmations into major political battles and added 'borking' to the political lexicon.",
         "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration.",
         "McCarthy Censure": "The Senate voted 67-22 to censure Senator Joseph McCarthy of Wisconsin for conduct 'contrary to Senate traditions,' effectively ending his reign of anti-Communist investigations. The vote came after the Army-McCarthy hearings exposed his methods to a national television audience. McCarthy died three years later, largely marginalized, but McCarthyism had already permanently shaped American political culture."
-      }
+      },
+      "vote_dissent_scores": {
+        "Civil Rights Act   1957": 0.6902,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.4348,
+        "Gun Control Act   1968": 0.7663,
+        "Immigration and Nationality Act   1965": 0.7891,
+        "McCarran Internal Security Act 1950": 0.1358,
+        "National Defense Education Act": 0.7485,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.7572,
+        "War Powers Act   1973": 0.1114,
+        "Airline Degregulation   1978": 0.1339,
+        "Confirm Robert Bork": 0.1902,
+        "Lewis Strauss Commerce Secretary": 0.6635,
+        "McCarthy Censure": 0.1057
+      },
+      "vote_revealing_stats": {
+        "Civil Rights Act   1957": "Voted Nay against 38% of their party (18 of 47 party members)",
+        "Gramm Rudman Hollings Deficit Act 1985": "Voted Yea \u2014 61 of 92 members agreed",
+        "Gun Control Act   1968": "Voted Nay against 26% of their party (14 of 54 party members)",
+        "Immigration and Nationality Act   1965": "Voted Nay against 22% of their party (15 of 67 party members)",
+        "McCarran Internal Security Act 1950": "Voted Yea \u2014 51 of 58 members agreed",
+        "National Defense Education Act": "Voted Nay against 22% of their party (10 of 45 party members)",
+        "Taiwan Relations Act": "",
+        "Voting Rights Act   1965": "Voted Nay against 27% of their party (18 of 66 party members)",
+        "War Powers Act   1973": "Voted Yea \u2014 75 of 93 members agreed",
+        "Airline Degregulation   1978": "Voted Yea \u2014 83 of 92 members agreed",
+        "Confirm Robert Bork": "Voted with 96% of their party",
+        "Lewis Strauss Commerce Secretary": "Voted Yea against 24% of their party (15 of 63 party members)",
+        "McCarthy Censure": "Voted with 100% of their party"
+      },
+      "votes_by_interest": [
+        "Immigration and Nationality Act   1965",
+        "Gun Control Act   1968",
+        "Voting Rights Act   1965",
+        "National Defense Education Act",
+        "Civil Rights Act   1957",
+        "Lewis Strauss Commerce Secretary",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Confirm Robert Bork",
+        "McCarran Internal Security Act 1950",
+        "Airline Degregulation   1978",
+        "War Powers Act   1973",
+        "McCarthy Censure",
+        "Taiwan Relations Act"
+      ],
+      "vote_minority_scores": {
+        "Civil Rights Act   1957": 0.526,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.526,
+        "Gun Control Act   1968": 0.571,
+        "Immigration and Nationality Act   1965": 0.754,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.817,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.775,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.0,
+        "Confirm Robert Bork": 0.0,
+        "Lewis Strauss Commerce Secretary": 0.762,
+        "McCarthy Censure": 0.0
+      },
+      "vote_overall_scores": {
+        "Civil Rights Act   1957": 0.694,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Gun Control Act   1968": 0.555,
+        "Immigration and Nationality Act   1965": 0.821,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.714,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.797,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.0,
+        "Confirm Robert Bork": 0.0,
+        "Lewis Strauss Commerce Secretary": 0.516,
+        "McCarthy Censure": 0.0
+      },
+      "vote_party_context": {
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 121,
+          "party_nay": 109
+        },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 271,
+          "nay_total": 154,
+          "party_yea": 119,
+          "party_nay": 132
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "McCarran Internal Security Act 1950": {
+          "yea_total": 313,
+          "nay_total": 20,
+          "party_yea": 189,
+          "party_nay": 21
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 152,
+          "party_nay": 34
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 242,
+          "party_nay": 14
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 196,
+          "party_nay": 32
+        },
+        "Airline Degregulation   1978": {
+          "yea_total": 83,
+          "nay_total": 9,
+          "party_yea": 48,
+          "party_nay": 9
+        },
+        "Confirm Robert Bork": {
+          "yea_total": 42,
+          "nay_total": 58,
+          "party_yea": 2,
+          "party_nay": 52
+        },
+        "Lewis Strauss Commerce Secretary": {
+          "yea_total": 46,
+          "nay_total": 49,
+          "party_yea": 15,
+          "party_nay": 48
+        },
+        "McCarthy Censure": {
+          "yea_total": 64,
+          "nay_total": 23,
+          "party_yea": 46,
+          "party_nay": 0
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Immigration and Nationality Act   1965",
+        "Voting Rights Act   1965",
+        "National Defense Education Act",
+        "Lewis Strauss Commerce Secretary",
+        "Civil Rights Act   1957",
+        "Gun Control Act   1968",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "McCarran Internal Security Act 1950",
+        "Taiwan Relations Act",
+        "War Powers Act   1973",
+        "Airline Degregulation   1978",
+        "Confirm Robert Bork",
+        "McCarthy Censure"
+      ],
+      "most_revealing_vote": "Immigration and Nationality Act   1965"
     },
     {
       "icpsr": "14105",
@@ -701,7 +2273,166 @@
         "Confirm Robert Bork": "The Senate's vote on Reagan's nomination of conservative jurist Robert Bork to the Supreme Court. Bork was rejected 42-58 after a fierce confirmation battle in which Democrats argued his originalist judicial philosophy threatened civil rights and privacy protections. His rejection transformed Supreme Court confirmations into major political battles and added 'borking' to the political lexicon.",
         "Impeaching Bill Clinton": "The Senate trial following the House's impeachment of President Clinton on charges of perjury and obstruction of justice related to his affair with Monica Lewinsky. Clinton was acquitted on both articles, with neither receiving even a simple majority \u2014 let alone the two-thirds required for conviction. Ten Republican senators voted against conviction on at least one article.",
         "Welfare and Medicaid Reform Act": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
-      }
+      },
+      "vote_dissent_scores": {
+        "Authorization of Force Against Iraq   1991": 0.2172,
+        "Defense of Marriage Act": 0.0566,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.2548,
+        "Iraq War Resolution   2002": 0.1042,
+        "NAFTA": 0.7101,
+        "Patriot Act": 0.004,
+        "Taiwan Relations Act": 0.0523,
+        "War Powers Act   1973": 0.7031,
+        "Airline Degregulation   1978": 0.0391,
+        "Confirm Robert Bork": 0.3103,
+        "Impeaching Bill Clinton": 0.2545,
+        "Welfare and Medicaid Reform Act": 0.1095
+      },
+      "vote_revealing_stats": {
+        "Authorization of Force Against Iraq   1991": "Voted with 95% of their party",
+        "Defense of Marriage Act": "Voted with 100% of their party",
+        "Gramm Rudman Hollings Deficit Act 1985": "Voted Yea \u2014 61 of 92 members agreed",
+        "Iraq War Resolution   2002": "Voted with 98% of their party",
+        "NAFTA": "Voted Nay against 23% of their party (10 of 44 party members)",
+        "Patriot Act": "Voted with 100% of their party",
+        "Taiwan Relations Act": "Voted Yea \u2014 85 of 89 members agreed",
+        "War Powers Act   1973": "Voted Nay against 37% of their party (15 of 41 party members)",
+        "Airline Degregulation   1978": "Voted with 100% of their party",
+        "Confirm Robert Bork": "Voted Yea \u2014 42 of 100 members agreed",
+        "Impeaching Bill Clinton": "Voted Yea \u2014 50 of 100 members agreed",
+        "Welfare and Medicaid Reform Act": "Voted with 98% of their party"
+      },
+      "votes_by_interest": [
+        "NAFTA",
+        "War Powers Act   1973",
+        "Confirm Robert Bork",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Impeaching Bill Clinton",
+        "Authorization of Force Against Iraq   1991",
+        "Welfare and Medicaid Reform Act",
+        "Iraq War Resolution   2002",
+        "Defense of Marriage Act",
+        "Taiwan Relations Act",
+        "Airline Degregulation   1978",
+        "Patriot Act"
+      ],
+      "vote_minority_scores": {
+        "Authorization of Force Against Iraq   1991": 0.0,
+        "Defense of Marriage Act": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Iraq War Resolution   2002": 0.0,
+        "NAFTA": 0.773,
+        "Patriot Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.0,
+        "Confirm Robert Bork": 0.0,
+        "Impeaching Bill Clinton": 0.0,
+        "Welfare and Medicaid Reform Act": 0.0
+      },
+      "vote_overall_scores": {
+        "Authorization of Force Against Iraq   1991": 0.0,
+        "Defense of Marriage Act": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Iraq War Resolution   2002": 0.0,
+        "NAFTA": 0.616,
+        "Patriot Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "War Powers Act   1973": 0.678,
+        "Airline Degregulation   1978": 0.0,
+        "Confirm Robert Bork": 0.58,
+        "Impeaching Bill Clinton": 0.0,
+        "Welfare and Medicaid Reform Act": 0.0
+      },
+      "vote_party_context": {
+        "Authorization of Force Against Iraq   1991": {
+          "yea_total": 250,
+          "nay_total": 183,
+          "party_yea": 164,
+          "party_nay": 3
+        },
+        "Defense of Marriage Act": {
+          "yea_total": 342,
+          "nay_total": 67,
+          "party_yea": 224,
+          "party_nay": 1
+        },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 271,
+          "nay_total": 154,
+          "party_yea": 154,
+          "party_nay": 24
+        },
+        "Iraq War Resolution   2002": {
+          "yea_total": 296,
+          "nay_total": 133,
+          "party_yea": 215,
+          "party_nay": 6
+        },
+        "NAFTA": {
+          "yea_total": 61,
+          "nay_total": 38,
+          "party_yea": 34,
+          "party_nay": 10
+        },
+        "Patriot Act": {
+          "yea_total": 357,
+          "nay_total": 66,
+          "party_yea": 211,
+          "party_nay": 3
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 105,
+          "party_nay": 41
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 87,
+          "party_nay": 103
+        },
+        "Airline Degregulation   1978": {
+          "yea_total": 83,
+          "nay_total": 9,
+          "party_yea": 34,
+          "party_nay": 0
+        },
+        "Confirm Robert Bork": {
+          "yea_total": 42,
+          "nay_total": 58,
+          "party_yea": 40,
+          "party_nay": 6
+        },
+        "Impeaching Bill Clinton": {
+          "yea_total": 50,
+          "nay_total": 50,
+          "party_yea": 50,
+          "party_nay": 5
+        },
+        "Welfare and Medicaid Reform Act": {
+          "yea_total": 74,
+          "nay_total": 24,
+          "party_yea": 51,
+          "party_nay": 1
+        }
+      },
+      "votes_sorted_by_interest": [
+        "NAFTA",
+        "War Powers Act   1973",
+        "Confirm Robert Bork",
+        "Authorization of Force Against Iraq   1991",
+        "Defense of Marriage Act",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Iraq War Resolution   2002",
+        "Patriot Act",
+        "Taiwan Relations Act",
+        "Airline Degregulation   1978",
+        "Impeaching Bill Clinton",
+        "Welfare and Medicaid Reform Act"
+      ],
+      "most_revealing_vote": "NAFTA"
     },
     {
       "icpsr": "4898",
@@ -764,7 +2495,154 @@
         "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
         "Airline Degregulation   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
         "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration."
-      }
+      },
+      "vote_dissent_scores": {
+        "Civil Rights Act   1957": 0.08,
+        "Gun Control Act   1968": 0.1467,
+        "Immigration and Nationality Act   1965": 0.1734,
+        "McCarran Internal Security Act 1950": 0.9363,
+        "National Defense Education Act": 0.3414,
+        "Taft Hartley": 0.8371,
+        "Taiwan Relations Act": 0.0523,
+        "Voting Rights Act   1965": 0.1167,
+        "War Powers Act   1973": 0.2969,
+        "Airline Degregulation   1978": 0.0391,
+        "Lewis Strauss Commerce Secretary": 0.2416
+      },
+      "vote_revealing_stats": {
+        "Civil Rights Act   1957": "Voted with 100% of their party",
+        "Gun Control Act   1968": "Voted Yea \u2014 70 of 87 members agreed",
+        "Immigration and Nationality Act   1965": "Voted Yea \u2014 76 of 94 members agreed",
+        "McCarran Internal Security Act 1950": "One of only 7 senators to vote Nay",
+        "National Defense Education Act": "Voted Yea \u2014 62 of 88 members agreed",
+        "Taft Hartley": "Voted Nay against 10% of their party (24 of 241 party members)",
+        "Taiwan Relations Act": "Voted Yea \u2014 85 of 89 members agreed",
+        "Voting Rights Act   1965": "Voted Yea \u2014 77 of 96 members agreed",
+        "War Powers Act   1973": "Voted Yea \u2014 75 of 93 members agreed",
+        "Airline Degregulation   1978": "Voted with 100% of their party",
+        "Lewis Strauss Commerce Secretary": "Voted Yea \u2014 46 of 95 members agreed"
+      },
+      "votes_by_interest": [
+        "McCarran Internal Security Act 1950",
+        "Taft Hartley",
+        "National Defense Education Act",
+        "War Powers Act   1973",
+        "Lewis Strauss Commerce Secretary",
+        "Immigration and Nationality Act   1965",
+        "Gun Control Act   1968",
+        "Voting Rights Act   1965",
+        "Civil Rights Act   1957",
+        "Taiwan Relations Act",
+        "Airline Degregulation   1978"
+      ],
+      "vote_minority_scores": {
+        "Civil Rights Act   1957": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "McCarran Internal Security Act 1950": 0.985,
+        "National Defense Education Act": 0.0,
+        "Taft Hartley": 0.9,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.542,
+        "Airline Degregulation   1978": 0.0,
+        "Lewis Strauss Commerce Secretary": 0.0
+      },
+      "vote_overall_scores": {
+        "Civil Rights Act   1957": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "McCarran Internal Security Act 1950": 0.94,
+        "National Defense Education Act": 0.0,
+        "Taft Hartley": 0.742,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.0,
+        "Lewis Strauss Commerce Secretary": 0.516
+      },
+      "vote_party_context": {
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 173,
+          "party_nay": 22
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 73,
+          "party_nay": 72
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 118,
+          "party_nay": 10
+        },
+        "McCarran Internal Security Act 1950": {
+          "yea_total": 313,
+          "nay_total": 20,
+          "party_yea": 129,
+          "party_nay": 2
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 81,
+          "party_nay": 72
+        },
+        "Taft Hartley": {
+          "yea_total": 308,
+          "nay_total": 107,
+          "party_yea": 217,
+          "party_nay": 24
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 105,
+          "party_nay": 41
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 112,
+          "party_nay": 23
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 87,
+          "party_nay": 103
+        },
+        "Airline Degregulation   1978": {
+          "yea_total": 83,
+          "nay_total": 9,
+          "party_yea": 34,
+          "party_nay": 0
+        },
+        "Lewis Strauss Commerce Secretary": {
+          "yea_total": 46,
+          "nay_total": 49,
+          "party_yea": 32,
+          "party_nay": 2
+        }
+      },
+      "votes_sorted_by_interest": [
+        "McCarran Internal Security Act 1950",
+        "Taft Hartley",
+        "War Powers Act   1973",
+        "Lewis Strauss Commerce Secretary",
+        "Civil Rights Act   1957",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "National Defense Education Act",
+        "Taiwan Relations Act",
+        "Voting Rights Act   1965",
+        "Airline Degregulation   1978"
+      ],
+      "most_revealing_vote": "McCarran Internal Security Act 1950"
     },
     {
       "icpsr": "1984",
@@ -799,7 +2677,70 @@
         "Hold Jefferson Davis in Treason": "A House resolution declaring that Jefferson Davis, former President of the Confederacy, should be tried for treason. Passed during Radical Reconstruction as Congress sought accountability for Confederate leadership. Davis was indicted but never tried \u2014 the charges were eventually dropped in 1869.",
         "Re Admit Southern States": "Voted to readmit formerly Confederate states \u2014 Alabama, Arkansas, Florida, Georgia, Louisiana, North Carolina, and South Carolina \u2014 to congressional representation under the terms of Radical Reconstruction. Required the states to ratify the 14th Amendment and adopt new constitutions guaranteeing Black male suffrage. A defining vote of the Reconstruction era.",
         "Andrew Johnson Impeachment": "The first presidential impeachment in American history, brought by Radical Republicans who accused Johnson of violating the Tenure of Office Act by attempting to remove Secretary of War Edwin Stanton. Johnson was acquitted in the Senate by a single vote, with several Republican senators breaking from their party to vote against conviction."
-      }
+      },
+      "vote_dissent_scores": {
+        "Bland Allison Act": 0.1888,
+        "Hold Jefferson Davis in Treason": 0.064,
+        "Re Admit Southern States": 0.0911,
+        "Andrew Johnson Impeachment": 0.2798
+      },
+      "vote_revealing_stats": {
+        "Bland Allison Act": "Voted Yea \u2014 49 of 71 members agreed",
+        "Hold Jefferson Davis in Treason": "Voted with 100% of their party",
+        "Re Admit Southern States": "Voted with 97% of their party",
+        "Andrew Johnson Impeachment": "Voted Yea \u2014 34 of 53 members agreed"
+      },
+      "votes_by_interest": [
+        "Andrew Johnson Impeachment",
+        "Bland Allison Act",
+        "Re Admit Southern States",
+        "Hold Jefferson Davis in Treason"
+      ],
+      "vote_minority_scores": {
+        "Bland Allison Act": 0.0,
+        "Hold Jefferson Davis in Treason": 0.0,
+        "Re Admit Southern States": 0.0,
+        "Andrew Johnson Impeachment": 0.0
+      },
+      "vote_overall_scores": {
+        "Bland Allison Act": 0.0,
+        "Hold Jefferson Davis in Treason": 0.0,
+        "Re Admit Southern States": 0.0,
+        "Andrew Johnson Impeachment": 0.0
+      },
+      "vote_party_context": {
+        "Bland Allison Act": {
+          "yea_total": 203,
+          "nay_total": 72,
+          "party_yea": 129,
+          "party_nay": 5
+        },
+        "Hold Jefferson Davis in Treason": {
+          "yea_total": 105,
+          "nay_total": 20,
+          "party_yea": 93,
+          "party_nay": 0
+        },
+        "Re Admit Southern States": {
+          "yea_total": 110,
+          "nay_total": 35,
+          "party_yea": 109,
+          "party_nay": 3
+        },
+        "Andrew Johnson Impeachment": {
+          "yea_total": 34,
+          "nay_total": 19,
+          "party_yea": 34,
+          "party_nay": 10
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Bland Allison Act",
+        "Hold Jefferson Davis in Treason",
+        "Re Admit Southern States",
+        "Andrew Johnson Impeachment"
+      ],
+      "most_revealing_vote": null
     },
     {
       "icpsr": "14101",
@@ -866,7 +2807,166 @@
         "Confirm Robert Bork": "The Senate's vote on Reagan's nomination of conservative jurist Robert Bork to the Supreme Court. Bork was rejected 42-58 after a fierce confirmation battle in which Democrats argued his originalist judicial philosophy threatened civil rights and privacy protections. His rejection transformed Supreme Court confirmations into major political battles and added 'borking' to the political lexicon.",
         "Impeaching Bill Clinton": "The Senate trial following the House's impeachment of President Clinton on charges of perjury and obstruction of justice related to his affair with Monica Lewinsky. Clinton was acquitted on both articles, with neither receiving even a simple majority \u2014 let alone the two-thirds required for conviction. Ten Republican senators voted against conviction on at least one article.",
         "Welfare and Medicaid Reform Act": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
-      }
+      },
+      "vote_dissent_scores": {
+        "Authorization of Force Against Iraq   1991": 0.3192,
+        "Defense of Marriage Act": 0.2392,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Iraq War Resolution   2002": 0.344,
+        "NAFTA": 0.459,
+        "Patriot Act": 0.0163,
+        "Taiwan Relations Act": 0.0406,
+        "War Powers Act   1973": 0.1114,
+        "Airline Degregulation   1978": 0.1339,
+        "Confirm Robert Bork": 0.1902,
+        "Impeaching Bill Clinton": 0.2,
+        "Welfare and Medicaid Reform Act": 0.398
+      },
+      "vote_revealing_stats": {
+        "Authorization of Force Against Iraq   1991": "Voted Nay \u2014 47 of 99 members agreed",
+        "Defense of Marriage Act": "Voted Yea \u2014 85 of 99 members agreed",
+        "Gramm Rudman Hollings Deficit Act 1985": "",
+        "Iraq War Resolution   2002": "Voted Yea \u2014 77 of 100 members agreed",
+        "NAFTA": "Voted Yea against 49% of their party (27 of 55 party members)",
+        "Patriot Act": "Voted with 98% of their party",
+        "Taiwan Relations Act": "Voted with 96% of their party",
+        "War Powers Act   1973": "Voted Yea \u2014 75 of 93 members agreed",
+        "Airline Degregulation   1978": "Voted Yea \u2014 83 of 92 members agreed",
+        "Confirm Robert Bork": "Voted with 96% of their party",
+        "Impeaching Bill Clinton": "Voted with 100% of their party",
+        "Welfare and Medicaid Reform Act": "Voted Yea \u2014 74 of 98 members agreed"
+      },
+      "votes_by_interest": [
+        "NAFTA",
+        "Welfare and Medicaid Reform Act",
+        "Iraq War Resolution   2002",
+        "Authorization of Force Against Iraq   1991",
+        "Defense of Marriage Act",
+        "Impeaching Bill Clinton",
+        "Confirm Robert Bork",
+        "Airline Degregulation   1978",
+        "War Powers Act   1973",
+        "Taiwan Relations Act",
+        "Patriot Act",
+        "Gramm Rudman Hollings Deficit Act 1985"
+      ],
+      "vote_minority_scores": {
+        "Authorization of Force Against Iraq   1991": 0.0,
+        "Defense of Marriage Act": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Iraq War Resolution   2002": 0.609,
+        "NAFTA": 0.509,
+        "Patriot Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.0,
+        "Confirm Robert Bork": 0.0,
+        "Impeaching Bill Clinton": 0.0,
+        "Welfare and Medicaid Reform Act": 0.0
+      },
+      "vote_overall_scores": {
+        "Authorization of Force Against Iraq   1991": 0.577,
+        "Defense of Marriage Act": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Iraq War Resolution   2002": 0.0,
+        "NAFTA": 0.0,
+        "Patriot Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.0,
+        "Confirm Robert Bork": 0.0,
+        "Impeaching Bill Clinton": 0.5,
+        "Welfare and Medicaid Reform Act": 0.0
+      },
+      "vote_party_context": {
+        "Authorization of Force Against Iraq   1991": {
+          "yea_total": 250,
+          "nay_total": 183,
+          "party_yea": 86,
+          "party_nay": 179
+        },
+        "Defense of Marriage Act": {
+          "yea_total": 342,
+          "nay_total": 67,
+          "party_yea": 118,
+          "party_nay": 65
+        },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 271,
+          "nay_total": 154,
+          "party_yea": 119,
+          "party_nay": 132
+        },
+        "Iraq War Resolution   2002": {
+          "yea_total": 296,
+          "nay_total": 133,
+          "party_yea": 81,
+          "party_nay": 126
+        },
+        "NAFTA": {
+          "yea_total": 61,
+          "nay_total": 38,
+          "party_yea": 27,
+          "party_nay": 28
+        },
+        "Patriot Act": {
+          "yea_total": 357,
+          "nay_total": 66,
+          "party_yea": 145,
+          "party_nay": 62
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 242,
+          "party_nay": 14
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 196,
+          "party_nay": 32
+        },
+        "Airline Degregulation   1978": {
+          "yea_total": 83,
+          "nay_total": 9,
+          "party_yea": 48,
+          "party_nay": 9
+        },
+        "Confirm Robert Bork": {
+          "yea_total": 42,
+          "nay_total": 58,
+          "party_yea": 2,
+          "party_nay": 52
+        },
+        "Impeaching Bill Clinton": {
+          "yea_total": 50,
+          "nay_total": 50,
+          "party_yea": 0,
+          "party_nay": 45
+        },
+        "Welfare and Medicaid Reform Act": {
+          "yea_total": 74,
+          "nay_total": 24,
+          "party_yea": 23,
+          "party_nay": 23
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Iraq War Resolution   2002",
+        "Authorization of Force Against Iraq   1991",
+        "NAFTA",
+        "Impeaching Bill Clinton",
+        "Defense of Marriage Act",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Patriot Act",
+        "Taiwan Relations Act",
+        "War Powers Act   1973",
+        "Airline Degregulation   1978",
+        "Confirm Robert Bork",
+        "Welfare and Medicaid Reform Act"
+      ],
+      "most_revealing_vote": "Iraq War Resolution   2002"
     },
     {
       "icpsr": "4979",
@@ -925,7 +3025,142 @@
         "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
         "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration.",
         "McCarthy Censure": "The Senate voted 67-22 to censure Senator Joseph McCarthy of Wisconsin for conduct 'contrary to Senate traditions,' effectively ending his reign of anti-Communist investigations. The vote came after the Army-McCarthy hearings exposed his methods to a national television audience. McCarthy died three years later, largely marginalized, but McCarthyism had already permanently shaped American political culture."
-      }
+      },
+      "vote_dissent_scores": {
+        "Civil Rights Act   1957": 0.3098,
+        "Gun Control Act   1968": 0.2337,
+        "Immigration and Nationality Act   1965": 0.2109,
+        "Lend Lease Act": 0.2601,
+        "McCarran Internal Security Act 1950": 0.1358,
+        "National Defense Education Act": 0.2515,
+        "Taft Hartley": 0.3882,
+        "Voting Rights Act   1965": 0.2428,
+        "Lewis Strauss Commerce Secretary": 0.3365,
+        "McCarthy Censure": 0.1057
+      },
+      "vote_revealing_stats": {
+        "Civil Rights Act   1957": "Voted Yea \u2014 72 of 90 members agreed",
+        "Gun Control Act   1968": "Voted Yea \u2014 70 of 87 members agreed",
+        "Immigration and Nationality Act   1965": "Voted Yea \u2014 76 of 94 members agreed",
+        "Lend Lease Act": "Voted Yea \u2014 60 of 91 members agreed",
+        "McCarran Internal Security Act 1950": "Voted Yea \u2014 51 of 58 members agreed",
+        "National Defense Education Act": "Voted Yea \u2014 62 of 88 members agreed",
+        "Taft Hartley": "Voted Yea \u2014 308 of 415 members agreed",
+        "Voting Rights Act   1965": "Voted Yea \u2014 77 of 96 members agreed",
+        "Lewis Strauss Commerce Secretary": "Voted Nay \u2014 49 of 95 members agreed",
+        "McCarthy Censure": "Voted with 100% of their party"
+      },
+      "votes_by_interest": [
+        "Taft Hartley",
+        "Lewis Strauss Commerce Secretary",
+        "Civil Rights Act   1957",
+        "Lend Lease Act",
+        "National Defense Education Act",
+        "Voting Rights Act   1965",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "McCarran Internal Security Act 1950",
+        "McCarthy Censure"
+      ],
+      "vote_minority_scores": {
+        "Civil Rights Act   1957": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Lend Lease Act": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.0,
+        "Taft Hartley": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "Lewis Strauss Commerce Secretary": 0.0,
+        "McCarthy Censure": 0.0
+      },
+      "vote_overall_scores": {
+        "Civil Rights Act   1957": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Lend Lease Act": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.0,
+        "Taft Hartley": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "Lewis Strauss Commerce Secretary": 0.0,
+        "McCarthy Censure": 0.0
+      },
+      "vote_party_context": {
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 121,
+          "party_nay": 109
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "Lend Lease Act": {
+          "yea_total": 336,
+          "nay_total": 55,
+          "party_yea": 235,
+          "party_nay": 7
+        },
+        "McCarran Internal Security Act 1950": {
+          "yea_total": 313,
+          "nay_total": 20,
+          "party_yea": 189,
+          "party_nay": 21
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 152,
+          "party_nay": 34
+        },
+        "Taft Hartley": {
+          "yea_total": 308,
+          "nay_total": 107,
+          "party_yea": 95,
+          "party_nay": 86
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        },
+        "Lewis Strauss Commerce Secretary": {
+          "yea_total": 46,
+          "nay_total": 49,
+          "party_yea": 15,
+          "party_nay": 48
+        },
+        "McCarthy Censure": {
+          "yea_total": 64,
+          "nay_total": 23,
+          "party_yea": 46,
+          "party_nay": 0
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Civil Rights Act   1957",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "Lend Lease Act",
+        "McCarran Internal Security Act 1950",
+        "National Defense Education Act",
+        "Taft Hartley",
+        "Voting Rights Act   1965",
+        "Lewis Strauss Commerce Secretary",
+        "McCarthy Censure"
+      ],
+      "most_revealing_vote": null
     },
     {
       "icpsr": "3658",
@@ -976,7 +3211,118 @@
         "Airline Degregulation   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
         "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration.",
         "McCarthy Censure": "The Senate voted 67-22 to censure Senator Joseph McCarthy of Wisconsin for conduct 'contrary to Senate traditions,' effectively ending his reign of anti-Communist investigations. The vote came after the Army-McCarthy hearings exposed his methods to a national television audience. McCarthy died three years later, largely marginalized, but McCarthyism had already permanently shaped American political culture."
-      }
+      },
+      "vote_dissent_scores": {
+        "Civil Rights Act   1957": 0.08,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "National Defense Education Act": 0.6586,
+        "Taiwan Relations Act": 0.0523,
+        "War Powers Act   1973": 0.7031,
+        "Airline Degregulation   1978": 0.0,
+        "Lewis Strauss Commerce Secretary": 0.2416,
+        "McCarthy Censure": 0.5594
+      },
+      "vote_revealing_stats": {
+        "Civil Rights Act   1957": "Voted with 100% of their party",
+        "Gramm Rudman Hollings Deficit Act 1985": "",
+        "National Defense Education Act": "Voted Nay against 37% of their party (16 of 43 party members)",
+        "Taiwan Relations Act": "Voted Yea \u2014 85 of 89 members agreed",
+        "War Powers Act   1973": "Voted Nay against 37% of their party (15 of 41 party members)",
+        "Airline Degregulation   1978": "",
+        "Lewis Strauss Commerce Secretary": "Voted Yea \u2014 46 of 95 members agreed",
+        "McCarthy Censure": "Voted Nay \u2014 23 of 87 members agreed"
+      },
+      "votes_by_interest": [
+        "War Powers Act   1973",
+        "National Defense Education Act",
+        "McCarthy Censure",
+        "Lewis Strauss Commerce Secretary",
+        "Civil Rights Act   1957",
+        "Taiwan Relations Act",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Airline Degregulation   1978"
+      ],
+      "vote_minority_scores": {
+        "Civil Rights Act   1957": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "National Defense Education Act": 0.529,
+        "Taiwan Relations Act": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.0,
+        "Lewis Strauss Commerce Secretary": 0.0,
+        "McCarthy Censure": 0.0
+      },
+      "vote_overall_scores": {
+        "Civil Rights Act   1957": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "National Defense Education Act": 0.714,
+        "Taiwan Relations Act": 0.0,
+        "War Powers Act   1973": 0.678,
+        "Airline Degregulation   1978": 0.0,
+        "Lewis Strauss Commerce Secretary": 0.516,
+        "McCarthy Censure": 0.736
+      },
+      "vote_party_context": {
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 173,
+          "party_nay": 22
+        },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 271,
+          "nay_total": 154,
+          "party_yea": 154,
+          "party_nay": 24
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 81,
+          "party_nay": 72
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 105,
+          "party_nay": 41
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 87,
+          "party_nay": 103
+        },
+        "Airline Degregulation   1978": {
+          "yea_total": 83,
+          "nay_total": 9,
+          "party_yea": 34,
+          "party_nay": 0
+        },
+        "Lewis Strauss Commerce Secretary": {
+          "yea_total": 46,
+          "nay_total": 49,
+          "party_yea": 32,
+          "party_nay": 2
+        },
+        "McCarthy Censure": {
+          "yea_total": 64,
+          "nay_total": 23,
+          "party_yea": 19,
+          "party_nay": 24
+        }
+      },
+      "votes_sorted_by_interest": [
+        "National Defense Education Act",
+        "McCarthy Censure",
+        "War Powers Act   1973",
+        "Lewis Strauss Commerce Secretary",
+        "Civil Rights Act   1957",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Taiwan Relations Act",
+        "Airline Degregulation   1978"
+      ],
+      "most_revealing_vote": "National Defense Education Act"
     },
     {
       "icpsr": "1721",
@@ -1031,7 +3377,130 @@
         "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
         "Airline Degregulation   1978": "Removed federal control over airline routes and fares, opening the industry to open market competition. Fares fell sharply in the years that followed, but smaller cities lost service. A rare bipartisan deregulation effort backed by both Ted Kennedy and the Carter administration.",
         "Lewis Strauss Commerce Secretary": "The Senate's rare rejection of a Cabinet nominee \u2014 Lewis Strauss, Eisenhower's pick for Commerce Secretary. Strauss had made powerful enemies during his tenure as Atomic Energy Commission chairman, particularly over his role in revoking J. Robert Oppenheimer's security clearance. The 49-46 vote against confirmation was a significant embarrassment for the Eisenhower administration."
-      }
+      },
+      "vote_dissent_scores": {
+        "Civil Rights Act   1957": 0.3098,
+        "Gun Control Act   1968": 0.7663,
+        "Immigration and Nationality Act   1965": 0.2109,
+        "National Defense Education Act": 0.2515,
+        "Taiwan Relations Act": 0.0406,
+        "Voting Rights Act   1965": 0.2428,
+        "War Powers Act   1973": 0.1114,
+        "Airline Degregulation   1978": 0.1339,
+        "Lewis Strauss Commerce Secretary": 0.3365
+      },
+      "vote_revealing_stats": {
+        "Civil Rights Act   1957": "Voted Yea \u2014 72 of 90 members agreed",
+        "Gun Control Act   1968": "Voted Nay against 26% of their party (14 of 54 party members)",
+        "Immigration and Nationality Act   1965": "Voted Yea \u2014 76 of 94 members agreed",
+        "National Defense Education Act": "Voted Yea \u2014 62 of 88 members agreed",
+        "Taiwan Relations Act": "Voted with 96% of their party",
+        "Voting Rights Act   1965": "Voted Yea \u2014 77 of 96 members agreed",
+        "War Powers Act   1973": "Voted Yea \u2014 75 of 93 members agreed",
+        "Airline Degregulation   1978": "Voted Yea \u2014 83 of 92 members agreed",
+        "Lewis Strauss Commerce Secretary": "Voted Nay \u2014 49 of 95 members agreed"
+      },
+      "votes_by_interest": [
+        "Gun Control Act   1968",
+        "Lewis Strauss Commerce Secretary",
+        "Civil Rights Act   1957",
+        "National Defense Education Act",
+        "Voting Rights Act   1965",
+        "Immigration and Nationality Act   1965",
+        "Airline Degregulation   1978",
+        "War Powers Act   1973",
+        "Taiwan Relations Act"
+      ],
+      "vote_minority_scores": {
+        "Civil Rights Act   1957": 0.0,
+        "Gun Control Act   1968": 0.571,
+        "Immigration and Nationality Act   1965": 0.0,
+        "National Defense Education Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.0,
+        "Lewis Strauss Commerce Secretary": 0.0
+      },
+      "vote_overall_scores": {
+        "Civil Rights Act   1957": 0.0,
+        "Gun Control Act   1968": 0.555,
+        "Immigration and Nationality Act   1965": 0.0,
+        "National Defense Education Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Airline Degregulation   1978": 0.0,
+        "Lewis Strauss Commerce Secretary": 0.0
+      },
+      "vote_party_context": {
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 121,
+          "party_nay": 109
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 152,
+          "party_nay": 34
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 242,
+          "party_nay": 14
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 196,
+          "party_nay": 32
+        },
+        "Airline Degregulation   1978": {
+          "yea_total": 83,
+          "nay_total": 9,
+          "party_yea": 48,
+          "party_nay": 9
+        },
+        "Lewis Strauss Commerce Secretary": {
+          "yea_total": 46,
+          "nay_total": 49,
+          "party_yea": 15,
+          "party_nay": 48
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Gun Control Act   1968",
+        "Civil Rights Act   1957",
+        "Immigration and Nationality Act   1965",
+        "National Defense Education Act",
+        "Taiwan Relations Act",
+        "Voting Rights Act   1965",
+        "War Powers Act   1973",
+        "Airline Degregulation   1978",
+        "Lewis Strauss Commerce Secretary"
+      ],
+      "most_revealing_vote": "Gun Control Act   1968"
     }
   ],
   "House": [
@@ -1120,7 +3589,226 @@
         "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
         "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
         "Welfare and Medicaid Reform Act   1996": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
-      }
+      },
+      "vote_dissent_scores": {
+        "Affordable Health Care for America": 0.1576,
+        "Airline Deregulation Act   1978": 0.0,
+        "Authorization of Force Against Iraq   1991": 0.6808,
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": 0.3281,
+        "Civil Rights Act   1957": 0.3098,
+        "Defense of Marriage Act": 0.2392,
+        "Designate MLK day as a National Holiday": 0.2215,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.5652,
+        "Gun Control Act   1968": 0.7663,
+        "Immigration and Nationality Act   1965": 0.2109,
+        "Iraq War Resolution   2002": 0.656,
+        "National Defense Education Act": 0.2515,
+        "Patriot Act": 0.9837,
+        "Taiwan Relations Act": 0.0406,
+        "Voting Rights Act   1965": 0.2428,
+        "War Powers Act   1973": 0.1114,
+        "Welfare and Medicaid Reform Act   1996": 0.3327
+      },
+      "vote_revealing_stats": {
+        "Affordable Health Care for America": "Voted with 100% of their party",
+        "Airline Deregulation Act   1978": "",
+        "Authorization of Force Against Iraq   1991": "Voted Yea against 18% of their party (10 of 55 party members)",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": "Voted Nay \u2014 176 of 434 members agreed",
+        "Civil Rights Act   1957": "Voted Yea \u2014 72 of 90 members agreed",
+        "Defense of Marriage Act": "Voted Yea \u2014 85 of 99 members agreed",
+        "Designate MLK day as a National Holiday": "Voted Yea \u2014 252 of 385 members agreed",
+        "Gramm Rudman Hollings Deficit Act 1985": "Voted Nay against 50% of their party (23 of 46 party members)",
+        "Gun Control Act   1968": "Voted Nay against 26% of their party (14 of 54 party members)",
+        "Immigration and Nationality Act   1965": "Voted Yea \u2014 76 of 94 members agreed",
+        "Iraq War Resolution   2002": "Voted Nay against 42% of their party (21 of 50 party members)",
+        "National Defense Education Act": "Voted Yea \u2014 62 of 88 members agreed",
+        "Patriot Act": "One of only 1 senators to vote Nay",
+        "Taiwan Relations Act": "Voted with 96% of their party",
+        "Voting Rights Act   1965": "Voted Yea \u2014 77 of 96 members agreed",
+        "War Powers Act   1973": "Voted Yea \u2014 75 of 93 members agreed",
+        "Welfare and Medicaid Reform Act   1996": "Voted Nay \u2014 170 of 426 members agreed"
+      },
+      "votes_by_interest": [
+        "Patriot Act",
+        "Gun Control Act   1968",
+        "Authorization of Force Against Iraq   1991",
+        "Iraq War Resolution   2002",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Welfare and Medicaid Reform Act   1996",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton",
+        "Civil Rights Act   1957",
+        "National Defense Education Act",
+        "Voting Rights Act   1965",
+        "Defense of Marriage Act",
+        "Designate MLK day as a National Holiday",
+        "Immigration and Nationality Act   1965",
+        "Affordable Health Care for America",
+        "War Powers Act   1973",
+        "Taiwan Relations Act",
+        "Airline Deregulation Act   1978"
+      ],
+      "vote_minority_scores": {
+        "Affordable Health Care for America": 0.0,
+        "Airline Deregulation Act   1978": 0.0,
+        "Authorization of Force Against Iraq   1991": 0.675,
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": 0.0,
+        "Civil Rights Act   1957": 0.0,
+        "Defense of Marriage Act": 0.0,
+        "Designate MLK day as a National Holiday": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Gun Control Act   1968": 0.571,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Iraq War Resolution   2002": 0.0,
+        "National Defense Education Act": 0.0,
+        "Patriot Act": 0.7,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Welfare and Medicaid Reform Act   1996": 0.0
+      },
+      "vote_overall_scores": {
+        "Affordable Health Care for America": 0.0,
+        "Airline Deregulation Act   1978": 0.0,
+        "Authorization of Force Against Iraq   1991": 0.0,
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": 0.594,
+        "Civil Rights Act   1957": 0.0,
+        "Defense of Marriage Act": 0.0,
+        "Designate MLK day as a National Holiday": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.638,
+        "Gun Control Act   1968": 0.555,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Iraq War Resolution   2002": 0.69,
+        "National Defense Education Act": 0.0,
+        "Patriot Act": 0.844,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Welfare and Medicaid Reform Act   1996": 0.601
+      },
+      "vote_party_context": {
+        "Affordable Health Care for America": {
+          "yea_total": 220,
+          "nay_total": 215,
+          "party_yea": 219,
+          "party_nay": 39
+        },
+        "Airline Deregulation Act   1978": {
+          "yea_total": 356,
+          "nay_total": 6,
+          "party_yea": 235,
+          "party_nay": 3
+        },
+        "Authorization of Force Against Iraq   1991": {
+          "yea_total": 250,
+          "nay_total": 183,
+          "party_yea": 86,
+          "party_nay": 179
+        },
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": {
+          "yea_total": 258,
+          "nay_total": 176,
+          "party_yea": 31,
+          "party_nay": 175
+        },
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 121,
+          "party_nay": 109
+        },
+        "Defense of Marriage Act": {
+          "yea_total": 342,
+          "nay_total": 67,
+          "party_yea": 118,
+          "party_nay": 65
+        },
+        "Designate MLK day as a National Holiday": {
+          "yea_total": 252,
+          "nay_total": 133,
+          "party_yea": 217,
+          "party_nay": 35
+        },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 271,
+          "nay_total": 154,
+          "party_yea": 119,
+          "party_nay": 132
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "Iraq War Resolution   2002": {
+          "yea_total": 296,
+          "nay_total": 133,
+          "party_yea": 81,
+          "party_nay": 126
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 152,
+          "party_nay": 34
+        },
+        "Patriot Act": {
+          "yea_total": 357,
+          "nay_total": 66,
+          "party_yea": 145,
+          "party_nay": 62
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 242,
+          "party_nay": 14
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 196,
+          "party_nay": 32
+        },
+        "Welfare and Medicaid Reform Act   1996": {
+          "yea_total": 256,
+          "nay_total": 170,
+          "party_yea": 30,
+          "party_nay": 165
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Patriot Act",
+        "Gun Control Act   1968",
+        "Iraq War Resolution   2002",
+        "Authorization of Force Against Iraq   1991",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Welfare and Medicaid Reform Act   1996",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton",
+        "Affordable Health Care for America",
+        "Airline Deregulation Act   1978",
+        "Civil Rights Act   1957",
+        "Defense of Marriage Act",
+        "Designate MLK day as a National Holiday",
+        "Immigration and Nationality Act   1965",
+        "National Defense Education Act",
+        "Taiwan Relations Act",
+        "Voting Rights Act   1965",
+        "War Powers Act   1973"
+      ],
+      "most_revealing_vote": "Patriot Act"
     },
     {
       "icpsr": "10713",
@@ -1199,7 +3887,202 @@
         "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
         "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
         "Welfare and Medicaid Reform Act   1996": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
-      }
+      },
+      "vote_dissent_scores": {
+        "Affordable Health Care for America": 0.1576,
+        "Airline Deregulation Act   1978": 0.0,
+        "Authorization of Force Against Iraq   1991": 0.3192,
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": 0.3281,
+        "Defense of Marriage Act": 0.7608,
+        "Designate MLK day as a National Holiday": 0.2215,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.5652,
+        "Gun Control Act   1968": 0.2337,
+        "Immigration and Nationality Act   1965": 0.2109,
+        "Iraq War Resolution   2002": 0.656,
+        "Patriot Act": 0.9837,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.2428,
+        "War Powers Act   1973": 0.8886,
+        "Welfare and Medicaid Reform Act   1996": 0.3327
+      },
+      "vote_revealing_stats": {
+        "Affordable Health Care for America": "Voted with 100% of their party",
+        "Airline Deregulation Act   1978": "",
+        "Authorization of Force Against Iraq   1991": "Voted Nay \u2014 47 of 99 members agreed",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": "Voted Nay \u2014 176 of 434 members agreed",
+        "Defense of Marriage Act": "Voted Nay against 30% of their party (14 of 46 party members)",
+        "Designate MLK day as a National Holiday": "Voted Yea \u2014 252 of 385 members agreed",
+        "Gramm Rudman Hollings Deficit Act 1985": "Voted Nay against 50% of their party (23 of 46 party members)",
+        "Gun Control Act   1968": "Voted Yea \u2014 70 of 87 members agreed",
+        "Immigration and Nationality Act   1965": "Voted Yea \u2014 76 of 94 members agreed",
+        "Iraq War Resolution   2002": "Voted Nay against 42% of their party (21 of 50 party members)",
+        "Patriot Act": "One of only 1 senators to vote Nay",
+        "Taiwan Relations Act": "",
+        "Voting Rights Act   1965": "Voted Yea \u2014 77 of 96 members agreed",
+        "War Powers Act   1973": "Voted Nay against 6% of their party (3 of 53 party members)",
+        "Welfare and Medicaid Reform Act   1996": "Voted Nay \u2014 170 of 426 members agreed"
+      },
+      "votes_by_interest": [
+        "Patriot Act",
+        "War Powers Act   1973",
+        "Defense of Marriage Act",
+        "Iraq War Resolution   2002",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Welfare and Medicaid Reform Act   1996",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton",
+        "Authorization of Force Against Iraq   1991",
+        "Voting Rights Act   1965",
+        "Gun Control Act   1968",
+        "Designate MLK day as a National Holiday",
+        "Immigration and Nationality Act   1965",
+        "Affordable Health Care for America",
+        "Airline Deregulation Act   1978",
+        "Taiwan Relations Act"
+      ],
+      "vote_minority_scores": {
+        "Affordable Health Care for America": 0.0,
+        "Airline Deregulation Act   1978": 0.0,
+        "Authorization of Force Against Iraq   1991": 0.0,
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": 0.0,
+        "Defense of Marriage Act": 0.645,
+        "Designate MLK day as a National Holiday": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Iraq War Resolution   2002": 0.0,
+        "Patriot Act": 0.7,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.86,
+        "Welfare and Medicaid Reform Act   1996": 0.0
+      },
+      "vote_overall_scores": {
+        "Affordable Health Care for America": 0.0,
+        "Airline Deregulation Act   1978": 0.0,
+        "Authorization of Force Against Iraq   1991": 0.577,
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": 0.594,
+        "Defense of Marriage Act": 0.836,
+        "Designate MLK day as a National Holiday": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.638,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Iraq War Resolution   2002": 0.69,
+        "Patriot Act": 0.844,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.678,
+        "Welfare and Medicaid Reform Act   1996": 0.601
+      },
+      "vote_party_context": {
+        "Affordable Health Care for America": {
+          "yea_total": 220,
+          "nay_total": 215,
+          "party_yea": 219,
+          "party_nay": 39
+        },
+        "Airline Deregulation Act   1978": {
+          "yea_total": 356,
+          "nay_total": 6,
+          "party_yea": 235,
+          "party_nay": 3
+        },
+        "Authorization of Force Against Iraq   1991": {
+          "yea_total": 250,
+          "nay_total": 183,
+          "party_yea": 86,
+          "party_nay": 179
+        },
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": {
+          "yea_total": 258,
+          "nay_total": 176,
+          "party_yea": 31,
+          "party_nay": 175
+        },
+        "Defense of Marriage Act": {
+          "yea_total": 342,
+          "nay_total": 67,
+          "party_yea": 118,
+          "party_nay": 65
+        },
+        "Designate MLK day as a National Holiday": {
+          "yea_total": 252,
+          "nay_total": 133,
+          "party_yea": 217,
+          "party_nay": 35
+        },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 271,
+          "nay_total": 154,
+          "party_yea": 119,
+          "party_nay": 132
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "Iraq War Resolution   2002": {
+          "yea_total": 296,
+          "nay_total": 133,
+          "party_yea": 81,
+          "party_nay": 126
+        },
+        "Patriot Act": {
+          "yea_total": 357,
+          "nay_total": 66,
+          "party_yea": 145,
+          "party_nay": 62
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 242,
+          "party_nay": 14
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 196,
+          "party_nay": 32
+        },
+        "Welfare and Medicaid Reform Act   1996": {
+          "yea_total": 256,
+          "nay_total": 170,
+          "party_yea": 30,
+          "party_nay": 165
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Patriot Act",
+        "War Powers Act   1973",
+        "Defense of Marriage Act",
+        "Iraq War Resolution   2002",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Welfare and Medicaid Reform Act   1996",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton",
+        "Authorization of Force Against Iraq   1991",
+        "Affordable Health Care for America",
+        "Airline Deregulation Act   1978",
+        "Designate MLK day as a National Holiday",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "Taiwan Relations Act",
+        "Voting Rights Act   1965"
+      ],
+      "most_revealing_vote": "Patriot Act"
     },
     {
       "icpsr": "10421",
@@ -1278,7 +4161,202 @@
         "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
         "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
         "Welfare and Medicaid Reform Act   1996": "Fundamentally restructured federal welfare by replacing the open-ended AFDC entitlement with block grants to states (TANF), imposing work requirements, and setting a five-year lifetime limit on benefits. Signed by President Clinton over the objections of many Democrats. Reduced welfare rolls dramatically in the subsequent boom years; critics argue it left the poorest families worse off during recessions."
-      }
+      },
+      "vote_dissent_scores": {
+        "Airline Deregulation Act   1978": 0.0142,
+        "Authorization of Force Against Iraq   1991": 0.3192,
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": 0.3281,
+        "Civil Rights Act   1957": 0.3098,
+        "Defense of Marriage Act": 0.2392,
+        "Designate MLK day as a National Holiday": 0.2215,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.5652,
+        "Gun Control Act   1968": 0.2337,
+        "Immigration and Nationality Act   1965": 0.2109,
+        "McCarran Internal Security Act 1950": 0.8642,
+        "National Defense Education Act": 0.2515,
+        "Taiwan Relations Act": 0.0406,
+        "Voting Rights Act   1965": 0.2428,
+        "War Powers Act   1973": 0.1114,
+        "Welfare and Medicaid Reform Act   1996": 0.3327
+      },
+      "vote_revealing_stats": {
+        "Airline Deregulation Act   1978": "Voted with 99% of their party",
+        "Authorization of Force Against Iraq   1991": "Voted Nay \u2014 47 of 99 members agreed",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": "Voted Nay \u2014 176 of 434 members agreed",
+        "Civil Rights Act   1957": "Voted Yea \u2014 72 of 90 members agreed",
+        "Defense of Marriage Act": "Voted Yea \u2014 85 of 99 members agreed",
+        "Designate MLK day as a National Holiday": "Voted Yea \u2014 252 of 385 members agreed",
+        "Gramm Rudman Hollings Deficit Act 1985": "Voted Nay against 50% of their party (23 of 46 party members)",
+        "Gun Control Act   1968": "Voted Yea \u2014 70 of 87 members agreed",
+        "Immigration and Nationality Act   1965": "Voted Yea \u2014 76 of 94 members agreed",
+        "McCarran Internal Security Act 1950": "One of only 7 senators to vote Nay",
+        "National Defense Education Act": "Voted Yea \u2014 62 of 88 members agreed",
+        "Taiwan Relations Act": "Voted with 96% of their party",
+        "Voting Rights Act   1965": "Voted Yea \u2014 77 of 96 members agreed",
+        "War Powers Act   1973": "Voted Yea \u2014 75 of 93 members agreed",
+        "Welfare and Medicaid Reform Act   1996": "Voted Nay \u2014 170 of 426 members agreed"
+      },
+      "votes_by_interest": [
+        "McCarran Internal Security Act 1950",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Welfare and Medicaid Reform Act   1996",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton",
+        "Authorization of Force Against Iraq   1991",
+        "Civil Rights Act   1957",
+        "National Defense Education Act",
+        "Voting Rights Act   1965",
+        "Defense of Marriage Act",
+        "Gun Control Act   1968",
+        "Designate MLK day as a National Holiday",
+        "Immigration and Nationality Act   1965",
+        "War Powers Act   1973",
+        "Taiwan Relations Act",
+        "Airline Deregulation Act   1978"
+      ],
+      "vote_minority_scores": {
+        "Airline Deregulation Act   1978": 0.0,
+        "Authorization of Force Against Iraq   1991": 0.0,
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": 0.0,
+        "Civil Rights Act   1957": 0.0,
+        "Defense of Marriage Act": 0.0,
+        "Designate MLK day as a National Holiday": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "McCarran Internal Security Act 1950": 0.9,
+        "National Defense Education Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Welfare and Medicaid Reform Act   1996": 0.0
+      },
+      "vote_overall_scores": {
+        "Airline Deregulation Act   1978": 0.0,
+        "Authorization of Force Against Iraq   1991": 0.577,
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": 0.594,
+        "Civil Rights Act   1957": 0.0,
+        "Defense of Marriage Act": 0.0,
+        "Designate MLK day as a National Holiday": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.638,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "McCarran Internal Security Act 1950": 0.94,
+        "National Defense Education Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0,
+        "Welfare and Medicaid Reform Act   1996": 0.601
+      },
+      "vote_party_context": {
+        "Airline Deregulation Act   1978": {
+          "yea_total": 356,
+          "nay_total": 6,
+          "party_yea": 235,
+          "party_nay": 3
+        },
+        "Authorization of Force Against Iraq   1991": {
+          "yea_total": 250,
+          "nay_total": 183,
+          "party_yea": 86,
+          "party_nay": 179
+        },
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": {
+          "yea_total": 258,
+          "nay_total": 176,
+          "party_yea": 31,
+          "party_nay": 175
+        },
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 121,
+          "party_nay": 109
+        },
+        "Defense of Marriage Act": {
+          "yea_total": 342,
+          "nay_total": 67,
+          "party_yea": 118,
+          "party_nay": 65
+        },
+        "Designate MLK day as a National Holiday": {
+          "yea_total": 252,
+          "nay_total": 133,
+          "party_yea": 217,
+          "party_nay": 35
+        },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 271,
+          "nay_total": 154,
+          "party_yea": 119,
+          "party_nay": 132
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "McCarran Internal Security Act 1950": {
+          "yea_total": 313,
+          "nay_total": 20,
+          "party_yea": 189,
+          "party_nay": 21
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 152,
+          "party_nay": 34
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 242,
+          "party_nay": 14
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 196,
+          "party_nay": 32
+        },
+        "Welfare and Medicaid Reform Act   1996": {
+          "yea_total": 256,
+          "nay_total": 170,
+          "party_yea": 30,
+          "party_nay": 165
+        }
+      },
+      "votes_sorted_by_interest": [
+        "McCarran Internal Security Act 1950",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Welfare and Medicaid Reform Act   1996",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton",
+        "Authorization of Force Against Iraq   1991",
+        "Airline Deregulation Act   1978",
+        "Civil Rights Act   1957",
+        "Defense of Marriage Act",
+        "Designate MLK day as a National Holiday",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "National Defense Education Act",
+        "Taiwan Relations Act",
+        "Voting Rights Act   1965",
+        "War Powers Act   1973"
+      ],
+      "most_revealing_vote": "McCarran Internal Security Act 1950"
     },
     {
       "icpsr": "1611",
@@ -1345,7 +4423,166 @@
         "TVA Creation": "Created the Tennessee Valley Authority to build dams, generate hydroelectric power, and develop the economically depressed Tennessee Valley region. One of the most ambitious projects of the New Deal, it brought electricity to rural areas that private utilities had ignored. Conservatives attacked it as government competition with private enterprise; supporters called it the model for regional economic development.",
         "Taft Hartley": "Significantly restricted the power of labor unions by banning closed shops, allowing states to pass right-to-work laws, and prohibiting certain strike tactics. Passed by a Republican Congress over President Truman's veto with the support of many Southern Democrats \u2014 one of the clearest examples of the conservative coalition at work. Organized labor called it the 'slave labor act' and has sought its repeal ever since.",
         "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted."
-      }
+      },
+      "vote_dissent_scores": {
+        "AGRICULTURAL ADJUSTMENT ACT": 0.163,
+        "Civil Rights Act   1957": 0.3098,
+        "Gun Control Act   1968": 0.2337,
+        "Immigration Act   1924": 0.8788,
+        "Immigration and Nationality Act   1965": 0.2109,
+        "Lend Lease Act": 0.2601,
+        "McCarran Internal Security Act 1950": 0.8642,
+        "National Defense Education Act": 0.2515,
+        "Smoot Hawley": 0.292,
+        "TVA Creation": 0.1819,
+        "Taft Hartley": 0.6118,
+        "Voting Rights Act   1965": 0.2428
+      },
+      "vote_revealing_stats": {
+        "AGRICULTURAL ADJUSTMENT ACT": "Voted Yea \u2014 64 of 79 members agreed",
+        "Civil Rights Act   1957": "Voted Yea \u2014 72 of 90 members agreed",
+        "Gun Control Act   1968": "Voted Yea \u2014 70 of 87 members agreed",
+        "Immigration Act   1924": "One of only 9 senators to vote Nay",
+        "Immigration and Nationality Act   1965": "Voted Yea \u2014 76 of 94 members agreed",
+        "Lend Lease Act": "Voted Yea \u2014 60 of 91 members agreed",
+        "McCarran Internal Security Act 1950": "One of only 7 senators to vote Nay",
+        "National Defense Education Act": "Voted Yea \u2014 62 of 88 members agreed",
+        "Smoot Hawley": "Voted Nay \u2014 153 of 375 members agreed",
+        "TVA Creation": "Voted Yea \u2014 258 of 370 members agreed",
+        "Taft Hartley": "Voted Nay against 48% of their party (86 of 181 party members)",
+        "Voting Rights Act   1965": "Voted Yea \u2014 77 of 96 members agreed"
+      },
+      "votes_by_interest": [
+        "Immigration Act   1924",
+        "McCarran Internal Security Act 1950",
+        "Taft Hartley",
+        "Civil Rights Act   1957",
+        "Smoot Hawley",
+        "Lend Lease Act",
+        "National Defense Education Act",
+        "Voting Rights Act   1965",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "TVA Creation",
+        "AGRICULTURAL ADJUSTMENT ACT"
+      ],
+      "vote_minority_scores": {
+        "AGRICULTURAL ADJUSTMENT ACT": 0.0,
+        "Civil Rights Act   1957": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration Act   1924": 0.796,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Lend Lease Act": 0.0,
+        "McCarran Internal Security Act 1950": 0.9,
+        "National Defense Education Act": 0.0,
+        "Smoot Hawley": 0.0,
+        "TVA Creation": 0.0,
+        "Taft Hartley": 0.525,
+        "Voting Rights Act   1965": 0.0
+      },
+      "vote_overall_scores": {
+        "AGRICULTURAL ADJUSTMENT ACT": 0.0,
+        "Civil Rights Act   1957": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration Act   1924": 0.82,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Lend Lease Act": 0.0,
+        "McCarran Internal Security Act 1950": 0.94,
+        "National Defense Education Act": 0.0,
+        "Smoot Hawley": 0.592,
+        "TVA Creation": 0.0,
+        "Taft Hartley": 0.742,
+        "Voting Rights Act   1965": 0.0
+      },
+      "vote_party_context": {
+        "AGRICULTURAL ADJUSTMENT ACT": {
+          "yea_total": 174,
+          "nay_total": 165,
+          "party_yea": 167,
+          "party_nay": 96
+        },
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 121,
+          "party_nay": 109
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration Act   1924": {
+          "yea_total": 323,
+          "nay_total": 71,
+          "party_yea": 160,
+          "party_nay": 41
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "Lend Lease Act": {
+          "yea_total": 336,
+          "nay_total": 55,
+          "party_yea": 235,
+          "party_nay": 7
+        },
+        "McCarran Internal Security Act 1950": {
+          "yea_total": 313,
+          "nay_total": 20,
+          "party_yea": 189,
+          "party_nay": 21
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 152,
+          "party_nay": 34
+        },
+        "Smoot Hawley": {
+          "yea_total": 222,
+          "nay_total": 153,
+          "party_yea": 15,
+          "party_nay": 148
+        },
+        "TVA Creation": {
+          "yea_total": 258,
+          "nay_total": 112,
+          "party_yea": 257,
+          "party_nay": 29
+        },
+        "Taft Hartley": {
+          "yea_total": 308,
+          "nay_total": 107,
+          "party_yea": 95,
+          "party_nay": 86
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        }
+      },
+      "votes_sorted_by_interest": [
+        "McCarran Internal Security Act 1950",
+        "Immigration Act   1924",
+        "Taft Hartley",
+        "Smoot Hawley",
+        "AGRICULTURAL ADJUSTMENT ACT",
+        "Civil Rights Act   1957",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "Lend Lease Act",
+        "National Defense Education Act",
+        "TVA Creation",
+        "Voting Rights Act   1965"
+      ],
+      "most_revealing_vote": "McCarran Internal Security Act 1950"
     },
     {
       "icpsr": "7232",
@@ -1412,7 +4649,166 @@
         "Taft Hartley": "Significantly restricted the power of labor unions by banning closed shops, allowing states to pass right-to-work laws, and prohibiting certain strike tactics. Passed by a Republican Congress over President Truman's veto with the support of many Southern Democrats \u2014 one of the clearest examples of the conservative coalition at work. Organized labor called it the 'slave labor act' and has sought its repeal ever since.",
         "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
         "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it."
-      }
+      },
+      "vote_dissent_scores": {
+        "AGRICULTURAL ADJUSTMENT ACT": 0.837,
+        "Civil Rights Act   1957": 0.6902,
+        "Gun Control Act   1968": 0.7663,
+        "Immigration and Nationality Act   1965": 0.2109,
+        "Lend Lease Act": 0.2601,
+        "McCarran Internal Security Act 1950": 0.1358,
+        "National Defense Education Act": 0.2515,
+        "Smoot Hawley": 0.292,
+        "TVA Creation": 0.1819,
+        "Taft Hartley": 0.3882,
+        "Voting Rights Act   1965": 0.7572,
+        "War Powers Act   1973": 0.0
+      },
+      "vote_revealing_stats": {
+        "AGRICULTURAL ADJUSTMENT ACT": "Voted Nay against 15% of their party (9 of 62 party members)",
+        "Civil Rights Act   1957": "Voted Nay against 38% of their party (18 of 47 party members)",
+        "Gun Control Act   1968": "Voted Nay against 26% of their party (14 of 54 party members)",
+        "Immigration and Nationality Act   1965": "Voted Yea \u2014 76 of 94 members agreed",
+        "Lend Lease Act": "Voted Yea \u2014 60 of 91 members agreed",
+        "McCarran Internal Security Act 1950": "Voted Yea \u2014 51 of 58 members agreed",
+        "National Defense Education Act": "Voted Yea \u2014 62 of 88 members agreed",
+        "Smoot Hawley": "Voted Nay \u2014 153 of 375 members agreed",
+        "TVA Creation": "Voted Yea \u2014 258 of 370 members agreed",
+        "Taft Hartley": "Voted Yea \u2014 308 of 415 members agreed",
+        "Voting Rights Act   1965": "Voted Nay against 27% of their party (18 of 66 party members)",
+        "War Powers Act   1973": ""
+      },
+      "votes_by_interest": [
+        "AGRICULTURAL ADJUSTMENT ACT",
+        "Gun Control Act   1968",
+        "Voting Rights Act   1965",
+        "Civil Rights Act   1957",
+        "Taft Hartley",
+        "Smoot Hawley",
+        "Lend Lease Act",
+        "National Defense Education Act",
+        "Immigration and Nationality Act   1965",
+        "TVA Creation",
+        "McCarran Internal Security Act 1950",
+        "War Powers Act   1973"
+      ],
+      "vote_minority_scores": {
+        "AGRICULTURAL ADJUSTMENT ACT": 0.635,
+        "Civil Rights Act   1957": 0.526,
+        "Gun Control Act   1968": 0.571,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Lend Lease Act": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.0,
+        "Smoot Hawley": 0.0,
+        "TVA Creation": 0.0,
+        "Taft Hartley": 0.0,
+        "Voting Rights Act   1965": 0.775,
+        "War Powers Act   1973": 0.0
+      },
+      "vote_overall_scores": {
+        "AGRICULTURAL ADJUSTMENT ACT": 0.513,
+        "Civil Rights Act   1957": 0.694,
+        "Gun Control Act   1968": 0.555,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Lend Lease Act": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.0,
+        "Smoot Hawley": 0.592,
+        "TVA Creation": 0.0,
+        "Taft Hartley": 0.0,
+        "Voting Rights Act   1965": 0.797,
+        "War Powers Act   1973": 0.0
+      },
+      "vote_party_context": {
+        "AGRICULTURAL ADJUSTMENT ACT": {
+          "yea_total": 174,
+          "nay_total": 165,
+          "party_yea": 167,
+          "party_nay": 96
+        },
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 121,
+          "party_nay": 109
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "Lend Lease Act": {
+          "yea_total": 336,
+          "nay_total": 55,
+          "party_yea": 235,
+          "party_nay": 7
+        },
+        "McCarran Internal Security Act 1950": {
+          "yea_total": 313,
+          "nay_total": 20,
+          "party_yea": 189,
+          "party_nay": 21
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 152,
+          "party_nay": 34
+        },
+        "Smoot Hawley": {
+          "yea_total": 222,
+          "nay_total": 153,
+          "party_yea": 15,
+          "party_nay": 148
+        },
+        "TVA Creation": {
+          "yea_total": 258,
+          "nay_total": 112,
+          "party_yea": 257,
+          "party_nay": 29
+        },
+        "Taft Hartley": {
+          "yea_total": 308,
+          "nay_total": 107,
+          "party_yea": 95,
+          "party_nay": 86
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 196,
+          "party_nay": 32
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Voting Rights Act   1965",
+        "Civil Rights Act   1957",
+        "AGRICULTURAL ADJUSTMENT ACT",
+        "Gun Control Act   1968",
+        "Smoot Hawley",
+        "Immigration and Nationality Act   1965",
+        "Lend Lease Act",
+        "McCarran Internal Security Act 1950",
+        "National Defense Education Act",
+        "TVA Creation",
+        "Taft Hartley",
+        "War Powers Act   1973"
+      ],
+      "most_revealing_vote": "Voting Rights Act   1965"
     },
     {
       "icpsr": "7333",
@@ -1479,7 +4875,166 @@
         "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it.",
         "22nd Amendment": "Limited the presidency to two terms following Franklin Roosevelt's four consecutive elections. Passed by a Republican-controlled Congress largely as a reaction to FDR's long tenure. Ratified by the states in 1951.",
         "Taft Hartley   Veto": "The Senate vote to override President Truman's veto of the Taft-Hartley Act, the most significant labor legislation since the Wagner Act. The override succeeded 68-25, with Southern Democrats providing the crucial margin against their own president. Truman's veto message, though overridden, became a political asset \u2014 he used it to rally labor support in his 1948 comeback election."
-      }
+      },
+      "vote_dissent_scores": {
+        "Airline Deregulation Act   1978": 0.0142,
+        "Designate MLK day as a National Holiday": 0.2215,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.5652,
+        "Gun Control Act   1968": 0.2337,
+        "Immigration and Nationality Act   1965": 0.2109,
+        "Lend Lease Act": 0.2601,
+        "McCarran Internal Security Act 1950": 0.0,
+        "Taiwan Relations Act": 0.0406,
+        "Voting Rights Act   1965": 0.2428,
+        "War Powers Act   1973": 0.1114,
+        "22nd Amendment": 0.5073,
+        "Taft Hartley   Veto": 0.5782
+      },
+      "vote_revealing_stats": {
+        "Airline Deregulation Act   1978": "Voted with 99% of their party",
+        "Designate MLK day as a National Holiday": "Voted Yea \u2014 252 of 385 members agreed",
+        "Gramm Rudman Hollings Deficit Act 1985": "Voted Nay against 50% of their party (23 of 46 party members)",
+        "Gun Control Act   1968": "Voted Yea \u2014 70 of 87 members agreed",
+        "Immigration and Nationality Act   1965": "Voted Yea \u2014 76 of 94 members agreed",
+        "Lend Lease Act": "Voted Yea \u2014 60 of 91 members agreed",
+        "McCarran Internal Security Act 1950": "",
+        "Taiwan Relations Act": "Voted with 96% of their party",
+        "Voting Rights Act   1965": "Voted Yea \u2014 77 of 96 members agreed",
+        "War Powers Act   1973": "Voted Yea \u2014 75 of 93 members agreed",
+        "22nd Amendment": "Voted Nay \u2014 23 of 82 members agreed",
+        "Taft Hartley   Veto": "Voted Nay \u2014 25 of 93 members agreed"
+      },
+      "votes_by_interest": [
+        "Taft Hartley   Veto",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "22nd Amendment",
+        "Lend Lease Act",
+        "Voting Rights Act   1965",
+        "Gun Control Act   1968",
+        "Designate MLK day as a National Holiday",
+        "Immigration and Nationality Act   1965",
+        "War Powers Act   1973",
+        "Taiwan Relations Act",
+        "Airline Deregulation Act   1978",
+        "McCarran Internal Security Act 1950"
+      ],
+      "vote_minority_scores": {
+        "Airline Deregulation Act   1978": 0.0,
+        "Designate MLK day as a National Holiday": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Lend Lease Act": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0,
+        "22nd Amendment": 0.0,
+        "Taft Hartley   Veto": 0.0
+      },
+      "vote_overall_scores": {
+        "Airline Deregulation Act   1978": 0.0,
+        "Designate MLK day as a National Holiday": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.638,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "Lend Lease Act": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0,
+        "22nd Amendment": 0.72,
+        "Taft Hartley   Veto": 0.731
+      },
+      "vote_party_context": {
+        "Airline Deregulation Act   1978": {
+          "yea_total": 356,
+          "nay_total": 6,
+          "party_yea": 235,
+          "party_nay": 3
+        },
+        "Designate MLK day as a National Holiday": {
+          "yea_total": 252,
+          "nay_total": 133,
+          "party_yea": 217,
+          "party_nay": 35
+        },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 271,
+          "nay_total": 154,
+          "party_yea": 119,
+          "party_nay": 132
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "Lend Lease Act": {
+          "yea_total": 336,
+          "nay_total": 55,
+          "party_yea": 235,
+          "party_nay": 7
+        },
+        "McCarran Internal Security Act 1950": {
+          "yea_total": 313,
+          "nay_total": 20,
+          "party_yea": 189,
+          "party_nay": 21
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 242,
+          "party_nay": 14
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 196,
+          "party_nay": 32
+        },
+        "22nd Amendment": {
+          "yea_total": 59,
+          "nay_total": 23,
+          "party_yea": 15,
+          "party_nay": 26
+        },
+        "Taft Hartley   Veto": {
+          "yea_total": 68,
+          "nay_total": 25,
+          "party_yea": 20,
+          "party_nay": 22
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Taft Hartley   Veto",
+        "22nd Amendment",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Airline Deregulation Act   1978",
+        "Designate MLK day as a National Holiday",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "Lend Lease Act",
+        "McCarran Internal Security Act 1950",
+        "Taiwan Relations Act",
+        "Voting Rights Act   1965",
+        "War Powers Act   1973"
+      ],
+      "most_revealing_vote": "Taft Hartley   Veto"
     },
     {
       "icpsr": "8010",
@@ -1542,7 +5097,154 @@
         "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
         "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
         "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it."
-      }
+      },
+      "vote_dissent_scores": {
+        "Airline Deregulation Act   1978": 0.0142,
+        "Civil Rights Act   1957": 0.3098,
+        "Designate MLK day as a National Holiday": 0.2215,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.5652,
+        "Gun Control Act   1968": 0.2337,
+        "Immigration and Nationality Act   1965": 0.2109,
+        "McCarran Internal Security Act 1950": 0.1358,
+        "National Defense Education Act": 0.2515,
+        "Taiwan Relations Act": 0.0406,
+        "Voting Rights Act   1965": 0.2428,
+        "War Powers Act   1973": 0.1114
+      },
+      "vote_revealing_stats": {
+        "Airline Deregulation Act   1978": "Voted with 99% of their party",
+        "Civil Rights Act   1957": "Voted Yea \u2014 72 of 90 members agreed",
+        "Designate MLK day as a National Holiday": "Voted Yea \u2014 252 of 385 members agreed",
+        "Gramm Rudman Hollings Deficit Act 1985": "Voted Nay against 50% of their party (23 of 46 party members)",
+        "Gun Control Act   1968": "Voted Yea \u2014 70 of 87 members agreed",
+        "Immigration and Nationality Act   1965": "Voted Yea \u2014 76 of 94 members agreed",
+        "McCarran Internal Security Act 1950": "Voted Yea \u2014 51 of 58 members agreed",
+        "National Defense Education Act": "Voted Yea \u2014 62 of 88 members agreed",
+        "Taiwan Relations Act": "Voted with 96% of their party",
+        "Voting Rights Act   1965": "Voted Yea \u2014 77 of 96 members agreed",
+        "War Powers Act   1973": "Voted Yea \u2014 75 of 93 members agreed"
+      },
+      "votes_by_interest": [
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Civil Rights Act   1957",
+        "National Defense Education Act",
+        "Voting Rights Act   1965",
+        "Gun Control Act   1968",
+        "Designate MLK day as a National Holiday",
+        "Immigration and Nationality Act   1965",
+        "McCarran Internal Security Act 1950",
+        "War Powers Act   1973",
+        "Taiwan Relations Act",
+        "Airline Deregulation Act   1978"
+      ],
+      "vote_minority_scores": {
+        "Airline Deregulation Act   1978": 0.0,
+        "Civil Rights Act   1957": 0.0,
+        "Designate MLK day as a National Holiday": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0
+      },
+      "vote_overall_scores": {
+        "Airline Deregulation Act   1978": 0.0,
+        "Civil Rights Act   1957": 0.0,
+        "Designate MLK day as a National Holiday": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.638,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0
+      },
+      "vote_party_context": {
+        "Airline Deregulation Act   1978": {
+          "yea_total": 356,
+          "nay_total": 6,
+          "party_yea": 235,
+          "party_nay": 3
+        },
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 121,
+          "party_nay": 109
+        },
+        "Designate MLK day as a National Holiday": {
+          "yea_total": 252,
+          "nay_total": 133,
+          "party_yea": 217,
+          "party_nay": 35
+        },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 271,
+          "nay_total": 154,
+          "party_yea": 119,
+          "party_nay": 132
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "McCarran Internal Security Act 1950": {
+          "yea_total": 313,
+          "nay_total": 20,
+          "party_yea": 189,
+          "party_nay": 21
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 152,
+          "party_nay": 34
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 242,
+          "party_nay": 14
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 196,
+          "party_nay": 32
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Airline Deregulation Act   1978",
+        "Civil Rights Act   1957",
+        "Designate MLK day as a National Holiday",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "McCarran Internal Security Act 1950",
+        "National Defense Education Act",
+        "Taiwan Relations Act",
+        "Voting Rights Act   1965",
+        "War Powers Act   1973"
+      ],
+      "most_revealing_vote": "Gramm Rudman Hollings Deficit Act 1985"
     },
     {
       "icpsr": "6455",
@@ -1605,7 +5307,154 @@
         "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
         "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
         "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it."
-      }
+      },
+      "vote_dissent_scores": {
+        "Airline Deregulation Act   1978": 0.0211,
+        "Authorization of Force Against Iraq   1991": 0.2172,
+        "Civil Rights Act   1957": 0.08,
+        "Designate MLK day as a National Holiday": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.2548,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "National Defense Education Act": 0.0,
+        "Taiwan Relations Act": 0.0523,
+        "Voting Rights Act   1965": 0.1167,
+        "War Powers Act   1973": 0.7031
+      },
+      "vote_revealing_stats": {
+        "Airline Deregulation Act   1978": "Voted with 98% of their party",
+        "Authorization of Force Against Iraq   1991": "Voted with 95% of their party",
+        "Civil Rights Act   1957": "Voted with 100% of their party",
+        "Designate MLK day as a National Holiday": "",
+        "Gramm Rudman Hollings Deficit Act 1985": "Voted Yea \u2014 61 of 92 members agreed",
+        "Gun Control Act   1968": "",
+        "Immigration and Nationality Act   1965": "",
+        "National Defense Education Act": "",
+        "Taiwan Relations Act": "Voted Yea \u2014 85 of 89 members agreed",
+        "Voting Rights Act   1965": "Voted Yea \u2014 77 of 96 members agreed",
+        "War Powers Act   1973": "Voted Nay against 37% of their party (15 of 41 party members)"
+      },
+      "votes_by_interest": [
+        "War Powers Act   1973",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Authorization of Force Against Iraq   1991",
+        "Voting Rights Act   1965",
+        "Civil Rights Act   1957",
+        "Taiwan Relations Act",
+        "Airline Deregulation Act   1978",
+        "Designate MLK day as a National Holiday",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "National Defense Education Act"
+      ],
+      "vote_minority_scores": {
+        "Airline Deregulation Act   1978": 0.0,
+        "Authorization of Force Against Iraq   1991": 0.0,
+        "Civil Rights Act   1957": 0.0,
+        "Designate MLK day as a National Holiday": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "National Defense Education Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0
+      },
+      "vote_overall_scores": {
+        "Airline Deregulation Act   1978": 0.0,
+        "Authorization of Force Against Iraq   1991": 0.0,
+        "Civil Rights Act   1957": 0.0,
+        "Designate MLK day as a National Holiday": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "National Defense Education Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.678
+      },
+      "vote_party_context": {
+        "Airline Deregulation Act   1978": {
+          "yea_total": 356,
+          "nay_total": 6,
+          "party_yea": 121,
+          "party_nay": 3
+        },
+        "Authorization of Force Against Iraq   1991": {
+          "yea_total": 250,
+          "nay_total": 183,
+          "party_yea": 164,
+          "party_nay": 3
+        },
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 173,
+          "party_nay": 22
+        },
+        "Designate MLK day as a National Holiday": {
+          "yea_total": 252,
+          "nay_total": 133,
+          "party_yea": 40,
+          "party_nay": 102
+        },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 271,
+          "nay_total": 154,
+          "party_yea": 154,
+          "party_nay": 24
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 73,
+          "party_nay": 72
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 118,
+          "party_nay": 10
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 81,
+          "party_nay": 72
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 105,
+          "party_nay": 41
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 112,
+          "party_nay": 23
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 87,
+          "party_nay": 103
+        }
+      },
+      "votes_sorted_by_interest": [
+        "War Powers Act   1973",
+        "Airline Deregulation Act   1978",
+        "Authorization of Force Against Iraq   1991",
+        "Civil Rights Act   1957",
+        "Designate MLK day as a National Holiday",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "National Defense Education Act",
+        "Taiwan Relations Act",
+        "Voting Rights Act   1965"
+      ],
+      "most_revealing_vote": "War Powers Act   1973"
     },
     {
       "icpsr": "1087",
@@ -1668,7 +5517,154 @@
         "Taiwan Relations Act": "Established an unofficial framework for U.S. relations with Taiwan after President Carter normalized diplomatic relations with the People's Republic of China and severed formal ties with Taiwan. Required the U.S. to provide Taiwan with defensive arms and treat threats to Taiwan as matters of 'grave concern.' The legal ambiguity it created \u2014 neither recognizing nor abandoning Taiwan \u2014 has defined U.S.-China-Taiwan relations ever since.",
         "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
         "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it."
-      }
+      },
+      "vote_dissent_scores": {
+        "Airline Deregulation Act   1978": 0.0211,
+        "Authorization of Force Against Iraq   1991": 0.2172,
+        "Civil Rights Act   1957": 0.08,
+        "Designate MLK day as a National Holiday": 0.4308,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.2548,
+        "Gun Control Act   1968": 0.1467,
+        "Immigration and Nationality Act   1965": 0.1734,
+        "National Defense Education Act": 0.0,
+        "Taiwan Relations Act": 0.0523,
+        "Voting Rights Act   1965": 0.1167,
+        "War Powers Act   1973": 0.2969
+      },
+      "vote_revealing_stats": {
+        "Airline Deregulation Act   1978": "Voted with 98% of their party",
+        "Authorization of Force Against Iraq   1991": "Voted with 95% of their party",
+        "Civil Rights Act   1957": "Voted with 100% of their party",
+        "Designate MLK day as a National Holiday": "Voted Nay \u2014 133 of 385 members agreed",
+        "Gramm Rudman Hollings Deficit Act 1985": "Voted Yea \u2014 61 of 92 members agreed",
+        "Gun Control Act   1968": "Voted Yea \u2014 70 of 87 members agreed",
+        "Immigration and Nationality Act   1965": "Voted Yea \u2014 76 of 94 members agreed",
+        "National Defense Education Act": "",
+        "Taiwan Relations Act": "Voted Yea \u2014 85 of 89 members agreed",
+        "Voting Rights Act   1965": "Voted Yea \u2014 77 of 96 members agreed",
+        "War Powers Act   1973": "Voted Yea \u2014 75 of 93 members agreed"
+      },
+      "votes_by_interest": [
+        "Designate MLK day as a National Holiday",
+        "War Powers Act   1973",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Authorization of Force Against Iraq   1991",
+        "Immigration and Nationality Act   1965",
+        "Gun Control Act   1968",
+        "Voting Rights Act   1965",
+        "Civil Rights Act   1957",
+        "Taiwan Relations Act",
+        "Airline Deregulation Act   1978",
+        "National Defense Education Act"
+      ],
+      "vote_minority_scores": {
+        "Airline Deregulation Act   1978": 0.0,
+        "Authorization of Force Against Iraq   1991": 0.0,
+        "Civil Rights Act   1957": 0.0,
+        "Designate MLK day as a National Holiday": 0.0,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "National Defense Education Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.542
+      },
+      "vote_overall_scores": {
+        "Airline Deregulation Act   1978": 0.0,
+        "Authorization of Force Against Iraq   1991": 0.0,
+        "Civil Rights Act   1957": 0.0,
+        "Designate MLK day as a National Holiday": 0.655,
+        "Gramm Rudman Hollings Deficit Act 1985": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "National Defense Education Act": 0.0,
+        "Taiwan Relations Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0
+      },
+      "vote_party_context": {
+        "Airline Deregulation Act   1978": {
+          "yea_total": 356,
+          "nay_total": 6,
+          "party_yea": 121,
+          "party_nay": 3
+        },
+        "Authorization of Force Against Iraq   1991": {
+          "yea_total": 250,
+          "nay_total": 183,
+          "party_yea": 164,
+          "party_nay": 3
+        },
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 173,
+          "party_nay": 22
+        },
+        "Designate MLK day as a National Holiday": {
+          "yea_total": 252,
+          "nay_total": 133,
+          "party_yea": 40,
+          "party_nay": 102
+        },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 271,
+          "nay_total": 154,
+          "party_yea": 154,
+          "party_nay": 24
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 73,
+          "party_nay": 72
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 118,
+          "party_nay": 10
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 81,
+          "party_nay": 72
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 345,
+          "nay_total": 55,
+          "party_yea": 105,
+          "party_nay": 41
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 112,
+          "party_nay": 23
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 87,
+          "party_nay": 103
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Designate MLK day as a National Holiday",
+        "War Powers Act   1973",
+        "Airline Deregulation Act   1978",
+        "Authorization of Force Against Iraq   1991",
+        "Civil Rights Act   1957",
+        "Gramm Rudman Hollings Deficit Act 1985",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "National Defense Education Act",
+        "Taiwan Relations Act",
+        "Voting Rights Act   1965"
+      ],
+      "most_revealing_vote": "Designate MLK day as a National Holiday"
     },
     {
       "icpsr": "5924",
@@ -1731,7 +5727,154 @@
         "Taft Hartley": "Significantly restricted the power of labor unions by banning closed shops, allowing states to pass right-to-work laws, and prohibiting certain strike tactics. Passed by a Republican Congress over President Truman's veto with the support of many Southern Democrats \u2014 one of the clearest examples of the conservative coalition at work. Organized labor called it the 'slave labor act' and has sought its repeal ever since.",
         "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
         "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it."
-      }
+      },
+      "vote_dissent_scores": {
+        "AGRICULTURAL ADJUSTMENT ACT": 0.837,
+        "Airline Deregulation Act   1978": 0.0142,
+        "Civil Rights Act   1957": 0.6902,
+        "Gun Control Act   1968": 0.7663,
+        "Immigration and Nationality Act   1965": 0.7891,
+        "Lend Lease Act": 0.2601,
+        "McCarran Internal Security Act 1950": 0.1358,
+        "National Defense Education Act": 0.2515,
+        "Taft Hartley": 0.3882,
+        "Voting Rights Act   1965": 0.7572,
+        "War Powers Act   1973": 0.0
+      },
+      "vote_revealing_stats": {
+        "AGRICULTURAL ADJUSTMENT ACT": "Voted Nay against 15% of their party (9 of 62 party members)",
+        "Airline Deregulation Act   1978": "Voted with 99% of their party",
+        "Civil Rights Act   1957": "Voted Nay against 38% of their party (18 of 47 party members)",
+        "Gun Control Act   1968": "Voted Nay against 26% of their party (14 of 54 party members)",
+        "Immigration and Nationality Act   1965": "Voted Nay against 22% of their party (15 of 67 party members)",
+        "Lend Lease Act": "Voted Yea \u2014 60 of 91 members agreed",
+        "McCarran Internal Security Act 1950": "Voted Yea \u2014 51 of 58 members agreed",
+        "National Defense Education Act": "Voted Yea \u2014 62 of 88 members agreed",
+        "Taft Hartley": "Voted Yea \u2014 308 of 415 members agreed",
+        "Voting Rights Act   1965": "Voted Nay against 27% of their party (18 of 66 party members)",
+        "War Powers Act   1973": ""
+      },
+      "votes_by_interest": [
+        "AGRICULTURAL ADJUSTMENT ACT",
+        "Immigration and Nationality Act   1965",
+        "Gun Control Act   1968",
+        "Voting Rights Act   1965",
+        "Civil Rights Act   1957",
+        "Taft Hartley",
+        "Lend Lease Act",
+        "National Defense Education Act",
+        "McCarran Internal Security Act 1950",
+        "Airline Deregulation Act   1978",
+        "War Powers Act   1973"
+      ],
+      "vote_minority_scores": {
+        "AGRICULTURAL ADJUSTMENT ACT": 0.635,
+        "Airline Deregulation Act   1978": 0.0,
+        "Civil Rights Act   1957": 0.526,
+        "Gun Control Act   1968": 0.571,
+        "Immigration and Nationality Act   1965": 0.754,
+        "Lend Lease Act": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.0,
+        "Taft Hartley": 0.0,
+        "Voting Rights Act   1965": 0.775,
+        "War Powers Act   1973": 0.0
+      },
+      "vote_overall_scores": {
+        "AGRICULTURAL ADJUSTMENT ACT": 0.513,
+        "Airline Deregulation Act   1978": 0.0,
+        "Civil Rights Act   1957": 0.694,
+        "Gun Control Act   1968": 0.555,
+        "Immigration and Nationality Act   1965": 0.821,
+        "Lend Lease Act": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.0,
+        "Taft Hartley": 0.0,
+        "Voting Rights Act   1965": 0.797,
+        "War Powers Act   1973": 0.0
+      },
+      "vote_party_context": {
+        "AGRICULTURAL ADJUSTMENT ACT": {
+          "yea_total": 174,
+          "nay_total": 165,
+          "party_yea": 167,
+          "party_nay": 96
+        },
+        "Airline Deregulation Act   1978": {
+          "yea_total": 356,
+          "nay_total": 6,
+          "party_yea": 235,
+          "party_nay": 3
+        },
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 121,
+          "party_nay": 109
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 125,
+          "party_nay": 94
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 211,
+          "party_nay": 69
+        },
+        "Lend Lease Act": {
+          "yea_total": 336,
+          "nay_total": 55,
+          "party_yea": 235,
+          "party_nay": 7
+        },
+        "McCarran Internal Security Act 1950": {
+          "yea_total": 313,
+          "nay_total": 20,
+          "party_yea": 189,
+          "party_nay": 21
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 152,
+          "party_nay": 34
+        },
+        "Taft Hartley": {
+          "yea_total": 308,
+          "nay_total": 107,
+          "party_yea": 95,
+          "party_nay": 86
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 224,
+          "party_nay": 65
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 196,
+          "party_nay": 32
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Immigration and Nationality Act   1965",
+        "Voting Rights Act   1965",
+        "Civil Rights Act   1957",
+        "AGRICULTURAL ADJUSTMENT ACT",
+        "Gun Control Act   1968",
+        "Airline Deregulation Act   1978",
+        "Lend Lease Act",
+        "McCarran Internal Security Act 1950",
+        "National Defense Education Act",
+        "Taft Hartley",
+        "War Powers Act   1973"
+      ],
+      "most_revealing_vote": "Immigration and Nationality Act   1965"
     },
     {
       "icpsr": "6312",
@@ -1766,7 +5909,70 @@
         "Federal Elections Bill": "Would have authorized federal supervision of congressional elections to protect Black voters in the South from disenfranchisement. Passed the House but was killed in the Senate when silver-state Republicans traded their votes to secure Southern support for the Sherman Silver Purchase Act and McKinley Tariff. Its defeat effectively ended federal protection of Black voting rights until the 1960s.",
         "Interstate Commerce Bill": "The first major federal regulation of the railroad industry, requiring that rates be 'reasonable and just' and creating the Interstate Commerce Commission to oversee compliance. Passed in response to widespread public outrage over discriminatory and monopolistic railroad pricing. Though initially weak in enforcement, it established the principle of federal regulation of private industry.",
         "Pendelton Civil Service Act": "Established a merit-based federal civil service system, requiring competitive examinations for many government positions and ending the patronage 'spoils system' that had dominated federal hiring since Andrew Jackson. Passed in the aftermath of President Garfield's assassination by a disappointed office-seeker. Gradually expanded over subsequent decades to cover most federal employees."
-      }
+      },
+      "vote_dissent_scores": {
+        "Bland Allison Act": 0.1888,
+        "Federal Elections Bill": 0.2037,
+        "Interstate Commerce Bill": 0.3201,
+        "Pendelton Civil Service Act": 0.0455
+      },
+      "vote_revealing_stats": {
+        "Bland Allison Act": "Voted Yea \u2014 49 of 71 members agreed",
+        "Federal Elections Bill": "Voted with 99% of their party",
+        "Interstate Commerce Bill": "Voted Yea \u2014 43 of 58 members agreed",
+        "Pendelton Civil Service Act": "Voted with 100% of their party"
+      },
+      "votes_by_interest": [
+        "Interstate Commerce Bill",
+        "Federal Elections Bill",
+        "Bland Allison Act",
+        "Pendelton Civil Service Act"
+      ],
+      "vote_minority_scores": {
+        "Bland Allison Act": 0.0,
+        "Federal Elections Bill": 0.0,
+        "Interstate Commerce Bill": 0.0,
+        "Pendelton Civil Service Act": 0.0
+      },
+      "vote_overall_scores": {
+        "Bland Allison Act": 0.0,
+        "Federal Elections Bill": 0.0,
+        "Interstate Commerce Bill": 0.0,
+        "Pendelton Civil Service Act": 0.0
+      },
+      "vote_party_context": {
+        "Bland Allison Act": {
+          "yea_total": 203,
+          "nay_total": 72,
+          "party_yea": 129,
+          "party_nay": 5
+        },
+        "Federal Elections Bill": {
+          "yea_total": 155,
+          "nay_total": 149,
+          "party_yea": 154,
+          "party_nay": 2
+        },
+        "Interstate Commerce Bill": {
+          "yea_total": 219,
+          "nay_total": 41,
+          "party_yea": 91,
+          "party_nay": 31
+        },
+        "Pendelton Civil Service Act": {
+          "yea_total": 155,
+          "nay_total": 46,
+          "party_yea": 105,
+          "party_nay": 7
+        }
+      },
+      "votes_sorted_by_interest": [
+        "Bland Allison Act",
+        "Federal Elections Bill",
+        "Interstate Commerce Bill",
+        "Pendelton Civil Service Act"
+      ],
+      "most_revealing_vote": null
     },
     {
       "icpsr": "3268",
@@ -1813,7 +6019,106 @@
         "National Defense Education Act": "Provided federal funding for education in science, mathematics, and foreign languages in response to the Soviet launch of Sputnik. The first major peacetime federal involvement in education funding, it was justified on national security grounds to overcome traditional resistance to federal control of schools. Transformed American higher education by dramatically expanding student loan and fellowship programs.",
         "Voting Rights Act   1965": "Prohibited discriminatory voting practices that had systematically disenfranchised Black voters across the South for a century, including literacy tests and other barriers. Required jurisdictions with a history of discrimination to obtain federal preclearance before changing voting laws. Passed after Bloody Sunday in Selma and considered by many historians the most effective civil rights legislation ever enacted.",
         "War Powers Act   1973": "Passed over Nixon's veto, requiring the President to notify Congress within 48 hours of deploying military forces and limiting deployments to 60 days without congressional authorization. A direct response to the undeclared wars in Korea and Vietnam, it represented Congress's attempt to reclaim its constitutional war-making authority. Every president since has disputed its constitutionality while nominally complying with it."
-      }
+      },
+      "vote_dissent_scores": {
+        "Civil Rights Act   1957": 0.08,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.1734,
+        "McCarran Internal Security Act 1950": 0.0637,
+        "National Defense Education Act": 0.3414,
+        "Voting Rights Act   1965": 0.1167,
+        "War Powers Act   1973": 0.7031
+      },
+      "vote_revealing_stats": {
+        "Civil Rights Act   1957": "Voted with 100% of their party",
+        "Gun Control Act   1968": "",
+        "Immigration and Nationality Act   1965": "Voted Yea \u2014 76 of 94 members agreed",
+        "McCarran Internal Security Act 1950": "Voted with 97% of their party",
+        "National Defense Education Act": "Voted Yea \u2014 62 of 88 members agreed",
+        "Voting Rights Act   1965": "Voted Yea \u2014 77 of 96 members agreed",
+        "War Powers Act   1973": "Voted Nay against 37% of their party (15 of 41 party members)"
+      },
+      "votes_by_interest": [
+        "War Powers Act   1973",
+        "National Defense Education Act",
+        "Immigration and Nationality Act   1965",
+        "Voting Rights Act   1965",
+        "Civil Rights Act   1957",
+        "McCarran Internal Security Act 1950",
+        "Gun Control Act   1968"
+      ],
+      "vote_minority_scores": {
+        "Civil Rights Act   1957": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.0
+      },
+      "vote_overall_scores": {
+        "Civil Rights Act   1957": 0.0,
+        "Gun Control Act   1968": 0.0,
+        "Immigration and Nationality Act   1965": 0.0,
+        "McCarran Internal Security Act 1950": 0.0,
+        "National Defense Education Act": 0.0,
+        "Voting Rights Act   1965": 0.0,
+        "War Powers Act   1973": 0.678
+      },
+      "vote_party_context": {
+        "Civil Rights Act   1957": {
+          "yea_total": 286,
+          "nay_total": 126,
+          "party_yea": 173,
+          "party_nay": 22
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 161,
+          "nay_total": 129,
+          "party_yea": 73,
+          "party_nay": 72
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 320,
+          "nay_total": 70,
+          "party_yea": 118,
+          "party_nay": 10
+        },
+        "McCarran Internal Security Act 1950": {
+          "yea_total": 313,
+          "nay_total": 20,
+          "party_yea": 129,
+          "party_nay": 2
+        },
+        "National Defense Education Act": {
+          "yea_total": 212,
+          "nay_total": 85,
+          "party_yea": 81,
+          "party_nay": 72
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 333,
+          "nay_total": 85,
+          "party_yea": 112,
+          "party_nay": 23
+        },
+        "War Powers Act   1973": {
+          "yea_total": 284,
+          "nay_total": 135,
+          "party_yea": 87,
+          "party_nay": 103
+        }
+      },
+      "votes_sorted_by_interest": [
+        "War Powers Act   1973",
+        "Civil Rights Act   1957",
+        "Gun Control Act   1968",
+        "Immigration and Nationality Act   1965",
+        "McCarran Internal Security Act 1950",
+        "National Defense Education Act",
+        "Voting Rights Act   1965"
+      ],
+      "most_revealing_vote": "War Powers Act   1973"
     }
   ]
 }
