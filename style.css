@@ -628,13 +628,13 @@ body {
   color: var(--parchment);
   font-family: var(--font-body);
   font-size: 0.78rem;
-  padding: 0.5rem 0.75rem;
+  padding: 0.6rem 0.9rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow-card);
   pointer-events: none;
   z-index: 500;
-  max-width: 220px;
-  line-height: 1.5;
+  max-width: 380px;
+  line-height: 1.6;
 }
 .map-tooltip.hidden { display: none; }
 .map-tooltip-title {
