@@ -316,7 +316,7 @@
         onEachFeature: bindStateEvents,
       }).addTo(map);
     } catch (e) {
-      console.warn('Could not load us-states.geojson — map will show tiles only');
+      console.warn('Could not load us-states.json — map will show tiles only');
     }
   }
 
