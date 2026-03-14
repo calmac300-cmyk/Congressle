@@ -22,6 +22,9 @@
   document.getElementById('today-date').textContent =
     new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 
+  // Render streak stats on chamber select
+  renderStreak();
+
   // Check if there's a saved session from today and restore it
   const d = new Date();
   const dateKey = `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
@@ -30,13 +33,55 @@
       const saved = localStorage.getItem(`crg_${chamber}_${dateKey}`);
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (parsed.guesses && parsed.guesses.length > 0) {
-          // Restore this session silently
+        if (parsed.gameOver) {
+          // Already finished today — show the already-played screen
+          await initGame(chamber);
+          showAlreadyPlayed(chamber, parsed);
+          return;
+        } else if (parsed.guesses && parsed.guesses.length > 0) {
+          // In progress — restore game
           await initGame(chamber);
           return;
         }
       }
     } catch(e) {}
+  }
+
+  // ----------------------------------------------------------
+  // Streak display
+  // ----------------------------------------------------------
+  function renderStreak() {
+    const streak  = CRGame.getStreak();
+    const el      = document.getElementById('streak-display');
+    if (!el) return;
+    if (streak.totalPlayed === 0) {
+      el.classList.add('hidden');
+      return;
+    }
+    const pct = streak.totalPlayed > 0
+      ? Math.round((streak.totalWon / streak.totalPlayed) * 100)
+      : 0;
+    el.classList.remove('hidden');
+    el.innerHTML = `
+      <div class="streak-stats">
+        <div class="streak-stat">
+          <span class="streak-num">${streak.totalPlayed}</span>
+          <span class="streak-label">Played</span>
+        </div>
+        <div class="streak-stat">
+          <span class="streak-num">${pct}%</span>
+          <span class="streak-label">Win rate</span>
+        </div>
+        <div class="streak-stat">
+          <span class="streak-num">${streak.current}</span>
+          <span class="streak-label">Streak</span>
+        </div>
+        <div class="streak-stat">
+          <span class="streak-num">${streak.best}</span>
+          <span class="streak-label">Best</span>
+        </div>
+      </div>
+    `;
   }
 
   // ----------------------------------------------------------
@@ -437,6 +482,65 @@
   }
 
   // ----------------------------------------------------------
+  // Already Played Today Screen
+  // ----------------------------------------------------------
+  function showAlreadyPlayed(chamber, savedState) {
+    const state   = CRGame.getState();
+    const target  = state.target;
+    const streak  = CRGame.getStreak();
+    const content = document.getElementById('already-played-content');
+    const streakEl= document.getElementById('already-played-streak');
+
+    const resultLine = savedState.won
+      ? `You identified today's ${chamber} puzzle in ${savedState.guesses.length} guess${savedState.guesses.length !== 1 ? 'es' : ''}.`
+      : `You did not identify today's ${chamber} puzzle.`;
+
+    content.innerHTML = `
+      <div class="already-played-banner ${savedState.won ? 'won' : 'lost'}">
+        <div class="gameover-headline">${savedState.won ? 'Already solved!' : 'Already played!'}</div>
+        <div class="gameover-sub">${resultLine}</div>
+      </div>
+      ${target ? `<div class="already-played-target">
+        <a href="https://en.wikipedia.org/wiki/${encodeURIComponent(formatName(target.name))}"
+           target="_blank" rel="noopener" class="wiki-link">${formatName(target.name)}</a>
+        <div class="gameover-target-meta">${target.chamber} · ${target.state} · ${shortParty(target.party)} · ${CRGame.tenureString(target)}</div>
+      </div>` : ''}
+    `;
+
+    const pct = streak.totalPlayed > 0
+      ? Math.round((streak.totalWon / streak.totalPlayed) * 100) : 0;
+    streakEl.innerHTML = `
+      <div class="streak-stats">
+        <div class="streak-stat"><span class="streak-num">${streak.totalPlayed}</span><span class="streak-label">Played</span></div>
+        <div class="streak-stat"><span class="streak-num">${pct}%</span><span class="streak-label">Win rate</span></div>
+        <div class="streak-stat"><span class="streak-num">${streak.current}</span><span class="streak-label">Streak</span></div>
+        <div class="streak-stat"><span class="streak-num">${streak.best}</span><span class="streak-label">Best</span></div>
+      </div>
+    `;
+
+    // Share button
+    document.getElementById('btn-already-share').onclick = () => {
+      const text = CRGame.buildShareString(state);
+      navigator.clipboard.writeText(text).catch(() => {
+        const ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta);
+        ta.select(); document.execCommand('copy');
+        document.body.removeChild(ta);
+      }).finally ? null : null;
+      document.getElementById('btn-already-share').textContent = 'Copied!';
+      setTimeout(() => {
+        document.getElementById('btn-already-share').textContent = 'Copy Result';
+      }, 2500);
+    };
+
+    const other = chamber === 'Senate' ? 'House' : 'Senate';
+    document.getElementById('already-other-chamber').textContent = other;
+    document.getElementById('btn-already-other').onclick = () => initGame(other);
+
+    showScreen('screen-already-played');
+  }
+
+  // ----------------------------------------------------------
   // Game Over Screen
   // ----------------------------------------------------------
   function showGameOver(state) {
@@ -536,9 +640,43 @@
       });
     });
 
+    // Wikipedia link on target name
+    tDiv.querySelector('.gameover-target-name').innerHTML =
+      `<a href="https://en.wikipedia.org/wiki/${encodeURIComponent(formatName(target.name))}"
+          target="_blank" rel="noopener" class="wiki-link">${formatName(target.name)}</a>`;
+
+    // Share button
+    const shareBtn = document.getElementById('btn-share');
+    const shareConfirm = document.getElementById('share-confirm');
+    shareBtn.onclick = () => {
+      const text = CRGame.buildShareString(CRGame.getState());
+      navigator.clipboard.writeText(text).then(() => {
+        shareConfirm.classList.remove('hidden');
+        shareBtn.textContent = 'Copied!';
+        setTimeout(() => {
+          shareConfirm.classList.add('hidden');
+          shareBtn.textContent = 'Copy Result';
+        }, 2500);
+      }).catch(() => {
+        // Fallback for browsers without clipboard API
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        shareBtn.textContent = 'Copied!';
+        setTimeout(() => { shareBtn.textContent = 'Copy Result'; }, 2500);
+      });
+    };
+
+    // Other chamber button
     const other = target.chamber === 'Senate' ? 'House' : 'Senate';
     document.getElementById('other-chamber').textContent = other;
     document.getElementById('btn-play-other').onclick = () => initGame(other);
+
+    // Refresh streak display
+    renderStreak();
 
     showScreen('screen-gameover');
   }

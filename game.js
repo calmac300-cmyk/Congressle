@@ -352,6 +352,7 @@ const CRGame = (() => {
     }
 
     _saveState();
+    if (_gameOver) recordResult(_won);
     return getState();
   }
 
@@ -472,6 +473,103 @@ const CRGame = (() => {
   }
 
   // ----------------------------------------------------------
+  // Streak tracking
+  // Stored separately from daily session — persists across days
+  // ----------------------------------------------------------
+
+  const STREAK_KEY = 'crg_streak';
+
+  function _loadStreak() {
+    try {
+      const raw = localStorage.getItem(STREAK_KEY);
+      return raw ? JSON.parse(raw) : {
+        current: 0, best: 0,
+        lastWonDate: null, totalPlayed: 0, totalWon: 0
+      };
+    } catch(e) {
+      return { current: 0, best: 0, lastWonDate: null, totalPlayed: 0, totalWon: 0 };
+    }
+  }
+
+  function _saveStreak(streak) {
+    try { localStorage.setItem(STREAK_KEY, JSON.stringify(streak)); } catch(e) {}
+  }
+
+  function recordResult(won) {
+    const streak = _loadStreak();
+    const d = new Date();
+    const today = `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
+    const yesterday = (() => {
+      const y = new Date(d); y.setDate(y.getDate() - 1);
+      return `${y.getFullYear()}-${y.getMonth()+1}-${y.getDate()}`;
+    })();
+
+    streak.totalPlayed++;
+    if (won) {
+      streak.totalWon++;
+      // Extend streak if won yesterday or starting fresh
+      if (streak.lastWonDate === yesterday || streak.lastWonDate === null) {
+        streak.current++;
+      } else if (streak.lastWonDate !== today) {
+        streak.current = 1;
+      }
+      streak.best = Math.max(streak.best, streak.current);
+      streak.lastWonDate = today;
+    } else {
+      // Only break streak if we haven't already recorded a loss today
+      if (streak.lastWonDate !== today) {
+        streak.current = 0;
+      }
+    }
+    _saveStreak(streak);
+    return streak;
+  }
+
+  function getStreak() {
+    return _loadStreak();
+  }
+
+  // ----------------------------------------------------------
+  // Share string generation
+  // Produces a Wordle-style emoji grid for the clipboard
+  // ----------------------------------------------------------
+
+  function buildShareString(state) {
+    if (!state.gameOver) return '';
+    const d = new Date();
+    const dateStr = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
+    const EMOJI = { green: '🟩', yellow: '🟨', grey: '⬜' };
+
+    const lines = [
+      `The Congressional Record`,
+      `${state.chamber} · ${dateStr}`,
+      state.won
+        ? `Identified in ${state.guessCount}/${state.maxGuesses}`
+        : `Not identified (${state.guessCount}/${state.maxGuesses})`,
+      '',
+    ];
+
+    for (const { feedback } of state.guesses) {
+      const row = [
+        EMOJI[feedback.state],
+        EMOJI[feedback.region],
+        EMOJI[feedback.party],
+        EMOJI[feedback.chamber],
+        EMOJI[feedback.tenure],
+        // Vote emojis — one per visible vote
+        ...feedback.votes.map(v => EMOJI[v.feedback]),
+      ].join('');
+      lines.push(row);
+    }
+
+    lines.push('');
+    lines.push('https://calmac300-cmyk.github.io/Congressle/');
+    return lines.join('
+');
+  }
+
+  // ----------------------------------------------------------
   // Utility: congress number to year string for display
   // ----------------------------------------------------------
 
@@ -506,6 +604,11 @@ const CRGame = (() => {
     // Display helpers
     congressToYear,
     tenureString,
+
+    // Stats & sharing
+    recordResult,
+    getStreak,
+    buildShareString,
 
     // Constants (exposed for UI)
     FEEDBACK,

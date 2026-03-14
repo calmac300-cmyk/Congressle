@@ -8,7 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
 
@@ -27,6 +26,10 @@
     <div class="chamber-intro">
       <p class="lede">You will be shown a series of historic votes cast by a
       single member of Congress. Use the clues to deduce who they are.</p>
+    </div>
+
+    <div id="streak-display" class="streak-display hidden">
+      <!-- Populated by JS -->
     </div>
 
     <div class="chamber-select">
@@ -148,7 +151,37 @@
       <div id="gameover-votes" class="gameover-votes">
         <!-- Full voting record -->
       </div>
-      <button id="btn-play-other" class="btn-primary">Play <span id="other-chamber"></span></button>
+      <div class="gameover-actions">
+        <button id="btn-share" class="btn-share">Copy Result</button>
+        <button id="btn-play-other" class="btn-primary">Play <span id="other-chamber"></span></button>
+      </div>
+      <div id="share-confirm" class="share-confirm hidden">Copied to clipboard!</div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       SCREEN 4 — Already Played Today
+  ====================================================== -->
+  <div id="screen-already-played" class="screen">
+    <div class="already-played-wrap">
+      <div class="masthead" style="margin-bottom:1.5rem">
+        <div class="masthead-rule"></div>
+        <h1 class="masthead-title">The Congressional Record</h1>
+        <div class="masthead-rule"></div>
+      </div>
+      <div id="already-played-content" class="already-played-content">
+        <!-- Populated by JS -->
+      </div>
+      <div id="already-played-streak" class="already-played-streak">
+        <!-- Streak stats populated by JS -->
+      </div>
+      <button id="btn-already-share" class="btn-share" style="width:100%;margin-bottom:0.75rem">
+        Copy Result
+      </button>
+      <button id="btn-already-other" class="btn-primary">
+        Play <span id="already-other-chamber"></span>
+      </button>
+      <p class="already-played-hint">Come back tomorrow for a new puzzle.</p>
     </div>
   </div>
 
