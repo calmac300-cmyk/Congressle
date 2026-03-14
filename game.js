@@ -107,17 +107,64 @@ const CRGame = (() => {
   }
 
   // ----------------------------------------------------------
+  // localStorage persistence
+  // Saves and restores game state so a page refresh picks up
+  // where the player left off. Keyed by chamber + date so each
+  // day starts fresh automatically.
+  // ----------------------------------------------------------
+
+  function _saveKey(chamber) {
+    const d = new Date();
+    return `crg_${chamber}_${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
+  }
+
+  function _saveState() {
+    try {
+      const payload = {
+        chamber:       _chamber,
+        guesses:       _guesses,
+        revealedVotes: _revealedVotes,
+        gameOver:      _gameOver,
+        won:           _won,
+      };
+      localStorage.setItem(_saveKey(_chamber), JSON.stringify(payload));
+    } catch (e) {
+      // localStorage unavailable — silently skip
+    }
+  }
+
+  function _loadSavedState(chamber) {
+    try {
+      const raw = localStorage.getItem(_saveKey(chamber));
+      return raw ? JSON.parse(raw) : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  // ----------------------------------------------------------
   // Game initialisation
   // Call this when the player picks a chamber.
   // ----------------------------------------------------------
 
   function startGame(chamber) {
-    _chamber       = chamber;
-    _target        = getDailyTarget(chamber);
-    _guesses       = [];
-    _gameOver      = false;
-    _won           = false;
-    _revealedVotes = Math.min(VOTES_INITIAL, Object.keys(_target.votes).length);
+    _chamber = chamber;
+    _target  = getDailyTarget(chamber);
+
+    // Try to restore today's saved session
+    const saved = _loadSavedState(chamber);
+    if (saved && saved.chamber === chamber) {
+      _guesses       = saved.guesses       || [];
+      _revealedVotes = saved.revealedVotes || Math.min(VOTES_INITIAL, Object.keys(_target.votes).length);
+      _gameOver      = saved.gameOver      || false;
+      _won           = saved.won           || false;
+    } else {
+      _guesses       = [];
+      _gameOver      = false;
+      _won           = false;
+      _revealedVotes = Math.min(VOTES_INITIAL, Object.keys(_target.votes).length);
+    }
+
     return getState();
   }
 
@@ -128,10 +175,11 @@ const CRGame = (() => {
   // ----------------------------------------------------------
 
   function _sortedVoteKeys(target) {
-    // Sort vote labels by the congress of the corresponding rollcall.
-    // targets.json doesn't store congress per vote label, so we sort
-    // alphabetically as a fallback — the UI can override with a
-    // date-aware sort once rollcall metadata is available.
+    // Use pre-computed interest order (most dissenting first) if available.
+    // Falls back to alphabetical if enrichment hasn't been run.
+    if (target.votes_sorted_by_interest && target.votes_sorted_by_interest.length > 0) {
+      return target.votes_sorted_by_interest;
+    }
     return Object.keys(target.votes).sort();
   }
 
@@ -303,6 +351,7 @@ const CRGame = (() => {
       }
     }
 
+    _saveState();
     return getState();
   }
 

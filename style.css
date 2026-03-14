@@ -724,6 +724,70 @@ body {
   margin-top: 0.25rem;
 }
 
+.revealing-vote {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--parchment-2);
+  border-left: 3px solid var(--accent-2);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.revealing-vote-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-2);
+  margin-bottom: 0.2rem;
+}
+
+.revealing-vote-name {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.revealing-vote-stat {
+  font-size: 0.82rem;
+  color: var(--ink-light);
+  font-style: italic;
+}
+
+.revealing-vote {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rule);
+}
+
+.revealing-vote-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.revealing-vote-name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.revealing-vote-stat {
+  font-size: 0.85rem;
+  color: var(--ink-light);
+  font-style: italic;
+  margin-top: 0.2rem;
+}
+
 .gameover-votes {
   background: var(--parchment-2);
   border: 1px solid var(--rule);

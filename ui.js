@@ -22,6 +22,23 @@
   document.getElementById('today-date').textContent =
     new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 
+  // Check if there's a saved session from today and restore it
+  const d = new Date();
+  const dateKey = `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
+  for (const chamber of ['Senate', 'House']) {
+    try {
+      const saved = localStorage.getItem(`crg_${chamber}_${dateKey}`);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (parsed.guesses && parsed.guesses.length > 0) {
+          // Restore this session silently
+          await initGame(chamber);
+          return;
+        }
+      }
+    } catch(e) {}
+  }
+
   // ----------------------------------------------------------
   // Screen management
   // ----------------------------------------------------------
@@ -75,11 +92,22 @@
     selectedLegislator = null;
 
     renderVotes(state);
+
+    // If game was already in progress or over, restore the full UI
+    if (state.guessCount > 0) {
+      renderGuesses(state);
+    }
+
     showScreen('screen-game');
 
     // Init map (only once)
     if (!map) await initMap();
     updateMap();
+
+    // If already game over, jump straight to reveal
+    if (state.gameOver) {
+      setTimeout(() => showGameOver(state), 300);
+    }
   }
 
   // ----------------------------------------------------------
@@ -424,12 +452,56 @@
       : `<div class="gameover-headline">Not quite.</div>
          <div class="gameover-sub">Better luck tomorrow.</div>`;
 
+    // Most revealing vote — highest dissent score
+    const revealingLabel = target.most_revealing_vote;
+    let revealingHtml = '';
+    if (revealingLabel && target.vote_party_context) {
+      const ctx         = target.vote_party_context[revealingLabel] || {};
+      const displayName = (target.vote_display_names || {})[revealingLabel] || revealingLabel;
+      const cast        = target.votes[revealingLabel];
+      const partyName   = shortParty(target.party);
+      const p_yea       = ctx.party_yea || 0;
+      const p_nay       = ctx.party_nay || 0;
+      const t_yea       = ctx.yea_total || 0;
+      const t_nay       = ctx.nay_total || 0;
+      const partyTotal  = p_yea + p_nay;
+      const chamberTotal= t_yea + t_nay;
+
+      // Build the "one of only X" stat
+      let statParts = [];
+      if (partyTotal > 0) {
+        const partyAgainst = cast === 'Yea' ? p_nay : p_yea;
+        const partyWith    = cast === 'Yea' ? p_yea : p_nay;
+        if (partyWith < partyAgainst) {
+          statParts.push(`One of only ${partyWith} ${partyName}s to vote ${cast} (${partyAgainst} voted ${cast === 'Yea' ? 'Nay' : 'Yea'})`);
+        }
+      }
+      if (chamberTotal > 0) {
+        const totalAgainst = cast === 'Yea' ? t_nay : t_yea;
+        const totalWith    = cast === 'Yea' ? t_yea : t_nay;
+        if (totalWith < totalAgainst) {
+          statParts.push(`${totalWith} of ${chamberTotal} total ${target.chamber} members voted ${cast}`);
+        }
+      }
+
+      if (statParts.length > 0) {
+        revealingHtml = `
+          <div class="revealing-vote">
+            <div class="revealing-vote-label">Most revealing vote</div>
+            <div class="revealing-vote-name">${displayName}: <span class="vote-result ${cast.toLowerCase()}">${cast}</span></div>
+            <div class="revealing-vote-stat">${statParts.join(' · ')}</div>
+          </div>
+        `;
+      }
+    }
+
     tDiv.innerHTML = `
       <div class="gameover-target-name">${formatName(target.name)}</div>
       <div class="gameover-target-meta">
         ${target.chamber} · ${target.state} · ${shortParty(target.party)} ·
         ${CRGame.tenureString(target)}
       </div>
+      ${revealingHtml}
     `;
 
     // Full voting record
