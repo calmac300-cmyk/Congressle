@@ -572,8 +572,7 @@ const CRGame = (() => {
 
     lines.push('');
     lines.push('https://calmac300-cmyk.github.io/Congressle/');
-    return lines.join('
-');
+    return lines.join('\n');
   }
 
   // ----------------------------------------------------------
