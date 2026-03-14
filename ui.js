@@ -312,9 +312,18 @@
       if (current) current.classList.remove('selected');
       items[Math.max(idx - 1, 0)]?.classList.add('selected');
     } else if (e.key === 'Enter') {
+      e.preventDefault();
       const sel = dropdown.querySelector('.dropdown-item.selected');
-      if (sel) sel.click();
-      else if (!btnSubmit.disabled) handleSubmit();
+      if (sel) {
+        // Confirm highlighted dropdown item
+        sel.click();
+      } else if (items.length > 0 && !selectedLegislator) {
+        // Auto-select first result if dropdown is open
+        items[0].click();
+      } else if (!btnSubmit.disabled) {
+        // Submit if a legislator is already selected
+        handleSubmit();
+      }
     } else if (e.key === 'Escape') {
       dropdown.classList.add('hidden');
     }
