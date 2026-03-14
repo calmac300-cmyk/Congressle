@@ -77,7 +77,10 @@
         <span class="game-title">The Congressional Record</span>
         <span id="chamber-badge" class="chamber-badge"></span>
       </div>
-      <span id="guess-counter" class="guess-counter">0 / 6</span>
+      <div class="header-right">
+        <span id="guess-counter" class="guess-counter">0 / 6</span>
+        <button id="btn-help" class="btn-ghost btn-help-icon" aria-label="Help">?</button>
+      </div>
     </header>
 
     <div class="game-layout">
@@ -187,6 +190,69 @@
 
   <!-- Tooltip for map hover -->
   <div id="map-tooltip" class="map-tooltip hidden"></div>
+
+  <!-- ======================================================
+       Help / About Modal
+  ====================================================== -->
+  <div id="modal-help" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="modal-title">How to Play</h2>
+        <button id="btn-modal-close" class="modal-close" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+
+        <div class="modal-section">
+          <p>Each day a mystery member of Congress is chosen. You are shown a selection of their historic votes and must identify who they are in <strong>6 guesses</strong>.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3 class="modal-section-title">Feedback Tiles</h3>
+          <div class="modal-tile-row">
+            <span class="tile green">WV</span>
+            <span class="modal-tile-desc"><strong>Green</strong> — exact match</span>
+          </div>
+          <div class="modal-tile-row">
+            <span class="tile yellow">NE</span>
+            <span class="modal-tile-desc"><strong>Yellow</strong> — same region, wrong state · or era within 8 years</span>
+          </div>
+          <div class="modal-tile-row">
+            <span class="tile grey">CA</span>
+            <span class="modal-tile-desc"><strong>Grey</strong> — no match</span>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h3 class="modal-section-title">Categories</h3>
+          <ul class="modal-list">
+            <li><strong>State</strong> — the state they represented</li>
+            <li><strong>Region</strong> — Census region (Northeast / South / Midwest / West)</li>
+            <li><strong>Party</strong> — their party affiliation</li>
+            <li><strong>Chamber</strong> — Senate or House</li>
+            <li><strong>Era</strong> — their years in Congress. An arrow (↑ later / ↓ earlier) shows which direction to guess</li>
+            <li><strong>Votes</strong> — one tile per visible vote. Green = same vote, Yellow = both present but opposite sides, Grey = not in office or absent</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h3 class="modal-section-title">Vote Clues</h3>
+          <p>You start with <strong>3 votes</strong>. A new vote is revealed with each wrong guess. Hover over any vote name to read a description of what the vote was about.</p>
+        </div>
+
+        <div class="modal-section">
+          <h3 class="modal-section-title">Difficulty</h3>
+          <p><strong>Senate</strong> puzzles feature well-known long-serving senators. <strong>House</strong> puzzles draw from a larger pool and district geography plays a bigger role.</p>
+        </div>
+
+        <div class="modal-section modal-about">
+          <h3 class="modal-section-title">About</h3>
+          <p>The Congressional Record is a daily deduction game built on historic U.S. roll-call vote data from <a href="https://voteview.com" target="_blank" rel="noopener">Voteview</a> (UCLA) and district boundaries from <a href="https://cdmaps.polisci.ucla.edu" target="_blank" rel="noopener">cdmaps</a>.</p>
+          <p style="margin-top:0.5rem">A new puzzle is available each day at midnight UTC.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
   <!-- Loading overlay -->
   <div id="loading" class="loading-overlay">

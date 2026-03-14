@@ -108,6 +108,31 @@
   });
 
   // ----------------------------------------------------------
+  // Help / About Modal
+  // ----------------------------------------------------------
+  const modalHelp  = document.getElementById('modal-help');
+
+  document.getElementById('btn-help').addEventListener('click', () => {
+    modalHelp.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  });
+
+  document.getElementById('btn-modal-close').addEventListener('click', closeModal);
+
+  modalHelp.addEventListener('click', e => {
+    if (e.target === modalHelp) closeModal();
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  function closeModal() {
+    modalHelp.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  // ----------------------------------------------------------
   // Game initialisation
   // ----------------------------------------------------------
   let map = null;
@@ -171,7 +196,7 @@
       const desc        = _targetDescriptions[label]  || '';
       const displayName = _targetDisplayNames[label] || label;
       row.innerHTML = `
-        <span class="vote-label ${desc ? 'has-tooltip' : ''}" data-desc="${desc}">${displayName}</span>
+        <span class="vote-label ${desc ? 'has-tooltip' : ''}" data-desc="${desc}" data-label="${label}">${displayName}</span>
         <span class="vote-result ${cls}">${result}</span>
       `;
       list.appendChild(row);
@@ -180,8 +205,14 @@
     // Bind tooltip events on vote labels
     list.querySelectorAll('.vote-label.has-tooltip').forEach(el => {
       el.addEventListener('mouseenter', e => {
-        const tooltip = document.getElementById('map-tooltip');
-        tooltip.innerHTML = `<div class="map-tooltip-title">Vote Description</div>${el.dataset.desc}`;
+        const tooltip   = document.getElementById('map-tooltip');
+        const label     = el.dataset.label || '';
+        const votePhoto = CRGame.getVotePhoto(label);
+        const photoHtml = votePhoto.photo_url
+          ? '<img src="' + votePhoto.photo_url + '" alt="' + label + '" class="tooltip-bill-photo" onerror="this.style.display=\'none\'">'
+          + (votePhoto.caption ? '<div class="tooltip-bill-caption">' + votePhoto.caption + '</div>' : '')
+          : '';
+        tooltip.innerHTML = '<div class="map-tooltip-title">Vote Description</div>' + photoHtml + el.dataset.desc;
         tooltip.classList.remove('hidden');
         moveTooltip(e);
       });
@@ -370,8 +401,9 @@
   // ----------------------------------------------------------
   async function initMap() {
     map = L.map('map', {
-      center: [39, -98],
-      zoom: 4,
+      center: [38, -96],
+      zoom: 3.5,
+      zoomSnap: 0.5,
       zoomControl: true,
       scrollWheelZoom: false,
       attributionControl: false,
@@ -599,11 +631,25 @@
       }
     }
 
+    const photoHtml = target.photo_url
+      ? `<img src="${target.photo_url}" alt="${formatName(target.name)}"
+              class="legislator-photo"
+              onerror="this.style.display='none'">`
+      : '';
+
     tDiv.innerHTML = `
-      <div class="gameover-target-name">${formatName(target.name)}</div>
-      <div class="gameover-target-meta">
-        ${target.chamber} · ${target.state} · ${shortParty(target.party)} ·
-        ${CRGame.tenureString(target)}
+      <div class="gameover-target-header">
+        ${photoHtml}
+        <div class="gameover-target-info">
+          <div class="gameover-target-name">
+            <a href="https://en.wikipedia.org/wiki/${encodeURIComponent(formatName(target.name))}"
+               target="_blank" rel="noopener" class="wiki-link">${formatName(target.name)}</a>
+          </div>
+          <div class="gameover-target-meta">
+            ${target.chamber} · ${target.state} · ${shortParty(target.party)} ·
+            ${CRGame.tenureString(target)}
+          </div>
+        </div>
       </div>
       ${revealingHtml}
     `;
@@ -639,11 +685,6 @@
         document.getElementById('map-tooltip').classList.add('hidden');
       });
     });
-
-    // Wikipedia link on target name
-    tDiv.querySelector('.gameover-target-name').innerHTML =
-      `<a href="https://en.wikipedia.org/wiki/${encodeURIComponent(formatName(target.name))}"
-          target="_blank" rel="noopener" class="wiki-link">${formatName(target.name)}</a>`;
 
     // Share button
     const shareBtn = document.getElementById('btn-share');

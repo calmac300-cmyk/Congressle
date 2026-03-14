@@ -63,8 +63,9 @@ const CRGame = (() => {
   // State
   // ----------------------------------------------------------
 
-  let _allTargets   = { Senate: [], House: [] };  // loaded from targets.json
-  let _allLegislators = [];                        // loaded from legislators.json (full pool for search)
+  let _allTargets     = { Senate: [], House: [] };  // loaded from targets.json
+  let _allLegislators = [];                         // loaded from legislators.json (full pool for search)
+  let _votePhotos     = {};                         // loaded from vote_photos.json
   let _chamber      = null;   // 'Senate' | 'House' — chosen by player
   let _target       = null;   // the day's target legislator object
   let _guesses      = [];     // array of guess result objects
@@ -77,12 +78,18 @@ const CRGame = (() => {
   // ----------------------------------------------------------
 
   async function loadData() {
-    const [targetsRes, legislatorsRes] = await Promise.all([
+    const [targetsRes, legislatorsRes, photosRes] = await Promise.all([
       fetch('data/targets.json'),
       fetch('data/legislators.json'),
+      fetch('data/vote_photos.json'),
     ]);
     _allTargets     = await targetsRes.json();
     _allLegislators = await legislatorsRes.json();
+    _votePhotos     = await photosRes.json();
+  }
+
+  function getVotePhoto(label) {
+    return _votePhotos[label] || { photo_url: '', caption: '' };
   }
 
   // ----------------------------------------------------------
@@ -609,6 +616,9 @@ const CRGame = (() => {
     recordResult,
     getStreak,
     buildShareString,
+
+    // Photos
+    getVotePhoto,
 
     // Constants (exposed for UI)
     FEEDBACK,

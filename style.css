@@ -995,3 +995,332 @@ body {
   font-style: italic;
   margin-top: 0.25rem;
 }
+
+/* ----------------------------------------------------------
+   Legislator Photo (game over screen)
+---------------------------------------------------------- */
+.gameover-target-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.legislator-photo {
+  width: 90px;
+  height: 110px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: var(--radius);
+  border: 1px solid var(--rule);
+  flex-shrink: 0;
+}
+
+.gameover-target-info {
+  flex: 1;
+}
+
+/* ----------------------------------------------------------
+   Bill Photo (vote tooltip)
+---------------------------------------------------------- */
+.tooltip-bill-photo {
+  width: 100%;
+  max-height: 140px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.tooltip-bill-caption {
+  font-size: 0.68rem;
+  color: var(--parchment-3);
+  font-style: italic;
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+}
+
+/* ----------------------------------------------------------
+   Mobile Layout
+---------------------------------------------------------- */
+@media (max-width: 768px) {
+
+  /* Game layout stacks vertically */
+  .game-layout {
+    grid-template-columns: 1fr;
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  /* Map moves below guesses on mobile */
+  .game-right {
+    order: 3;
+  }
+
+  .game-left {
+    order: 1;
+  }
+
+  /* Smaller map on mobile */
+  .map-container {
+    height: 220px;
+  }
+
+  /* Header tightens up */
+  .game-header {
+    padding: 0.6rem 0.75rem;
+  }
+
+  .game-title {
+    font-size: 0.9rem;
+  }
+
+  .btn-ghost {
+    font-size: 0.68rem;
+  }
+
+  /* Chamber select adjustments */
+  #screen-chamber {
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .masthead-title {
+    font-size: clamp(1.8rem, 8vw, 3.6rem);
+  }
+
+  .chamber-buttons {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .chamber-btn {
+    padding: 1rem 0.75rem;
+  }
+
+  .chamber-name {
+    font-size: 1.1rem;
+  }
+
+  /* Guess tiles wrap more gracefully */
+  .guess-tiles {
+    gap: 0.25rem;
+  }
+
+  .guess-tile-value {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.35rem;
+  }
+
+  .guess-tile-label {
+    font-size: 0.52rem;
+  }
+
+  /* Vote rows tighten */
+  .vote-label {
+    font-size: 0.8rem;
+  }
+
+  /* Legislator photo smaller on mobile */
+  .legislator-photo {
+    width: 70px;
+    height: 86px;
+  }
+
+  /* Game over screens */
+  #screen-gameover,
+  #screen-already-played {
+    padding: 1.25rem 1rem 2rem;
+  }
+
+  .gameover-target-name,
+  .gameover-headline {
+    font-size: 1.4rem;
+  }
+
+  /* Streak stats */
+  .streak-num {
+    font-size: 1.3rem;
+  }
+
+  /* Tooltip stays readable but doesn't overflow */
+  .map-tooltip {
+    max-width: min(380px, calc(100vw - 2rem));
+    font-size: 0.75rem;
+  }
+
+  /* Search dropdown full width */
+  .search-dropdown {
+    max-height: 180px;
+  }
+
+  /* How to play tightens */
+  .htp-list {
+    font-size: 0.85rem;
+  }
+
+  .htp-legend {
+    font-size: 0.75rem;
+    gap: 0.3rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 380px) {
+  .chamber-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .streak-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .guess-tiles {
+    gap: 0.2rem;
+  }
+}
+
+/* ----------------------------------------------------------
+   Help / About Modal
+---------------------------------------------------------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 18, 8, 0.65);
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal {
+  background: var(--parchment);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  width: 100%;
+  max-width: 520px;
+  max-height: 88vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 1.25rem 0.9rem;
+  border-bottom: 2px solid var(--rule);
+  background: var(--ink);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.modal-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--parchment);
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: var(--parchment-3);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  border-radius: var(--radius);
+  transition: color 0.15s;
+  line-height: 1;
+}
+.modal-close:hover { color: var(--parchment); }
+
+.modal-body {
+  padding: 1.1rem 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.modal-section {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--ink-light);
+}
+
+.modal-section-title {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.modal-tile-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.modal-tile-desc {
+  font-size: 0.85rem;
+  color: var(--ink-light);
+}
+
+.modal-list {
+  padding-left: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.modal-about {
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rule);
+}
+
+.modal-about a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.modal-about a:hover {
+  text-decoration: underline;
+}
+
+/* Help button in header */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn-help-icon {
+  font-size: 0.9rem;
+  font-weight: 700;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid var(--parchment-3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: var(--parchment-3);
+  transition: all 0.15s;
+}
+.btn-help-icon:hover {
+  color: var(--accent-2);
+  border-color: var(--accent-2);
+}
+
+@media (max-width: 768px) {
+  .modal {
+    max-height: 92vh;
+  }
+  .modal-body {
+    padding: 0.9rem 1rem 1.25rem;
+  }
+}
