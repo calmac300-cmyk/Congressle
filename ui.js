@@ -297,8 +297,8 @@
   // ----------------------------------------------------------
   async function initMap() {
     map = L.map('map', {
-      center: [38, -96],
-      zoom: 3,
+      center: [39, -98],
+      zoom: 4,
       zoomControl: true,
       scrollWheelZoom: false,
       attributionControl: false,
@@ -371,10 +371,12 @@
       const tooltip = document.getElementById('map-tooltip');
       tooltip.innerHTML = `
         <div class="map-tooltip-title">${name}</div>
-        ${candidates.map(c => `<div>${formatName(c.name)}</div>`).join('')}
-        ${CRGame.getViableCandidates().filter(l => l.state === abbr).length > 8
-          ? `<div style="opacity:0.6;font-style:italic">+${CRGame.getViableCandidates().filter(l => l.state === abbr).length - 8} more…</div>`
-          : ''}
+        <ul class="tooltip-candidates">
+          ${candidates.map(c => `<li>${formatName(c.name)}</li>`).join('')}
+          ${CRGame.getViableCandidates().filter(l => l.state === abbr).length > 8
+            ? `<li class="tooltip-more">+${CRGame.getViableCandidates().filter(l => l.state === abbr).length - 8} more…</li>`
+            : ''}
+        </ul>
       `;
       tooltip.classList.remove('hidden');
       moveTooltip(e.originalEvent);
