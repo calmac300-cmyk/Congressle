@@ -55,10 +55,11 @@
   async function initGame(chamber) {
     const state = CRGame.startGame(chamber);
 
-    // Pre-load vote descriptions for this target so tooltips work
+    // Pre-load vote display names and summaries for this target
     // without exposing the target identity
     const dailyTarget = CRGame.getDailyTarget(chamber);
-    _targetDescriptions = dailyTarget ? (dailyTarget.vote_descriptions || {}) : {};
+    _targetDescriptions  = dailyTarget ? (dailyTarget.vote_summaries      || {}) : {};
+    _targetDisplayNames  = dailyTarget ? (dailyTarget.vote_display_names  || {}) : {};
 
     // Header
     document.getElementById('chamber-badge').textContent = chamber;
@@ -94,9 +95,10 @@
       const row = document.createElement('div');
       row.className = 'vote-row';
       const cls = result === 'Yea' ? 'yea' : result === 'Nay' ? 'nay' : 'absent';
-      const desc = _targetDescriptions[label] || '';
+      const desc        = _targetDescriptions[label]  || '';
+      const displayName = _targetDisplayNames[label] || label;
       row.innerHTML = `
-        <span class="vote-label ${desc ? 'has-tooltip' : ''}" data-desc="${desc}">${label}</span>
+        <span class="vote-label ${desc ? 'has-tooltip' : ''}" data-desc="${desc}">${displayName}</span>
         <span class="vote-result ${cls}">${result}</span>
       `;
       list.appendChild(row);
@@ -127,9 +129,10 @@
     }
   }
 
-  // Stores vote descriptions for the current target so renderVotes can access them
+  // Stores vote descriptions and display names for the current target
   // without exposing the target itself before game over
   let _targetDescriptions = {};
+  let _targetDisplayNames = {};
 
   // ----------------------------------------------------------
   // Fuzzy search & dropdown
@@ -283,10 +286,10 @@
   }
 
   function voteTile({ label, guessVote, feedback }) {
-    const display = guessVote || 'N/A';
-    // Truncate long vote labels for the tile
-    const short = label.length > 28 ? label.slice(0, 26) + '…' : label;
-    return `<span class="vote-tile ${feedback}" title="${label}: ${display}">${short}</span>`;
+    const display     = guessVote || 'N/A';
+    const displayName = _targetDisplayNames[label] || label;
+    const short       = displayName.length > 30 ? displayName.slice(0, 28) + '…' : displayName;
+    return `<span class="vote-tile ${feedback}" title="${displayName}: ${display}">${short}</span>`;
   }
 
   // ----------------------------------------------------------
@@ -433,14 +436,31 @@
       <div class="gameover-votes-title">Complete Voting Record (${allVotes.length} votes)</div>
       <div class="votes-list">
         ${allVotes.map(([label, result]) => {
-          const cls = result === 'Yea' ? 'yea' : result === 'Nay' ? 'nay' : 'absent';
-          return `<div class="vote-row">
-            <span class="vote-label">${label}</span>
+          const cls         = result === 'Yea' ? 'yea' : result === 'Nay' ? 'nay' : 'absent';
+          const displayName = (target.vote_display_names || {})[label] || label;
+          const summary     = (target.vote_summaries     || {})[label] || '';
+          return `<div class="vote-row ${summary ? 'has-tooltip' : ''}"
+                       data-desc="${summary}">
+            <span class="vote-label">${displayName}</span>
             <span class="vote-result ${cls}">${result}</span>
           </div>`;
         }).join('')}
       </div>
     `;
+
+    // Bind tooltips on game over vote rows
+    vDiv.querySelectorAll('.vote-row.has-tooltip').forEach(el => {
+      el.addEventListener('mouseenter', e => {
+        const tooltip = document.getElementById('map-tooltip');
+        tooltip.innerHTML = \`<div class="map-tooltip-title">About this vote</div>\${el.dataset.desc}\`;
+        tooltip.classList.remove('hidden');
+        moveTooltip(e);
+      });
+      el.addEventListener('mousemove', moveTooltip);
+      el.addEventListener('mouseleave', () => {
+        document.getElementById('map-tooltip').classList.add('hidden');
+      });
+    });
 
     const other = target.chamber === 'Senate' ? 'House' : 'Senate';
     document.getElementById('other-chamber').textContent = other;
