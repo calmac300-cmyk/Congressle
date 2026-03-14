@@ -30,7 +30,28 @@
         "Lewis Strauss Commerce Secretary": "Nay",
         "Welfare and Medicaid Reform Act": "Yea"
       },
-      "vote_count": 19
+      "vote_count": 19,
+      "vote_descriptions": {
+        "Affordable Health Care for America": "Affordable Health Care for America Act",
+        "Authorization of Force Against Iraq   1991": "TO AUTHORIZE THE USE OF UNITED STATES ARMED FORCES PURSUANT TO UNITED NATIONS SECURITY COUNCIL RESOLUTION 678",
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Defense of Marriage Act": "Defense of Marriage Act",
+        "Gramm Rudman Hollings Deficit Act 1985": "TO ADOPT THE CONFERENCE REPORT ON H.J. RES 372, RAISING THE STATUTORY LIMIT ON THE PUBLIC DEBT TO $2.079 TRILLION, AND REQUIRING AN ANNUAL DECLINE IN THE PUBLIC DEBT BEGINNING IN 1986 WHICH RESULTS IN A BALANCED BUDGET BY 1991.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "Iraq War Resolution   2002": "To Authorize the Use of United States Armed Forces Against Iraq",
+        "NAFTA": "A bill to implement the North American Free Trade Agreement.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Patriot Act": "To deter and punish terrorist acts in the United States and around the world",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
+        "Airline Degregulation   1978": "TO PASS S. 2493.",
+        "Confirm Robert Bork": "TO CONFIRM THE NOMINATION OF ROBERT H. BORK, OF THE DISTRICT OF COLUMBIA, TO BE AN ASSOCIATE JUSTICE OF THE SUPREME COURT.",
+        "Impeaching Bill Clinton": "A resolution impeaching William Jefferson Clinton, President of the United States, for high crimes and misdemeanors.",
+        "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE.",
+        "Welfare and Medicaid Reform Act": "A bill to provide for reconciliation pursuant to section 201(a)(1) of the concurrent resolution on the budget for fiscal year 1997."
+      }
     },
     {
       "icpsr": "4812",
@@ -59,7 +80,25 @@
         "Impeaching Bill Clinton": "Nay",
         "Welfare and Medicaid Reform Act": "Absent"
       },
-      "vote_count": 16
+      "vote_count": 16,
+      "vote_descriptions": {
+        "Affordable Health Care for America": "Affordable Health Care for America Act",
+        "Authorization of Force Against Iraq   1991": "TO AUTHORIZE THE USE OF UNITED STATES ARMED FORCES PURSUANT TO UNITED NATIONS SECURITY COUNCIL RESOLUTION 678",
+        "Defense of Marriage Act": "Defense of Marriage Act",
+        "Gramm Rudman Hollings Deficit Act 1985": "TO ADOPT THE CONFERENCE REPORT ON H.J. RES 372, RAISING THE STATUTORY LIMIT ON THE PUBLIC DEBT TO $2.079 TRILLION, AND REQUIRING AN ANNUAL DECLINE IN THE PUBLIC DEBT BEGINNING IN 1986 WHICH RESULTS IN A BALANCED BUDGET BY 1991.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "Iraq War Resolution   2002": "To Authorize the Use of United States Armed Forces Against Iraq",
+        "NAFTA": "A bill to implement the North American Free Trade Agreement.",
+        "Patriot Act": "To deter and punish terrorist acts in the United States and around the world",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
+        "Airline Degregulation   1978": "TO PASS S. 2493.",
+        "Confirm Robert Bork": "TO CONFIRM THE NOMINATION OF ROBERT H. BORK, OF THE DISTRICT OF COLUMBIA, TO BE AN ASSOCIATE JUSTICE OF THE SUPREME COURT.",
+        "Impeaching Bill Clinton": "A resolution impeaching William Jefferson Clinton, President of the United States, for high crimes and misdemeanors.",
+        "Welfare and Medicaid Reform Act": "A bill to provide for reconciliation pursuant to section 201(a)(1) of the concurrent resolution on the budget for fiscal year 1997."
+      }
     },
     {
       "icpsr": "4227",
@@ -87,7 +126,24 @@
         "McCarthy Censure": "Yea",
         "Taft Hartley   Veto": "Nay"
       },
-      "vote_count": 15
+      "vote_count": 15,
+      "vote_descriptions": {
+        "AGRICULTURAL ADJUSTMENT ACT": "TO CONCUR IN A SENATE AMENDMENT TO H.R. 8492 (P.A. 320), A BILL AMENDING THE AGRICULTURAL ADJUSTMENT ACT, SAID AMENDMENT ADDING POTATOES TO THE ACT'S PROVISIONS",
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Federal Reserve Act": "TO AGREE TO CONFERENCE REPORT #163 ON H. R. 7837, WHICH PROVIDES THAT THE HOUSE RECEDE FROM ITS DISAGREEMENT TO THE SENATE AMENDMENT AND AGREE TO THE SAME WITH AN AMENDMENT THAT THE SHORT TITLE OF THIS ACT SHALL BE THE \"FEDERAL RESERVE ACT.\"  (P.1430-2, 1439-1)",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration Act   1924": "TO PASS H.R. 7995.  (P. 6257-1)",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "Lend Lease Act": "TO PASS H.R. 4050, DEFENSE AID SUPPLEMENTAL APPROPRIATION BILL, 1941, (APPROPRIATION FOR LEND-LEASE).",
+        "McCarran Internal Security Act 1950": "HR 9490.  PROTECT THE U.S. AGAINST CERTAIN UNAMERICAN AND SUBVERSIVE ACTIVITES BY REQUIREING REGISTRATION OF COMMUNIST ORGANIZATIONS.  ADOPTION OF CONFERENCE REPORT.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Volstead Act": "TO PASS H.R. 6810, OVER THE PRESIDENT'S VETO.  (P. 7610-2)",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "22nd Amendment": "H J RES 27.  PASSAGE.",
+        "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE.",
+        "McCarthy Censure": "S. RES. 301.  BENNETT AMEND. CONDEMNING MC CARTHY FOR MAKING CERTAIN CHARGES AGAINST MEMBERS OF THE SELECT COMMITTEE TO STUDY CENSURE AFTER THE COMMITTEE HAD ISSUED ITS REPORT.",
+        "Taft Hartley   Veto": "HR 3020.  PASSAGE OVER THE PRESIDENT'S VETO."
+      }
     },
     {
       "icpsr": "10808",
@@ -115,7 +171,24 @@
         "Impeaching Bill Clinton": "Nay",
         "Welfare and Medicaid Reform Act": "Nay"
       },
-      "vote_count": 15
+      "vote_count": 15,
+      "vote_descriptions": {
+        "Authorization of Force Against Iraq   1991": "TO AUTHORIZE THE USE OF UNITED STATES ARMED FORCES PURSUANT TO UNITED NATIONS SECURITY COUNCIL RESOLUTION 678",
+        "Defense of Marriage Act": "Defense of Marriage Act",
+        "Gramm Rudman Hollings Deficit Act 1985": "TO ADOPT THE CONFERENCE REPORT ON H.J. RES 372, RAISING THE STATUTORY LIMIT ON THE PUBLIC DEBT TO $2.079 TRILLION, AND REQUIRING AN ANNUAL DECLINE IN THE PUBLIC DEBT BEGINNING IN 1986 WHICH RESULTS IN A BALANCED BUDGET BY 1991.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "Iraq War Resolution   2002": "To Authorize the Use of United States Armed Forces Against Iraq",
+        "NAFTA": "A bill to implement the North American Free Trade Agreement.",
+        "Patriot Act": "To deter and punish terrorist acts in the United States and around the world",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
+        "Airline Degregulation   1978": "TO PASS S. 2493.",
+        "Confirm Robert Bork": "TO CONFIRM THE NOMINATION OF ROBERT H. BORK, OF THE DISTRICT OF COLUMBIA, TO BE AN ASSOCIATE JUSTICE OF THE SUPREME COURT.",
+        "Impeaching Bill Clinton": "A resolution impeaching William Jefferson Clinton, President of the United States, for high crimes and misdemeanors.",
+        "Welfare and Medicaid Reform Act": "A bill to provide for reconciliation pursuant to section 201(a)(1) of the concurrent resolution on the budget for fiscal year 1997."
+      }
     },
     {
       "icpsr": "9369",
@@ -143,7 +216,24 @@
         "Impeaching Bill Clinton": "Yea",
         "Welfare and Medicaid Reform Act": "Yea"
       },
-      "vote_count": 15
+      "vote_count": 15,
+      "vote_descriptions": {
+        "Authorization of Force Against Iraq   1991": "TO AUTHORIZE THE USE OF UNITED STATES ARMED FORCES PURSUANT TO UNITED NATIONS SECURITY COUNCIL RESOLUTION 678",
+        "Defense of Marriage Act": "Defense of Marriage Act",
+        "Gramm Rudman Hollings Deficit Act 1985": "TO ADOPT THE CONFERENCE REPORT ON H.J. RES 372, RAISING THE STATUTORY LIMIT ON THE PUBLIC DEBT TO $2.079 TRILLION, AND REQUIRING AN ANNUAL DECLINE IN THE PUBLIC DEBT BEGINNING IN 1986 WHICH RESULTS IN A BALANCED BUDGET BY 1991.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "Iraq War Resolution   2002": "To Authorize the Use of United States Armed Forces Against Iraq",
+        "NAFTA": "A bill to implement the North American Free Trade Agreement.",
+        "Patriot Act": "To deter and punish terrorist acts in the United States and around the world",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
+        "Airline Degregulation   1978": "TO PASS S. 2493.",
+        "Confirm Robert Bork": "TO CONFIRM THE NOMINATION OF ROBERT H. BORK, OF THE DISTRICT OF COLUMBIA, TO BE AN ASSOCIATE JUSTICE OF THE SUPREME COURT.",
+        "Impeaching Bill Clinton": "A resolution impeaching William Jefferson Clinton, President of the United States, for high crimes and misdemeanors.",
+        "Welfare and Medicaid Reform Act": "A bill to provide for reconciliation pursuant to section 201(a)(1) of the concurrent resolution on the budget for fiscal year 1997."
+      }
     },
     {
       "icpsr": "4418",
@@ -171,7 +261,24 @@
         "McCarthy Censure": "Yea",
         "Taft Hartley   Veto": "Nay"
       },
-      "vote_count": 15
+      "vote_count": 15,
+      "vote_descriptions": {
+        "AGRICULTURAL ADJUSTMENT ACT": "TO CONCUR IN A SENATE AMENDMENT TO H.R. 8492 (P.A. 320), A BILL AMENDING THE AGRICULTURAL ADJUSTMENT ACT, SAID AMENDMENT ADDING POTATOES TO THE ACT'S PROVISIONS",
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration Act   1924": "TO PASS H.R. 7995.  (P. 6257-1)",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "Lend Lease Act": "TO PASS H.R. 4050, DEFENSE AID SUPPLEMENTAL APPROPRIATION BILL, 1941, (APPROPRIATION FOR LEND-LEASE).",
+        "McCarran Internal Security Act 1950": "HR 9490.  PROTECT THE U.S. AGAINST CERTAIN UNAMERICAN AND SUBVERSIVE ACTIVITES BY REQUIREING REGISTRATION OF COMMUNIST ORGANIZATIONS.  ADOPTION OF CONFERENCE REPORT.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Smoot Hawley": "TO AGREE TO REPORT OF CONFERENCE COMMITTEE ON H.R. 2667.",
+        "TVA Creation": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 5081 (P.L. 17) A BILL CREATING THE TENN. VALLEY AUTHORITY AND PROVIDING FOR THE OPERATION OF THF THE MUSCLE SHOALS PROPERTIES.",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "22nd Amendment": "H J RES 27.  PASSAGE.",
+        "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE.",
+        "McCarthy Censure": "S. RES. 301.  BENNETT AMEND. CONDEMNING MC CARTHY FOR MAKING CERTAIN CHARGES AGAINST MEMBERS OF THE SELECT COMMITTEE TO STUDY CENSURE AFTER THE COMMITTEE HAD ISSUED ITS REPORT.",
+        "Taft Hartley   Veto": "HR 3020.  PASSAGE OVER THE PRESIDENT'S VETO."
+      }
     },
     {
       "icpsr": "4851",
@@ -197,7 +304,22 @@
         "Lewis Strauss Commerce Secretary": "Nay",
         "McCarthy Censure": "Yea"
       },
-      "vote_count": 13
+      "vote_count": 13,
+      "vote_descriptions": {
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "Lend Lease Act": "TO PASS H.R. 4050, DEFENSE AID SUPPLEMENTAL APPROPRIATION BILL, 1941, (APPROPRIATION FOR LEND-LEASE).",
+        "McCarran Internal Security Act 1950": "HR 9490.  PROTECT THE U.S. AGAINST CERTAIN UNAMERICAN AND SUBVERSIVE ACTIVITES BY REQUIREING REGISTRATION OF COMMUNIST ORGANIZATIONS.  ADOPTION OF CONFERENCE REPORT.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Taft Hartley": "HR 3020.  PASSAGE.",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
+        "Airline Degregulation   1978": "TO PASS S. 2493.",
+        "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE.",
+        "McCarthy Censure": "S. RES. 301.  BENNETT AMEND. CONDEMNING MC CARTHY FOR MAKING CERTAIN CHARGES AGAINST MEMBERS OF THE SELECT COMMITTEE TO STUDY CENSURE AFTER THE COMMITTEE HAD ISSUED ITS REPORT."
+      }
     },
     {
       "icpsr": "8883",
@@ -223,7 +345,22 @@
         "Lewis Strauss Commerce Secretary": "Yea",
         "McCarthy Censure": "Yea"
       },
-      "vote_count": 13
+      "vote_count": 13,
+      "vote_descriptions": {
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Gramm Rudman Hollings Deficit Act 1985": "TO ADOPT THE CONFERENCE REPORT ON H.J. RES 372, RAISING THE STATUTORY LIMIT ON THE PUBLIC DEBT TO $2.079 TRILLION, AND REQUIRING AN ANNUAL DECLINE IN THE PUBLIC DEBT BEGINNING IN 1986 WHICH RESULTS IN A BALANCED BUDGET BY 1991.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "McCarran Internal Security Act 1950": "HR 9490.  PROTECT THE U.S. AGAINST CERTAIN UNAMERICAN AND SUBVERSIVE ACTIVITES BY REQUIREING REGISTRATION OF COMMUNIST ORGANIZATIONS.  ADOPTION OF CONFERENCE REPORT.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
+        "Airline Degregulation   1978": "TO PASS S. 2493.",
+        "Confirm Robert Bork": "TO CONFIRM THE NOMINATION OF ROBERT H. BORK, OF THE DISTRICT OF COLUMBIA, TO BE AN ASSOCIATE JUSTICE OF THE SUPREME COURT.",
+        "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE.",
+        "McCarthy Censure": "S. RES. 301.  BENNETT AMEND. CONDEMNING MC CARTHY FOR MAKING CERTAIN CHARGES AGAINST MEMBERS OF THE SELECT COMMITTEE TO STUDY CENSURE AFTER THE COMMITTEE HAD ISSUED ITS REPORT."
+      }
     },
     {
       "icpsr": "14105",
@@ -248,7 +385,21 @@
         "Impeaching Bill Clinton": "Yea",
         "Welfare and Medicaid Reform Act": "Yea"
       },
-      "vote_count": 12
+      "vote_count": 12,
+      "vote_descriptions": {
+        "Authorization of Force Against Iraq   1991": "TO AUTHORIZE THE USE OF UNITED STATES ARMED FORCES PURSUANT TO UNITED NATIONS SECURITY COUNCIL RESOLUTION 678",
+        "Defense of Marriage Act": "Defense of Marriage Act",
+        "Gramm Rudman Hollings Deficit Act 1985": "TO ADOPT THE CONFERENCE REPORT ON H.J. RES 372, RAISING THE STATUTORY LIMIT ON THE PUBLIC DEBT TO $2.079 TRILLION, AND REQUIRING AN ANNUAL DECLINE IN THE PUBLIC DEBT BEGINNING IN 1986 WHICH RESULTS IN A BALANCED BUDGET BY 1991.",
+        "Iraq War Resolution   2002": "To Authorize the Use of United States Armed Forces Against Iraq",
+        "NAFTA": "A bill to implement the North American Free Trade Agreement.",
+        "Patriot Act": "To deter and punish terrorist acts in the United States and around the world",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
+        "Airline Degregulation   1978": "TO PASS S. 2493.",
+        "Confirm Robert Bork": "TO CONFIRM THE NOMINATION OF ROBERT H. BORK, OF THE DISTRICT OF COLUMBIA, TO BE AN ASSOCIATE JUSTICE OF THE SUPREME COURT.",
+        "Impeaching Bill Clinton": "A resolution impeaching William Jefferson Clinton, President of the United States, for high crimes and misdemeanors.",
+        "Welfare and Medicaid Reform Act": "A bill to provide for reconciliation pursuant to section 201(a)(1) of the concurrent resolution on the budget for fiscal year 1997."
+      }
     },
     {
       "icpsr": "4898",
@@ -272,7 +423,20 @@
         "Airline Degregulation   1978": "Yea",
         "Lewis Strauss Commerce Secretary": "Yea"
       },
-      "vote_count": 11
+      "vote_count": 11,
+      "vote_descriptions": {
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "McCarran Internal Security Act 1950": "HR 9490.  PROTECT THE U.S. AGAINST CERTAIN UNAMERICAN AND SUBVERSIVE ACTIVITES BY REQUIREING REGISTRATION OF COMMUNIST ORGANIZATIONS.  ADOPTION OF CONFERENCE REPORT.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Taft Hartley": "HR 3020.  PASSAGE.",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
+        "Airline Degregulation   1978": "TO PASS S. 2493.",
+        "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE."
+      }
     },
     {
       "icpsr": "1984",
@@ -289,7 +453,13 @@
         "Re Admit Southern States": "Yea",
         "Andrew Johnson Impeachment": "Yea"
       },
-      "vote_count": 4
+      "vote_count": 4,
+      "vote_descriptions": {
+        "Bland Allison Act": "TO CONCUR IN SENATE AMENDMENT TO H.R. 1093 SAID AMENDMENT STRIKING THE PROVISION PERMITTING THE COINAGE OF SILVER BULLION AT A U.S. MINT OR ASSAY OFFICE ON SAME TERMS AND CONDITIONS AS COINAGE OF GOLD BULLION.",
+        "Hold Jefferson Davis in Treason": "TO PASS A RESOLUTION PROVIDING THAT JEFFERSON DAVIS, LEADER OF THE LATE REBELLION, IS GUILTY OF TREASON AND WAS CHARGED BY PROCLAMATION OF PRESIDENT MAY 18, 1865, - RESOLVED THAT DAVIS BE HOLD IN CUSTODY AS A PRISONER, SUBJECT TO TRIAL ACCORDING TO LAWS.  (P. 3089)",
+        "Re Admit Southern States": "TO PASS H. R. 1058.",
+        "Andrew Johnson Impeachment": "TO ADOPT THE ORDER TO HAVE 11TH ARTICLE OF IMPEACHMENT READ FIRST, AND OTHER IN THE USUAL ORDER, THE QUESTION GUILTY OR NOT GUILTY BEING PUT ON EACH PART OF 11TH ARTICLE AND OTHER IN ORDER.  (P. 411-1)"
+      }
     },
     {
       "icpsr": "14101",
@@ -314,7 +484,21 @@
         "Impeaching Bill Clinton": "Nay",
         "Welfare and Medicaid Reform Act": "Yea"
       },
-      "vote_count": 12
+      "vote_count": 12,
+      "vote_descriptions": {
+        "Authorization of Force Against Iraq   1991": "TO AUTHORIZE THE USE OF UNITED STATES ARMED FORCES PURSUANT TO UNITED NATIONS SECURITY COUNCIL RESOLUTION 678",
+        "Defense of Marriage Act": "Defense of Marriage Act",
+        "Gramm Rudman Hollings Deficit Act 1985": "TO ADOPT THE CONFERENCE REPORT ON H.J. RES 372, RAISING THE STATUTORY LIMIT ON THE PUBLIC DEBT TO $2.079 TRILLION, AND REQUIRING AN ANNUAL DECLINE IN THE PUBLIC DEBT BEGINNING IN 1986 WHICH RESULTS IN A BALANCED BUDGET BY 1991.",
+        "Iraq War Resolution   2002": "To Authorize the Use of United States Armed Forces Against Iraq",
+        "NAFTA": "A bill to implement the North American Free Trade Agreement.",
+        "Patriot Act": "To deter and punish terrorist acts in the United States and around the world",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
+        "Airline Degregulation   1978": "TO PASS S. 2493.",
+        "Confirm Robert Bork": "TO CONFIRM THE NOMINATION OF ROBERT H. BORK, OF THE DISTRICT OF COLUMBIA, TO BE AN ASSOCIATE JUSTICE OF THE SUPREME COURT.",
+        "Impeaching Bill Clinton": "A resolution impeaching William Jefferson Clinton, President of the United States, for high crimes and misdemeanors.",
+        "Welfare and Medicaid Reform Act": "A bill to provide for reconciliation pursuant to section 201(a)(1) of the concurrent resolution on the budget for fiscal year 1997."
+      }
     },
     {
       "icpsr": "4979",
@@ -337,7 +521,19 @@
         "Lewis Strauss Commerce Secretary": "Nay",
         "McCarthy Censure": "Yea"
       },
-      "vote_count": 10
+      "vote_count": 10,
+      "vote_descriptions": {
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "Lend Lease Act": "TO PASS H.R. 4050, DEFENSE AID SUPPLEMENTAL APPROPRIATION BILL, 1941, (APPROPRIATION FOR LEND-LEASE).",
+        "McCarran Internal Security Act 1950": "HR 9490.  PROTECT THE U.S. AGAINST CERTAIN UNAMERICAN AND SUBVERSIVE ACTIVITES BY REQUIREING REGISTRATION OF COMMUNIST ORGANIZATIONS.  ADOPTION OF CONFERENCE REPORT.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Taft Hartley": "HR 3020.  PASSAGE.",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE.",
+        "McCarthy Censure": "S. RES. 301.  BENNETT AMEND. CONDEMNING MC CARTHY FOR MAKING CERTAIN CHARGES AGAINST MEMBERS OF THE SELECT COMMITTEE TO STUDY CENSURE AFTER THE COMMITTEE HAD ISSUED ITS REPORT."
+      }
     },
     {
       "icpsr": "3658",
@@ -358,7 +554,17 @@
         "Lewis Strauss Commerce Secretary": "Yea",
         "McCarthy Censure": "Nay"
       },
-      "vote_count": 8
+      "vote_count": 8,
+      "vote_descriptions": {
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Gramm Rudman Hollings Deficit Act 1985": "TO ADOPT THE CONFERENCE REPORT ON H.J. RES 372, RAISING THE STATUTORY LIMIT ON THE PUBLIC DEBT TO $2.079 TRILLION, AND REQUIRING AN ANNUAL DECLINE IN THE PUBLIC DEBT BEGINNING IN 1986 WHICH RESULTS IN A BALANCED BUDGET BY 1991.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
+        "Airline Degregulation   1978": "TO PASS S. 2493.",
+        "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE.",
+        "McCarthy Censure": "S. RES. 301.  BENNETT AMEND. CONDEMNING MC CARTHY FOR MAKING CERTAIN CHARGES AGAINST MEMBERS OF THE SELECT COMMITTEE TO STUDY CENSURE AFTER THE COMMITTEE HAD ISSUED ITS REPORT."
+      }
     },
     {
       "icpsr": "1721",
@@ -380,7 +586,18 @@
         "Airline Degregulation   1978": "Yea",
         "Lewis Strauss Commerce Secretary": "Nay"
       },
-      "vote_count": 9
+      "vote_count": 9,
+      "vote_descriptions": {
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
+        "Airline Degregulation   1978": "TO PASS S. 2493.",
+        "Lewis Strauss Commerce Secretary": "NOMINATION OF LEWIS STRAUSS AS SECRETARY OF COMMERCE."
+      }
     }
   ],
   "House": [
@@ -412,7 +629,26 @@
         "War Powers Act   1973": "Yea",
         "Welfare and Medicaid Reform Act   1996": "Nay"
       },
-      "vote_count": 17
+      "vote_count": 17,
+      "vote_descriptions": {
+        "Affordable Health Care for America": "Affordable Health Care for America Act",
+        "Airline Deregulation Act   1978": "TO AGREE TO THE CONFERENCE REPORT ON S. 2493, THE AIRLINE DEREGULATION ACT OF 1978.",
+        "Authorization of Force Against Iraq   1991": "TO AUTHORIZE THE USE OF UNITED STATES ARMED FORCES PURSUANT TO UNITED NATIONS SECURITY COUNCIL RESOLUTION 678",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": "Authorizing and directing the Committee on the Judiciary to investigate whether sufficient grounds exist for the impeachment of William Jefferson Clinton, President of the United States",
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Defense of Marriage Act": "Defense of Marriage Act",
+        "Designate MLK day as a National Holiday": "TO SUSPEND THE RULES AND PASS H.R. 5461, DESIGNATING THE BIRTHDAY OF MARTIN LUTHER KING, JR. A LEGAL PUBLIC HOLIDAY. (MOTION PASSED:2/3 REQUIRED)",
+        "Gramm Rudman Hollings Deficit Act 1985": "TO ADOPT THE CONFERENCE REPORT ON H.J. RES 372, RAISING THE STATUTORY LIMIT ON THE PUBLIC DEBT TO $2.079 TRILLION, AND REQUIRING AN ANNUAL DECLINE IN THE PUBLIC DEBT BEGINNING IN 1986 WHICH RESULTS IN A BALANCED BUDGET BY 1991.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "Iraq War Resolution   2002": "To Authorize the Use of United States Armed Forces Against Iraq",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Patriot Act": "To deter and punish terrorist acts in the United States and around the world",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
+        "Welfare and Medicaid Reform Act   1996": "Welfare and Medicaid Reform Act of 1996"
+      }
     },
     {
       "icpsr": "10713",
@@ -440,7 +676,24 @@
         "War Powers Act   1973": "Nay",
         "Welfare and Medicaid Reform Act   1996": "Nay"
       },
-      "vote_count": 15
+      "vote_count": 15,
+      "vote_descriptions": {
+        "Affordable Health Care for America": "Affordable Health Care for America Act",
+        "Airline Deregulation Act   1978": "TO AGREE TO THE CONFERENCE REPORT ON S. 2493, THE AIRLINE DEREGULATION ACT OF 1978.",
+        "Authorization of Force Against Iraq   1991": "TO AUTHORIZE THE USE OF UNITED STATES ARMED FORCES PURSUANT TO UNITED NATIONS SECURITY COUNCIL RESOLUTION 678",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": "Authorizing and directing the Committee on the Judiciary to investigate whether sufficient grounds exist for the impeachment of William Jefferson Clinton, President of the United States",
+        "Defense of Marriage Act": "Defense of Marriage Act",
+        "Designate MLK day as a National Holiday": "TO SUSPEND THE RULES AND PASS H.R. 5461, DESIGNATING THE BIRTHDAY OF MARTIN LUTHER KING, JR. A LEGAL PUBLIC HOLIDAY. (MOTION PASSED:2/3 REQUIRED)",
+        "Gramm Rudman Hollings Deficit Act 1985": "TO ADOPT THE CONFERENCE REPORT ON H.J. RES 372, RAISING THE STATUTORY LIMIT ON THE PUBLIC DEBT TO $2.079 TRILLION, AND REQUIRING AN ANNUAL DECLINE IN THE PUBLIC DEBT BEGINNING IN 1986 WHICH RESULTS IN A BALANCED BUDGET BY 1991.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "Iraq War Resolution   2002": "To Authorize the Use of United States Armed Forces Against Iraq",
+        "Patriot Act": "To deter and punish terrorist acts in the United States and around the world",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
+        "Welfare and Medicaid Reform Act   1996": "Welfare and Medicaid Reform Act of 1996"
+      }
     },
     {
       "icpsr": "10421",
@@ -468,7 +721,24 @@
         "War Powers Act   1973": "Yea",
         "Welfare and Medicaid Reform Act   1996": "Nay"
       },
-      "vote_count": 15
+      "vote_count": 15,
+      "vote_descriptions": {
+        "Airline Deregulation Act   1978": "TO AGREE TO THE CONFERENCE REPORT ON S. 2493, THE AIRLINE DEREGULATION ACT OF 1978.",
+        "Authorization of Force Against Iraq   1991": "TO AUTHORIZE THE USE OF UNITED STATES ARMED FORCES PURSUANT TO UNITED NATIONS SECURITY COUNCIL RESOLUTION 678",
+        "Authorizing a Comittie to Investigate Impeachment   Bill Clinton": "Authorizing and directing the Committee on the Judiciary to investigate whether sufficient grounds exist for the impeachment of William Jefferson Clinton, President of the United States",
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Defense of Marriage Act": "Defense of Marriage Act",
+        "Designate MLK day as a National Holiday": "TO SUSPEND THE RULES AND PASS H.R. 5461, DESIGNATING THE BIRTHDAY OF MARTIN LUTHER KING, JR. A LEGAL PUBLIC HOLIDAY. (MOTION PASSED:2/3 REQUIRED)",
+        "Gramm Rudman Hollings Deficit Act 1985": "TO ADOPT THE CONFERENCE REPORT ON H.J. RES 372, RAISING THE STATUTORY LIMIT ON THE PUBLIC DEBT TO $2.079 TRILLION, AND REQUIRING AN ANNUAL DECLINE IN THE PUBLIC DEBT BEGINNING IN 1986 WHICH RESULTS IN A BALANCED BUDGET BY 1991.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "McCarran Internal Security Act 1950": "HR 9490.  PROTECT THE U.S. AGAINST CERTAIN UNAMERICAN AND SUBVERSIVE ACTIVITES BY REQUIREING REGISTRATION OF COMMUNIST ORGANIZATIONS.  ADOPTION OF CONFERENCE REPORT.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
+        "Welfare and Medicaid Reform Act   1996": "Welfare and Medicaid Reform Act of 1996"
+      }
     },
     {
       "icpsr": "1611",
@@ -493,7 +763,21 @@
         "Taft Hartley": "Nay",
         "Voting Rights Act   1965": "Yea"
       },
-      "vote_count": 12
+      "vote_count": 12,
+      "vote_descriptions": {
+        "AGRICULTURAL ADJUSTMENT ACT": "TO CONCUR IN A SENATE AMENDMENT TO H.R. 8492 (P.A. 320), A BILL AMENDING THE AGRICULTURAL ADJUSTMENT ACT, SAID AMENDMENT ADDING POTATOES TO THE ACT'S PROVISIONS",
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration Act   1924": "TO PASS H.R. 7995.  (P. 6257-1)",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "Lend Lease Act": "TO PASS H.R. 4050, DEFENSE AID SUPPLEMENTAL APPROPRIATION BILL, 1941, (APPROPRIATION FOR LEND-LEASE).",
+        "McCarran Internal Security Act 1950": "HR 9490.  PROTECT THE U.S. AGAINST CERTAIN UNAMERICAN AND SUBVERSIVE ACTIVITES BY REQUIREING REGISTRATION OF COMMUNIST ORGANIZATIONS.  ADOPTION OF CONFERENCE REPORT.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Smoot Hawley": "TO AGREE TO REPORT OF CONFERENCE COMMITTEE ON H.R. 2667.",
+        "TVA Creation": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 5081 (P.L. 17) A BILL CREATING THE TENN. VALLEY AUTHORITY AND PROVIDING FOR THE OPERATION OF THF THE MUSCLE SHOALS PROPERTIES.",
+        "Taft Hartley": "HR 3020.  PASSAGE.",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT."
+      }
     },
     {
       "icpsr": "7232",
@@ -518,7 +802,21 @@
         "Voting Rights Act   1965": "Nay",
         "War Powers Act   1973": "Absent"
       },
-      "vote_count": 12
+      "vote_count": 12,
+      "vote_descriptions": {
+        "AGRICULTURAL ADJUSTMENT ACT": "TO CONCUR IN A SENATE AMENDMENT TO H.R. 8492 (P.A. 320), A BILL AMENDING THE AGRICULTURAL ADJUSTMENT ACT, SAID AMENDMENT ADDING POTATOES TO THE ACT'S PROVISIONS",
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "Lend Lease Act": "TO PASS H.R. 4050, DEFENSE AID SUPPLEMENTAL APPROPRIATION BILL, 1941, (APPROPRIATION FOR LEND-LEASE).",
+        "McCarran Internal Security Act 1950": "HR 9490.  PROTECT THE U.S. AGAINST CERTAIN UNAMERICAN AND SUBVERSIVE ACTIVITES BY REQUIREING REGISTRATION OF COMMUNIST ORGANIZATIONS.  ADOPTION OF CONFERENCE REPORT.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Smoot Hawley": "TO AGREE TO REPORT OF CONFERENCE COMMITTEE ON H.R. 2667.",
+        "TVA Creation": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 5081 (P.L. 17) A BILL CREATING THE TENN. VALLEY AUTHORITY AND PROVIDING FOR THE OPERATION OF THF THE MUSCLE SHOALS PROPERTIES.",
+        "Taft Hartley": "HR 3020.  PASSAGE.",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT."
+      }
     },
     {
       "icpsr": "7333",
@@ -543,7 +841,21 @@
         "22nd Amendment": "Nay",
         "Taft Hartley   Veto": "Nay"
       },
-      "vote_count": 12
+      "vote_count": 12,
+      "vote_descriptions": {
+        "Airline Deregulation Act   1978": "TO AGREE TO THE CONFERENCE REPORT ON S. 2493, THE AIRLINE DEREGULATION ACT OF 1978.",
+        "Designate MLK day as a National Holiday": "TO SUSPEND THE RULES AND PASS H.R. 5461, DESIGNATING THE BIRTHDAY OF MARTIN LUTHER KING, JR. A LEGAL PUBLIC HOLIDAY. (MOTION PASSED:2/3 REQUIRED)",
+        "Gramm Rudman Hollings Deficit Act 1985": "TO ADOPT THE CONFERENCE REPORT ON H.J. RES 372, RAISING THE STATUTORY LIMIT ON THE PUBLIC DEBT TO $2.079 TRILLION, AND REQUIRING AN ANNUAL DECLINE IN THE PUBLIC DEBT BEGINNING IN 1986 WHICH RESULTS IN A BALANCED BUDGET BY 1991.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "Lend Lease Act": "TO PASS H.R. 4050, DEFENSE AID SUPPLEMENTAL APPROPRIATION BILL, 1941, (APPROPRIATION FOR LEND-LEASE).",
+        "McCarran Internal Security Act 1950": "HR 9490.  PROTECT THE U.S. AGAINST CERTAIN UNAMERICAN AND SUBVERSIVE ACTIVITES BY REQUIREING REGISTRATION OF COMMUNIST ORGANIZATIONS.  ADOPTION OF CONFERENCE REPORT.",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT.",
+        "22nd Amendment": "H J RES 27.  PASSAGE.",
+        "Taft Hartley   Veto": "HR 3020.  PASSAGE OVER THE PRESIDENT'S VETO."
+      }
     },
     {
       "icpsr": "8010",
@@ -567,7 +879,20 @@
         "Voting Rights Act   1965": "Yea",
         "War Powers Act   1973": "Yea"
       },
-      "vote_count": 11
+      "vote_count": 11,
+      "vote_descriptions": {
+        "Airline Deregulation Act   1978": "TO AGREE TO THE CONFERENCE REPORT ON S. 2493, THE AIRLINE DEREGULATION ACT OF 1978.",
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Designate MLK day as a National Holiday": "TO SUSPEND THE RULES AND PASS H.R. 5461, DESIGNATING THE BIRTHDAY OF MARTIN LUTHER KING, JR. A LEGAL PUBLIC HOLIDAY. (MOTION PASSED:2/3 REQUIRED)",
+        "Gramm Rudman Hollings Deficit Act 1985": "TO ADOPT THE CONFERENCE REPORT ON H.J. RES 372, RAISING THE STATUTORY LIMIT ON THE PUBLIC DEBT TO $2.079 TRILLION, AND REQUIRING AN ANNUAL DECLINE IN THE PUBLIC DEBT BEGINNING IN 1986 WHICH RESULTS IN A BALANCED BUDGET BY 1991.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "McCarran Internal Security Act 1950": "HR 9490.  PROTECT THE U.S. AGAINST CERTAIN UNAMERICAN AND SUBVERSIVE ACTIVITES BY REQUIREING REGISTRATION OF COMMUNIST ORGANIZATIONS.  ADOPTION OF CONFERENCE REPORT.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT."
+      }
     },
     {
       "icpsr": "6455",
@@ -591,7 +916,20 @@
         "Voting Rights Act   1965": "Yea",
         "War Powers Act   1973": "Nay"
       },
-      "vote_count": 11
+      "vote_count": 11,
+      "vote_descriptions": {
+        "Airline Deregulation Act   1978": "TO AGREE TO THE CONFERENCE REPORT ON S. 2493, THE AIRLINE DEREGULATION ACT OF 1978.",
+        "Authorization of Force Against Iraq   1991": "TO AUTHORIZE THE USE OF UNITED STATES ARMED FORCES PURSUANT TO UNITED NATIONS SECURITY COUNCIL RESOLUTION 678",
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Designate MLK day as a National Holiday": "TO SUSPEND THE RULES AND PASS H.R. 5461, DESIGNATING THE BIRTHDAY OF MARTIN LUTHER KING, JR. A LEGAL PUBLIC HOLIDAY. (MOTION PASSED:2/3 REQUIRED)",
+        "Gramm Rudman Hollings Deficit Act 1985": "TO ADOPT THE CONFERENCE REPORT ON H.J. RES 372, RAISING THE STATUTORY LIMIT ON THE PUBLIC DEBT TO $2.079 TRILLION, AND REQUIRING AN ANNUAL DECLINE IN THE PUBLIC DEBT BEGINNING IN 1986 WHICH RESULTS IN A BALANCED BUDGET BY 1991.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT."
+      }
     },
     {
       "icpsr": "1087",
@@ -615,7 +953,20 @@
         "Voting Rights Act   1965": "Yea",
         "War Powers Act   1973": "Yea"
       },
-      "vote_count": 11
+      "vote_count": 11,
+      "vote_descriptions": {
+        "Airline Deregulation Act   1978": "TO AGREE TO THE CONFERENCE REPORT ON S. 2493, THE AIRLINE DEREGULATION ACT OF 1978.",
+        "Authorization of Force Against Iraq   1991": "TO AUTHORIZE THE USE OF UNITED STATES ARMED FORCES PURSUANT TO UNITED NATIONS SECURITY COUNCIL RESOLUTION 678",
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Designate MLK day as a National Holiday": "TO SUSPEND THE RULES AND PASS H.R. 5461, DESIGNATING THE BIRTHDAY OF MARTIN LUTHER KING, JR. A LEGAL PUBLIC HOLIDAY. (MOTION PASSED:2/3 REQUIRED)",
+        "Gramm Rudman Hollings Deficit Act 1985": "TO ADOPT THE CONFERENCE REPORT ON H.J. RES 372, RAISING THE STATUTORY LIMIT ON THE PUBLIC DEBT TO $2.079 TRILLION, AND REQUIRING AN ANNUAL DECLINE IN THE PUBLIC DEBT BEGINNING IN 1986 WHICH RESULTS IN A BALANCED BUDGET BY 1991.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Taiwan Relations Act": "TO PASS H.R. 2479. (MOTION PASSED)",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT."
+      }
     },
     {
       "icpsr": "5924",
@@ -639,7 +990,20 @@
         "Voting Rights Act   1965": "Nay",
         "War Powers Act   1973": "Absent"
       },
-      "vote_count": 11
+      "vote_count": 11,
+      "vote_descriptions": {
+        "AGRICULTURAL ADJUSTMENT ACT": "TO CONCUR IN A SENATE AMENDMENT TO H.R. 8492 (P.A. 320), A BILL AMENDING THE AGRICULTURAL ADJUSTMENT ACT, SAID AMENDMENT ADDING POTATOES TO THE ACT'S PROVISIONS",
+        "Airline Deregulation Act   1978": "TO AGREE TO THE CONFERENCE REPORT ON S. 2493, THE AIRLINE DEREGULATION ACT OF 1978.",
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "Lend Lease Act": "TO PASS H.R. 4050, DEFENSE AID SUPPLEMENTAL APPROPRIATION BILL, 1941, (APPROPRIATION FOR LEND-LEASE).",
+        "McCarran Internal Security Act 1950": "HR 9490.  PROTECT THE U.S. AGAINST CERTAIN UNAMERICAN AND SUBVERSIVE ACTIVITES BY REQUIREING REGISTRATION OF COMMUNIST ORGANIZATIONS.  ADOPTION OF CONFERENCE REPORT.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Taft Hartley": "HR 3020.  PASSAGE.",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT."
+      }
     },
     {
       "icpsr": "6312",
@@ -656,7 +1020,13 @@
         "Interstate Commerce Bill": "Yea",
         "Pendelton Civil Service Act": "Yea"
       },
-      "vote_count": 4
+      "vote_count": 4,
+      "vote_descriptions": {
+        "Bland Allison Act": "TO CONCUR IN SENATE AMENDMENT TO H.R. 1093 SAID AMENDMENT STRIKING THE PROVISION PERMITTING THE COINAGE OF SILVER BULLION AT A U.S. MINT OR ASSAY OFFICE ON SAME TERMS AND CONDITIONS AS COINAGE OF GOLD BULLION.",
+        "Federal Elections Bill": "TO PASS H.R. 11045.  (P. 6940-2)",
+        "Interstate Commerce Bill": "TO AGREE TO THE REPORT OF THE COMMITTEE OF CONFERENCE ON S. 1532 (24 STAT 379, APP 2/4/1887), THE INTERSTATE COMMERCE BILL.",
+        "Pendelton Civil Service Act": "TO PASS S. 133, A BILL REGULATING AND IMPROVING THE U. S. CIVIL SERVICE.  (J.P. 163)"
+      }
     },
     {
       "icpsr": "3268",
@@ -676,7 +1046,16 @@
         "Voting Rights Act   1965": "Yea",
         "War Powers Act   1973": "Nay"
       },
-      "vote_count": 7
+      "vote_count": 7,
+      "vote_descriptions": {
+        "Civil Rights Act   1957": "HR 6127.  CIVIL RIGHTS ACT OF 1957.  PASSED.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Gun Control Act   1968": "TO ADOPT THE CONFERENCE REPORT ON H.R. 17735, THE STATE FIREARMS CONTROL ASSISTANCE ACT.",
+        "Immigration and Nationality Act   1965": "TO AGREE TO THE CONFERENCE REPORT ON H.R. 2580, THE IMMIGRATION AND NATIONALITY ACT.",
+        "McCarran Internal Security Act 1950": "HR 9490.  PROTECT THE U.S. AGAINST CERTAIN UNAMERICAN AND SUBVERSIVE ACTIVITES BY REQUIREING REGISTRATION OF COMMUNIST ORGANIZATIONS.  ADOPTION OF CONFERENCE REPORT.",
+        "National Defense Education Act": "HR 13247.  NATIONAL DEFENSE EDUCATION ACT OF 1958 AUTHORIZING FUNDS FOR SEVEN YEAR PROGRAM OF FEDERAL ASSISTANCE TO STUDENTS AND SCHOOLS.  CONFERENCE REPORT.  AGREED TO.  YEA SUPPORTS PRESIDENT'S POSITION.",
+        "Voting Rights Act   1965": "TO PASS H.R. 6400, THE 1965 VOTING RIGHTS ACT.",
+        "War Powers Act   1973": "TO OVERIDE THE PRESIDENT'S VETO OF H. J. RES. 542, CONCERING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT. CONCERNING THE WAR POWERS OF THE CONGRESS AND THE PRESIDENT."
+      }
     }
   ]
 }
