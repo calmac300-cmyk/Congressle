@@ -267,9 +267,17 @@
     results.forEach(leg => {
       const item = document.createElement('div');
       item.className = 'dropdown-item';
+      const photoHtml = leg.photo_url
+        ? `<img src="${leg.photo_url}" alt="${formatName(leg.name)}"
+                class="dropdown-photo"
+                onerror="this.style.display='none'">`
+        : `<div class="dropdown-photo-placeholder"></div>`;
       item.innerHTML = `
-        <span class="dropdown-item-name">${formatName(leg.name)}</span>
-        <span class="dropdown-item-meta">${leg.state} · ${shortParty(leg.party)} · ${CRGame.tenureString(leg)}</span>
+        ${photoHtml}
+        <div class="dropdown-item-text">
+          <span class="dropdown-item-name">${formatName(leg.name)}</span>
+          <span class="dropdown-item-meta">${leg.state} · ${shortParty(leg.party)} · ${CRGame.tenureString(leg)}</span>
+        </div>
       `;
       item.addEventListener('click', () => {
         selectedLegislator = leg;
