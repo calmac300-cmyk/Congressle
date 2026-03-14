@@ -378,6 +378,15 @@ body {
   line-height: 1.4;
 }
 
+.vote-label.has-tooltip {
+  cursor: help;
+  text-decoration: underline dotted var(--rule-dark);
+  text-underline-offset: 3px;
+}
+.vote-label.has-tooltip:hover {
+  color: var(--ink);
+}
+
 .vote-result {
   font-family: var(--font-mono);
   font-size: 0.72rem;

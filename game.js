@@ -443,6 +443,7 @@ const CRGame = (() => {
     // Setup
     loadData,
     startGame,
+    getDailyTarget,
 
     // Gameplay
     search,

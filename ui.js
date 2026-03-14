@@ -55,6 +55,11 @@
   async function initGame(chamber) {
     const state = CRGame.startGame(chamber);
 
+    // Pre-load vote descriptions for this target so tooltips work
+    // without exposing the target identity
+    const dailyTarget = CRGame.getDailyTarget(chamber);
+    _targetDescriptions = dailyTarget ? (dailyTarget.vote_descriptions || {}) : {};
+
     // Header
     document.getElementById('chamber-badge').textContent = chamber;
     document.getElementById('guess-counter').textContent =
@@ -83,16 +88,32 @@
     const list = document.getElementById('votes-list');
     list.innerHTML = '';
 
+    // Get descriptions from the current target (only available post-gameover
+    // via state.target, so we store them on a module-level var during startGame)
     state.visibleVotes.forEach(({ label, result }) => {
       const row = document.createElement('div');
       row.className = 'vote-row';
-
       const cls = result === 'Yea' ? 'yea' : result === 'Nay' ? 'nay' : 'absent';
+      const desc = _targetDescriptions[label] || '';
       row.innerHTML = `
-        <span class="vote-label">${label}</span>
+        <span class="vote-label ${desc ? 'has-tooltip' : ''}" data-desc="${desc}">${label}</span>
         <span class="vote-result ${cls}">${result}</span>
       `;
       list.appendChild(row);
+    });
+
+    // Bind tooltip events on vote labels
+    list.querySelectorAll('.vote-label.has-tooltip').forEach(el => {
+      el.addEventListener('mouseenter', e => {
+        const tooltip = document.getElementById('map-tooltip');
+        tooltip.innerHTML = `<div class="map-tooltip-title">Vote Description</div>${el.dataset.desc}`;
+        tooltip.classList.remove('hidden');
+        moveTooltip(e);
+      });
+      el.addEventListener('mousemove', moveTooltip);
+      el.addEventListener('mouseleave', () => {
+        document.getElementById('map-tooltip').classList.add('hidden');
+      });
     });
 
     document.getElementById('votes-revealed-count').textContent =
@@ -105,6 +126,10 @@
       hint.textContent = `All available votes shown.`;
     }
   }
+
+  // Stores vote descriptions for the current target so renderVotes can access them
+  // without exposing the target itself before game over
+  let _targetDescriptions = {};
 
   // ----------------------------------------------------------
   // Fuzzy search & dropdown
@@ -284,7 +309,7 @@
 
     // Load US states GeoJSON
     try {
-      const res  = await fetch('data/us-states.geojson');
+      const res  = await fetch('data/us-states.json');
       const data = await res.json();
       geojsonLayer = L.geoJSON(data, {
         style: stateStyle,
