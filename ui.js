@@ -1,0 +1,437 @@
+// ============================================================
+// ui.js — DOM controller for The Congressional Record
+// Depends on: game.js (CRGame), Leaflet
+// ============================================================
+
+(async () => {
+
+  // ----------------------------------------------------------
+  // Boot — load data then reveal UI
+  // ----------------------------------------------------------
+  try {
+    await CRGame.loadData();
+  } catch (e) {
+    document.getElementById('loading').innerHTML =
+      '<div class="loading-inner"><p class="loading-title">Failed to load data</p>' +
+      '<p class="loading-sub">Please check that data/targets.json and data/legislators.json exist.</p></div>';
+    return;
+  }
+  document.getElementById('loading').classList.add('hidden');
+
+  // Set today's date in masthead
+  document.getElementById('today-date').textContent =
+    new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+
+  // ----------------------------------------------------------
+  // Screen management
+  // ----------------------------------------------------------
+  function showScreen(id) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    window.scrollTo(0, 0);
+  }
+
+  // ----------------------------------------------------------
+  // Chamber Select Screen
+  // ----------------------------------------------------------
+  document.querySelectorAll('.chamber-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const chamber = btn.dataset.chamber;
+      initGame(chamber);
+    });
+  });
+
+  document.getElementById('btn-back').addEventListener('click', () => {
+    showScreen('screen-chamber');
+  });
+
+  // ----------------------------------------------------------
+  // Game initialisation
+  // ----------------------------------------------------------
+  let map = null;
+  let geojsonLayer = null;
+  let stateData = {};   // state abbrev -> { layer, candidates[] }
+
+  async function initGame(chamber) {
+    const state = CRGame.startGame(chamber);
+
+    // Header
+    document.getElementById('chamber-badge').textContent = chamber;
+    document.getElementById('guess-counter').textContent =
+      `${state.guessCount} / ${state.maxGuesses}`;
+
+    // Reset UI panels
+    document.getElementById('guesses-list').innerHTML =
+      '<p class="no-guesses-yet">Your guesses will appear here.</p>';
+    document.getElementById('search-input').value = '';
+    document.getElementById('search-dropdown').classList.add('hidden');
+    document.getElementById('btn-submit').disabled = true;
+    selectedLegislator = null;
+
+    renderVotes(state);
+    showScreen('screen-game');
+
+    // Init map (only once)
+    if (!map) await initMap();
+    updateMap();
+  }
+
+  // ----------------------------------------------------------
+  // Vote Clues rendering
+  // ----------------------------------------------------------
+  function renderVotes(state) {
+    const list = document.getElementById('votes-list');
+    list.innerHTML = '';
+
+    state.visibleVotes.forEach(({ label, result }) => {
+      const row = document.createElement('div');
+      row.className = 'vote-row';
+
+      const cls = result === 'Yea' ? 'yea' : result === 'Nay' ? 'nay' : 'absent';
+      row.innerHTML = `
+        <span class="vote-label">${label}</span>
+        <span class="vote-result ${cls}">${result}</span>
+      `;
+      list.appendChild(row);
+    });
+
+    document.getElementById('votes-revealed-count').textContent =
+      `${state.revealedVotes} of ${state.totalVotes} shown`;
+
+    const hint = document.getElementById('votes-hint');
+    if (state.revealedVotes < state.totalVotes) {
+      hint.textContent = `A new vote is revealed with each wrong guess.`;
+    } else {
+      hint.textContent = `All available votes shown.`;
+    }
+  }
+
+  // ----------------------------------------------------------
+  // Fuzzy search & dropdown
+  // ----------------------------------------------------------
+  let selectedLegislator = null;
+
+  const searchInput = document.getElementById('search-input');
+  const dropdown    = document.getElementById('search-dropdown');
+  const btnSubmit   = document.getElementById('btn-submit');
+
+  searchInput.addEventListener('input', () => {
+    const q = searchInput.value.trim();
+    selectedLegislator = null;
+    btnSubmit.disabled = true;
+
+    if (q.length < 2) {
+      dropdown.classList.add('hidden');
+      return;
+    }
+
+    const results = CRGame.search(q, 8);
+    if (results.length === 0) {
+      dropdown.classList.add('hidden');
+      return;
+    }
+
+    dropdown.innerHTML = '';
+    results.forEach(leg => {
+      const item = document.createElement('div');
+      item.className = 'dropdown-item';
+      item.innerHTML = `
+        <span class="dropdown-item-name">${formatName(leg.name)}</span>
+        <span class="dropdown-item-meta">${leg.state} · ${shortParty(leg.party)} · ${CRGame.tenureString(leg)}</span>
+      `;
+      item.addEventListener('click', () => {
+        selectedLegislator = leg;
+        searchInput.value  = formatName(leg.name);
+        dropdown.classList.add('hidden');
+        btnSubmit.disabled = false;
+      });
+      dropdown.appendChild(item);
+    });
+    dropdown.classList.remove('hidden');
+  });
+
+  // Close dropdown on outside click
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.search-wrap')) {
+      dropdown.classList.add('hidden');
+    }
+  });
+
+  // Keyboard navigation in dropdown
+  searchInput.addEventListener('keydown', e => {
+    const items = dropdown.querySelectorAll('.dropdown-item');
+    const current = dropdown.querySelector('.dropdown-item.selected');
+    let idx = Array.from(items).indexOf(current);
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      if (current) current.classList.remove('selected');
+      items[Math.min(idx + 1, items.length - 1)]?.classList.add('selected');
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (current) current.classList.remove('selected');
+      items[Math.max(idx - 1, 0)]?.classList.add('selected');
+    } else if (e.key === 'Enter') {
+      const sel = dropdown.querySelector('.dropdown-item.selected');
+      if (sel) sel.click();
+      else if (!btnSubmit.disabled) handleSubmit();
+    } else if (e.key === 'Escape') {
+      dropdown.classList.add('hidden');
+    }
+  });
+
+  // ----------------------------------------------------------
+  // Submit guess
+  // ----------------------------------------------------------
+  btnSubmit.addEventListener('click', handleSubmit);
+
+  function handleSubmit() {
+    if (!selectedLegislator || btnSubmit.disabled) return;
+    const state = CRGame.submitGuess(selectedLegislator);
+
+    searchInput.value      = '';
+    selectedLegislator     = null;
+    btnSubmit.disabled     = true;
+    dropdown.classList.add('hidden');
+
+    document.getElementById('guess-counter').textContent =
+      `${state.guessCount} / ${state.maxGuesses}`;
+
+    renderVotes(state);
+    renderGuesses(state);
+    updateMap();
+
+    if (state.gameOver) {
+      setTimeout(() => showGameOver(state), 800);
+    }
+  }
+
+  // ----------------------------------------------------------
+  // Guess history rendering
+  // ----------------------------------------------------------
+  function renderGuesses(state) {
+    const list = document.getElementById('guesses-list');
+    list.innerHTML = '';
+
+    if (state.guesses.length === 0) {
+      list.innerHTML = '<p class="no-guesses-yet">Your guesses will appear here.</p>';
+      return;
+    }
+
+    state.guesses.forEach((result, i) => {
+      const { guess, feedback, correct } = result;
+      const row = document.createElement('div');
+      row.className = `guess-row${correct ? ' correct' : ''}`;
+
+      // Tenure direction arrow
+      const arrow = feedback.tenureDirection === 'later'   ? ' ↑ later'
+                  : feedback.tenureDirection === 'earlier' ? ' ↓ earlier'
+                  : '';
+
+      row.innerHTML = `
+        <div class="guess-row-header">
+          <span class="guess-name">${formatName(guess.name)}</span>
+          <span class="guess-number">Guess ${i + 1}</span>
+        </div>
+        <div class="guess-tiles">
+          ${guessTile('State',   guess.state,                    feedback.state)}
+          ${guessTile('Region',  guess.region || regionOf(guess.state), feedback.region)}
+          ${guessTile('Party',   shortParty(guess.party),        feedback.party)}
+          ${guessTile('Chamber', guess.chamber,                  feedback.chamber)}
+          ${guessTile('Era',     CRGame.tenureString(guess) + arrow, feedback.tenure)}
+        </div>
+        <div class="guess-votes">
+          ${feedback.votes.map(v => voteTile(v)).join('')}
+        </div>
+      `;
+      list.appendChild(row);
+    });
+  }
+
+  function guessTile(label, value, feedbackClass) {
+    return `
+      <div class="guess-tile">
+        <span class="guess-tile-label">${label}</span>
+        <span class="guess-tile-value ${feedbackClass}">${value}</span>
+      </div>
+    `;
+  }
+
+  function voteTile({ label, guessVote, feedback }) {
+    const display = guessVote || 'N/A';
+    // Truncate long vote labels for the tile
+    const short = label.length > 28 ? label.slice(0, 26) + '…' : label;
+    return `<span class="vote-tile ${feedback}" title="${label}: ${display}">${short}</span>`;
+  }
+
+  // ----------------------------------------------------------
+  // Map
+  // ----------------------------------------------------------
+  async function initMap() {
+    map = L.map('map', {
+      center: [38, -96],
+      zoom: 3,
+      zoomControl: true,
+      scrollWheelZoom: false,
+      attributionControl: false,
+    });
+
+    // Minimal tile layer — muted to let our colours stand out
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+      subdomains: 'abcd',
+      maxZoom: 19,
+    }).addTo(map);
+
+    // Load US states GeoJSON
+    try {
+      const res  = await fetch('data/us-states.geojson');
+      const data = await res.json();
+      geojsonLayer = L.geoJSON(data, {
+        style: stateStyle,
+        onEachFeature: bindStateEvents,
+      }).addTo(map);
+    } catch (e) {
+      console.warn('Could not load us-states.geojson — map will show tiles only');
+    }
+  }
+
+  function stateStyle(feature) {
+    const abbr      = feature.properties.STUSPS || feature.properties.postal;
+    const eliminated = CRGame.getEliminatedStates();
+    const isElim    = eliminated.has(abbr);
+    return {
+      fillColor:   isElim ? '#c8b99a' : '#8b1a1a',
+      fillOpacity: isElim ? 0.18     : 0.35,
+      color:       '#7a6a54',
+      weight:      1,
+      opacity:     0.7,
+    };
+  }
+
+  function bindStateEvents(feature, layer) {
+    const abbr = feature.properties.STUSPS || feature.properties.postal;
+    const name = feature.properties.NAME   || abbr;
+
+    layer.on('mouseover', e => {
+      const eliminated = CRGame.getEliminatedStates();
+      if (eliminated.has(abbr)) return;
+
+      const candidates = CRGame.getViableCandidates()
+        .filter(l => l.state === abbr)
+        .slice(0, 8);
+
+      if (candidates.length === 0) return;
+
+      const tooltip = document.getElementById('map-tooltip');
+      tooltip.innerHTML = `
+        <div class="map-tooltip-title">${name}</div>
+        ${candidates.map(c => `<div>${formatName(c.name)}</div>`).join('')}
+        ${CRGame.getViableCandidates().filter(l => l.state === abbr).length > 8
+          ? `<div style="opacity:0.6;font-style:italic">+${CRGame.getViableCandidates().filter(l => l.state === abbr).length - 8} more…</div>`
+          : ''}
+      `;
+      tooltip.classList.remove('hidden');
+      moveTooltip(e.originalEvent);
+    });
+
+    layer.on('mousemove', e => moveTooltip(e.originalEvent));
+
+    layer.on('mouseout', () => {
+      document.getElementById('map-tooltip').classList.add('hidden');
+    });
+  }
+
+  function moveTooltip(e) {
+    const t = document.getElementById('map-tooltip');
+    t.style.left = (e.clientX + 14) + 'px';
+    t.style.top  = (e.clientY - 10) + 'px';
+  }
+
+  function updateMap() {
+    if (!geojsonLayer) return;
+    geojsonLayer.setStyle(stateStyle);
+
+    const viable = CRGame.getViableCandidates();
+    document.getElementById('candidate-count').textContent =
+      `${viable.length} candidate${viable.length !== 1 ? 's' : ''} remaining`;
+  }
+
+  // ----------------------------------------------------------
+  // Game Over Screen
+  // ----------------------------------------------------------
+  function showGameOver(state) {
+    const target  = state.target;
+    const banner  = document.getElementById('gameover-banner');
+    const tDiv    = document.getElementById('gameover-target');
+    const vDiv    = document.getElementById('gameover-votes');
+
+    banner.className = `gameover-banner ${state.won ? 'won' : 'lost'}`;
+    banner.innerHTML = state.won
+      ? `<div class="gameover-headline">Identified!</div>
+         <div class="gameover-sub">You got it in ${state.guessCount} guess${state.guessCount !== 1 ? 'es' : ''}.</div>`
+      : `<div class="gameover-headline">Not quite.</div>
+         <div class="gameover-sub">Better luck tomorrow.</div>`;
+
+    tDiv.innerHTML = `
+      <div class="gameover-target-name">${formatName(target.name)}</div>
+      <div class="gameover-target-meta">
+        ${target.chamber} · ${target.state} · ${shortParty(target.party)} ·
+        ${CRGame.tenureString(target)}
+      </div>
+    `;
+
+    // Full voting record
+    const allVotes = Object.entries(target.votes);
+    vDiv.innerHTML = `
+      <div class="gameover-votes-title">Complete Voting Record (${allVotes.length} votes)</div>
+      <div class="votes-list">
+        ${allVotes.map(([label, result]) => {
+          const cls = result === 'Yea' ? 'yea' : result === 'Nay' ? 'nay' : 'absent';
+          return `<div class="vote-row">
+            <span class="vote-label">${label}</span>
+            <span class="vote-result ${cls}">${result}</span>
+          </div>`;
+        }).join('')}
+      </div>
+    `;
+
+    const other = target.chamber === 'Senate' ? 'House' : 'Senate';
+    document.getElementById('other-chamber').textContent = other;
+    document.getElementById('btn-play-other').onclick = () => initGame(other);
+
+    showScreen('screen-gameover');
+  }
+
+  // ----------------------------------------------------------
+  // Utility helpers
+  // ----------------------------------------------------------
+
+  function formatName(raw) {
+    // "BYRD, Robert Carlyle" -> "Robert Carlyle Byrd"
+    const parts = raw.split(',');
+    if (parts.length < 2) return raw;
+    const last  = parts[0].trim();
+    const first = parts.slice(1).join(',').trim();
+    return `${toTitleCase(first)} ${toTitleCase(last)}`;
+  }
+
+  function toTitleCase(str) {
+    return str.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+  }
+
+  function shortParty(party) {
+    if (!party) return '?';
+    const u = party.toUpperCase();
+    if (u.includes('DEMOCRAT'))   return 'D';
+    if (u.includes('REPUBLICAN')) return 'R';
+    if (u.includes('INDEPENDENT'))return 'I';
+    if (u.includes('WHIG'))       return 'W';
+    if (u.includes('POPULIST'))   return 'Pop';
+    return party.slice(0, 3);
+  }
+
+  function regionOf(state) {
+    return CRGame.STATE_TO_REGION[state] || '?';
+  }
+
+})();

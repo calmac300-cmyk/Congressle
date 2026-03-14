@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Congressional Record</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================================================
+       SCREEN 1 — Chamber Select
+  ====================================================== -->
+  <div id="screen-chamber" class="screen active">
+    <div class="masthead">
+      <div class="masthead-rule"></div>
+      <p class="masthead-vol">Vol. I &nbsp;·&nbsp; <span id="today-date"></span></p>
+      <h1 class="masthead-title">The Congressional Record</h1>
+      <p class="masthead-sub">A Daily Deduction Game</p>
+      <div class="masthead-rule"></div>
+    </div>
+
+    <div class="chamber-intro">
+      <p class="lede">You will be shown a series of historic votes cast by a
+      single member of Congress. Use the clues to deduce who they are.</p>
+    </div>
+
+    <div class="chamber-select">
+      <p class="chamber-label">Select your chamber</p>
+      <div class="chamber-buttons">
+        <button class="chamber-btn" data-chamber="Senate">
+          <span class="chamber-icon">⬡</span>
+          <span class="chamber-name">Senate</span>
+          <span class="chamber-desc">100 members · harder</span>
+        </button>
+        <button class="chamber-btn" data-chamber="House">
+          <span class="chamber-icon">⬡</span>
+          <span class="chamber-name">House</span>
+          <span class="chamber-desc">435 members · broader</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="how-to-play">
+      <h2 class="htp-title">How to Play</h2>
+      <ol class="htp-list">
+        <li>You'll see <strong>3 historic votes</strong> cast by today's mystery legislator.</li>
+        <li>Type a name to search and submit your guess.</li>
+        <li>Each guess reveals <strong>clues</strong> — state, region, party, era, and votes.</li>
+        <li>A new vote is revealed with each wrong guess.</li>
+        <li>You have <strong>6 guesses</strong> to identify the legislator.</li>
+      </ol>
+      <div class="htp-legend">
+        <span class="tile green">Yea</span> Exact match &nbsp;
+        <span class="tile yellow">Nay</span> Close / same region or era &nbsp;
+        <span class="tile grey">Abs</span> No match
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       SCREEN 2 — Game
+  ====================================================== -->
+  <div id="screen-game" class="screen">
+
+    <!-- Header bar -->
+    <header class="game-header">
+      <button id="btn-back" class="btn-ghost">← Change chamber</button>
+      <div class="game-title-wrap">
+        <span class="game-title">The Congressional Record</span>
+        <span id="chamber-badge" class="chamber-badge"></span>
+      </div>
+      <span id="guess-counter" class="guess-counter">0 / 6</span>
+    </header>
+
+    <div class="game-layout">
+
+      <!-- LEFT COLUMN — Votes + Guesses -->
+      <div class="game-left">
+
+        <!-- Vote clues panel -->
+        <section class="panel votes-panel">
+          <h2 class="panel-title">
+            Voting Record
+            <span id="votes-revealed-count" class="votes-count"></span>
+          </h2>
+          <div id="votes-list" class="votes-list">
+            <!-- Populated by JS -->
+          </div>
+          <p id="votes-hint" class="votes-hint"></p>
+        </section>
+
+        <!-- Guess input -->
+        <section class="panel guess-panel" id="guess-panel">
+          <div class="search-wrap">
+            <input
+              type="text"
+              id="search-input"
+              class="search-input"
+              placeholder="Search legislator name…"
+              autocomplete="off"
+            >
+            <div id="search-dropdown" class="search-dropdown hidden"></div>
+          </div>
+          <button id="btn-submit" class="btn-submit" disabled>Submit Guess</button>
+        </section>
+
+        <!-- Guess history -->
+        <section class="panel guesses-panel" id="guesses-panel">
+          <h2 class="panel-title">Guesses</h2>
+          <div id="guesses-list" class="guesses-list">
+            <!-- Populated by JS -->
+          </div>
+        </section>
+
+      </div>
+
+      <!-- RIGHT COLUMN — Map -->
+      <div class="game-right">
+        <section class="panel map-panel">
+          <h2 class="panel-title">
+            Geographic Candidates
+            <span id="candidate-count" class="candidate-count"></span>
+          </h2>
+          <div id="map" class="map-container"></div>
+          <p class="map-hint">Hover a state to see remaining candidates</p>
+        </section>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================
+       SCREEN 3 — Game Over
+  ====================================================== -->
+  <div id="screen-gameover" class="screen">
+    <div class="gameover-wrap">
+      <div id="gameover-banner" class="gameover-banner">
+        <!-- WIN or LOSE message -->
+      </div>
+      <div id="gameover-target" class="gameover-target">
+        <!-- Target legislator reveal -->
+      </div>
+      <div id="gameover-votes" class="gameover-votes">
+        <!-- Full voting record -->
+      </div>
+      <button id="btn-play-other" class="btn-primary">Play <span id="other-chamber"></span></button>
+    </div>
+  </div>
+
+  <!-- Tooltip for map hover -->
+  <div id="map-tooltip" class="map-tooltip hidden"></div>
+
+  <!-- Loading overlay -->
+  <div id="loading" class="loading-overlay">
+    <div class="loading-inner">
+      <p class="loading-title">The Congressional Record</p>
+      <p class="loading-sub">Loading the archives…</p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="game.js"></script>
+  <script src="ui.js"></script>
+</body>
+</html>

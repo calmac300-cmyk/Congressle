@@ -1,0 +1,745 @@
+/* ============================================================
+   The Congressional Record — Stylesheet
+   Aesthetic: vintage broadsheet / historical document
+   Fonts: Playfair Display (headlines), Libre Baskerville (body),
+          Source Code Pro (data/tiles)
+============================================================ */
+
+/* ----------------------------------------------------------
+   CSS Variables
+---------------------------------------------------------- */
+:root {
+  --ink:         #1a1208;
+  --ink-light:   #3d2f1a;
+  --ink-faint:   #7a6a54;
+  --parchment:   #f5f0e8;
+  --parchment-2: #ede6d6;
+  --parchment-3: #e4dac6;
+  --rule:        #c8b99a;
+  --rule-dark:   #8a7358;
+
+  --green:       #2d5a1b;
+  --green-bg:    #d4e8c4;
+  --yellow:      #7a5a00;
+  --yellow-bg:   #f5e4a0;
+  --grey:        #5a5040;
+  --grey-bg:     #ddd8cc;
+
+  --accent:      #8b1a1a;   /* deep congressional red */
+  --accent-2:    #c4922a;   /* gilt gold */
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Libre Baskerville', Georgia, serif;
+  --font-mono:    'Source Code Pro', 'Courier New', monospace;
+
+  --shadow-soft: 0 2px 12px rgba(26,18,8,0.10);
+  --shadow-card: 0 4px 24px rgba(26,18,8,0.14);
+
+  --radius:      4px;
+  --radius-lg:   8px;
+}
+
+/* ----------------------------------------------------------
+   Reset & Base
+---------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--parchment);
+  color: var(--ink);
+  min-height: 100vh;
+  /* Subtle paper texture via repeating gradient */
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 28px,
+      rgba(180,160,120,0.07) 28px,
+      rgba(180,160,120,0.07) 29px
+    );
+}
+
+/* ----------------------------------------------------------
+   Screen Management
+---------------------------------------------------------- */
+.screen { display: none; }
+.screen.active { display: block; }
+
+/* ----------------------------------------------------------
+   Loading Overlay
+---------------------------------------------------------- */
+.loading-overlay {
+  position: fixed; inset: 0;
+  background: var(--parchment);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 1000;
+  transition: opacity 0.4s;
+}
+.loading-overlay.hidden {
+  opacity: 0; pointer-events: none;
+}
+.loading-inner { text-align: center; }
+.loading-title {
+  font-family: var(--font-display);
+  font-size: 2rem; font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+.loading-sub {
+  font-size: 0.9rem; color: var(--ink-faint);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* ----------------------------------------------------------
+   Screen 1 — Chamber Select / Masthead
+---------------------------------------------------------- */
+#screen-chamber {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.masthead { text-align: center; margin-bottom: 2rem; }
+
+.masthead-rule {
+  height: 3px;
+  background: linear-gradient(to right,
+    transparent, var(--rule-dark) 20%, var(--rule-dark) 80%, transparent);
+  margin: 0.6rem 0;
+}
+
+.masthead-vol {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0.4rem 0;
+}
+
+.masthead-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.masthead-sub {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--ink-light);
+  margin-top: 0.3rem;
+}
+
+.chamber-intro {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 3px solid var(--accent);
+  background: var(--parchment-2);
+}
+
+.lede {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--ink-light);
+  font-style: italic;
+}
+
+.chamber-select { margin: 2rem 0; }
+
+.chamber-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-faint);
+  margin-bottom: 0.8rem;
+}
+
+.chamber-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.chamber-btn {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 0.3rem;
+  padding: 1.5rem 1rem;
+  background: var(--parchment-2);
+  border: 2px solid var(--rule);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all 0.18s;
+  font-family: var(--font-body);
+}
+.chamber-btn:hover {
+  border-color: var(--accent);
+  background: #fff;
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+.chamber-icon {
+  font-size: 1.8rem;
+  color: var(--accent);
+  line-height: 1;
+}
+.chamber-name {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.chamber-desc {
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  font-style: italic;
+}
+
+.how-to-play {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  background: var(--parchment-2);
+}
+
+.htp-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.htp-list {
+  padding-left: 1.4rem;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--ink-light);
+}
+
+.htp-legend {
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+/* ----------------------------------------------------------
+   Feedback Tiles (shared)
+---------------------------------------------------------- */
+.tile {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius);
+}
+.tile.green  { background: var(--green-bg);  color: var(--green);  }
+.tile.yellow { background: var(--yellow-bg); color: var(--yellow); }
+.tile.grey   { background: var(--grey-bg);   color: var(--grey);   }
+
+/* ----------------------------------------------------------
+   Screen 2 — Game Layout
+---------------------------------------------------------- */
+.game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  background: var(--ink);
+  color: var(--parchment);
+  border-bottom: 3px solid var(--accent-2);
+  position: sticky; top: 0; z-index: 100;
+}
+
+.btn-ghost {
+  background: none; border: none;
+  color: var(--parchment-3);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  transition: color 0.15s;
+}
+.btn-ghost:hover { color: var(--accent-2); }
+
+.game-title-wrap {
+  display: flex; align-items: center; gap: 0.6rem;
+}
+.game-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--parchment);
+}
+.chamber-badge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.15rem 0.5rem;
+  background: var(--accent);
+  color: var(--parchment);
+  border-radius: 2px;
+}
+.guess-counter {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--parchment-3);
+}
+
+.game-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .game-layout { grid-template-columns: 1fr; }
+}
+
+/* ----------------------------------------------------------
+   Panels
+---------------------------------------------------------- */
+.panel {
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.panel-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ----------------------------------------------------------
+   Votes Panel
+---------------------------------------------------------- */
+.votes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.vote-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.55rem 0.75rem;
+  background: var(--parchment);
+  border: 1px solid var(--parchment-3);
+  border-radius: var(--radius);
+  gap: 0.75rem;
+  animation: fadeSlideIn 0.3s ease;
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.vote-label {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--ink-light);
+  flex: 1;
+  line-height: 1.4;
+}
+
+.vote-result {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.vote-result.yea    { background: var(--green-bg);  color: var(--green);  }
+.vote-result.nay    { background: #f5d0d0;           color: #7a1a1a;       }
+.vote-result.absent { background: var(--grey-bg);    color: var(--grey);   }
+
+.votes-count {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-faint);
+  font-weight: 400;
+}
+
+.votes-hint {
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  font-style: italic;
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+/* ----------------------------------------------------------
+   Guess Input
+---------------------------------------------------------- */
+.search-wrap { position: relative; margin-bottom: 0.75rem; }
+
+.search-input {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: var(--parchment);
+  border: 2px solid var(--rule);
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.15s;
+}
+.search-input:focus { border-color: var(--accent); }
+.search-input::placeholder { color: var(--ink-faint); font-style: italic; }
+
+.search-dropdown {
+  position: absolute; top: calc(100% + 4px); left: 0; right: 0;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  z-index: 200;
+  max-height: 220px;
+  overflow-y: auto;
+}
+.search-dropdown.hidden { display: none; }
+
+.dropdown-item {
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+  font-size: 0.88rem;
+  color: var(--ink-light);
+  border-bottom: 1px solid var(--parchment-3);
+  transition: background 0.1s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown-item:last-child { border-bottom: none; }
+.dropdown-item:hover { background: var(--parchment); }
+.dropdown-item.selected { background: var(--parchment-2); }
+
+.dropdown-item-name { font-weight: 700; color: var(--ink); }
+.dropdown-item-meta {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.04em;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 0.7rem;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--parchment);
+  background: var(--accent);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: background 0.15s, transform 0.1s;
+}
+.btn-submit:hover:not(:disabled) {
+  background: var(--ink);
+  transform: translateY(-1px);
+}
+.btn-submit:disabled {
+  background: var(--rule);
+  color: var(--ink-faint);
+  cursor: not-allowed;
+}
+
+/* ----------------------------------------------------------
+   Guess History
+---------------------------------------------------------- */
+.guesses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.guess-row {
+  border: 1px solid var(--parchment-3);
+  border-radius: var(--radius);
+  overflow: hidden;
+  animation: fadeSlideIn 0.25s ease;
+}
+
+.guess-row-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  background: var(--parchment);
+  border-bottom: 1px solid var(--parchment-3);
+}
+
+.guess-name {
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.guess-number {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--ink-faint);
+}
+
+.guess-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0.6rem 0.75rem;
+  background: #fff;
+}
+
+.guess-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.guess-tile-label {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.guess-tile-value {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.18rem 0.45rem;
+  border-radius: var(--radius);
+  letter-spacing: 0.04em;
+}
+.guess-tile-value.green  { background: var(--green-bg);  color: var(--green);  }
+.guess-tile-value.yellow { background: var(--yellow-bg); color: var(--yellow); }
+.guess-tile-value.grey   { background: var(--grey-bg);   color: var(--grey);   }
+
+.guess-votes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding: 0.5rem 0.75rem;
+  border-top: 1px solid var(--parchment-3);
+  background: var(--parchment);
+}
+
+.vote-tile {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 2px;
+  letter-spacing: 0.04em;
+}
+.vote-tile.green  { background: var(--green-bg);  color: var(--green);  }
+.vote-tile.yellow { background: var(--yellow-bg); color: var(--yellow); }
+.vote-tile.grey   { background: var(--grey-bg);   color: var(--grey);   }
+
+.guess-row.correct .guess-row-header {
+  background: var(--green-bg);
+  border-color: var(--green);
+}
+.guess-row.correct .guess-name { color: var(--green); }
+
+/* ----------------------------------------------------------
+   Map Panel
+---------------------------------------------------------- */
+.map-panel { padding: 1.25rem; }
+
+.map-container {
+  height: 300px;
+  border-radius: var(--radius);
+  border: 1px solid var(--rule);
+  overflow: hidden;
+  background: var(--parchment-2);
+}
+
+.candidate-count {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-faint);
+  font-weight: 400;
+}
+
+.map-hint {
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+  font-style: italic;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.map-tooltip {
+  position: fixed;
+  background: var(--ink);
+  color: var(--parchment);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  pointer-events: none;
+  z-index: 500;
+  max-width: 220px;
+  line-height: 1.5;
+}
+.map-tooltip.hidden { display: none; }
+.map-tooltip-title {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent-2);
+  margin-bottom: 0.25rem;
+}
+
+/* ----------------------------------------------------------
+   Screen 3 — Game Over
+---------------------------------------------------------- */
+#screen-gameover {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.gameover-banner {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  margin-bottom: 1.5rem;
+  border: 2px solid;
+}
+.gameover-banner.won {
+  background: var(--green-bg);
+  border-color: var(--green);
+  color: var(--green);
+}
+.gameover-banner.lost {
+  background: #f5d0d0;
+  border-color: #7a1a1a;
+  color: #7a1a1a;
+}
+.gameover-headline {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.gameover-sub {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
+.gameover-target {
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow-soft);
+}
+.gameover-target-name {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.gameover-target-meta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.06em;
+  margin-top: 0.25rem;
+}
+
+.gameover-votes {
+  background: var(--parchment-2);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.gameover-votes-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--ink);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  padding: 0.85rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--parchment);
+  background: var(--ink);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: background 0.15s;
+  text-align: center;
+}
+.btn-primary:hover { background: var(--accent); }
+
+/* ----------------------------------------------------------
+   Utility
+---------------------------------------------------------- */
+.hidden { display: none !important; }
+
+.no-guesses-yet {
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+  font-style: italic;
+  text-align: center;
+  padding: 0.75rem;
+}
