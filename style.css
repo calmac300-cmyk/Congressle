@@ -1720,3 +1720,125 @@ body {
   padding: 0.5rem 0 0.75rem;
   text-transform: uppercase;
 }
+
+/* ----------------------------------------------------------
+   Create Challenge screen
+---------------------------------------------------------- */
+.challenge-chamber-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.cc-tab {
+  flex: 1;
+  padding: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  color: var(--ink-faint);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.cc-tab.active {
+  background: var(--ink);
+  color: var(--parchment);
+  border-color: var(--ink);
+}
+
+.challenge-selected {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: var(--parchment-2);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.challenge-selected-name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.challenge-selected-meta {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-faint);
+  margin-top: 0.25rem;
+  letter-spacing: 0.04em;
+}
+
+.challenge-link-wrap {
+  margin-top: 1rem;
+}
+
+/* ----------------------------------------------------------
+   Custom Challenge Picker Modal
+---------------------------------------------------------- */
+.picker-chamber-toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.picker-chamber-btn {
+  flex: 1;
+  padding: 0.45rem 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  color: var(--ink-faint);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.picker-chamber-btn:hover { color: var(--ink-light); border-color: var(--ink-light); }
+.picker-chamber-btn.active {
+  background: var(--ink);
+  color: var(--parchment);
+  border-color: var(--ink);
+}
+
+.picker-selected {
+  background: var(--parchment-2);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+}
+
+.picker-selected-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.picker-name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+
+.picker-meta {
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+  font-family: var(--font-mono);
+}
+
+/* Masthead actions row — allow two buttons */
+.masthead-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}

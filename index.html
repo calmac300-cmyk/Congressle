@@ -67,6 +67,7 @@
 
     <div class="masthead-actions">
       <button id="btn-leaderboard" class="btn-leaderboard-home">🏛 Leaderboard</button>
+      <button id="btn-create-challenge" class="btn-leaderboard-home">⚔ Create Challenge</button>
     </div>
     <button id="btn-reset-streak-home" class="btn-reset-streak">Reset streak</button>
 
@@ -186,7 +187,7 @@
         <button id="btn-share" class="btn-share">Copy Result</button>
         <button id="btn-main-menu" class="btn-primary">Main Menu</button>
         <button id="btn-gameover-leaderboard" class="btn-secondary-action">🏛 Leaderboard</button>
-        <button id="btn-challenge" class="btn-secondary-action" style="display:none">⚔ Challenge a Friend</button>
+        <button id="btn-challenge" class="btn-secondary-action">⚔ Create Challenge</button>
         <button id="btn-play-other" class="btn-secondary-action">Play <span id="other-chamber"></span></button>
         <button id="btn-play-freeplay" class="btn-freeplay-gameover">Free Play <span id="freeplay-chamber"></span></button>
       </div>
@@ -350,6 +351,55 @@
   </div>
 
   <!-- ======================================================
+       Create Challenge Screen
+  ====================================================== -->
+  <div id="screen-create-challenge" class="screen">
+    <div class="leaderboard-wrap">
+      <div class="masthead" style="margin-bottom:1rem">
+        <div class="masthead-rule"></div>
+        <h1 class="masthead-title">Create a Challenge</h1>
+        <div class="masthead-rule"></div>
+      </div>
+
+      <p class="chamber-label">Search for any legislator to challenge a friend with:</p>
+
+      <div class="challenge-chamber-tabs">
+        <button class="cc-tab active" data-chamber="Senate">Senate</button>
+        <button class="cc-tab" data-chamber="House">House</button>
+      </div>
+
+      <div class="search-wrap" style="margin-top:0.75rem">
+        <input id="challenge-search-input" type="text"
+               class="search-input" placeholder="Search legislators…"
+               autocomplete="off">
+        <div id="challenge-search-dropdown" class="search-dropdown hidden"></div>
+      </div>
+
+      <div id="challenge-selected" class="challenge-selected hidden">
+        <div id="challenge-selected-name" class="challenge-selected-name"></div>
+        <div id="challenge-selected-meta" class="challenge-selected-meta"></div>
+        <button id="btn-generate-challenge" class="btn-primary" style="width:100%;margin-top:0.75rem">
+          Generate Challenge Link
+        </button>
+      </div>
+
+      <div id="challenge-link-wrap" class="challenge-link-wrap hidden">
+        <div id="challenge-link-display" class="challenge-url-display"></div>
+        <button id="btn-copy-challenge-cc" class="btn-primary" style="width:100%;margin-top:0.75rem">
+          Copy Link
+        </button>
+        <button id="btn-challenge-another" class="btn-secondary-action" style="margin-top:0.5rem">
+          Challenge Another
+        </button>
+      </div>
+
+      <button id="btn-cc-back" class="btn-reset-streak" style="margin-top:1.5rem">
+        ← Back to Menu
+      </button>
+    </div>
+  </div>
+
+  <!-- ======================================================
        Challenge Share Modal
   ====================================================== -->
   <div id="modal-challenge" class="modal-overlay hidden" role="dialog" aria-modal="true">
@@ -370,6 +420,58 @@
             Copy Challenge Link
           </button>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       Custom Challenge Picker Modal
+  ====================================================== -->
+  <div id="modal-challenge-picker" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="modal-title">Create a Custom Challenge</h2>
+        <button id="btn-picker-close" class="modal-close" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+
+        <div class="modal-section">
+          <p>Search for any legislator to create a shareable challenge link. Your friend won't know who it is until they solve it.</p>
+        </div>
+
+        <div class="modal-section">
+          <div class="picker-chamber-toggle">
+            <button class="picker-chamber-btn active" data-chamber="Senate">Senate</button>
+            <button class="picker-chamber-btn" data-chamber="House">House</button>
+          </div>
+          <div class="search-wrap" style="margin-top:0.75rem">
+            <input id="picker-search-input" type="text" class="search-input"
+                   placeholder="Search legislators…" autocomplete="off">
+            <div id="picker-dropdown" class="search-dropdown hidden"></div>
+          </div>
+        </div>
+
+        <div id="picker-selected" class="picker-selected hidden">
+          <div class="picker-selected-info">
+            <img id="picker-photo" src="" alt="" class="legislator-photo"
+                 onerror="this.style.display='none'" style="width:50px;height:62px">
+            <div>
+              <div id="picker-name" class="picker-name"></div>
+              <div id="picker-meta" class="picker-meta"></div>
+            </div>
+          </div>
+          <button id="btn-generate-link" class="btn-primary" style="width:100%;margin-top:0.75rem">
+            Generate Challenge Link
+          </button>
+        </div>
+
+        <div id="picker-link-result" class="modal-section hidden">
+          <div id="picker-url-display" class="challenge-url-display"></div>
+          <button id="btn-copy-picker-link" class="btn-primary" style="width:100%;margin-top:0.75rem">
+            Copy Link
+          </button>
+        </div>
+
       </div>
     </div>
   </div>

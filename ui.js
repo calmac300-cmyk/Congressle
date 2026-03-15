@@ -326,6 +326,161 @@
   }
 
   // ----------------------------------------------------------
+  // Create Challenge screen
+  // ----------------------------------------------------------
+  let _ccChamber   = 'Senate';
+  let _ccSelected  = null;
+
+  document.getElementById('btn-create-challenge').addEventListener('click', () => {
+    showCreateChallenge();
+  });
+
+  document.getElementById('btn-cc-back').addEventListener('click', () => {
+    showScreen('screen-chamber');
+  });
+
+  // Chamber tabs
+  document.querySelectorAll('.cc-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.cc-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      _ccChamber = tab.dataset.chamber;
+      _ccSelected = null;
+      document.getElementById('challenge-selected').classList.add('hidden');
+      document.getElementById('challenge-link-wrap').classList.add('hidden');
+      document.getElementById('challenge-search-input').value = '';
+      document.getElementById('challenge-search-dropdown').classList.add('hidden');
+    });
+  });
+
+  // Search input
+  const ccInput    = document.getElementById('challenge-search-input');
+  const ccDropdown = document.getElementById('challenge-search-dropdown');
+
+  ccInput.addEventListener('input', () => {
+    const q = ccInput.value.trim();
+    document.getElementById('challenge-selected').classList.add('hidden');
+    document.getElementById('challenge-link-wrap').classList.add('hidden');
+    _ccSelected = null;
+
+    if (q.length < 2) { ccDropdown.classList.add('hidden'); return; }
+
+    // Search the full pool for this chamber (no era filter for custom challenges)
+    const pool = CRGame.getAllLegislators().filter(l =>
+      l.chamber === _ccChamber &&
+      Object.keys(l.votes || {}).length >= 3
+    );
+    const qu = q.toUpperCase();
+    const results = pool
+      .map(l => {
+        const name = l.name.toUpperCase();
+        if (name.startsWith(qu))             return { l, score: 3 };
+        if (name.split(',')[0].startsWith(qu)) return { l, score: 2 };
+        if (name.includes(qu))               return { l, score: 1 };
+        return { l, score: 0 };
+      })
+      .filter(x => x.score > 0)
+      .sort((a, b) => b.score - a.score || b.l.last_congress - a.l.last_congress)
+      .slice(0, 8)
+      .map(x => x.l);
+
+    if (results.length === 0) { ccDropdown.classList.add('hidden'); return; }
+
+    ccDropdown.innerHTML = '';
+    results.forEach(leg => {
+      const item = document.createElement('div');
+      item.className = 'dropdown-item';
+      const photoHtml = leg.photo_url
+        ? `<img src="${leg.photo_url}" alt="" class="dropdown-photo" onerror="this.style.visibility='hidden'">`
+        : '<div class="dropdown-photo-placeholder"></div>';
+      item.innerHTML = photoHtml +
+        '<div class="dropdown-item-text">' +
+        '<span class="dropdown-item-name">' + formatName(leg.name) + '</span>' +
+        '<span class="dropdown-item-meta">' + leg.state + ' · ' + shortParty(leg.party) + ' · ' + CRGame.tenureString(leg) + '</span>' +
+        '</div>';
+      item.addEventListener('click', () => {
+        _ccSelected = leg;
+        ccInput.value = formatName(leg.name);
+        ccDropdown.classList.add('hidden');
+        const selDiv  = document.getElementById('challenge-selected');
+        document.getElementById('challenge-selected-name').textContent = formatName(leg.name);
+        document.getElementById('challenge-selected-meta').textContent =
+          leg.chamber + ' · ' + leg.state + ' · ' + shortParty(leg.party) + ' · ' + CRGame.tenureString(leg);
+        selDiv.classList.remove('hidden');
+        document.getElementById('challenge-link-wrap').classList.add('hidden');
+      });
+      ccDropdown.appendChild(item);
+    });
+    ccDropdown.classList.remove('hidden');
+  });
+
+  // Close dropdown on outside click
+  document.addEventListener('click', e => {
+    if (!e.target.closest('#challenge-search-input') &&
+        !e.target.closest('#challenge-search-dropdown')) {
+      ccDropdown.classList.add('hidden');
+    }
+  });
+
+  // Generate link
+  document.getElementById('btn-generate-challenge').addEventListener('click', async () => {
+    if (!_ccSelected) return;
+    const btn = document.getElementById('btn-generate-challenge');
+    btn.textContent = 'Generating…';
+    btn.disabled = true;
+
+    const code = await window.CRSupabase.createChallenge(_ccSelected.icpsr, _ccChamber);
+    btn.textContent = 'Generate Challenge Link';
+    btn.disabled = false;
+
+    const linkWrap = document.getElementById('challenge-link-wrap');
+    const display  = document.getElementById('challenge-link-display');
+
+    if (!code) {
+      display.textContent = 'Could not generate link — try again.';
+      linkWrap.classList.remove('hidden');
+      return;
+    }
+
+    const url = window.location.origin + window.location.pathname + '?c=' + code;
+    display.textContent = url;
+    linkWrap.classList.remove('hidden');
+
+    document.getElementById('btn-copy-challenge-cc').onclick = () => {
+      navigator.clipboard.writeText(url).catch(() => {
+        const ta = document.createElement('textarea');
+        ta.value = url; document.body.appendChild(ta);
+        ta.select(); document.execCommand('copy');
+        document.body.removeChild(ta);
+      });
+      document.getElementById('btn-copy-challenge-cc').textContent = 'Copied!';
+      setTimeout(() => {
+        document.getElementById('btn-copy-challenge-cc').textContent = 'Copy Link';
+      }, 2500);
+    };
+  });
+
+  document.getElementById('btn-challenge-another').addEventListener('click', () => {
+    _ccSelected = null;
+    ccInput.value = '';
+    document.getElementById('challenge-selected').classList.add('hidden');
+    document.getElementById('challenge-link-wrap').classList.add('hidden');
+  });
+
+  function showCreateChallenge() {
+    _ccChamber  = 'Senate';
+    _ccSelected = null;
+    ccInput.value = '';
+    ccDropdown.classList.add('hidden');
+    document.getElementById('challenge-selected').classList.add('hidden');
+    document.getElementById('challenge-link-wrap').classList.add('hidden');
+    document.querySelectorAll('.cc-tab').forEach((t, i) => {
+      t.classList.toggle('active', i === 0);
+    });
+    showScreen('screen-create-challenge');
+  }
+
+  // ----------------------------------------------------------
   // Challenge mode
   // ----------------------------------------------------------
   async function initChallengeFromCode(code) {
@@ -428,6 +583,197 @@
   });
 
   // ----------------------------------------------------------
+  // Custom Challenge Picker
+  // ----------------------------------------------------------
+  (function() {
+    const pickerModal    = document.getElementById('modal-challenge-picker');
+    const pickerInput    = document.getElementById('picker-search-input');
+    const pickerDropdown = document.getElementById('picker-dropdown');
+    const pickerSelected = document.getElementById('picker-selected');
+    const pickerLinkResult = document.getElementById('picker-link-result');
+    let pickerChamber    = 'Senate';
+    let pickerLegislator = null;
+
+    // Open from main menu button
+    const btnCreate = document.getElementById('btn-create-challenge');
+    if (btnCreate) btnCreate.addEventListener('click', openPickerModal);
+
+    // Also wire the game-over challenge button to open picker instead of auto-sharing
+    // (we'll handle this in showGameOver separately)
+
+    function openPickerModal() {
+      pickerModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      resetPicker();
+      pickerInput.focus();
+    }
+
+    function resetPicker() {
+      pickerInput.value = '';
+      pickerDropdown.classList.add('hidden');
+      pickerSelected.classList.add('hidden');
+      pickerLinkResult.classList.add('hidden');
+      pickerLegislator = null;
+    }
+
+    // Close
+    document.getElementById('btn-picker-close').addEventListener('click', () => {
+      pickerModal.classList.add('hidden');
+      document.body.style.overflow = '';
+    });
+    pickerModal.addEventListener('click', e => {
+      if (e.target === pickerModal) {
+        pickerModal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    });
+
+    // Chamber toggle
+    document.querySelectorAll('.picker-chamber-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.picker-chamber-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        pickerChamber = btn.dataset.chamber;
+        resetPicker();
+        pickerInput.focus();
+      });
+    });
+
+    // Search input
+    pickerInput.addEventListener('input', () => {
+      const q = pickerInput.value.trim();
+      pickerSelected.classList.add('hidden');
+      pickerLinkResult.classList.add('hidden');
+      pickerLegislator = null;
+
+      if (q.length < 2) { pickerDropdown.classList.add('hidden'); return; }
+
+      // Search the full pool for this chamber (no era filter for custom picks)
+      const pool = CRGame.getAllLegislators().filter(l =>
+        l.chamber === pickerChamber &&
+        Object.keys(l.votes || {}).length >= 3
+      );
+      const qu = q.toUpperCase();
+      const results = pool
+        .map(l => {
+          const name = l.name.toUpperCase();
+          if (name.startsWith(qu))          return { l, score: 3 };
+          if (name.split(',')[0].startsWith(qu)) return { l, score: 2 };
+          if (name.includes(qu))            return { l, score: 1 };
+          return { l, score: 0 };
+        })
+        .filter(x => x.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 8)
+        .map(x => x.l);
+
+      if (results.length === 0) { pickerDropdown.classList.add('hidden'); return; }
+
+      pickerDropdown.innerHTML = '';
+      results.forEach(leg => {
+        const item = document.createElement('div');
+        item.className = 'dropdown-item';
+        const photoHtml = leg.photo_url
+          ? `<img src="${leg.photo_url}" alt="" class="dropdown-photo" onerror="this.style.visibility='hidden'">`
+          : '<div class="dropdown-photo-placeholder"></div>';
+        item.innerHTML = photoHtml +
+          '<div class="dropdown-item-text">' +
+          '<span class="dropdown-item-name">' + formatName(leg.name) + '</span>' +
+          '<span class="dropdown-item-meta">' + leg.state + ' · ' + shortParty(leg.party) + ' · ' + CRGame.tenureString(leg) + '</span>' +
+          '</div>';
+        item.addEventListener('click', () => selectPickerLegislator(leg));
+        pickerDropdown.appendChild(item);
+      });
+      pickerDropdown.classList.remove('hidden');
+    });
+
+    pickerInput.addEventListener('keydown', e => {
+      const items = pickerDropdown.querySelectorAll('.dropdown-item');
+      const current = pickerDropdown.querySelector('.dropdown-item.selected');
+      let idx = Array.from(items).indexOf(current);
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        if (current) current.classList.remove('selected');
+        items[Math.min(idx + 1, items.length - 1)]?.classList.add('selected');
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (current) current.classList.remove('selected');
+        items[Math.max(idx - 1, 0)]?.classList.add('selected');
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        const sel = pickerDropdown.querySelector('.dropdown-item.selected');
+        if (sel) sel.click();
+        else if (items.length > 0) items[0].click();
+      } else if (e.key === 'Escape') {
+        pickerDropdown.classList.add('hidden');
+      }
+    });
+
+    // Close dropdown on outside click
+    document.addEventListener('click', e => {
+      if (!e.target.closest('#modal-challenge-picker .search-wrap')) {
+        pickerDropdown.classList.add('hidden');
+      }
+    });
+
+    function selectPickerLegislator(leg) {
+      pickerLegislator = leg;
+      pickerInput.value = formatName(leg.name);
+      pickerDropdown.classList.add('hidden');
+      pickerLinkResult.classList.add('hidden');
+
+      // Show selected card
+      const photo = document.getElementById('picker-photo');
+      photo.src = leg.photo_url || '';
+      photo.style.display = leg.photo_url ? '' : 'none';
+      document.getElementById('picker-name').textContent = formatName(leg.name);
+      document.getElementById('picker-meta').textContent =
+        leg.chamber + ' · ' + leg.state + ' · ' + shortParty(leg.party) + ' · ' +
+        CRGame.tenureString(leg) + ' · ' + Object.keys(leg.votes || {}).length + ' votes';
+      pickerSelected.classList.remove('hidden');
+    }
+
+    document.getElementById('btn-generate-link').addEventListener('click', async () => {
+      if (!pickerLegislator) return;
+      const btn = document.getElementById('btn-generate-link');
+      btn.textContent = 'Generating…';
+      btn.disabled = true;
+
+      const code = await window.CRSupabase.createChallenge(
+        pickerLegislator.icpsr, pickerLegislator.chamber
+      );
+
+      btn.textContent = 'Generate Challenge Link';
+      btn.disabled = false;
+
+      if (!code) {
+        alert('Could not generate link. Please try again.');
+        return;
+      }
+
+      const url = window.location.origin + window.location.pathname + '?c=' + code;
+      document.getElementById('picker-url-display').textContent = url;
+      pickerLinkResult.classList.remove('hidden');
+
+      document.getElementById('btn-copy-picker-link').onclick = () => {
+        navigator.clipboard.writeText(url).catch(() => {
+          const ta = document.createElement('textarea');
+          ta.value = url; document.body.appendChild(ta);
+          ta.select(); document.execCommand('copy');
+          document.body.removeChild(ta);
+        });
+        document.getElementById('btn-copy-picker-link').textContent = 'Copied!';
+        setTimeout(() => {
+          document.getElementById('btn-copy-picker-link').textContent = 'Copy Link';
+        }, 2500);
+      };
+    });
+
+    // Expose openPickerModal for use in showGameOver
+    window._openPickerModal = openPickerModal;
+  })();
+
+  // ----------------------------------------------------------
   // Game initialisation
   // ----------------------------------------------------------
   let map = null;
@@ -516,7 +862,7 @@
         const label     = el.dataset.label || '';
         const votePhoto = CRGame.getVotePhoto(label);
         const photoHtml = votePhoto.photo_url
-          ? '<img src="' + votePhoto.photo_url + '" alt="' + label + '" class="tooltip-bill-photo" onerror="this.style.display=\'none\'">'
+          ? '<img src="' + votePhoto.photo_url + '" alt="' + label + '" class="tooltip-bill-photo" onerror="this.style.visibility='hidden'">'
           + (votePhoto.caption ? '<div class="tooltip-bill-caption">' + votePhoto.caption + '</div>' : '')
           : '';
         return '<div class="map-tooltip-title">Vote Description</div>' + photoHtml + el.dataset.desc;
@@ -1269,11 +1615,13 @@
     const otherChamberSpan    = document.getElementById('other-chamber');
     const btnPlayOther        = document.getElementById('btn-play-other');
 
-    // Challenge button — only for daily games
+    // Challenge button — opens picker so they can choose any legislator
     if (btnChallenge) {
       if (!state.freeplay && !state.challenge) {
         btnChallenge.style.display = '';
-        btnChallenge.onclick = () => openChallengeModal(target);
+        btnChallenge.onclick = () => {
+          if (window._openPickerModal) window._openPickerModal();
+        };
       } else {
         btnChallenge.style.display = 'none';
       }
