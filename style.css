@@ -1391,3 +1391,84 @@ body {
   opacity: 1;
   border-style: solid;
 }
+
+/* ----------------------------------------------------------
+   Fix help button z-index (sits above map controls)
+   Leaflet zoom controls default to z-index 1000
+   Modal overlay must be above that
+---------------------------------------------------------- */
+.game-header {
+  z-index: 200;
+}
+
+.btn-help-icon {
+  position: relative;
+  z-index: 201;
+}
+
+.modal-overlay {
+  z-index: 1100;  /* above Leaflet's 1000 */
+}
+
+/* ----------------------------------------------------------
+   Reset Streak Button
+---------------------------------------------------------- */
+.btn-reset-streak {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  background: none;
+  border: 1px dashed var(--rule);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.btn-reset-streak:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ----------------------------------------------------------
+   Mobile map — enable touch scroll within map
+   but prevent it taking over page scroll
+---------------------------------------------------------- */
+@media (max-width: 768px) {
+  .map-container {
+    touch-action: pan-x pan-y;
+  }
+
+  /* Map hint updated for mobile */
+  .map-hint {
+    display: none;
+  }
+}
+
+/* ----------------------------------------------------------
+   Freeplay button on game over screen
+---------------------------------------------------------- */
+.btn-freeplay-gameover {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.7rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: none;
+  border: 1px dashed var(--rule);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.15s;
+  letter-spacing: 0.03em;
+}
+.btn-freeplay-gameover:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  border-style: solid;
+}

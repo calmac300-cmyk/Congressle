@@ -508,6 +508,26 @@ const CRGame = (() => {
     });
   }
 
+  // Normalise district code for map matching.
+  // At-large states use district 0 in Voteview but district 1 in GeoJSON.
+  // Single-member states: AK, DE, MT, ND, SD, VT, WY (and historically others)
+  const AT_LARGE_STATES = new Set([
+    'AK','DE','MT','ND','SD','VT','WY'
+  ]);
+
+  function normaliseDistrictForMap(state, districtCode) {
+    const dc = String(districtCode || '0');
+    // Voteview codes at-large as 0; GeoJSON codes them as 1
+    if (dc === '0' && AT_LARGE_STATES.has(state)) return '1';
+    // Some at-large reps coded as 98/99 — treat as 0/1
+    if (dc === '98' || dc === '99') return AT_LARGE_STATES.has(state) ? '1' : '0';
+    return dc;
+  }
+
+  function getDistrictCodeForMap(legislator) {
+    return normaliseDistrictForMap(legislator.state, legislator.district_code);
+  }
+
   // ----------------------------------------------------------
   // Streak tracking
   // Stored separately from daily session — persists across days
@@ -559,6 +579,17 @@ const CRGame = (() => {
     }
     _saveStreak(streak);
     return streak;
+  }
+
+  function resetStreak() {
+    try {
+      localStorage.removeItem(STREAK_KEY);
+      // Also clear today's daily sessions so puzzles can be replayed
+      const d = new Date();
+      const dateKey = `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
+      localStorage.removeItem(`crg_Senate_${dateKey}`);
+      localStorage.removeItem(`crg_House_${dateKey}`);
+    } catch(e) {}
   }
 
   function getStreak() {
@@ -627,6 +658,7 @@ const CRGame = (() => {
     startGame,
     getDailyTarget,
     getFreeplayTarget,
+    getCurrentTarget: () => _target,
     isFreeplay: () => _freeplay,
 
     // Gameplay
@@ -645,10 +677,14 @@ const CRGame = (() => {
     // Stats & sharing
     recordResult,
     getStreak,
+    resetStreak,
     buildShareString,
 
     // Photos
     getVotePhoto,
+
+    // Map helpers (district)
+    getDistrictCodeForMap,
 
     // Constants (exposed for UI)
     FEEDBACK,
