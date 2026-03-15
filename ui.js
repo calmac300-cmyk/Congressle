@@ -1066,7 +1066,7 @@
         <div class="gameover-sub">${resultLine}</div>
       </div>
       ${target ? `<div class="already-played-target">
-        <a href="https://en.wikipedia.org/wiki/${encodeURIComponent(wikiName(target.name))}"
+        <a href="https://en.wikipedia.org/wiki/${encodeURIComponent(target.wiki_slug || wikiName(target.name))}"
            target="_blank" rel="noopener" class="wiki-link">${formatName(target.name)}</a>
         <div class="gameover-target-meta">${target.chamber} · ${target.state} · ${shortParty(target.party)} · ${CRGame.tenureString(target)}</div>
       </div>` : ''}
@@ -1191,7 +1191,7 @@
         ${photoHtml}
         <div class="gameover-target-info">
           <div class="gameover-target-name">
-            <a href="https://en.wikipedia.org/wiki/${encodeURIComponent(wikiName(target.name))}"
+            <a href="https://en.wikipedia.org/wiki/${encodeURIComponent(target.wiki_slug || wikiName(target.name))}"
                target="_blank" rel="noopener" class="wiki-link">${formatName(target.name)}</a>
           </div>
           <div class="gameover-target-meta">
