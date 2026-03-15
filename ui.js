@@ -494,8 +494,8 @@
       // Build absolute URL — window.location.origin ensures we get https://host
       const pathBase = window.location.pathname.replace(/\/[^/]*$/, '/');
       const absBase  = window.location.origin + pathBase;
-      const res  = await fetch(absBase + 'districts/districts' + padded + '.json');
-      console.log('[fetch] district URL:', absBase + 'districts/districts' + padded + '.json');
+      const res  = await fetch(absBase + 'data/districts/districts' + padded + '.json');
+      console.log('[fetch] district URL:', absBase + 'data/districts/districts' + padded + '.json');
       if (!res.ok) throw new Error('Not found');
       const data = await res.json();
       districtLayerCache[congress] = data;
