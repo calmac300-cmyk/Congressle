@@ -64,6 +64,8 @@
       </div>
     </div>
 
+    <button id="btn-reset-streak-home" class="btn-reset-streak">Reset streak</button>
+
     <div class="how-to-play">
       <h2 class="htp-title">How to Play</h2>
       <ol class="htp-list">
@@ -173,6 +175,7 @@
       <div class="gameover-actions">
         <button id="btn-share" class="btn-share">Copy Result</button>
         <button id="btn-play-other" class="btn-primary">Play <span id="other-chamber"></span></button>
+        <button id="btn-play-freeplay" class="btn-freeplay-gameover">Free Play <span id="freeplay-chamber"></span></button>
       </div>
       <div id="share-confirm" class="share-confirm hidden">Copied to clipboard!</div>
     </div>
@@ -200,7 +203,11 @@
       <button id="btn-already-other" class="btn-primary">
         Play <span id="already-other-chamber"></span>
       </button>
+      <button id="btn-already-freeplay" class="btn-share" style="width:100%;margin-top:0.5rem">
+        Free Play <span id="already-freeplay-chamber"></span>
+      </button>
       <p class="already-played-hint">Come back tomorrow for a new puzzle.</p>
+      <button id="btn-reset-streak" class="btn-reset-streak">Reset streak data</button>
     </div>
   </div>
 

@@ -107,6 +107,21 @@
     showScreen('screen-chamber');
   });
 
+  // Reset streak buttons
+  document.getElementById('btn-reset-streak-home').addEventListener('click', () => {
+    if (confirm('Reset all streak data?')) {
+      CRGame.resetStreak();
+      renderStreak();
+    }
+  });
+  document.getElementById('btn-reset-streak').addEventListener('click', () => {
+    if (confirm('Reset all streak data?')) {
+      CRGame.resetStreak();
+      renderStreak();
+      showScreen('screen-chamber');
+    }
+  });
+
   // ----------------------------------------------------------
   // Help / About Modal
   // ----------------------------------------------------------
@@ -139,14 +154,17 @@
   let geojsonLayer = null;
   let stateData = {};   // state abbrev -> { layer, candidates[] }
 
+  let _currentMapChamber = null;  // track which chamber the map is showing
+  let _gameGeneration    = 0;     // incremented on each new game to cancel stale timeouts
+
   async function initGame(chamber, freeplay = false) {
+    _gameGeneration++;             // invalidate any pending setTimeout from previous game
+    const myGeneration = _gameGeneration;
     const state = CRGame.startGame(chamber, freeplay);
 
-    // Pre-load vote display names and summaries for this target
-    // without exposing the target identity
-    const dailyTarget = CRGame.getDailyTarget(chamber);
-    _targetDescriptions  = dailyTarget ? (dailyTarget.vote_summaries      || {}) : {};
-    _targetDisplayNames  = dailyTarget ? (dailyTarget.vote_display_names  || {}) : {};
+    const activeTarget = CRGame.getCurrentTarget();
+    _targetDescriptions = activeTarget ? (activeTarget.vote_summaries     || {}) : {};
+    _targetDisplayNames = activeTarget ? (activeTarget.vote_display_names || {}) : {};
 
     // Header
     document.getElementById('chamber-badge').textContent =
@@ -154,30 +172,42 @@
     document.getElementById('guess-counter').textContent =
       `${state.guessCount} / ${state.maxGuesses}`;
 
-    // Reset UI panels
+    // Reset UI panels fully — including clearing any previous game over state
     document.getElementById('guesses-list').innerHTML =
       '<p class="no-guesses-yet">Your guesses will appear here.</p>';
+    document.getElementById('votes-list').innerHTML = '';
     document.getElementById('search-input').value = '';
     document.getElementById('search-dropdown').classList.add('hidden');
     document.getElementById('btn-submit').disabled = true;
+    document.getElementById('gameover-target').innerHTML = '';
+    document.getElementById('gameover-votes').innerHTML = '';
     selectedLegislator = null;
 
     renderVotes(state);
 
-    // If game was already in progress or over, restore the full UI
     if (state.guessCount > 0) {
       renderGuesses(state);
     }
 
     showScreen('screen-game');
 
-    // Init map (only once)
+    // Init map once; force layer rebuild when chamber changes
     if (!map) await initMap();
+    if (_currentMapChamber !== chamber) {
+      // Remove existing layer to force fresh load for new chamber
+      if (geojsonLayer) { map.removeLayer(geojsonLayer); geojsonLayer = null; }
+      _currentMapChamber = chamber;
+    }
     await updateMap();
 
-    // If already game over, jump straight to reveal
     if (state.gameOver) {
-      setTimeout(() => showGameOver(state), 300);
+      const gen = myGeneration;
+      console.log('[initGame] scheduling showGameOver, gen:', gen);
+      setTimeout(() => {
+        console.log('[initGame timeout] gen:', gen, 'current:', _gameGeneration);
+        if (_gameGeneration === gen) showGameOver(state);
+        else console.log('[initGame timeout] stale, skipping');
+      }, 300);
     }
   }
 
@@ -352,7 +382,13 @@
     await updateMap();
 
     if (state.gameOver) {
-      setTimeout(() => showGameOver(state), 800);
+      const gen = _gameGeneration;
+      console.log('[handleSubmit] scheduling showGameOver, gen:', gen);
+      setTimeout(() => {
+        console.log('[handleSubmit timeout] gen:', gen, 'current:', _gameGeneration);
+        if (_gameGeneration === gen) showGameOver(state);
+        else console.log('[handleSubmit timeout] stale, skipping');
+      }, 800);
     }
   }
 
@@ -429,6 +465,8 @@
       zoomSnap: 0.5,
       zoomControl: true,
       scrollWheelZoom: false,
+      tap: true,
+      dragging: true,
       attributionControl: false,
     });
 
@@ -453,7 +491,9 @@
     if (districtLayerCache[congress]) return districtLayerCache[congress];
     const padded = String(congress).padStart(3, '0');
     try {
-      const res  = await fetch('data/districts/districts' + padded + '.json');
+      // Build absolute URL relative to the page — works on GitHub Pages subfolders
+      const pageBase = window.location.href.split('?')[0].replace(/\/[^/]*$/, '/');
+      const res  = await fetch(pageBase + 'districts/districts' + padded + '.json');
       if (!res.ok) throw new Error('Not found');
       const data = await res.json();
       districtLayerCache[congress] = data;
@@ -477,9 +517,11 @@
     }
 
     if (chamber === 'House') {
-      // Load district boundaries for the target's last congress
-      const target = CRGame.getDailyTarget('House');
+      // Use getCurrentTarget so freeplay targets work too
+      const target   = CRGame.getCurrentTarget();
       const congress = target ? target.last_congress : null;
+
+      console.log('[map] House mode, target:', target ? target.name : 'null', 'congress:', congress);
 
       if (congress) {
         const distData = await loadDistrictGeoJSON(congress);
@@ -488,11 +530,15 @@
             style:          districtStyle,
             onEachFeature:  bindDistrictEvents,
           }).addTo(map);
+          console.log('[map] District layer added, features:', distData.features.length);
+        } else {
+          console.warn('[map] District data null for congress', congress);
         }
       }
 
       // Fall back to state layer if district file not available
       if (!geojsonLayer && stateGeoJSON) {
+        console.warn('[map] Falling back to state layer');
         geojsonLayer = L.geoJSON(stateGeoJSON, {
           style:         stateStyle,
           onEachFeature: bindStateEvents,
@@ -619,11 +665,10 @@
     const { state, district } = getDistrictKey(feature.properties);
     const eliminated = CRGame.getEliminatedStates();
 
-    // A district is eliminated if its state is eliminated OR
-    // no viable candidate is from that state+district
     const isStateElim = eliminated.has(state);
     const hasCandidate = !isStateElim && CRGame.getViableCandidates()
-      .some(l => l.state === state && String(l.district_code) === district);
+      .some(l => l.state === state &&
+                 CRGame.getDistrictCodeForMap(l) === district);
 
     const isElim = isStateElim || !hasCandidate;
     return {
@@ -641,7 +686,8 @@
 
     layer.on('mouseover', e => {
       const candidates = CRGame.getViableCandidates()
-        .filter(l => l.state === state && String(l.district_code) === district);
+        .filter(l => l.state === state &&
+                     CRGame.getDistrictCodeForMap(l) === district);
 
       if (candidates.length === 0) return;
 
@@ -722,7 +768,9 @@
 
     const other = chamber === 'Senate' ? 'House' : 'Senate';
     document.getElementById('already-other-chamber').textContent = other;
-    document.getElementById('btn-already-other').onclick = () => initGame(other);
+    document.getElementById('btn-already-other').onclick = () => initGame(other, false);
+    document.getElementById('btn-already-freeplay-chamber').textContent = chamber;
+    document.getElementById('btn-already-freeplay').onclick = () => initGame(chamber, true);
 
     showScreen('screen-already-played');
   }
@@ -731,7 +779,17 @@
   // Game Over Screen
   // ----------------------------------------------------------
   function showGameOver(state) {
-    const target  = state.target;
+    const target = state.target || CRGame.getCurrentTarget();
+
+    console.log('[showGameOver] called, target:', target ? target.name : 'NULL',
+                'gameOver:', state.gameOver, 'won:', state.won,
+                'generation check passed');
+
+    if (!target) {
+      console.warn('[showGameOver] No target available — skipping');
+      return;
+    }
+
     const banner  = document.getElementById('gameover-banner');
     const tDiv    = document.getElementById('gameover-target');
     const vDiv    = document.getElementById('gameover-votes');
@@ -740,8 +798,11 @@
     banner.innerHTML = state.won
       ? `<div class="gameover-headline">Identified!</div>
          <div class="gameover-sub">You got it in ${state.guessCount} guess${state.guessCount !== 1 ? 'es' : ''}.</div>`
-      : `<div class="gameover-headline">Not quite.</div>
-         <div class="gameover-sub">Better luck tomorrow.</div>`;
+      : state.freeplay
+        ? `<div class="gameover-headline">Not quite.</div>
+           <div class="gameover-sub">Try another?</div>`
+        : `<div class="gameover-headline">Not quite.</div>
+           <div class="gameover-sub">Better luck tomorrow.</div>`;
 
     // Most revealing vote — highest dissent score
     const revealingLabel = target.most_revealing_vote;
@@ -866,14 +927,24 @@
       });
     };
 
-    // Other chamber / play again buttons
+    // Other chamber / play again / freeplay buttons
     const other    = target.chamber === 'Senate' ? 'House' : 'Senate';
     const freeplay = state.freeplay;
+
+    const freeplayBtn  = document.getElementById('btn-play-freeplay');
+    const freeplayChamberSpan = document.getElementById('freeplay-chamber');
+
+    if (freeplayChamberSpan) freeplayChamberSpan.textContent = target.chamber;
+    if (freeplayBtn) {
+      freeplayBtn.onclick = () => initGame(target.chamber, true);
+      freeplayBtn.style.display = '';
+    }
 
     if (freeplay) {
       document.getElementById('other-chamber').textContent = 'Again';
       document.getElementById('btn-play-other').textContent = 'Play Again';
       document.getElementById('btn-play-other').onclick = () => initGame(target.chamber, true);
+      if (freeplayBtn) freeplayBtn.style.display = 'none';
     } else {
       document.getElementById('other-chamber').textContent = other;
       document.getElementById('btn-play-other').textContent = 'Play ' + other;
