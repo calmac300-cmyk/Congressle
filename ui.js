@@ -539,12 +539,13 @@
         const d = new Date();
         const puzzleDate = d.getFullYear() + '-' + (d.getMonth()+1) + '-' + d.getDate();
         window.CRSupabase.submitResult({
-          chamber:     state.chamber,
-          mode:        'daily',
-          targetIcpsr: target ? target.icpsr : '',
-          targetName:  target ? target.name  : '',
-          won:         state.won,
-          guessCount:  state.guessCount,
+          chamber:           state.chamber,
+          mode:              'daily',
+          targetIcpsr:       target ? target.icpsr : '',
+          targetName:        target ? target.name  : '',
+          won:               state.won,
+          guessCount:        state.guessCount,
+          revealedVotesCount: state.revealedVotes,
           puzzleDate,
         });
       }
