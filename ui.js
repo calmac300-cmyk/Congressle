@@ -202,7 +202,12 @@
 
     if (state.gameOver) {
       const gen = myGeneration;
-      setTimeout(() => { if (_gameGeneration === gen) showGameOver(state); }, 300);
+      console.log('[initGame] scheduling showGameOver, gen:', gen);
+      setTimeout(() => {
+        console.log('[initGame timeout] gen:', gen, 'current:', _gameGeneration);
+        if (_gameGeneration === gen) showGameOver(state);
+        else console.log('[initGame timeout] stale, skipping');
+      }, 300);
     }
   }
 
@@ -378,7 +383,12 @@
 
     if (state.gameOver) {
       const gen = _gameGeneration;
-      setTimeout(() => { if (_gameGeneration === gen) showGameOver(state); }, 800);
+      console.log('[handleSubmit] scheduling showGameOver, gen:', gen);
+      setTimeout(() => {
+        console.log('[handleSubmit timeout] gen:', gen, 'current:', _gameGeneration);
+        if (_gameGeneration === gen) showGameOver(state);
+        else console.log('[handleSubmit timeout] stale, skipping');
+      }, 800);
     }
   }
 
@@ -505,9 +515,11 @@
     }
 
     if (chamber === 'House') {
-      // Load district boundaries for the target's last congress
-      const target = CRGame.getDailyTarget('House');
+      // Use getCurrentTarget so freeplay targets work too
+      const target   = CRGame.getCurrentTarget();
       const congress = target ? target.last_congress : null;
+
+      console.log('[map] House mode, target:', target ? target.name : 'null', 'congress:', congress);
 
       if (congress) {
         const distData = await loadDistrictGeoJSON(congress);
@@ -516,11 +528,15 @@
             style:          districtStyle,
             onEachFeature:  bindDistrictEvents,
           }).addTo(map);
+          console.log('[map] District layer added, features:', distData.features.length);
+        } else {
+          console.warn('[map] District data null for congress', congress);
         }
       }
 
       // Fall back to state layer if district file not available
       if (!geojsonLayer && stateGeoJSON) {
+        console.warn('[map] Falling back to state layer');
         geojsonLayer = L.geoJSON(stateGeoJSON, {
           style:         stateStyle,
           onEachFeature: bindStateEvents,
@@ -761,7 +777,17 @@
   // Game Over Screen
   // ----------------------------------------------------------
   function showGameOver(state) {
-    const target  = state.target;
+    const target = state.target || CRGame.getCurrentTarget();
+
+    console.log('[showGameOver] called, target:', target ? target.name : 'NULL',
+                'gameOver:', state.gameOver, 'won:', state.won,
+                'generation check passed');
+
+    if (!target) {
+      console.warn('[showGameOver] No target available — skipping');
+      return;
+    }
+
     const banner  = document.getElementById('gameover-banner');
     const tDiv    = document.getElementById('gameover-target');
     const vDiv    = document.getElementById('gameover-votes');
