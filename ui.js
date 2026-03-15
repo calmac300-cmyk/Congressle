@@ -847,8 +847,8 @@
       const row = document.createElement('div');
       row.className = 'vote-row';
       const cls = result === 'Yea' ? 'yea' : result === 'Nay' ? 'nay' : 'absent';
-      const desc        = _targetDescriptions[label]  || '';
-      const displayName = _targetDisplayNames[label] || label;
+      const desc        = _targetDescriptions[label]  || CRGame.getVoteMeta(label).summary || '';
+      const displayName = _targetDisplayNames[label] || CRGame.getVoteMeta(label).display_name || label;
       row.innerHTML = `
         <span class="vote-label ${desc ? 'has-tooltip' : ''}" data-desc="${desc}" data-label="${label}">${displayName}</span>
         <span class="vote-result ${cls}">${result}</span>
@@ -1078,7 +1078,7 @@
 
   function voteTile({ label, guessVote, feedback }) {
     const display     = guessVote || 'N/A';
-    const displayName = _targetDisplayNames[label] || label;
+    const displayName = _targetDisplayNames[label] || CRGame.getVoteMeta(label).display_name || label;
     const short       = displayName.length > 30 ? displayName.slice(0, 28) + '…' : displayName;
     return `<span class="vote-tile ${feedback}" title="${displayName}: ${display}">${short}</span>`;
   }
@@ -1491,7 +1491,7 @@
     let revealingHtml = '';
     if (revealingLabel && target.vote_party_context) {
       const ctx         = target.vote_party_context[revealingLabel] || {};
-      const displayName = (target.vote_display_names || {})[revealingLabel] || revealingLabel;
+      const displayName = (target.vote_display_names || {})[revealingLabel] || CRGame.getVoteMeta(revealingLabel).display_name || revealingLabel;
       const cast        = target.votes[revealingLabel];
       const partyName   = shortParty(target.party);
       const p_yea       = ctx.party_yea || 0;
@@ -1559,8 +1559,8 @@
       <div class="votes-list">
         ${allVotes.map(([label, result]) => {
           const cls         = result === 'Yea' ? 'yea' : result === 'Nay' ? 'nay' : 'absent';
-          const displayName = (target.vote_display_names || {})[label] || label;
-          const summary     = (target.vote_summaries     || {})[label] || '';
+          const displayName = (target.vote_display_names || {})[label] || CRGame.getVoteMeta(label).display_name || label;
+          const summary     = (target.vote_summaries     || {})[label] || CRGame.getVoteMeta(label).summary || '';
           return `<div class="vote-row ${summary ? 'has-tooltip' : ''}"
                        data-desc="${summary}">
             <span class="vote-label">${displayName}</span>

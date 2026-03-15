@@ -66,6 +66,7 @@ const CRGame = (() => {
   let _allTargets     = { Senate: [], House: [] };  // loaded from targets.json
   let _allLegislators = [];                         // loaded from legislators.json (full pool for search)
   let _votePhotos     = {};                         // loaded from vote_photos.json
+  let _voteMeta       = {};                         // loaded from vote_meta.json — display names & summaries
   let _chamber      = null;   // 'Senate' | 'House' — chosen by player
   let _target       = null;   // the day's target legislator object
   let _guesses      = [];     // array of guess result objects
@@ -83,14 +84,20 @@ const CRGame = (() => {
   // ----------------------------------------------------------
 
   async function loadData() {
-    const [targetsRes, legislatorsRes, photosRes] = await Promise.all([
+    const [targetsRes, legislatorsRes, photosRes, metaRes] = await Promise.all([
       fetch('data/targets.json'),
       fetch('data/legislators.json'),
       fetch('data/vote_photos.json'),
+      fetch('data/vote_meta.json'),
     ]);
     _allTargets     = await targetsRes.json();
     _allLegislators = await legislatorsRes.json();
     _votePhotos     = await photosRes.json();
+    _voteMeta       = await metaRes.json();
+  }
+
+  function getVoteMeta(label) {
+    return _voteMeta[label] || { display_name: label, summary: '' };
   }
 
   function getVotePhoto(label) {
@@ -741,6 +748,7 @@ const CRGame = (() => {
 
     // Photos
     getVotePhoto,
+    getVoteMeta,
 
     // Map helpers (district)
     getDistrictCodeForMap,
