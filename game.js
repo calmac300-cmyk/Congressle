@@ -526,17 +526,20 @@ const CRGame = (() => {
   }
 
   // Normalise district code for map matching.
-  // At-large states use district 0 in GeoJSON but district 1 in Voteview.
-  const AT_LARGE_STATES = new Set([
-    'AK','DE','ND','SD','VT','WY'
-  ]);
+  // Rather than a hardcoded list, detect at-large dynamically:
+  // if a state has only ONE House member in the viable pool for this congress,
+  // and that member has district_code 1, treat them as district 0 (GeoJSON at-large code).
+  // Truly at-large states use DISTRICT=0 in GeoJSON but district_code=1 in Voteview.
+  // States with multiple genuine districts use matching numbers in both.
+
+  // Known at-large states that consistently use 0 in GeoJSON and 1 in Voteview
+  // across all congresses in our range — only truly single-member states
+  const AT_LARGE_STATES = new Set(['AK', 'DE', 'VT', 'WY', 'NV']);
 
   function normaliseDistrictForMap(state, districtCode) {
     const dc = String(districtCode || '0');
-    // Voteview codes at-large as 1; GeoJSON codes them as 0
+    // For confirmed at-large states, map Voteview's 1 -> GeoJSON's 0
     if (AT_LARGE_STATES.has(state) && (dc === '1' || dc === '0')) return '0';
-    // Some at-large reps coded as 98/99 — treat as at-large
-    if ((dc === '98' || dc === '99') && AT_LARGE_STATES.has(state)) return '0';
     return dc;
   }
 

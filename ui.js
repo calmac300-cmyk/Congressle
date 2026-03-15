@@ -1257,8 +1257,16 @@
     const other    = target.chamber === 'Senate' ? 'House' : 'Senate';
     const freeplay = state.freeplay;
 
+    // Grab all game over buttons upfront
+    const btnChallenge        = document.getElementById('btn-challenge');
+    const btnMainMenu         = document.getElementById('btn-main-menu');
+    const btnGoLb             = document.getElementById('btn-gameover-leaderboard');
+    const freeplayBtn         = document.getElementById('btn-play-freeplay');
+    const freeplayChamberSpan = document.getElementById('freeplay-chamber');
+    const otherChamberSpan    = document.getElementById('other-chamber');
+    const btnPlayOther        = document.getElementById('btn-play-other');
+
     // Challenge button — only for daily games
-    const btnChallenge = document.getElementById('btn-challenge');
     if (btnChallenge) {
       if (!state.freeplay && !state.challenge) {
         btnChallenge.style.display = '';
@@ -1268,20 +1276,16 @@
       }
     }
 
-    // Main menu button — cleanest way to start a new game
-    const btnMainMenu = document.getElementById('btn-main-menu');
+    // Main menu button
     if (btnMainMenu) btnMainMenu.onclick = () => showScreen('screen-chamber');
 
-    // Leaderboard button on game over
-    const btnGoLb = document.getElementById('btn-gameover-leaderboard');
+    // Leaderboard button
     if (btnGoLb) btnGoLb.onclick = () => showLeaderboard();
-    const freeplayChamberSpan = document.getElementById('freeplay-chamber');
-    const otherChamberSpan    = document.getElementById('other-chamber');
-    const btnPlayOther        = document.getElementById('btn-play-other');
 
+    // Freeplay button
     if (freeplayChamberSpan) freeplayChamberSpan.textContent = target.chamber;
     if (freeplayBtn) {
-      freeplayBtn.onclick      = () => initGame(target.chamber, true);
+      freeplayBtn.onclick       = () => initGame(target.chamber, true);
       freeplayBtn.style.display = '';
     }
 
