@@ -391,7 +391,7 @@
       const item = document.createElement('div');
       item.className = 'dropdown-item';
       const photoHtml = leg.photo_url
-        ? `<img src="${leg.photo_url}" alt="" class="dropdown-photo" onerror="this.style.visibility='hidden'">`
+        ? `<img src="${leg.photo_url}" alt="" class="dropdown-photo" onerror="this.style.visibility=\'hidden\'">`
         : '<div class="dropdown-photo-placeholder"></div>';
       item.innerHTML = photoHtml +
         '<div class="dropdown-item-text">' +
@@ -674,7 +674,7 @@
         const item = document.createElement('div');
         item.className = 'dropdown-item';
         const photoHtml = leg.photo_url
-          ? `<img src="${leg.photo_url}" alt="" class="dropdown-photo" onerror="this.style.visibility='hidden'">`
+          ? `<img src="${leg.photo_url}" alt="" class="dropdown-photo" onerror="this.style.visibility=\'hidden\'">`
           : '<div class="dropdown-photo-placeholder"></div>';
         item.innerHTML = photoHtml +
           '<div class="dropdown-item-text">' +
@@ -862,7 +862,7 @@
         const label     = el.dataset.label || '';
         const votePhoto = CRGame.getVotePhoto(label);
         const photoHtml = votePhoto.photo_url
-          ? '<img src="' + votePhoto.photo_url + '" alt="' + label + '" class="tooltip-bill-photo" onerror="this.style.visibility='hidden'">'
+          ? '<img src="' + votePhoto.photo_url + '" alt="' + label + '" class="tooltip-bill-photo" onerror="this.style.visibility=\'hidden\'">'
           + (votePhoto.caption ? '<div class="tooltip-bill-caption">' + votePhoto.caption + '</div>' : '')
           : '';
         return '<div class="map-tooltip-title">Vote Description</div>' + photoHtml + el.dataset.desc;
@@ -917,7 +917,7 @@
       const photoHtml = leg.photo_url
         ? `<img src="${leg.photo_url}" alt="${formatName(leg.name)}"
                 class="dropdown-photo"
-                onerror="this.style.display='none'">`
+                onerror="this.style.display=\\'none\\'">`
         : `<div class="dropdown-photo-placeholder"></div>`;
       item.innerHTML = `
         ${photoHtml}
@@ -1532,7 +1532,7 @@
     const photoHtml = target.photo_url
       ? `<img src="${target.photo_url}" alt="${formatName(target.name)}"
               class="legislator-photo"
-              onerror="this.style.display='none'">`
+              onerror="this.style.display=\\'none\\'">`
       : '';
 
     tDiv.innerHTML = `
