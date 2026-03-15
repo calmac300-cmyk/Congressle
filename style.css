@@ -1359,3 +1359,35 @@ body {
     padding: 0.9rem 1rem 1.25rem;
   }
 }
+
+/* ----------------------------------------------------------
+   Freeplay Section
+---------------------------------------------------------- */
+.freeplay-select {
+  margin-top: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--rule);
+}
+
+.freeplay-select .chamber-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.freeplay-badge {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--accent-2);
+  font-weight: 700;
+}
+
+.freeplay-btn {
+  border-style: dashed;
+  opacity: 0.85;
+}
+
+.freeplay-btn:hover {
+  opacity: 1;
+  border-style: solid;
+}

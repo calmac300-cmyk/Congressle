@@ -72,6 +72,9 @@ const CRGame = (() => {
   let _revealedVotes= 0;      // how many votes are currently visible
   let _gameOver     = false;
   let _won          = false;
+  let _freeplay     = false;  // true when in freeplay mode
+
+  const FREEPLAY_MIN_VOTES = 8;  // minimum votes for a freeplay target
 
   // ----------------------------------------------------------
   // Data loading
@@ -149,27 +152,50 @@ const CRGame = (() => {
     }
   }
 
+  function getFreeplayTarget(chamber) {
+    // Pick a random legislator from the full pool with enough votes
+    const pool = _allLegislators.filter(l =>
+      l.chamber === chamber &&
+      Object.keys(l.votes || {}).length >= FREEPLAY_MIN_VOTES
+    );
+    if (pool.length === 0) return null;
+    return pool[Math.floor(Math.random() * pool.length)];
+  }
+
   // ----------------------------------------------------------
   // Game initialisation
   // Call this when the player picks a chamber.
   // ----------------------------------------------------------
 
-  function startGame(chamber) {
-    _chamber = chamber;
-    _target  = getDailyTarget(chamber);
+  function startGame(chamber, freeplay = false) {
+    _chamber  = chamber;
+    _freeplay = freeplay;
 
-    // Try to restore today's saved session
-    const saved = _loadSavedState(chamber);
-    if (saved && saved.chamber === chamber) {
-      _guesses       = saved.guesses       || [];
-      _revealedVotes = saved.revealedVotes || Math.min(VOTES_INITIAL, Object.keys(_target.votes).length);
-      _gameOver      = saved.gameOver      || false;
-      _won           = saved.won           || false;
-    } else {
+    if (freeplay) {
+      // Freeplay — random target, no save/restore
+      _target        = getFreeplayTarget(chamber);
       _guesses       = [];
       _gameOver      = false;
       _won           = false;
-      _revealedVotes = Math.min(VOTES_INITIAL, Object.keys(_target.votes).length);
+      _revealedVotes = _target
+        ? Math.min(VOTES_INITIAL, Object.keys(_target.votes).length)
+        : 0;
+    } else {
+      _target = getDailyTarget(chamber);
+
+      // Try to restore today's saved session
+      const saved = _loadSavedState(chamber);
+      if (saved && saved.chamber === chamber) {
+        _guesses       = saved.guesses       || [];
+        _revealedVotes = saved.revealedVotes || Math.min(VOTES_INITIAL, Object.keys(_target.votes).length);
+        _gameOver      = saved.gameOver      || false;
+        _won           = saved.won           || false;
+      } else {
+        _guesses       = [];
+        _gameOver      = false;
+        _won           = false;
+        _revealedVotes = Math.min(VOTES_INITIAL, Object.keys(_target.votes).length);
+      }
     }
 
     return getState();
@@ -358,8 +384,10 @@ const CRGame = (() => {
       }
     }
 
-    _saveState();
-    if (_gameOver) recordResult(_won);
+    if (!_freeplay) {
+      _saveState();
+      if (_gameOver) recordResult(_won);
+    }
     return getState();
   }
 
@@ -379,6 +407,7 @@ const CRGame = (() => {
       revealedVotes:  _revealedVotes,
       gameOver:       _gameOver,
       won:            _won,
+      freeplay:       _freeplay,
       // Only expose target on game over
       target:         _gameOver ? _target : null,
     };
@@ -597,6 +626,8 @@ const CRGame = (() => {
     loadData,
     startGame,
     getDailyTarget,
+    getFreeplayTarget,
+    isFreeplay: () => _freeplay,
 
     // Gameplay
     search,

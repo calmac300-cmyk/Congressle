@@ -33,17 +33,33 @@
     </div>
 
     <div class="chamber-select">
-      <p class="chamber-label">Select your chamber</p>
+      <p class="chamber-label">Daily Puzzle</p>
       <div class="chamber-buttons">
-        <button class="chamber-btn" data-chamber="Senate">
+        <button class="chamber-btn" data-chamber="Senate" data-mode="daily">
           <span class="chamber-icon">⬡</span>
           <span class="chamber-name">Senate</span>
           <span class="chamber-desc">100 members · harder</span>
         </button>
-        <button class="chamber-btn" data-chamber="House">
+        <button class="chamber-btn" data-chamber="House" data-mode="daily">
           <span class="chamber-icon">⬡</span>
           <span class="chamber-name">House</span>
           <span class="chamber-desc">435 members · broader</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="chamber-select freeplay-select">
+      <p class="chamber-label">Free Play <span class="freeplay-badge">∞</span></p>
+      <div class="chamber-buttons">
+        <button class="chamber-btn freeplay-btn" data-chamber="Senate" data-mode="freeplay">
+          <span class="chamber-icon">⬡</span>
+          <span class="chamber-name">Senate</span>
+          <span class="chamber-desc">Random · no streak</span>
+        </button>
+        <button class="chamber-btn freeplay-btn" data-chamber="House" data-mode="freeplay">
+          <span class="chamber-icon">⬡</span>
+          <span class="chamber-name">House</span>
+          <span class="chamber-desc">Random · no streak</span>
         </button>
       </div>
     </div>

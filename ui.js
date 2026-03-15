@@ -28,19 +28,18 @@
   // Check if there's a saved session from today and restore it
   const d = new Date();
   const dateKey = `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
+  // Only restore daily sessions (never freeplay)
   for (const chamber of ['Senate', 'House']) {
     try {
       const saved = localStorage.getItem(`crg_${chamber}_${dateKey}`);
       if (saved) {
         const parsed = JSON.parse(saved);
         if (parsed.gameOver) {
-          // Already finished today — show the already-played screen
-          await initGame(chamber);
+          await initGame(chamber, false);
           showAlreadyPlayed(chamber, parsed);
           return;
         } else if (parsed.guesses && parsed.guesses.length > 0) {
-          // In progress — restore game
-          await initGame(chamber);
+          await initGame(chamber, false);
           return;
         }
       }
@@ -98,8 +97,9 @@
   // ----------------------------------------------------------
   document.querySelectorAll('.chamber-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      const chamber = btn.dataset.chamber;
-      initGame(chamber);
+      const chamber  = btn.dataset.chamber;
+      const freeplay = btn.dataset.mode === 'freeplay';
+      initGame(chamber, freeplay);
     });
   });
 
@@ -139,8 +139,8 @@
   let geojsonLayer = null;
   let stateData = {};   // state abbrev -> { layer, candidates[] }
 
-  async function initGame(chamber) {
-    const state = CRGame.startGame(chamber);
+  async function initGame(chamber, freeplay = false) {
+    const state = CRGame.startGame(chamber, freeplay);
 
     // Pre-load vote display names and summaries for this target
     // without exposing the target identity
@@ -149,7 +149,8 @@
     _targetDisplayNames  = dailyTarget ? (dailyTarget.vote_display_names  || {}) : {};
 
     // Header
-    document.getElementById('chamber-badge').textContent = chamber;
+    document.getElementById('chamber-badge').textContent =
+      chamber + (freeplay ? ' · Free Play' : '');
     document.getElementById('guess-counter').textContent =
       `${state.guessCount} / ${state.maxGuesses}`;
 
@@ -172,7 +173,7 @@
 
     // Init map (only once)
     if (!map) await initMap();
-    updateMap();
+    await updateMap();
 
     // If already game over, jump straight to reveal
     if (state.gameOver) {
@@ -334,7 +335,7 @@
   // ----------------------------------------------------------
   btnSubmit.addEventListener('click', handleSubmit);
 
-  function handleSubmit() {
+  async function handleSubmit() {
     if (!selectedLegislator || btnSubmit.disabled) return;
     const state = CRGame.submitGuess(selectedLegislator);
 
@@ -348,12 +349,15 @@
 
     renderVotes(state);
     renderGuesses(state);
-    updateMap();
+    await updateMap();
 
     if (state.gameOver) {
       setTimeout(() => showGameOver(state), 800);
     }
   }
+
+  // expose initGame for freeplay "play again" button
+  window._initGame = initGame;
 
   // ----------------------------------------------------------
   // Guess history rendering
@@ -416,6 +420,8 @@
   // ----------------------------------------------------------
   // Map
   // ----------------------------------------------------------
+  let districtLayerCache = {};   // congress -> GeoJSON data, cached after first load
+
   async function initMap() {
     map = L.map('map', {
       center: [38, -96],
@@ -426,23 +432,95 @@
       attributionControl: false,
     });
 
-    // Minimal tile layer — muted to let our colours stand out
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
       subdomains: 'abcd',
       maxZoom: 19,
     }).addTo(map);
 
-    // Load US states GeoJSON
+    // Load state GeoJSON upfront — always needed for Senate
     try {
       const res  = await fetch('data/us-states.json');
-      const data = await res.json();
-      geojsonLayer = L.geoJSON(data, {
-        style: stateStyle,
-        onEachFeature: bindStateEvents,
-      }).addTo(map);
+      stateGeoJSON = await res.json();
     } catch (e) {
-      console.warn('Could not load us-states.geojson — map will show tiles only');
+      console.warn('Could not load us-states.json — map will show tiles only');
     }
+  }
+
+  // Stored state GeoJSON for reuse
+  let stateGeoJSON = null;
+
+  async function loadDistrictGeoJSON(congress) {
+    if (districtLayerCache[congress]) return districtLayerCache[congress];
+    const padded = String(congress).padStart(3, '0');
+    try {
+      const res  = await fetch('data/districts/districts' + padded + '.json');
+      if (!res.ok) throw new Error('Not found');
+      const data = await res.json();
+      districtLayerCache[congress] = data;
+      return data;
+    } catch (e) {
+      console.warn('Could not load district GeoJSON for Congress ' + congress);
+      return null;
+    }
+  }
+
+  async function updateMap() {
+    if (!map) return;
+
+    const state   = CRGame.getState();
+    const chamber = state.chamber;
+
+    // Remove existing layer
+    if (geojsonLayer) {
+      map.removeLayer(geojsonLayer);
+      geojsonLayer = null;
+    }
+
+    if (chamber === 'House') {
+      // Load district boundaries for the target's last congress
+      const target = CRGame.getDailyTarget('House');
+      const congress = target ? target.last_congress : null;
+
+      if (congress) {
+        const distData = await loadDistrictGeoJSON(congress);
+        if (distData) {
+          geojsonLayer = L.geoJSON(distData, {
+            style:          districtStyle,
+            onEachFeature:  bindDistrictEvents,
+          }).addTo(map);
+        }
+      }
+
+      // Fall back to state layer if district file not available
+      if (!geojsonLayer && stateGeoJSON) {
+        geojsonLayer = L.geoJSON(stateGeoJSON, {
+          style:         stateStyle,
+          onEachFeature: bindStateEvents,
+        }).addTo(map);
+      }
+    } else {
+      // Senate — always use state layer
+      if (stateGeoJSON) {
+        geojsonLayer = L.geoJSON(stateGeoJSON, {
+          style:         stateStyle,
+          onEachFeature: bindStateEvents,
+        }).addTo(map);
+      }
+    }
+
+    // Redraw if layer already existed (guess was submitted)
+    if (geojsonLayer) {
+      geojsonLayer.eachLayer(layer => {
+        const isDistrict = layer.feature.properties.DISTRICT !== undefined ||
+                           layer.feature.properties.district !== undefined;
+        layer.setStyle(isDistrict ? districtStyle(layer.feature)
+                                  : stateStyle(layer.feature));
+      });
+    }
+
+    const viable = CRGame.getViableCandidates();
+    document.getElementById('candidate-count').textContent =
+      viable.length + ' candidate' + (viable.length !== 1 ? 's' : '') + ' remaining';
   }
 
   const FIPS_TO_ABBR = {
@@ -456,12 +534,39 @@
     '55':'WI','56':'WY','72':'PR',
   };
 
+  // Full state name -> abbreviation for district layer joins
+  const NAME_TO_ABBR = {
+    'Alabama':'AL','Alaska':'AK','Arizona':'AZ','Arkansas':'AR','California':'CA',
+    'Colorado':'CO','Connecticut':'CT','Delaware':'DE','Florida':'FL','Georgia':'GA',
+    'Hawaii':'HI','Idaho':'ID','Illinois':'IL','Indiana':'IN','Iowa':'IA',
+    'Kansas':'KS','Kentucky':'KY','Louisiana':'LA','Maine':'ME','Maryland':'MD',
+    'Massachusetts':'MA','Michigan':'MI','Minnesota':'MN','Mississippi':'MS',
+    'Missouri':'MO','Montana':'MT','Nebraska':'NE','Nevada':'NV',
+    'New Hampshire':'NH','New Jersey':'NJ','New Mexico':'NM','New York':'NY',
+    'North Carolina':'NC','North Dakota':'ND','Ohio':'OH','Oklahoma':'OK',
+    'Oregon':'OR','Pennsylvania':'PA','Rhode Island':'RI','South Carolina':'SC',
+    'South Dakota':'SD','Tennessee':'TN','Texas':'TX','Utah':'UT','Vermont':'VT',
+    'Virginia':'VA','Washington':'WA','West Virginia':'WV','Wisconsin':'WI',
+    'Wyoming':'WY',
+  };
+
   function getStateAbbr(props) {
     return props.STUSPS || props.postal || props.STUSAB ||
            props.STATE_ABBR || props.abbr ||
            FIPS_TO_ABBR[props.STATE] || '';
   }
 
+  function getDistrictKey(props) {
+    // Returns {state, district} for matching against legislators
+    const stateName = props.STATENAME || props.state_name || props.StateName || '';
+    const stateAbbr = NAME_TO_ABBR[stateName] || '';
+    const district  = String(parseInt(props.DISTRICT || props.district || 0));
+    return { state: stateAbbr, district };
+  }
+
+  // ----------------------------------------------------------
+  // Senate — state-level styling and events
+  // ----------------------------------------------------------
   function stateStyle(feature) {
     const abbr       = getStateAbbr(feature.properties);
     const eliminated = CRGame.getEliminatedStates();
@@ -484,28 +589,74 @@
       const eliminated = CRGame.getEliminatedStates();
       if (eliminated.has(abbr)) return;
 
-      const candidates = CRGame.getViableCandidates()
-        .filter(l => l.state === abbr)
-        .slice(0, 8);
-
+      const all        = CRGame.getViableCandidates().filter(l => l.state === abbr);
+      const candidates = all.slice(0, 8);
       if (candidates.length === 0) return;
 
       const tooltip = document.getElementById('map-tooltip');
-      tooltip.innerHTML = `
-        <div class="map-tooltip-title">${name}</div>
-        <ul class="tooltip-candidates">
-          ${candidates.map(c => `<li>${formatName(c.name)}</li>`).join('')}
-          ${CRGame.getViableCandidates().filter(l => l.state === abbr).length > 8
-            ? `<li class="tooltip-more">+${CRGame.getViableCandidates().filter(l => l.state === abbr).length - 8} more…</li>`
-            : ''}
-        </ul>
-      `;
+      tooltip.innerHTML =
+        '<div class="map-tooltip-title">' + name + '</div>' +
+        '<ul class="tooltip-candidates">' +
+        candidates.map(c => '<li>' + formatName(c.name) + '</li>').join('') +
+        (all.length > 8
+          ? '<li class="tooltip-more">+' + (all.length - 8) + ' more\u2026</li>'
+          : '') +
+        '</ul>';
       tooltip.classList.remove('hidden');
       moveTooltip(e.originalEvent);
     });
 
     layer.on('mousemove', e => moveTooltip(e.originalEvent));
+    layer.on('mouseout', () => {
+      document.getElementById('map-tooltip').classList.add('hidden');
+    });
+  }
 
+  // ----------------------------------------------------------
+  // House — district-level styling and events
+  // ----------------------------------------------------------
+  function districtStyle(feature) {
+    const { state, district } = getDistrictKey(feature.properties);
+    const eliminated = CRGame.getEliminatedStates();
+
+    // A district is eliminated if its state is eliminated OR
+    // no viable candidate is from that state+district
+    const isStateElim = eliminated.has(state);
+    const hasCandidate = !isStateElim && CRGame.getViableCandidates()
+      .some(l => l.state === state && String(l.district_code) === district);
+
+    const isElim = isStateElim || !hasCandidate;
+    return {
+      fillColor:   isElim ? '#c8b99a' : '#8b1a1a',
+      fillOpacity: isElim ? 0.15     : 0.40,
+      color:       '#7a6a54',
+      weight:      0.5,
+      opacity:     0.7,
+    };
+  }
+
+  function bindDistrictEvents(feature, layer) {
+    const { state, district } = getDistrictKey(feature.properties);
+    const stateName = feature.properties.STATENAME || state;
+
+    layer.on('mouseover', e => {
+      const candidates = CRGame.getViableCandidates()
+        .filter(l => l.state === state && String(l.district_code) === district);
+
+      if (candidates.length === 0) return;
+
+      const label   = stateName + (district !== '0' ? ' District ' + district : ' (At-Large)');
+      const tooltip = document.getElementById('map-tooltip');
+      tooltip.innerHTML =
+        '<div class="map-tooltip-title">' + label + '</div>' +
+        '<ul class="tooltip-candidates">' +
+        candidates.map(c => '<li>' + formatName(c.name) + '</li>').join('') +
+        '</ul>';
+      tooltip.classList.remove('hidden');
+      moveTooltip(e.originalEvent);
+    });
+
+    layer.on('mousemove', e => moveTooltip(e.originalEvent));
     layer.on('mouseout', () => {
       document.getElementById('map-tooltip').classList.add('hidden');
     });
@@ -515,19 +666,6 @@
     const t = document.getElementById('map-tooltip');
     t.style.left = (e.clientX + 14) + 'px';
     t.style.top  = (e.clientY - 10) + 'px';
-  }
-
-  function updateMap() {
-    if (!geojsonLayer) return;
-
-    // Force redraw each layer individually — more reliable than setStyle()
-    geojsonLayer.eachLayer(layer => {
-      layer.setStyle(stateStyle(layer.feature));
-    });
-
-    const viable = CRGame.getViableCandidates();
-    document.getElementById('candidate-count').textContent =
-      `${viable.length} candidate${viable.length !== 1 ? 's' : ''} remaining`;
   }
 
   // ----------------------------------------------------------
@@ -728,10 +866,19 @@
       });
     };
 
-    // Other chamber button
-    const other = target.chamber === 'Senate' ? 'House' : 'Senate';
-    document.getElementById('other-chamber').textContent = other;
-    document.getElementById('btn-play-other').onclick = () => initGame(other);
+    // Other chamber / play again buttons
+    const other    = target.chamber === 'Senate' ? 'House' : 'Senate';
+    const freeplay = state.freeplay;
+
+    if (freeplay) {
+      document.getElementById('other-chamber').textContent = 'Again';
+      document.getElementById('btn-play-other').textContent = 'Play Again';
+      document.getElementById('btn-play-other').onclick = () => initGame(target.chamber, true);
+    } else {
+      document.getElementById('other-chamber').textContent = other;
+      document.getElementById('btn-play-other').textContent = 'Play ' + other;
+      document.getElementById('btn-play-other').onclick = () => initGame(other, false);
+    }
 
     // Refresh streak display
     renderStreak();
