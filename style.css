@@ -1494,7 +1494,6 @@ body {
   color: var(--ink);
   border-color: var(--ink-light);
 }
-<<<<<<< HEAD
 
 /* ----------------------------------------------------------
    Touch-only elements (shown only on touch devices)
@@ -1681,5 +1680,3 @@ body {
   justify-content: center;
   margin-bottom: 0.75rem;
 }
-=======
->>>>>>> 3832aadf1eae00724d4363b9311444f8eb2424b5

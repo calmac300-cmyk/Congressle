@@ -660,10 +660,6 @@
       const pathBase = window.location.pathname.replace(/\/[^/]*$/, '/');
       const absBase  = window.location.origin + pathBase;
       const res  = await fetch(absBase + 'data/districts/districts' + padded + '.json');
-<<<<<<< HEAD
-=======
-      console.log('[fetch] district URL:', absBase + 'data/districts/districts' + padded + '.json');
->>>>>>> 3832aadf1eae00724d4363b9311444f8eb2424b5
       if (!res.ok) throw new Error('Not found');
       const data = await res.json();
       districtLayerCache[congress] = data;
@@ -1152,13 +1148,10 @@
     // Main menu button — cleanest way to start a new game
     const btnMainMenu = document.getElementById('btn-main-menu');
     if (btnMainMenu) btnMainMenu.onclick = () => showScreen('screen-chamber');
-<<<<<<< HEAD
 
     // Leaderboard button on game over
     const btnGoLb = document.getElementById('btn-gameover-leaderboard');
     if (btnGoLb) btnGoLb.onclick = () => showLeaderboard();
-=======
->>>>>>> 3832aadf1eae00724d4363b9311444f8eb2424b5
     const freeplayChamberSpan = document.getElementById('freeplay-chamber');
     const otherChamberSpan    = document.getElementById('other-chamber');
     const btnPlayOther        = document.getElementById('btn-play-other');
