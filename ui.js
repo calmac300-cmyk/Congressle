@@ -107,6 +107,21 @@
     showScreen('screen-chamber');
   });
 
+  // Reset streak buttons
+  document.getElementById('btn-reset-streak-home').addEventListener('click', () => {
+    if (confirm('Reset all streak data?')) {
+      CRGame.resetStreak();
+      renderStreak();
+    }
+  });
+  document.getElementById('btn-reset-streak').addEventListener('click', () => {
+    if (confirm('Reset all streak data?')) {
+      CRGame.resetStreak();
+      renderStreak();
+      showScreen('screen-chamber');
+    }
+  });
+
   // ----------------------------------------------------------
   // Help / About Modal
   // ----------------------------------------------------------
@@ -142,11 +157,12 @@
   async function initGame(chamber, freeplay = false) {
     const state = CRGame.startGame(chamber, freeplay);
 
-    // Pre-load vote display names and summaries for this target
-    // without exposing the target identity
-    const dailyTarget = CRGame.getDailyTarget(chamber);
-    _targetDescriptions  = dailyTarget ? (dailyTarget.vote_summaries      || {}) : {};
-    _targetDisplayNames  = dailyTarget ? (dailyTarget.vote_display_names  || {}) : {};
+    // Get the active target's display data without exposing identity
+    // getCurrentTarget is safe — it returns the target object for descriptions
+    // but the game only exposes it fully via state.target on game over
+    const activeTarget = CRGame.getCurrentTarget();
+    _targetDescriptions = activeTarget ? (activeTarget.vote_summaries     || {}) : {};
+    _targetDisplayNames = activeTarget ? (activeTarget.vote_display_names || {}) : {};
 
     // Header
     document.getElementById('chamber-badge').textContent =
@@ -429,6 +445,8 @@
       zoomSnap: 0.5,
       zoomControl: true,
       scrollWheelZoom: false,
+      tap: true,
+      dragging: true,
       attributionControl: false,
     });
 
@@ -453,7 +471,7 @@
     if (districtLayerCache[congress]) return districtLayerCache[congress];
     const padded = String(congress).padStart(3, '0');
     try {
-      const res  = await fetch('data/districts/districts' + padded + '.json');
+      const res  = await fetch('districts/districts' + padded + '.json');
       if (!res.ok) throw new Error('Not found');
       const data = await res.json();
       districtLayerCache[congress] = data;
@@ -619,11 +637,10 @@
     const { state, district } = getDistrictKey(feature.properties);
     const eliminated = CRGame.getEliminatedStates();
 
-    // A district is eliminated if its state is eliminated OR
-    // no viable candidate is from that state+district
     const isStateElim = eliminated.has(state);
     const hasCandidate = !isStateElim && CRGame.getViableCandidates()
-      .some(l => l.state === state && String(l.district_code) === district);
+      .some(l => l.state === state &&
+                 CRGame.getDistrictCodeForMap(l) === district);
 
     const isElim = isStateElim || !hasCandidate;
     return {
@@ -641,7 +658,8 @@
 
     layer.on('mouseover', e => {
       const candidates = CRGame.getViableCandidates()
-        .filter(l => l.state === state && String(l.district_code) === district);
+        .filter(l => l.state === state &&
+                     CRGame.getDistrictCodeForMap(l) === district);
 
       if (candidates.length === 0) return;
 
@@ -722,7 +740,9 @@
 
     const other = chamber === 'Senate' ? 'House' : 'Senate';
     document.getElementById('already-other-chamber').textContent = other;
-    document.getElementById('btn-already-other').onclick = () => initGame(other);
+    document.getElementById('btn-already-other').onclick = () => initGame(other, false);
+    document.getElementById('btn-already-freeplay-chamber').textContent = chamber;
+    document.getElementById('btn-already-freeplay').onclick = () => initGame(chamber, true);
 
     showScreen('screen-already-played');
   }
@@ -740,8 +760,11 @@
     banner.innerHTML = state.won
       ? `<div class="gameover-headline">Identified!</div>
          <div class="gameover-sub">You got it in ${state.guessCount} guess${state.guessCount !== 1 ? 'es' : ''}.</div>`
-      : `<div class="gameover-headline">Not quite.</div>
-         <div class="gameover-sub">Better luck tomorrow.</div>`;
+      : state.freeplay
+        ? `<div class="gameover-headline">Not quite.</div>
+           <div class="gameover-sub">Try another?</div>`
+        : `<div class="gameover-headline">Not quite.</div>
+           <div class="gameover-sub">Better luck tomorrow.</div>`;
 
     // Most revealing vote — highest dissent score
     const revealingLabel = target.most_revealing_vote;
