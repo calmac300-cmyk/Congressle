@@ -1680,3 +1680,30 @@ body {
   justify-content: center;
   margin-bottom: 0.75rem;
 }
+
+/* ----------------------------------------------------------
+   Challenge mode
+---------------------------------------------------------- */
+.challenge-banner {
+  background: var(--ink);
+  color: var(--parchment);
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.challenge-url-display {
+  background: var(--parchment-2);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 0.65rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-light);
+  word-break: break-all;
+  line-height: 1.5;
+  min-height: 2.5rem;
+}

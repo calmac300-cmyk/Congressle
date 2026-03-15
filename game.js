@@ -73,6 +73,8 @@ const CRGame = (() => {
   let _gameOver     = false;
   let _won          = false;
   let _freeplay     = false;  // true when in freeplay mode
+  let _challenge    = false;  // true when in challenge mode
+  let _shareCode    = null;   // current challenge share code
 
   const FREEPLAY_MIN_VOTES = 8;  // minimum votes for a freeplay target
 
@@ -162,14 +164,28 @@ const CRGame = (() => {
     return pool[Math.floor(Math.random() * pool.length)];
   }
 
+  function startChallenge(challengeTarget, chamber) {
+    // Start a game with a specific legislator from the full pool
+    _chamber   = chamber;
+    _freeplay  = false;
+    _challenge = true;
+    _target    = challengeTarget;
+    _guesses       = [];
+    _gameOver      = false;
+    _won           = false;
+    _revealedVotes = Math.min(VOTES_INITIAL, Object.keys(_target.votes).length);
+    return getState();
+  }
+
   // ----------------------------------------------------------
   // Game initialisation
   // Call this when the player picks a chamber.
   // ----------------------------------------------------------
 
   function startGame(chamber, freeplay = false) {
-    _chamber  = chamber;
-    _freeplay = freeplay;
+    _chamber   = chamber;
+    _freeplay  = freeplay;
+    _challenge = false;
 
     if (freeplay) {
       // Freeplay — random target, no save/restore
@@ -384,7 +400,7 @@ const CRGame = (() => {
       }
     }
 
-    if (!_freeplay) {
+    if (!_freeplay && !_challenge) {
       _saveState();
       if (_gameOver) recordResult(_won);
     }
@@ -408,6 +424,7 @@ const CRGame = (() => {
       gameOver:       _gameOver,
       won:            _won,
       freeplay:       _freeplay,
+      challenge:      _challenge,
       // Only expose target on game over
       target:         _gameOver ? _target : null,
     };
@@ -658,7 +675,10 @@ const CRGame = (() => {
     getDailyTarget,
     getFreeplayTarget,
     getCurrentTarget: () => _target,
-    isFreeplay: () => _freeplay,
+    getAllLegislators: () => _allLegislators,
+    isFreeplay:    () => _freeplay,
+    isChallenge:   () => _challenge,
+    startChallenge,
 
     // Gameplay
     search,

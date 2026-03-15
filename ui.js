@@ -43,6 +43,13 @@
   // Render streak stats on chamber select
   renderStreak();
 
+  // Check for challenge URL parameter (?c=xxxxxx)
+  const urlParams  = new URLSearchParams(window.location.search);
+  const challengeCode = urlParams.get('c');
+  if (challengeCode && window.CRSupabase) {
+    initChallengeFromCode(challengeCode);
+  } else {
+
   // Check if there's a saved session from today and restore it
   const d = new Date();
   const dateKey = `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
@@ -63,6 +70,8 @@
       }
     } catch(e) {}
   }
+
+  } // end else (not a challenge URL)
 
   // ----------------------------------------------------------
   // Streak display
@@ -308,6 +317,108 @@
   }
 
   // ----------------------------------------------------------
+  // Challenge mode
+  // ----------------------------------------------------------
+  async function initChallengeFromCode(code) {
+    // Show loading state
+    document.getElementById('loading').classList.remove('hidden');
+
+    const challenge = await window.CRSupabase.getChallenge(code);
+    document.getElementById('loading').classList.add('hidden');
+
+    if (!challenge) {
+      alert('Challenge link not found or expired.');
+      showScreen('screen-chamber');
+      return;
+    }
+
+    // Find the target in legislators pool — loadData already called at boot
+    const legs = CRGame.getAllLegislators();
+
+    // Look up legislator by icpsr
+    const leg = legs.find(l => l.icpsr === challenge.target_icpsr);
+    if (!leg || Object.keys(leg.votes || {}).length < 3) {
+      alert('Could not load challenge target.');
+      showScreen('screen-chamber');
+      return;
+    }
+
+    const state = CRGame.startChallenge(leg, challenge.chamber);
+    _targetDescriptions = leg.vote_summaries     || {};
+    _targetDisplayNames = leg.vote_display_names || {};
+
+    // Update header
+    document.getElementById('chamber-badge').textContent =
+      challenge.chamber + ' · Challenge';
+    document.getElementById('guess-counter').textContent =
+      '0 / ' + state.maxGuesses;
+
+    // Show challenge banner
+    document.getElementById('challenge-banner').classList.remove('hidden');
+
+    // Reset UI
+    document.getElementById('guesses-list').innerHTML =
+      '<p class="no-guesses-yet">Your guesses will appear here.</p>';
+    document.getElementById('search-input').value = '';
+    document.getElementById('search-dropdown').classList.add('hidden');
+    document.getElementById('btn-submit').disabled = true;
+    document.getElementById('gameover-target').innerHTML = '';
+    document.getElementById('gameover-votes').innerHTML = '';
+    selectedLegislator = null;
+
+    renderVotes(state);
+    showScreen('screen-game');
+
+    _gameGeneration++;
+    if (!map) await initMap();
+    _currentMapChamber = null;
+    await updateMap();
+  }
+
+  function openChallengeModal(target) {
+    const modal = document.getElementById('modal-challenge');
+    const display = document.getElementById('challenge-url-display');
+    const copyBtn = document.getElementById('btn-copy-challenge');
+
+    display.textContent = 'Generating link…';
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+
+    window.CRSupabase.createChallenge(target.icpsr, target.chamber).then(code => {
+      if (!code) {
+        display.textContent = 'Could not generate link. Try again.';
+        return;
+      }
+      const url = window.location.origin + window.location.pathname + '?c=' + code;
+      display.textContent = url;
+
+      copyBtn.onclick = () => {
+        navigator.clipboard.writeText(url).catch(() => {
+          const ta = document.createElement('textarea');
+          ta.value = url;
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+        });
+        copyBtn.textContent = 'Copied!';
+        setTimeout(() => { copyBtn.textContent = 'Copy Challenge Link'; }, 2500);
+      };
+    });
+  }
+
+  document.getElementById('btn-challenge-modal-close').addEventListener('click', () => {
+    document.getElementById('modal-challenge').classList.add('hidden');
+    document.body.style.overflow = '';
+  });
+  document.getElementById('modal-challenge').addEventListener('click', e => {
+    if (e.target === document.getElementById('modal-challenge')) {
+      document.getElementById('modal-challenge').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+  });
+
+  // ----------------------------------------------------------
   // Game initialisation
   // ----------------------------------------------------------
   let map = null;
@@ -533,18 +644,18 @@
     await updateMap();
 
     if (state.gameOver) {
-      // Submit to Supabase (daily only, non-blocking)
+      // Submit to Supabase (daily + challenge, not freeplay)
       if (!state.freeplay && window.CRSupabase && window.CRSupabase.getLocalPlayer()) {
         const target = CRGame.getCurrentTarget();
         const d = new Date();
         const puzzleDate = d.getFullYear() + '-' + (d.getMonth()+1) + '-' + d.getDate();
         window.CRSupabase.submitResult({
-          chamber:           state.chamber,
-          mode:              'daily',
-          targetIcpsr:       target ? target.icpsr : '',
-          targetName:        target ? target.name  : '',
-          won:               state.won,
-          guessCount:        state.guessCount,
+          chamber:            state.chamber,
+          mode:               state.challenge ? 'challenge' : 'daily',
+          targetIcpsr:        target ? target.icpsr : '',
+          targetName:         target ? target.name  : '',
+          won:                state.won,
+          guessCount:         state.guessCount,
           revealedVotesCount: state.revealedVotes,
           puzzleDate,
         });
@@ -1145,6 +1256,17 @@
     // Other chamber / play again / freeplay buttons
     const other    = target.chamber === 'Senate' ? 'House' : 'Senate';
     const freeplay = state.freeplay;
+
+    // Challenge button — only for daily games
+    const btnChallenge = document.getElementById('btn-challenge');
+    if (btnChallenge) {
+      if (!state.freeplay && !state.challenge) {
+        btnChallenge.style.display = '';
+        btnChallenge.onclick = () => openChallengeModal(target);
+      } else {
+        btnChallenge.style.display = 'none';
+      }
+    }
 
     // Main menu button — cleanest way to start a new game
     const btnMainMenu = document.getElementById('btn-main-menu');

@@ -92,6 +92,11 @@
   ====================================================== -->
   <div id="screen-game" class="screen">
 
+    <!-- Challenge banner (hidden unless in challenge mode) -->
+    <div id="challenge-banner" class="challenge-banner hidden">
+      A friend challenged you — identify this legislator!
+    </div>
+
     <!-- Header bar -->
     <header class="game-header">
       <button id="btn-back" class="btn-ghost">← Change chamber</button>
@@ -181,6 +186,7 @@
         <button id="btn-share" class="btn-share">Copy Result</button>
         <button id="btn-main-menu" class="btn-primary">Main Menu</button>
         <button id="btn-gameover-leaderboard" class="btn-secondary-action">🏛 Leaderboard</button>
+        <button id="btn-challenge" class="btn-secondary-action" style="display:none">⚔ Challenge a Friend</button>
         <button id="btn-play-other" class="btn-secondary-action">Play <span id="other-chamber"></span></button>
         <button id="btn-play-freeplay" class="btn-freeplay-gameover">Free Play <span id="freeplay-chamber"></span></button>
       </div>
@@ -339,6 +345,31 @@
       <div class="leaderboard-name-row">
         <span id="lb-player-name-display" class="lb-player-name"></span>
         <button id="btn-change-name" class="btn-reset-streak">Change name</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       Challenge Share Modal
+  ====================================================== -->
+  <div id="modal-challenge" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="modal-title">Challenge a Friend</h2>
+        <button id="btn-challenge-modal-close" class="modal-close" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <p>Share this link — your friend will get the same legislator without knowing who it is.</p>
+        </div>
+        <div class="modal-section">
+          <div id="challenge-url-display" class="challenge-url-display">
+            Generating link…
+          </div>
+          <button id="btn-copy-challenge" class="btn-primary" style="width:100%;margin-top:0.75rem">
+            Copy Challenge Link
+          </button>
+        </div>
       </div>
     </div>
   </div>
