@@ -18,9 +18,27 @@
   }
   document.getElementById('loading').classList.add('hidden');
 
-  // Set today's date in masthead
+  // Set today's date and volume number in masthead
   document.getElementById('today-date').textContent =
     new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+
+  function toRoman(n) {
+    const vals = [1000,900,500,400,100,90,50,40,10,9,5,4,1];
+    const syms = ['M','CM','D','CD','C','XC','L','XL','X','IX','V','IV','I'];
+    let result = '';
+    for (let i = 0; i < vals.length; i++) {
+      while (n >= vals[i]) { result += syms[i]; n -= vals[i]; }
+    }
+    return result;
+  }
+
+  const volEpoch = new Date(2026, 2, 15); // March 15, 2026 = Vol. I
+  const volDays  = Math.floor((new Date() - volEpoch) / 86400000) + 1;
+  const volEl    = document.getElementById('masthead-vol');
+  if (volEl) volEl.innerHTML =
+    'Vol. ' + toRoman(volDays) + ' &nbsp;·&nbsp; <span id="today-date">' +
+    new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) +
+    '</span>';
 
   // Render streak stats on chamber select
   renderStreak();
@@ -148,6 +166,148 @@
   }
 
   // ----------------------------------------------------------
+  // Player name modal
+  // ----------------------------------------------------------
+  function showPlayerModal(onComplete) {
+    const modal = document.getElementById('modal-player');
+    const input = document.getElementById('player-name-input');
+    const existing = window.CRSupabase.getLocalPlayer();
+    if (existing) input.value = existing.display_name;
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    input.focus();
+
+    document.getElementById('btn-save-name').onclick = async () => {
+      const name = input.value.trim();
+      if (!name) { input.focus(); return; }
+      await window.CRSupabase.getOrCreatePlayer(name);
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+      updateLbNameDisplay();
+      if (onComplete) onComplete();
+    };
+
+    document.getElementById('btn-skip-name').onclick = () => {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+      if (onComplete) onComplete();
+    };
+
+    input.addEventListener('keydown', e => {
+      if (e.key === 'Enter') document.getElementById('btn-save-name').click();
+    });
+  }
+
+  function updateLbNameDisplay() {
+    const player = window.CRSupabase ? window.CRSupabase.getLocalPlayer() : null;
+    const el = document.getElementById('lb-player-name-display');
+    if (el) el.textContent = player ? ('Playing as: ' + player.display_name) : 'Playing anonymously';
+  }
+
+  // Show name prompt on first visit
+  if (window.CRSupabase && !window.CRSupabase.getLocalPlayer()) {
+    showPlayerModal(null);
+  }
+
+  // Leaderboard button
+  document.getElementById('btn-leaderboard').addEventListener('click', () => {
+    showLeaderboard();
+  });
+
+  document.getElementById('btn-lb-back').addEventListener('click', () => {
+    showScreen('screen-chamber');
+  });
+
+  document.getElementById('btn-change-name').addEventListener('click', () => {
+    showPlayerModal(updateLbNameDisplay);
+  });
+
+  // Leaderboard tab switching
+  document.querySelectorAll('.lb-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.lb-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      loadLeaderboardTab(tab.dataset.tab);
+    });
+  });
+
+  async function showLeaderboard() {
+    updateLbNameDisplay();
+    showScreen('screen-leaderboard');
+    loadLeaderboardTab('daily-senate');
+  }
+
+  async function loadLeaderboardTab(tab) {
+    const content = document.getElementById('leaderboard-content');
+    content.innerHTML = '<div class="lb-loading">Loading…</div>';
+
+    const d = new Date();
+    const puzzleDate = d.getFullYear() + '-' + (d.getMonth()+1) + '-' + d.getDate();
+
+    try {
+      let rows = [];
+      if (tab === 'daily-senate') {
+        rows = await window.CRSupabase.getDailyLeaderboard('Senate', puzzleDate);
+        renderDailyLeaderboard(content, rows, 'Senate', puzzleDate);
+      } else if (tab === 'daily-house') {
+        rows = await window.CRSupabase.getDailyLeaderboard('House', puzzleDate);
+        renderDailyLeaderboard(content, rows, 'House', puzzleDate);
+      } else {
+        rows = await window.CRSupabase.getAllTimeLeaderboard();
+        renderAllTimeLeaderboard(content, rows);
+      }
+    } catch(e) {
+      content.innerHTML = '<div class="lb-empty">Could not load leaderboard.</div>';
+    }
+  }
+
+  function renderDailyLeaderboard(el, rows, chamber, date) {
+    if (rows.length === 0) {
+      el.innerHTML = '<div class="lb-empty">No results yet for today\'s ' + chamber + ' puzzle.<br>Be the first!</div>';
+      return;
+    }
+    el.innerHTML = '<table class="lb-table">' +
+      '<thead><tr><th>#</th><th>Name</th><th>Guesses</th></tr></thead>' +
+      '<tbody>' +
+      rows.map((r, i) => {
+        const player = window.CRSupabase.getLocalPlayer();
+        const isMe   = player && player.display_name === r.display_name;
+        return '<tr class="' + (isMe ? 'lb-me' : '') + '">' +
+          '<td class="lb-rank">' + (i+1) + '</td>' +
+          '<td class="lb-name">' + escapeHtml(r.display_name) + (isMe ? ' ★' : '') + '</td>' +
+          '<td class="lb-guesses">' + r.guess_count + ' / 6</td>' +
+          '</tr>';
+      }).join('') +
+      '</tbody></table>';
+  }
+
+  function renderAllTimeLeaderboard(el, rows) {
+    if (rows.length === 0) {
+      el.innerHTML = '<div class="lb-empty">No all-time data yet.<br>Play a few daily puzzles to appear here.</div>';
+      return;
+    }
+    el.innerHTML = '<table class="lb-table">' +
+      '<thead><tr><th>#</th><th>Name</th><th>Win %</th><th>Avg</th><th>Played</th></tr></thead>' +
+      '<tbody>' +
+      rows.map((r, i) => {
+        const player = window.CRSupabase.getLocalPlayer();
+        const isMe   = player && player.display_name === r.display_name;
+        return '<tr class="' + (isMe ? 'lb-me' : '') + '">' +
+          '<td class="lb-rank">' + (i+1) + '</td>' +
+          '<td class="lb-name">' + escapeHtml(r.display_name) + (isMe ? ' ★' : '') + '</td>' +
+          '<td>' + r.win_rate + '%</td>' +
+          '<td>' + r.avg_guesses + '</td>' +
+          '<td>' + r.played + '</td>' +
+          '</tr>';
+      }).join('') +
+      '</tbody></table>';
+  }
+
+  function escapeHtml(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  // ----------------------------------------------------------
   // Game initialisation
   // ----------------------------------------------------------
   let map = null;
@@ -202,9 +362,7 @@
 
     if (state.gameOver) {
       const gen = myGeneration;
-      console.log('[initGame] scheduling showGameOver, gen:', gen);
       setTimeout(() => {
-        console.log('[initGame timeout] gen:', gen, 'current:', _gameGeneration);
         if (_gameGeneration === gen) showGameOver(state);
         else console.log('[initGame timeout] stale, skipping');
       }, 300);
@@ -235,21 +393,14 @@
 
     // Bind tooltip events on vote labels
     list.querySelectorAll('.vote-label.has-tooltip').forEach(el => {
-      el.addEventListener('mouseenter', e => {
-        const tooltip   = document.getElementById('map-tooltip');
+      bindTooltip(el, () => {
         const label     = el.dataset.label || '';
         const votePhoto = CRGame.getVotePhoto(label);
         const photoHtml = votePhoto.photo_url
           ? '<img src="' + votePhoto.photo_url + '" alt="' + label + '" class="tooltip-bill-photo" onerror="this.style.display=\'none\'">'
           + (votePhoto.caption ? '<div class="tooltip-bill-caption">' + votePhoto.caption + '</div>' : '')
           : '';
-        tooltip.innerHTML = '<div class="map-tooltip-title">Vote Description</div>' + photoHtml + el.dataset.desc;
-        tooltip.classList.remove('hidden');
-        moveTooltip(e);
-      });
-      el.addEventListener('mousemove', moveTooltip);
-      el.addEventListener('mouseleave', () => {
-        document.getElementById('map-tooltip').classList.add('hidden');
+        return '<div class="map-tooltip-title">Vote Description</div>' + photoHtml + el.dataset.desc;
       });
     });
 
@@ -382,10 +533,24 @@
     await updateMap();
 
     if (state.gameOver) {
+      // Submit to Supabase (daily only, non-blocking)
+      if (!state.freeplay && window.CRSupabase && window.CRSupabase.getLocalPlayer()) {
+        const target = CRGame.getCurrentTarget();
+        const d = new Date();
+        const puzzleDate = d.getFullYear() + '-' + (d.getMonth()+1) + '-' + d.getDate();
+        window.CRSupabase.submitResult({
+          chamber:     state.chamber,
+          mode:        'daily',
+          targetIcpsr: target ? target.icpsr : '',
+          targetName:  target ? target.name  : '',
+          won:         state.won,
+          guessCount:  state.guessCount,
+          puzzleDate,
+        });
+      }
+
       const gen = _gameGeneration;
-      console.log('[handleSubmit] scheduling showGameOver, gen:', gen);
       setTimeout(() => {
-        console.log('[handleSubmit timeout] gen:', gen, 'current:', _gameGeneration);
         if (_gameGeneration === gen) showGameOver(state);
         else console.log('[handleSubmit timeout] stale, skipping');
       }, 800);
@@ -494,8 +659,7 @@
       // Build absolute URL — window.location.origin ensures we get https://host
       const pathBase = window.location.pathname.replace(/\/[^/]*$/, '/');
       const absBase  = window.location.origin + pathBase;
-      const res  = await fetch(absBase + 'districts/districts' + padded + '.json');
-      console.log('[fetch] district URL:', absBase + 'districts/districts' + padded + '.json');
+      const res  = await fetch(absBase + 'data/districts/districts' + padded + '.json');
       if (!res.ok) throw new Error('Not found');
       const data = await res.json();
       districtLayerCache[congress] = data;
@@ -523,7 +687,6 @@
       const target   = CRGame.getCurrentTarget();
       const congress = target ? target.last_congress : null;
 
-      console.log('[map] House mode, target:', target ? target.name : 'null', 'congress:', congress);
 
       if (congress) {
         const distData = await loadDistrictGeoJSON(congress);
@@ -531,16 +694,14 @@
           geojsonLayer = L.geoJSON(distData, {
             style:          districtStyle,
             onEachFeature:  bindDistrictEvents,
+            smoothFactor:   2,
           }).addTo(map);
-          console.log('[map] District layer added, features:', distData.features.length);
         } else {
-          console.warn('[map] District data null for congress', congress);
         }
       }
 
       // Fall back to state layer if district file not available
       if (!geojsonLayer && stateGeoJSON) {
-        console.warn('[map] Falling back to state layer');
         geojsonLayer = L.geoJSON(stateGeoJSON, {
           style:         stateStyle,
           onEachFeature: bindStateEvents,
@@ -716,6 +877,63 @@
     t.style.top  = (e.clientY - 10) + 'px';
   }
 
+  function hideTooltip() {
+    document.getElementById('map-tooltip').classList.add('hidden');
+  }
+
+  // isTouchDevice — true if primary input is touch
+  const isTouchDevice = () => window.matchMedia('(hover: none)').matches;
+
+  // bindTooltip — attaches mouse + touch events to an element.
+  // getHtml: function returning the tooltip innerHTML string.
+  // For touch: first tap opens, second tap (or tap elsewhere) closes.
+  function bindTooltip(el, getHtml) {
+    // Mouse events (desktop)
+    el.addEventListener('mouseenter', e => {
+      if (isTouchDevice()) return;
+      const tooltip = document.getElementById('map-tooltip');
+      tooltip.innerHTML = getHtml();
+      tooltip.classList.remove('hidden');
+      moveTooltip(e);
+    });
+    el.addEventListener('mousemove', e => {
+      if (isTouchDevice()) return;
+      moveTooltip(e);
+    });
+    el.addEventListener('mouseleave', () => {
+      if (isTouchDevice()) return;
+      hideTooltip();
+    });
+
+    // Touch events (mobile) — tap to toggle
+    el.addEventListener('touchend', e => {
+      e.preventDefault(); // prevent ghost click
+      const tooltip = document.getElementById('map-tooltip');
+      const isOpen  = !tooltip.classList.contains('hidden') &&
+                      tooltip.dataset.owner === el.dataset.label;
+
+      // Close any open tooltip first
+      hideTooltip();
+
+      if (!isOpen) {
+        tooltip.innerHTML  = getHtml();
+        tooltip.dataset.owner = el.dataset.label || '';
+        // Position near the element itself on mobile
+        const rect = el.getBoundingClientRect();
+        tooltip.style.left = Math.min(rect.left, window.innerWidth - 300) + 'px';
+        tooltip.style.top  = (rect.bottom + window.scrollY + 8) + 'px';
+        tooltip.classList.remove('hidden');
+      }
+    });
+  }
+
+  // Close tooltip when tapping outside any tooltip-bound element
+  document.addEventListener('touchend', e => {
+    if (!e.target.closest('.has-tooltip') && !e.target.closest('.map-tooltip')) {
+      hideTooltip();
+    }
+  });
+
   // ----------------------------------------------------------
   // Already Played Today Screen
   // ----------------------------------------------------------
@@ -769,6 +987,8 @@
     };
 
     const other = chamber === 'Senate' ? 'House' : 'Senate';
+    const btnAlreadyMenu = document.getElementById('btn-already-menu');
+    if (btnAlreadyMenu) btnAlreadyMenu.onclick = () => showScreen('screen-chamber');
     document.getElementById('already-other-chamber').textContent = other;
     document.getElementById('btn-already-other').onclick = () => initGame(other, false);
     document.getElementById('btn-already-freeplay-chamber').textContent = chamber;
@@ -788,7 +1008,6 @@
                 'generation check passed');
 
     if (!target) {
-      console.warn('[showGameOver] No target available — skipping');
       return;
     }
 
@@ -892,16 +1111,9 @@
 
     // Bind tooltips on game over vote rows
     vDiv.querySelectorAll('.vote-row.has-tooltip').forEach(el => {
-      el.addEventListener('mouseenter', e => {
-        const tooltip = document.getElementById('map-tooltip');
-        tooltip.innerHTML = '<div class="map-tooltip-title">About this vote</div>' + el.dataset.desc;
-        tooltip.classList.remove('hidden');
-        moveTooltip(e);
-      });
-      el.addEventListener('mousemove', moveTooltip);
-      el.addEventListener('mouseleave', () => {
-        document.getElementById('map-tooltip').classList.add('hidden');
-      });
+      bindTooltip(el, () =>
+        '<div class="map-tooltip-title">About this vote</div>' + el.dataset.desc
+      );
     });
 
     // Share button
@@ -933,7 +1145,13 @@
     const other    = target.chamber === 'Senate' ? 'House' : 'Senate';
     const freeplay = state.freeplay;
 
-    const freeplayBtn         = document.getElementById('btn-play-freeplay');
+    // Main menu button — cleanest way to start a new game
+    const btnMainMenu = document.getElementById('btn-main-menu');
+    if (btnMainMenu) btnMainMenu.onclick = () => showScreen('screen-chamber');
+
+    // Leaderboard button on game over
+    const btnGoLb = document.getElementById('btn-gameover-leaderboard');
+    if (btnGoLb) btnGoLb.onclick = () => showLeaderboard();
     const freeplayChamberSpan = document.getElementById('freeplay-chamber');
     const otherChamberSpan    = document.getElementById('other-chamber');
     const btnPlayOther        = document.getElementById('btn-play-other');

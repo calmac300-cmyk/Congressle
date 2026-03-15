@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
   <div id="screen-chamber" class="screen active">
     <div class="masthead">
       <div class="masthead-rule"></div>
-      <p class="masthead-vol">Vol. I &nbsp;·&nbsp; <span id="today-date"></span></p>
+      <p class="masthead-vol" id="masthead-vol">Vol. I &nbsp;·&nbsp; <span id="today-date"></span></p>
       <h1 class="masthead-title">The Congressional Record</h1>
       <p class="masthead-sub">A Daily Deduction Game</p>
       <div class="masthead-rule"></div>
@@ -64,6 +65,9 @@
       </div>
     </div>
 
+    <div class="masthead-actions">
+      <button id="btn-leaderboard" class="btn-leaderboard-home">🏛 Leaderboard</button>
+    </div>
     <button id="btn-reset-streak-home" class="btn-reset-streak">Reset streak</button>
 
     <div class="how-to-play">
@@ -116,6 +120,7 @@
             <!-- Populated by JS -->
           </div>
           <p id="votes-hint" class="votes-hint"></p>
+          <p class="votes-touch-hint touch-only">Tap a vote name for details</p>
         </section>
 
         <!-- Guess input -->
@@ -174,7 +179,9 @@
       </div>
       <div class="gameover-actions">
         <button id="btn-share" class="btn-share">Copy Result</button>
-        <button id="btn-play-other" class="btn-primary">Play <span id="other-chamber"></span></button>
+        <button id="btn-main-menu" class="btn-primary">Main Menu</button>
+        <button id="btn-gameover-leaderboard" class="btn-secondary-action">🏛 Leaderboard</button>
+        <button id="btn-play-other" class="btn-secondary-action">Play <span id="other-chamber"></span></button>
         <button id="btn-play-freeplay" class="btn-freeplay-gameover">Free Play <span id="freeplay-chamber"></span></button>
       </div>
       <div id="share-confirm" class="share-confirm hidden">Copied to clipboard!</div>
@@ -200,7 +207,8 @@
       <button id="btn-already-share" class="btn-share" style="width:100%;margin-bottom:0.75rem">
         Copy Result
       </button>
-      <button id="btn-already-other" class="btn-primary">
+      <button id="btn-already-menu" class="btn-primary" style="width:100%;margin-bottom:0.5rem">Main Menu</button>
+      <button id="btn-already-other" class="btn-secondary-action">
         Play <span id="already-other-chamber"></span>
       </button>
       <button id="btn-already-freeplay" class="btn-share" style="width:100%;margin-top:0.5rem">
@@ -277,6 +285,64 @@
     </div>
   </div>
 
+  <!-- ======================================================
+       Player Name Modal
+  ====================================================== -->
+  <div id="modal-player" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="modal-title">Enter Your Name</h2>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <p>Your name will appear on the leaderboard. You can change it any time.</p>
+        </div>
+        <div class="modal-section">
+          <input id="player-name-input" type="text" class="player-name-input"
+                 placeholder="Your name" maxlength="30" autocomplete="off">
+          <button id="btn-save-name" class="btn-primary" style="width:100%;margin-top:0.75rem">
+            Save &amp; Continue
+          </button>
+          <button id="btn-skip-name" class="btn-reset-streak" style="margin-top:0.5rem">
+            Skip — play anonymously
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================
+       Leaderboard Screen
+  ====================================================== -->
+  <div id="screen-leaderboard" class="screen">
+    <div class="leaderboard-wrap">
+      <div class="masthead" style="margin-bottom:1rem">
+        <div class="masthead-rule"></div>
+        <h1 class="masthead-title">Leaderboard</h1>
+        <div class="masthead-rule"></div>
+      </div>
+
+      <div class="leaderboard-tabs">
+        <button class="lb-tab active" data-tab="daily-senate">Senate Today</button>
+        <button class="lb-tab" data-tab="daily-house">House Today</button>
+        <button class="lb-tab" data-tab="alltime">All Time</button>
+      </div>
+
+      <div id="leaderboard-content" class="leaderboard-content">
+        <div class="lb-loading">Loading…</div>
+      </div>
+
+      <button id="btn-lb-back" class="btn-primary" style="width:100%;margin-top:1.5rem">
+        ← Back to Menu
+      </button>
+
+      <div class="leaderboard-name-row">
+        <span id="lb-player-name-display" class="lb-player-name"></span>
+        <button id="btn-change-name" class="btn-reset-streak">Change name</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Loading overlay -->
   <div id="loading" class="loading-overlay">
     <div class="loading-inner">
@@ -286,6 +352,7 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="supabase.js"></script>
   <script src="game.js"></script>
   <script src="ui.js"></script>
 </body>
