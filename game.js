@@ -587,6 +587,10 @@ const CRGame = (() => {
     } catch(e) {}
   }
 
+  function getStreak() {
+    return _loadStreak();
+  }
+
   // ----------------------------------------------------------
   // Share string generation
   // Produces a Wordle-style emoji grid for the clipboard
