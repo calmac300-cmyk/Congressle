@@ -491,9 +491,11 @@
     if (districtLayerCache[congress]) return districtLayerCache[congress];
     const padded = String(congress).padStart(3, '0');
     try {
-      // Build absolute URL relative to the page — works on GitHub Pages subfolders
-      const pageBase = window.location.href.split('?')[0].replace(/\/[^/]*$/, '/');
-      const res  = await fetch(pageBase + 'districts/districts' + padded + '.json');
+      // Build absolute URL — window.location.origin ensures we get https://host
+      const pathBase = window.location.pathname.replace(/\/[^/]*$/, '/');
+      const absBase  = window.location.origin + pathBase;
+      const res  = await fetch(absBase + 'districts/districts' + padded + '.json');
+      console.log('[fetch] district URL:', absBase + 'districts/districts' + padded + '.json');
       if (!res.ok) throw new Error('Not found');
       const data = await res.json();
       districtLayerCache[congress] = data;
@@ -931,24 +933,30 @@
     const other    = target.chamber === 'Senate' ? 'House' : 'Senate';
     const freeplay = state.freeplay;
 
-    const freeplayBtn  = document.getElementById('btn-play-freeplay');
+    const freeplayBtn         = document.getElementById('btn-play-freeplay');
     const freeplayChamberSpan = document.getElementById('freeplay-chamber');
+    const otherChamberSpan    = document.getElementById('other-chamber');
+    const btnPlayOther        = document.getElementById('btn-play-other');
 
     if (freeplayChamberSpan) freeplayChamberSpan.textContent = target.chamber;
     if (freeplayBtn) {
-      freeplayBtn.onclick = () => initGame(target.chamber, true);
+      freeplayBtn.onclick      = () => initGame(target.chamber, true);
       freeplayBtn.style.display = '';
     }
 
     if (freeplay) {
-      document.getElementById('other-chamber').textContent = 'Again';
-      document.getElementById('btn-play-other').textContent = 'Play Again';
-      document.getElementById('btn-play-other').onclick = () => initGame(target.chamber, true);
+      if (otherChamberSpan) otherChamberSpan.textContent = 'Again';
+      if (btnPlayOther) {
+        btnPlayOther.textContent = 'Play Again';
+        btnPlayOther.onclick     = () => initGame(target.chamber, true);
+      }
       if (freeplayBtn) freeplayBtn.style.display = 'none';
     } else {
-      document.getElementById('other-chamber').textContent = other;
-      document.getElementById('btn-play-other').textContent = 'Play ' + other;
-      document.getElementById('btn-play-other').onclick = () => initGame(other, false);
+      if (otherChamberSpan) otherChamberSpan.textContent = other;
+      if (btnPlayOther) {
+        btnPlayOther.textContent = 'Play ' + other;
+        btnPlayOther.onclick     = () => initGame(other, false);
+      }
     }
 
     // Refresh streak display
