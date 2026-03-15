@@ -1066,7 +1066,7 @@
         <div class="gameover-sub">${resultLine}</div>
       </div>
       ${target ? `<div class="already-played-target">
-        <a href="https://en.wikipedia.org/wiki/${encodeURIComponent(formatName(target.name))}"
+        <a href="https://en.wikipedia.org/wiki/${encodeURIComponent(wikiName(target.name))}"
            target="_blank" rel="noopener" class="wiki-link">${formatName(target.name)}</a>
         <div class="gameover-target-meta">${target.chamber} · ${target.state} · ${shortParty(target.party)} · ${CRGame.tenureString(target)}</div>
       </div>` : ''}
@@ -1191,7 +1191,7 @@
         ${photoHtml}
         <div class="gameover-target-info">
           <div class="gameover-target-name">
-            <a href="https://en.wikipedia.org/wiki/${encodeURIComponent(formatName(target.name))}"
+            <a href="https://en.wikipedia.org/wiki/${encodeURIComponent(wikiName(target.name))}"
                target="_blank" rel="noopener" class="wiki-link">${formatName(target.name)}</a>
           </div>
           <div class="gameover-target-meta">
@@ -1321,6 +1321,20 @@
     const last  = parts[0].trim();
     const first = parts.slice(1).join(',').trim();
     return `${toTitleCase(first)} ${toTitleCase(last)}`;
+  }
+
+  function wikiName(raw) {
+    // Like formatName but strips parenthetical nicknames for Wikipedia URLs
+    // "KENNEDY, Edward Moore (Ted), Jr." -> "Edward Moore Kennedy"
+    const parts = raw.split(',');
+    if (parts.length < 2) return formatName(raw);
+    const last  = parts[0].trim();
+    // Remove suffixes like Jr., Sr., II, III and nicknames in parens
+    const first = parts.slice(1).join(',')
+      .replace(/\([^)]*\)/g, '')  // strip (Ted), (Scoop), (Joe) etc.
+      .replace(/\b(Jr|Sr|II|III|IV)\b\.?/gi, '')
+      .trim();
+    return toTitleCase(first) + ' ' + toTitleCase(last);
   }
 
   function toTitleCase(str) {

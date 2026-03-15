@@ -495,7 +495,12 @@ const CRGame = (() => {
 
   function getViableCandidates() {
     if (!_chamber || _allLegislators.length === 0) return [];
-    const pool = _allLegislators.filter(l => l.chamber === _chamber);
+    // Only include legislators who have at least one signal vote —
+    // candidates with no votes can never be the answer and pollute the map
+    const pool = _allLegislators.filter(l =>
+      l.chamber === _chamber &&
+      Object.keys(l.votes || {}).length > 0
+    );
     const eliminated = getEliminatedStates();
 
     return pool.filter(l => {
