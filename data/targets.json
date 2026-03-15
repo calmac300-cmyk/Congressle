@@ -182,112 +182,112 @@
       },
       "vote_party_context": {
         "Affordable Health Care for America": {
-          "yea_total": 220,
-          "nay_total": 215,
-          "party_yea": 219,
-          "party_nay": 39
+          "yea_total": 60,
+          "nay_total": 39,
+          "party_yea": 59,
+          "party_nay": 0
         },
         "Authorization of Force Against Iraq   1991": {
-          "yea_total": 250,
-          "nay_total": 183,
-          "party_yea": 86,
-          "party_nay": 179
+          "yea_total": 52,
+          "nay_total": 47,
+          "party_yea": 10,
+          "party_nay": 45
         },
         "Civil Rights Act   1957": {
-          "yea_total": 286,
-          "nay_total": 126,
-          "party_yea": 121,
-          "party_nay": 109
+          "yea_total": 72,
+          "nay_total": 18,
+          "party_yea": 29,
+          "party_nay": 18
         },
         "Civil Rights Act  1964": {
-          "yea_total": 289,
-          "nay_total": 126,
-          "party_yea": 156,
-          "party_nay": 95
+          "yea_total": 67,
+          "nay_total": 17,
+          "party_yea": 42,
+          "party_nay": 18
         },
         "Defense of Marriage Act": {
-          "yea_total": 342,
-          "nay_total": 67,
-          "party_yea": 118,
-          "party_nay": 65
-        },
-        "Gramm Rudman Hollings Deficit Act 1985": {
-          "yea_total": 271,
-          "nay_total": 154,
-          "party_yea": 119,
-          "party_nay": 132
-        },
-        "Gun Control Act   1968": {
-          "yea_total": 161,
-          "nay_total": 129,
-          "party_yea": 125,
-          "party_nay": 94
-        },
-        "Immigration and Nationality Act   1965": {
-          "yea_total": 320,
-          "nay_total": 70,
-          "party_yea": 211,
-          "party_nay": 69
-        },
-        "Iraq War Resolution   2002": {
-          "yea_total": 296,
-          "nay_total": 133,
-          "party_yea": 81,
-          "party_nay": 126
-        },
-        "National Defense Education Act": {
-          "yea_total": 212,
-          "nay_total": 85,
-          "party_yea": 152,
-          "party_nay": 34
-        },
-        "Normalize Trade Relations with China": {
-          "yea_total": 237,
-          "nay_total": 197,
-          "party_yea": 73,
-          "party_nay": 138
-        },
-        "Panama Canal Treaty": {
-          "yea_total": 232,
-          "nay_total": 188,
-          "party_yea": 199,
-          "party_nay": 70
-        },
-        "Partial Birth Abortion Ban": {
-          "yea_total": 281,
-          "nay_total": 142,
-          "party_yea": 63,
-          "party_nay": 137
-        },
-        "Patriot Act": {
-          "yea_total": 357,
-          "nay_total": 66,
-          "party_yea": 145,
-          "party_nay": 62
-        },
-        "TARP": {
-          "yea_total": 263,
-          "nay_total": 171,
-          "party_yea": 172,
-          "party_nay": 63
-        },
-        "Taiwan Relations Act": {
-          "yea_total": 345,
-          "nay_total": 55,
-          "party_yea": 242,
+          "yea_total": 85,
+          "nay_total": 14,
+          "party_yea": 32,
           "party_nay": 14
         },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 61,
+          "nay_total": 31,
+          "party_yea": 23,
+          "party_nay": 23
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 70,
+          "nay_total": 17,
+          "party_yea": 40,
+          "party_nay": 14
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 76,
+          "nay_total": 18,
+          "party_yea": 52,
+          "party_nay": 15
+        },
+        "Iraq War Resolution   2002": {
+          "yea_total": 77,
+          "nay_total": 23,
+          "party_yea": 29,
+          "party_nay": 21
+        },
+        "National Defense Education Act": {
+          "yea_total": 62,
+          "nay_total": 26,
+          "party_yea": 35,
+          "party_nay": 10
+        },
+        "Normalize Trade Relations with China": {
+          "yea_total": 83,
+          "nay_total": 15,
+          "party_yea": 37,
+          "party_nay": 7
+        },
+        "Panama Canal Treaty": {
+          "yea_total": 59,
+          "nay_total": 29,
+          "party_yea": 48,
+          "party_nay": 9
+        },
+        "Partial Birth Abortion Ban": {
+          "yea_total": 64,
+          "nay_total": 34,
+          "party_yea": 17,
+          "party_nay": 30
+        },
+        "Patriot Act": {
+          "yea_total": 98,
+          "nay_total": 1,
+          "party_yea": 48,
+          "party_nay": 1
+        },
+        "TARP": {
+          "yea_total": 74,
+          "nay_total": 25,
+          "party_yea": 40,
+          "party_nay": 9
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 85,
+          "nay_total": 4,
+          "party_yea": 51,
+          "party_nay": 2
+        },
         "Voting Rights Act   1965": {
-          "yea_total": 333,
-          "nay_total": 85,
-          "party_yea": 224,
-          "party_nay": 65
+          "yea_total": 77,
+          "nay_total": 19,
+          "party_yea": 48,
+          "party_nay": 18
         },
         "War Powers Act   1973": {
-          "yea_total": 284,
-          "nay_total": 135,
-          "party_yea": 196,
-          "party_nay": 32
+          "yea_total": 75,
+          "nay_total": 18,
+          "party_yea": 50,
+          "party_nay": 3
         },
         "Airline Degregulation   1978": {
           "yea_total": 83,
@@ -561,100 +561,100 @@
       },
       "vote_party_context": {
         "Affordable Health Care for America": {
-          "yea_total": 220,
-          "nay_total": 215,
-          "party_yea": 219,
-          "party_nay": 39
+          "yea_total": 60,
+          "nay_total": 39,
+          "party_yea": 59,
+          "party_nay": 0
         },
         "Authorization of Force Against Iraq   1991": {
-          "yea_total": 250,
-          "nay_total": 183,
-          "party_yea": 86,
-          "party_nay": 179
+          "yea_total": 52,
+          "nay_total": 47,
+          "party_yea": 10,
+          "party_nay": 45
         },
         "Civil Rights Act  1964": {
-          "yea_total": 289,
-          "nay_total": 126,
-          "party_yea": 156,
-          "party_nay": 95
+          "yea_total": 67,
+          "nay_total": 17,
+          "party_yea": 42,
+          "party_nay": 18
         },
         "Defense of Marriage Act": {
-          "yea_total": 342,
-          "nay_total": 67,
-          "party_yea": 118,
-          "party_nay": 65
-        },
-        "Gramm Rudman Hollings Deficit Act 1985": {
-          "yea_total": 271,
-          "nay_total": 154,
-          "party_yea": 119,
-          "party_nay": 132
-        },
-        "Gun Control Act   1968": {
-          "yea_total": 161,
-          "nay_total": 129,
-          "party_yea": 125,
-          "party_nay": 94
-        },
-        "Immigration and Nationality Act   1965": {
-          "yea_total": 320,
-          "nay_total": 70,
-          "party_yea": 211,
-          "party_nay": 69
-        },
-        "Iraq War Resolution   2002": {
-          "yea_total": 296,
-          "nay_total": 133,
-          "party_yea": 81,
-          "party_nay": 126
-        },
-        "Normalize Trade Relations with China": {
-          "yea_total": 237,
-          "nay_total": 197,
-          "party_yea": 73,
-          "party_nay": 138
-        },
-        "Panama Canal Treaty": {
-          "yea_total": 232,
-          "nay_total": 188,
-          "party_yea": 199,
-          "party_nay": 70
-        },
-        "Partial Birth Abortion Ban": {
-          "yea_total": 281,
-          "nay_total": 142,
-          "party_yea": 63,
-          "party_nay": 137
-        },
-        "Patriot Act": {
-          "yea_total": 357,
-          "nay_total": 66,
-          "party_yea": 145,
-          "party_nay": 62
-        },
-        "TARP": {
-          "yea_total": 263,
-          "nay_total": 171,
-          "party_yea": 172,
-          "party_nay": 63
-        },
-        "Taiwan Relations Act": {
-          "yea_total": 345,
-          "nay_total": 55,
-          "party_yea": 242,
+          "yea_total": 85,
+          "nay_total": 14,
+          "party_yea": 32,
           "party_nay": 14
         },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 61,
+          "nay_total": 31,
+          "party_yea": 23,
+          "party_nay": 23
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 70,
+          "nay_total": 17,
+          "party_yea": 40,
+          "party_nay": 14
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 76,
+          "nay_total": 18,
+          "party_yea": 52,
+          "party_nay": 15
+        },
+        "Iraq War Resolution   2002": {
+          "yea_total": 77,
+          "nay_total": 23,
+          "party_yea": 29,
+          "party_nay": 21
+        },
+        "Normalize Trade Relations with China": {
+          "yea_total": 83,
+          "nay_total": 15,
+          "party_yea": 37,
+          "party_nay": 7
+        },
+        "Panama Canal Treaty": {
+          "yea_total": 59,
+          "nay_total": 29,
+          "party_yea": 48,
+          "party_nay": 9
+        },
+        "Partial Birth Abortion Ban": {
+          "yea_total": 64,
+          "nay_total": 34,
+          "party_yea": 17,
+          "party_nay": 30
+        },
+        "Patriot Act": {
+          "yea_total": 98,
+          "nay_total": 1,
+          "party_yea": 48,
+          "party_nay": 1
+        },
+        "TARP": {
+          "yea_total": 74,
+          "nay_total": 25,
+          "party_yea": 40,
+          "party_nay": 9
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 85,
+          "nay_total": 4,
+          "party_yea": 51,
+          "party_nay": 2
+        },
         "Voting Rights Act   1965": {
-          "yea_total": 333,
-          "nay_total": 85,
-          "party_yea": 224,
-          "party_nay": 65
+          "yea_total": 77,
+          "nay_total": 19,
+          "party_yea": 48,
+          "party_nay": 18
         },
         "War Powers Act   1973": {
-          "yea_total": 284,
-          "nay_total": 135,
-          "party_yea": 196,
-          "party_nay": 32
+          "yea_total": 75,
+          "nay_total": 18,
+          "party_yea": 50,
+          "party_nay": 3
         },
         "Airline Degregulation   1978": {
           "yea_total": 83,
@@ -880,22 +880,22 @@
       },
       "vote_party_context": {
         "AGRICULTURAL ADJUSTMENT ACT": {
-          "yea_total": 174,
-          "nay_total": 165,
-          "party_yea": 167,
-          "party_nay": 96
+          "yea_total": 64,
+          "nay_total": 15,
+          "party_yea": 53,
+          "party_nay": 9
         },
         "Civil Rights Act   1957": {
-          "yea_total": 286,
-          "nay_total": 126,
-          "party_yea": 121,
-          "party_nay": 109
+          "yea_total": 72,
+          "nay_total": 18,
+          "party_yea": 29,
+          "party_nay": 18
         },
         "Civil Rights Act  1964": {
-          "yea_total": 289,
-          "nay_total": 126,
-          "party_yea": 156,
-          "party_nay": 95
+          "yea_total": 67,
+          "nay_total": 17,
+          "party_yea": 42,
+          "party_nay": 18
         },
         "Dyer Anti Lynching Bill": {
           "yea_total": 180,
@@ -904,58 +904,58 @@
           "party_nay": 70
         },
         "Federal Reserve Act": {
-          "yea_total": 298,
-          "nay_total": 60,
-          "party_yea": 261,
-          "party_nay": 2
+          "yea_total": 43,
+          "nay_total": 25,
+          "party_yea": 45,
+          "party_nay": 0
         },
         "Gun Control Act   1968": {
-          "yea_total": 161,
-          "nay_total": 129,
-          "party_yea": 125,
-          "party_nay": 94
+          "yea_total": 70,
+          "nay_total": 17,
+          "party_yea": 40,
+          "party_nay": 14
         },
         "Immigration Act   1924": {
-          "yea_total": 323,
-          "nay_total": 71,
-          "party_yea": 160,
-          "party_nay": 41
+          "yea_total": 69,
+          "nay_total": 9,
+          "party_yea": 35,
+          "party_nay": 5
         },
         "Immigration and Nationality Act   1965": {
-          "yea_total": 320,
-          "nay_total": 70,
-          "party_yea": 211,
-          "party_nay": 69
+          "yea_total": 76,
+          "nay_total": 18,
+          "party_yea": 52,
+          "party_nay": 15
         },
         "Lend Lease Act": {
-          "yea_total": 336,
-          "nay_total": 55,
-          "party_yea": 235,
-          "party_nay": 7
+          "yea_total": 60,
+          "nay_total": 31,
+          "party_yea": 50,
+          "party_nay": 13
         },
         "McCarran Internal Security Act 1950": {
-          "yea_total": 313,
-          "nay_total": 20,
-          "party_yea": 189,
-          "party_nay": 21
+          "yea_total": 51,
+          "nay_total": 7,
+          "party_yea": 41,
+          "party_nay": 7
         },
         "National Defense Education Act": {
-          "yea_total": 212,
-          "nay_total": 85,
-          "party_yea": 152,
-          "party_nay": 34
+          "yea_total": 62,
+          "nay_total": 26,
+          "party_yea": 35,
+          "party_nay": 10
         },
         "Volstead Act": {
-          "yea_total": 175,
-          "nay_total": 55,
-          "party_yea": 95,
-          "party_nay": 38
+          "yea_total": 65,
+          "nay_total": 20,
+          "party_yea": 30,
+          "party_nay": 11
         },
         "Voting Rights Act   1965": {
-          "yea_total": 333,
-          "nay_total": 85,
-          "party_yea": 224,
-          "party_nay": 65
+          "yea_total": 77,
+          "nay_total": 19,
+          "party_yea": 48,
+          "party_nay": 18
         },
         "22nd Amendment": {
           "yea_total": 59,
@@ -1181,94 +1181,94 @@
       },
       "vote_party_context": {
         "Authorization of Force Against Iraq   1991": {
-          "yea_total": 250,
-          "nay_total": 183,
-          "party_yea": 86,
-          "party_nay": 179
+          "yea_total": 52,
+          "nay_total": 47,
+          "party_yea": 10,
+          "party_nay": 45
         },
         "Civil Rights Act  1964": {
-          "yea_total": 289,
-          "nay_total": 126,
-          "party_yea": 156,
-          "party_nay": 95
+          "yea_total": 67,
+          "nay_total": 17,
+          "party_yea": 42,
+          "party_nay": 18
         },
         "Defense of Marriage Act": {
-          "yea_total": 342,
-          "nay_total": 67,
-          "party_yea": 118,
-          "party_nay": 65
-        },
-        "Gramm Rudman Hollings Deficit Act 1985": {
-          "yea_total": 271,
-          "nay_total": 154,
-          "party_yea": 119,
-          "party_nay": 132
-        },
-        "Gun Control Act   1968": {
-          "yea_total": 161,
-          "nay_total": 129,
-          "party_yea": 125,
-          "party_nay": 94
-        },
-        "Immigration and Nationality Act   1965": {
-          "yea_total": 320,
-          "nay_total": 70,
-          "party_yea": 211,
-          "party_nay": 69
-        },
-        "Iraq War Resolution   2002": {
-          "yea_total": 296,
-          "nay_total": 133,
-          "party_yea": 81,
-          "party_nay": 126
-        },
-        "Normalize Trade Relations with China": {
-          "yea_total": 237,
-          "nay_total": 197,
-          "party_yea": 73,
-          "party_nay": 138
-        },
-        "Panama Canal Treaty": {
-          "yea_total": 232,
-          "nay_total": 188,
-          "party_yea": 199,
-          "party_nay": 70
-        },
-        "Partial Birth Abortion Ban": {
-          "yea_total": 281,
-          "nay_total": 142,
-          "party_yea": 63,
-          "party_nay": 137
-        },
-        "Patriot Act": {
-          "yea_total": 357,
-          "nay_total": 66,
-          "party_yea": 145,
-          "party_nay": 62
-        },
-        "TARP": {
-          "yea_total": 263,
-          "nay_total": 171,
-          "party_yea": 172,
-          "party_nay": 63
-        },
-        "Taiwan Relations Act": {
-          "yea_total": 345,
-          "nay_total": 55,
-          "party_yea": 242,
+          "yea_total": 85,
+          "nay_total": 14,
+          "party_yea": 32,
           "party_nay": 14
         },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 61,
+          "nay_total": 31,
+          "party_yea": 23,
+          "party_nay": 23
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 70,
+          "nay_total": 17,
+          "party_yea": 40,
+          "party_nay": 14
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 76,
+          "nay_total": 18,
+          "party_yea": 52,
+          "party_nay": 15
+        },
+        "Iraq War Resolution   2002": {
+          "yea_total": 77,
+          "nay_total": 23,
+          "party_yea": 29,
+          "party_nay": 21
+        },
+        "Normalize Trade Relations with China": {
+          "yea_total": 83,
+          "nay_total": 15,
+          "party_yea": 37,
+          "party_nay": 7
+        },
+        "Panama Canal Treaty": {
+          "yea_total": 59,
+          "nay_total": 29,
+          "party_yea": 48,
+          "party_nay": 9
+        },
+        "Partial Birth Abortion Ban": {
+          "yea_total": 64,
+          "nay_total": 34,
+          "party_yea": 17,
+          "party_nay": 30
+        },
+        "Patriot Act": {
+          "yea_total": 98,
+          "nay_total": 1,
+          "party_yea": 48,
+          "party_nay": 1
+        },
+        "TARP": {
+          "yea_total": 74,
+          "nay_total": 25,
+          "party_yea": 40,
+          "party_nay": 9
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 85,
+          "nay_total": 4,
+          "party_yea": 51,
+          "party_nay": 2
+        },
         "Voting Rights Act   1965": {
-          "yea_total": 333,
-          "nay_total": 85,
-          "party_yea": 224,
-          "party_nay": 65
+          "yea_total": 77,
+          "nay_total": 19,
+          "party_yea": 48,
+          "party_nay": 18
         },
         "War Powers Act   1973": {
-          "yea_total": 284,
-          "nay_total": 135,
-          "party_yea": 196,
-          "party_nay": 32
+          "yea_total": 75,
+          "nay_total": 18,
+          "party_yea": 50,
+          "party_nay": 3
         },
         "Airline Degregulation   1978": {
           "yea_total": 83,
@@ -1462,46 +1462,46 @@
       },
       "vote_party_context": {
         "AGRICULTURAL ADJUSTMENT ACT": {
-          "yea_total": 174,
-          "nay_total": 165,
-          "party_yea": 5,
-          "party_nay": 76
-        },
-        "Civil Rights Act   1957": {
-          "yea_total": 286,
-          "nay_total": 126,
-          "party_yea": 173,
-          "party_nay": 22
-        },
-        "Civil Rights Act  1964": {
-          "yea_total": 289,
-          "nay_total": 126,
-          "party_yea": 139,
-          "party_nay": 37
-        },
-        "Gun Control Act   1968": {
-          "yea_total": 161,
-          "nay_total": 129,
-          "party_yea": 73,
-          "party_nay": 72
-        },
-        "Immigration and Nationality Act   1965": {
-          "yea_total": 320,
-          "nay_total": 70,
-          "party_yea": 118,
+          "yea_total": 64,
+          "nay_total": 15,
+          "party_yea": 12,
           "party_nay": 10
         },
+        "Civil Rights Act   1957": {
+          "yea_total": 72,
+          "nay_total": 18,
+          "party_yea": 43,
+          "party_nay": 0
+        },
+        "Civil Rights Act  1964": {
+          "yea_total": 67,
+          "nay_total": 17,
+          "party_yea": 27,
+          "party_nay": 1
+        },
+        "Gun Control Act   1968": {
+          "yea_total": 70,
+          "nay_total": 17,
+          "party_yea": 31,
+          "party_nay": 4
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 76,
+          "nay_total": 18,
+          "party_yea": 26,
+          "party_nay": 5
+        },
         "Lend Lease Act": {
-          "yea_total": 336,
-          "nay_total": 55,
-          "party_yea": 105,
-          "party_nay": 50
+          "yea_total": 60,
+          "nay_total": 31,
+          "party_yea": 10,
+          "party_nay": 18
         },
         "National Defense Education Act": {
-          "yea_total": 212,
-          "nay_total": 85,
-          "party_yea": 81,
-          "party_nay": 72
+          "yea_total": 62,
+          "nay_total": 26,
+          "party_yea": 27,
+          "party_nay": 16
         },
         "TVA Creation": {
           "yea_total": 258,
@@ -1516,10 +1516,10 @@
           "party_nay": 24
         },
         "Voting Rights Act   1965": {
-          "yea_total": 333,
-          "nay_total": 85,
-          "party_yea": 112,
-          "party_nay": 23
+          "yea_total": 77,
+          "nay_total": 19,
+          "party_yea": 30,
+          "party_nay": 2
         },
         "Lewis Strauss Commerce Secretary": {
           "yea_total": 46,
@@ -1705,76 +1705,76 @@
       },
       "vote_party_context": {
         "Authorization of Force Against Iraq   1991": {
-          "yea_total": 250,
-          "nay_total": 183,
-          "party_yea": 164,
-          "party_nay": 3
+          "yea_total": 52,
+          "nay_total": 47,
+          "party_yea": 42,
+          "party_nay": 2
         },
         "Defense of Marriage Act": {
-          "yea_total": 342,
-          "nay_total": 67,
-          "party_yea": 224,
-          "party_nay": 1
+          "yea_total": 85,
+          "nay_total": 14,
+          "party_yea": 53,
+          "party_nay": 0
         },
         "Gramm Rudman Hollings Deficit Act 1985": {
-          "yea_total": 271,
-          "nay_total": 154,
-          "party_yea": 154,
-          "party_nay": 24
-        },
-        "Gun Control Act   1968": {
-          "yea_total": 161,
-          "nay_total": 129,
-          "party_yea": 73,
-          "party_nay": 72
-        },
-        "Immigration and Nationality Act   1965": {
-          "yea_total": 320,
-          "nay_total": 70,
-          "party_yea": 118,
+          "yea_total": 61,
+          "nay_total": 31,
+          "party_yea": 40,
           "party_nay": 10
         },
+        "Gun Control Act   1968": {
+          "yea_total": 70,
+          "nay_total": 17,
+          "party_yea": 31,
+          "party_nay": 4
+        },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 76,
+          "nay_total": 18,
+          "party_yea": 26,
+          "party_nay": 5
+        },
         "Iraq War Resolution   2002": {
-          "yea_total": 296,
-          "nay_total": 133,
-          "party_yea": 215,
-          "party_nay": 6
+          "yea_total": 77,
+          "nay_total": 23,
+          "party_yea": 48,
+          "party_nay": 1
         },
         "Normalize Trade Relations with China": {
-          "yea_total": 237,
-          "nay_total": 197,
-          "party_yea": 164,
-          "party_nay": 57
+          "yea_total": 83,
+          "nay_total": 15,
+          "party_yea": 46,
+          "party_nay": 8
         },
         "Panama Canal Treaty": {
-          "yea_total": 232,
-          "nay_total": 188,
-          "party_yea": 36,
-          "party_nay": 122
-        },
-        "Patriot Act": {
-          "yea_total": 357,
-          "nay_total": 66,
-          "party_yea": 211,
-          "party_nay": 3
-        },
-        "Taiwan Relations Act": {
-          "yea_total": 345,
-          "nay_total": 55,
-          "party_yea": 105,
-          "party_nay": 41
-        },
-        "Voting Rights Act   1965": {
-          "yea_total": 333,
-          "nay_total": 85,
-          "party_yea": 112,
+          "yea_total": 59,
+          "nay_total": 29,
+          "party_yea": 16,
           "party_nay": 23
         },
+        "Patriot Act": {
+          "yea_total": 98,
+          "nay_total": 1,
+          "party_yea": 49,
+          "party_nay": 0
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 85,
+          "nay_total": 4,
+          "party_yea": 33,
+          "party_nay": 2
+        },
+        "Voting Rights Act   1965": {
+          "yea_total": 77,
+          "nay_total": 19,
+          "party_yea": 30,
+          "party_nay": 2
+        },
         "War Powers Act   1973": {
-          "yea_total": 284,
-          "nay_total": 135,
-          "party_yea": 87,
-          "party_nay": 103
+          "yea_total": 75,
+          "nay_total": 18,
+          "party_yea": 26,
+          "party_nay": 15
         },
         "Airline Degregulation   1978": {
           "yea_total": 83,
@@ -1992,52 +1992,52 @@
       },
       "vote_party_context": {
         "Civil Rights Act   1957": {
-          "yea_total": 286,
-          "nay_total": 126,
-          "party_yea": 121,
-          "party_nay": 109
+          "yea_total": 72,
+          "nay_total": 18,
+          "party_yea": 29,
+          "party_nay": 18
         },
         "Civil Rights Act  1964": {
-          "yea_total": 289,
-          "nay_total": 126,
-          "party_yea": 156,
-          "party_nay": 95
+          "yea_total": 67,
+          "nay_total": 17,
+          "party_yea": 42,
+          "party_nay": 18
         },
         "Gun Control Act   1968": {
-          "yea_total": 161,
-          "nay_total": 129,
-          "party_yea": 125,
-          "party_nay": 94
+          "yea_total": 70,
+          "nay_total": 17,
+          "party_yea": 40,
+          "party_nay": 14
         },
         "Immigration and Nationality Act   1965": {
-          "yea_total": 320,
-          "nay_total": 70,
-          "party_yea": 211,
-          "party_nay": 69
+          "yea_total": 76,
+          "nay_total": 18,
+          "party_yea": 52,
+          "party_nay": 15
         },
         "Lend Lease Act": {
-          "yea_total": 336,
-          "nay_total": 55,
-          "party_yea": 235,
-          "party_nay": 7
+          "yea_total": 60,
+          "nay_total": 31,
+          "party_yea": 50,
+          "party_nay": 13
         },
         "McCarran Internal Security Act 1950": {
-          "yea_total": 313,
-          "nay_total": 20,
-          "party_yea": 189,
-          "party_nay": 21
+          "yea_total": 51,
+          "nay_total": 7,
+          "party_yea": 41,
+          "party_nay": 7
         },
         "National Defense Education Act": {
-          "yea_total": 212,
-          "nay_total": 85,
-          "party_yea": 152,
-          "party_nay": 34
+          "yea_total": 62,
+          "nay_total": 26,
+          "party_yea": 35,
+          "party_nay": 10
         },
         "Panama Canal Treaty": {
-          "yea_total": 232,
-          "nay_total": 188,
-          "party_yea": 199,
-          "party_nay": 70
+          "yea_total": 59,
+          "nay_total": 29,
+          "party_yea": 48,
+          "party_nay": 9
         },
         "Taft Hartley": {
           "yea_total": 308,
@@ -2046,22 +2046,22 @@
           "party_nay": 86
         },
         "Taiwan Relations Act": {
-          "yea_total": 345,
-          "nay_total": 55,
-          "party_yea": 242,
-          "party_nay": 14
+          "yea_total": 85,
+          "nay_total": 4,
+          "party_yea": 51,
+          "party_nay": 2
         },
         "Voting Rights Act   1965": {
-          "yea_total": 333,
-          "nay_total": 85,
-          "party_yea": 224,
-          "party_nay": 65
+          "yea_total": 77,
+          "nay_total": 19,
+          "party_yea": 48,
+          "party_nay": 18
         },
         "War Powers Act   1973": {
-          "yea_total": 284,
-          "nay_total": 135,
-          "party_yea": 196,
-          "party_nay": 32
+          "yea_total": 75,
+          "nay_total": 18,
+          "party_yea": 50,
+          "party_nay": 3
         },
         "Airline Degregulation   1978": {
           "yea_total": 83,
@@ -2263,70 +2263,70 @@
       },
       "vote_party_context": {
         "Civil Rights Act   1957": {
-          "yea_total": 286,
-          "nay_total": 126,
-          "party_yea": 121,
-          "party_nay": 109
+          "yea_total": 72,
+          "nay_total": 18,
+          "party_yea": 29,
+          "party_nay": 18
         },
         "Civil Rights Act  1964": {
-          "yea_total": 289,
-          "nay_total": 126,
-          "party_yea": 156,
-          "party_nay": 95
+          "yea_total": 67,
+          "nay_total": 17,
+          "party_yea": 42,
+          "party_nay": 18
         },
         "Gramm Rudman Hollings Deficit Act 1985": {
-          "yea_total": 271,
-          "nay_total": 154,
-          "party_yea": 119,
-          "party_nay": 132
+          "yea_total": 61,
+          "nay_total": 31,
+          "party_yea": 23,
+          "party_nay": 23
         },
         "Gun Control Act   1968": {
-          "yea_total": 161,
-          "nay_total": 129,
-          "party_yea": 125,
-          "party_nay": 94
-        },
-        "Immigration and Nationality Act   1965": {
-          "yea_total": 320,
-          "nay_total": 70,
-          "party_yea": 211,
-          "party_nay": 69
-        },
-        "McCarran Internal Security Act 1950": {
-          "yea_total": 313,
-          "nay_total": 20,
-          "party_yea": 189,
-          "party_nay": 21
-        },
-        "National Defense Education Act": {
-          "yea_total": 212,
-          "nay_total": 85,
-          "party_yea": 152,
-          "party_nay": 34
-        },
-        "Panama Canal Treaty": {
-          "yea_total": 232,
-          "nay_total": 188,
-          "party_yea": 199,
-          "party_nay": 70
-        },
-        "Taiwan Relations Act": {
-          "yea_total": 345,
-          "nay_total": 55,
-          "party_yea": 242,
+          "yea_total": 70,
+          "nay_total": 17,
+          "party_yea": 40,
           "party_nay": 14
         },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 76,
+          "nay_total": 18,
+          "party_yea": 52,
+          "party_nay": 15
+        },
+        "McCarran Internal Security Act 1950": {
+          "yea_total": 51,
+          "nay_total": 7,
+          "party_yea": 41,
+          "party_nay": 7
+        },
+        "National Defense Education Act": {
+          "yea_total": 62,
+          "nay_total": 26,
+          "party_yea": 35,
+          "party_nay": 10
+        },
+        "Panama Canal Treaty": {
+          "yea_total": 59,
+          "nay_total": 29,
+          "party_yea": 48,
+          "party_nay": 9
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 85,
+          "nay_total": 4,
+          "party_yea": 51,
+          "party_nay": 2
+        },
         "Voting Rights Act   1965": {
-          "yea_total": 333,
-          "nay_total": 85,
-          "party_yea": 224,
-          "party_nay": 65
+          "yea_total": 77,
+          "nay_total": 19,
+          "party_yea": 48,
+          "party_nay": 18
         },
         "War Powers Act   1973": {
-          "yea_total": 284,
-          "nay_total": 135,
-          "party_yea": 196,
-          "party_nay": 32
+          "yea_total": 75,
+          "nay_total": 18,
+          "party_yea": 50,
+          "party_nay": 3
         },
         "Airline Degregulation   1978": {
           "yea_total": 83,
@@ -2522,58 +2522,58 @@
       },
       "vote_party_context": {
         "Authorization of Force Against Iraq   1991": {
-          "yea_total": 250,
-          "nay_total": 183,
-          "party_yea": 164,
-          "party_nay": 3
+          "yea_total": 52,
+          "nay_total": 47,
+          "party_yea": 42,
+          "party_nay": 2
         },
         "Defense of Marriage Act": {
-          "yea_total": 342,
-          "nay_total": 67,
-          "party_yea": 224,
-          "party_nay": 1
+          "yea_total": 85,
+          "nay_total": 14,
+          "party_yea": 53,
+          "party_nay": 0
         },
         "Gramm Rudman Hollings Deficit Act 1985": {
-          "yea_total": 271,
-          "nay_total": 154,
-          "party_yea": 154,
-          "party_nay": 24
+          "yea_total": 61,
+          "nay_total": 31,
+          "party_yea": 40,
+          "party_nay": 10
         },
         "Iraq War Resolution   2002": {
-          "yea_total": 296,
-          "nay_total": 133,
-          "party_yea": 215,
-          "party_nay": 6
+          "yea_total": 77,
+          "nay_total": 23,
+          "party_yea": 48,
+          "party_nay": 1
         },
         "Normalize Trade Relations with China": {
-          "yea_total": 237,
-          "nay_total": 197,
-          "party_yea": 164,
-          "party_nay": 57
+          "yea_total": 83,
+          "nay_total": 15,
+          "party_yea": 46,
+          "party_nay": 8
         },
         "Panama Canal Treaty": {
-          "yea_total": 232,
-          "nay_total": 188,
-          "party_yea": 36,
-          "party_nay": 122
+          "yea_total": 59,
+          "nay_total": 29,
+          "party_yea": 16,
+          "party_nay": 23
         },
         "Patriot Act": {
-          "yea_total": 357,
-          "nay_total": 66,
-          "party_yea": 211,
-          "party_nay": 3
+          "yea_total": 98,
+          "nay_total": 1,
+          "party_yea": 49,
+          "party_nay": 0
         },
         "Taiwan Relations Act": {
-          "yea_total": 345,
-          "nay_total": 55,
-          "party_yea": 105,
-          "party_nay": 41
+          "yea_total": 85,
+          "nay_total": 4,
+          "party_yea": 33,
+          "party_nay": 2
         },
         "War Powers Act   1973": {
-          "yea_total": 284,
-          "nay_total": 135,
-          "party_yea": 87,
-          "party_nay": 103
+          "yea_total": 75,
+          "nay_total": 18,
+          "party_yea": 26,
+          "party_nay": 15
         },
         "Airline Degregulation   1978": {
           "yea_total": 83,
@@ -2759,46 +2759,46 @@
       },
       "vote_party_context": {
         "Civil Rights Act   1957": {
-          "yea_total": 286,
-          "nay_total": 126,
-          "party_yea": 173,
-          "party_nay": 22
+          "yea_total": 72,
+          "nay_total": 18,
+          "party_yea": 43,
+          "party_nay": 0
         },
         "Civil Rights Act  1964": {
-          "yea_total": 289,
-          "nay_total": 126,
-          "party_yea": 139,
-          "party_nay": 37
+          "yea_total": 67,
+          "nay_total": 17,
+          "party_yea": 27,
+          "party_nay": 1
         },
         "Gun Control Act   1968": {
-          "yea_total": 161,
-          "nay_total": 129,
-          "party_yea": 73,
-          "party_nay": 72
+          "yea_total": 70,
+          "nay_total": 17,
+          "party_yea": 31,
+          "party_nay": 4
         },
         "Immigration and Nationality Act   1965": {
-          "yea_total": 320,
-          "nay_total": 70,
-          "party_yea": 118,
-          "party_nay": 10
+          "yea_total": 76,
+          "nay_total": 18,
+          "party_yea": 26,
+          "party_nay": 5
         },
         "McCarran Internal Security Act 1950": {
-          "yea_total": 313,
-          "nay_total": 20,
-          "party_yea": 129,
-          "party_nay": 2
+          "yea_total": 51,
+          "nay_total": 7,
+          "party_yea": 38,
+          "party_nay": 1
         },
         "National Defense Education Act": {
-          "yea_total": 212,
-          "nay_total": 85,
-          "party_yea": 81,
-          "party_nay": 72
+          "yea_total": 62,
+          "nay_total": 26,
+          "party_yea": 27,
+          "party_nay": 16
         },
         "Panama Canal Treaty": {
-          "yea_total": 232,
-          "nay_total": 188,
-          "party_yea": 36,
-          "party_nay": 122
+          "yea_total": 59,
+          "nay_total": 29,
+          "party_yea": 16,
+          "party_nay": 23
         },
         "Taft Hartley": {
           "yea_total": 308,
@@ -2807,22 +2807,22 @@
           "party_nay": 24
         },
         "Taiwan Relations Act": {
-          "yea_total": 345,
-          "nay_total": 55,
-          "party_yea": 105,
-          "party_nay": 41
+          "yea_total": 85,
+          "nay_total": 4,
+          "party_yea": 33,
+          "party_nay": 2
         },
         "Voting Rights Act   1965": {
-          "yea_total": 333,
-          "nay_total": 85,
-          "party_yea": 112,
-          "party_nay": 23
+          "yea_total": 77,
+          "nay_total": 19,
+          "party_yea": 30,
+          "party_nay": 2
         },
         "War Powers Act   1973": {
-          "yea_total": 284,
-          "nay_total": 135,
-          "party_yea": 87,
-          "party_nay": 103
+          "yea_total": 75,
+          "nay_total": 18,
+          "party_yea": 26,
+          "party_nay": 15
         },
         "Airline Degregulation   1978": {
           "yea_total": 83,
@@ -2928,10 +2928,10 @@
       },
       "vote_party_context": {
         "Bland Allison Act": {
-          "yea_total": 203,
-          "nay_total": 72,
-          "party_yea": 129,
-          "party_nay": 5
+          "yea_total": 49,
+          "nay_total": 22,
+          "party_yea": 33,
+          "party_nay": 4
         },
         "Hold Jefferson Davis in Treason": {
           "yea_total": 105,
@@ -2940,10 +2940,10 @@
           "party_nay": 0
         },
         "Re Admit Southern States": {
-          "yea_total": 110,
-          "nay_total": 35,
-          "party_yea": 109,
-          "party_nay": 3
+          "yea_total": 35,
+          "nay_total": 8,
+          "party_yea": 35,
+          "party_nay": 1
         },
         "Andrew Johnson Impeachment": {
           "yea_total": 34,
@@ -3095,70 +3095,70 @@
       },
       "vote_party_context": {
         "Authorization of Force Against Iraq   1991": {
-          "yea_total": 250,
-          "nay_total": 183,
-          "party_yea": 86,
-          "party_nay": 179
+          "yea_total": 52,
+          "nay_total": 47,
+          "party_yea": 10,
+          "party_nay": 45
         },
         "Defense of Marriage Act": {
-          "yea_total": 342,
-          "nay_total": 67,
-          "party_yea": 118,
-          "party_nay": 65
-        },
-        "Gramm Rudman Hollings Deficit Act 1985": {
-          "yea_total": 271,
-          "nay_total": 154,
-          "party_yea": 119,
-          "party_nay": 132
-        },
-        "Iraq War Resolution   2002": {
-          "yea_total": 296,
-          "nay_total": 133,
-          "party_yea": 81,
-          "party_nay": 126
-        },
-        "Normalize Trade Relations with China": {
-          "yea_total": 237,
-          "nay_total": 197,
-          "party_yea": 73,
-          "party_nay": 138
-        },
-        "Panama Canal Treaty": {
-          "yea_total": 232,
-          "nay_total": 188,
-          "party_yea": 199,
-          "party_nay": 70
-        },
-        "Partial Birth Abortion Ban": {
-          "yea_total": 281,
-          "nay_total": 142,
-          "party_yea": 63,
-          "party_nay": 137
-        },
-        "Patriot Act": {
-          "yea_total": 357,
-          "nay_total": 66,
-          "party_yea": 145,
-          "party_nay": 62
-        },
-        "TARP": {
-          "yea_total": 263,
-          "nay_total": 171,
-          "party_yea": 172,
-          "party_nay": 63
-        },
-        "Taiwan Relations Act": {
-          "yea_total": 345,
-          "nay_total": 55,
-          "party_yea": 242,
+          "yea_total": 85,
+          "nay_total": 14,
+          "party_yea": 32,
           "party_nay": 14
         },
+        "Gramm Rudman Hollings Deficit Act 1985": {
+          "yea_total": 61,
+          "nay_total": 31,
+          "party_yea": 23,
+          "party_nay": 23
+        },
+        "Iraq War Resolution   2002": {
+          "yea_total": 77,
+          "nay_total": 23,
+          "party_yea": 29,
+          "party_nay": 21
+        },
+        "Normalize Trade Relations with China": {
+          "yea_total": 83,
+          "nay_total": 15,
+          "party_yea": 37,
+          "party_nay": 7
+        },
+        "Panama Canal Treaty": {
+          "yea_total": 59,
+          "nay_total": 29,
+          "party_yea": 48,
+          "party_nay": 9
+        },
+        "Partial Birth Abortion Ban": {
+          "yea_total": 64,
+          "nay_total": 34,
+          "party_yea": 17,
+          "party_nay": 30
+        },
+        "Patriot Act": {
+          "yea_total": 98,
+          "nay_total": 1,
+          "party_yea": 48,
+          "party_nay": 1
+        },
+        "TARP": {
+          "yea_total": 74,
+          "nay_total": 25,
+          "party_yea": 40,
+          "party_nay": 9
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 85,
+          "nay_total": 4,
+          "party_yea": 51,
+          "party_nay": 2
+        },
         "War Powers Act   1973": {
-          "yea_total": 284,
-          "nay_total": 135,
-          "party_yea": 196,
-          "party_nay": 32
+          "yea_total": 75,
+          "nay_total": 18,
+          "party_yea": 50,
+          "party_nay": 3
         },
         "Airline Degregulation   1978": {
           "yea_total": 83,
@@ -3330,46 +3330,46 @@
       },
       "vote_party_context": {
         "Civil Rights Act   1957": {
-          "yea_total": 286,
-          "nay_total": 126,
-          "party_yea": 121,
-          "party_nay": 109
+          "yea_total": 72,
+          "nay_total": 18,
+          "party_yea": 29,
+          "party_nay": 18
         },
         "Civil Rights Act  1964": {
-          "yea_total": 289,
-          "nay_total": 126,
-          "party_yea": 156,
-          "party_nay": 95
+          "yea_total": 67,
+          "nay_total": 17,
+          "party_yea": 42,
+          "party_nay": 18
         },
         "Gun Control Act   1968": {
-          "yea_total": 161,
-          "nay_total": 129,
-          "party_yea": 125,
-          "party_nay": 94
+          "yea_total": 70,
+          "nay_total": 17,
+          "party_yea": 40,
+          "party_nay": 14
         },
         "Immigration and Nationality Act   1965": {
-          "yea_total": 320,
-          "nay_total": 70,
-          "party_yea": 211,
-          "party_nay": 69
+          "yea_total": 76,
+          "nay_total": 18,
+          "party_yea": 52,
+          "party_nay": 15
         },
         "Lend Lease Act": {
-          "yea_total": 336,
-          "nay_total": 55,
-          "party_yea": 235,
-          "party_nay": 7
+          "yea_total": 60,
+          "nay_total": 31,
+          "party_yea": 50,
+          "party_nay": 13
         },
         "McCarran Internal Security Act 1950": {
-          "yea_total": 313,
-          "nay_total": 20,
-          "party_yea": 189,
-          "party_nay": 21
+          "yea_total": 51,
+          "nay_total": 7,
+          "party_yea": 41,
+          "party_nay": 7
         },
         "National Defense Education Act": {
-          "yea_total": 212,
-          "nay_total": 85,
-          "party_yea": 152,
-          "party_nay": 34
+          "yea_total": 62,
+          "nay_total": 26,
+          "party_yea": 35,
+          "party_nay": 10
         },
         "Taft Hartley": {
           "yea_total": 308,
@@ -3378,10 +3378,10 @@
           "party_nay": 86
         },
         "Voting Rights Act   1965": {
-          "yea_total": 333,
-          "nay_total": 85,
-          "party_yea": 224,
-          "party_nay": 65
+          "yea_total": 77,
+          "nay_total": 19,
+          "party_yea": 48,
+          "party_nay": 18
         },
         "Lewis Strauss Commerce Secretary": {
           "yea_total": 46,
@@ -3523,46 +3523,46 @@
       },
       "vote_party_context": {
         "Civil Rights Act   1957": {
-          "yea_total": 286,
-          "nay_total": 126,
-          "party_yea": 173,
-          "party_nay": 22
+          "yea_total": 72,
+          "nay_total": 18,
+          "party_yea": 43,
+          "party_nay": 0
         },
         "Civil Rights Act  1964": {
-          "yea_total": 289,
-          "nay_total": 126,
-          "party_yea": 139,
-          "party_nay": 37
+          "yea_total": 67,
+          "nay_total": 17,
+          "party_yea": 27,
+          "party_nay": 1
         },
         "Gramm Rudman Hollings Deficit Act 1985": {
-          "yea_total": 271,
-          "nay_total": 154,
-          "party_yea": 154,
-          "party_nay": 24
+          "yea_total": 61,
+          "nay_total": 31,
+          "party_yea": 40,
+          "party_nay": 10
         },
         "National Defense Education Act": {
-          "yea_total": 212,
-          "nay_total": 85,
-          "party_yea": 81,
-          "party_nay": 72
+          "yea_total": 62,
+          "nay_total": 26,
+          "party_yea": 27,
+          "party_nay": 16
         },
         "Panama Canal Treaty": {
-          "yea_total": 232,
-          "nay_total": 188,
-          "party_yea": 36,
-          "party_nay": 122
+          "yea_total": 59,
+          "nay_total": 29,
+          "party_yea": 16,
+          "party_nay": 23
         },
         "Taiwan Relations Act": {
-          "yea_total": 345,
-          "nay_total": 55,
-          "party_yea": 105,
-          "party_nay": 41
+          "yea_total": 85,
+          "nay_total": 4,
+          "party_yea": 33,
+          "party_nay": 2
         },
         "War Powers Act   1973": {
-          "yea_total": 284,
-          "nay_total": 135,
-          "party_yea": 87,
-          "party_nay": 103
+          "yea_total": 75,
+          "nay_total": 18,
+          "party_yea": 26,
+          "party_nay": 15
         },
         "Airline Degregulation   1978": {
           "yea_total": 83,
@@ -3724,58 +3724,58 @@
       },
       "vote_party_context": {
         "Civil Rights Act   1957": {
-          "yea_total": 286,
-          "nay_total": 126,
-          "party_yea": 121,
-          "party_nay": 109
+          "yea_total": 72,
+          "nay_total": 18,
+          "party_yea": 29,
+          "party_nay": 18
         },
         "Civil Rights Act  1964": {
-          "yea_total": 289,
-          "nay_total": 126,
-          "party_yea": 156,
-          "party_nay": 95
+          "yea_total": 67,
+          "nay_total": 17,
+          "party_yea": 42,
+          "party_nay": 18
         },
         "Gun Control Act   1968": {
-          "yea_total": 161,
-          "nay_total": 129,
-          "party_yea": 125,
-          "party_nay": 94
-        },
-        "Immigration and Nationality Act   1965": {
-          "yea_total": 320,
-          "nay_total": 70,
-          "party_yea": 211,
-          "party_nay": 69
-        },
-        "National Defense Education Act": {
-          "yea_total": 212,
-          "nay_total": 85,
-          "party_yea": 152,
-          "party_nay": 34
-        },
-        "Panama Canal Treaty": {
-          "yea_total": 232,
-          "nay_total": 188,
-          "party_yea": 199,
-          "party_nay": 70
-        },
-        "Taiwan Relations Act": {
-          "yea_total": 345,
-          "nay_total": 55,
-          "party_yea": 242,
+          "yea_total": 70,
+          "nay_total": 17,
+          "party_yea": 40,
           "party_nay": 14
         },
+        "Immigration and Nationality Act   1965": {
+          "yea_total": 76,
+          "nay_total": 18,
+          "party_yea": 52,
+          "party_nay": 15
+        },
+        "National Defense Education Act": {
+          "yea_total": 62,
+          "nay_total": 26,
+          "party_yea": 35,
+          "party_nay": 10
+        },
+        "Panama Canal Treaty": {
+          "yea_total": 59,
+          "nay_total": 29,
+          "party_yea": 48,
+          "party_nay": 9
+        },
+        "Taiwan Relations Act": {
+          "yea_total": 85,
+          "nay_total": 4,
+          "party_yea": 51,
+          "party_nay": 2
+        },
         "Voting Rights Act   1965": {
-          "yea_total": 333,
-          "nay_total": 85,
-          "party_yea": 224,
-          "party_nay": 65
+          "yea_total": 77,
+          "nay_total": 19,
+          "party_yea": 48,
+          "party_nay": 18
         },
         "War Powers Act   1973": {
-          "yea_total": 284,
-          "nay_total": 135,
-          "party_yea": 196,
-          "party_nay": 32
+          "yea_total": 75,
+          "nay_total": 18,
+          "party_yea": 50,
+          "party_nay": 3
         },
         "Airline Degregulation   1978": {
           "yea_total": 83,
