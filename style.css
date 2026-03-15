@@ -1472,3 +1472,25 @@ body {
   color: var(--accent);
   border-style: solid;
 }
+
+/* ----------------------------------------------------------
+   Secondary action button (Play House/Senate on game over)
+---------------------------------------------------------- */
+.btn-secondary-action {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.7rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink-light);
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.btn-secondary-action:hover {
+  color: var(--ink);
+  border-color: var(--ink-light);
+}
