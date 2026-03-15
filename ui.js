@@ -531,6 +531,7 @@
           geojsonLayer = L.geoJSON(distData, {
             style:          districtStyle,
             onEachFeature:  bindDistrictEvents,
+            smoothFactor:   2,
           }).addTo(map);
           console.log('[map] District layer added, features:', distData.features.length);
         } else {
@@ -769,6 +770,8 @@
     };
 
     const other = chamber === 'Senate' ? 'House' : 'Senate';
+    const btnAlreadyMenu = document.getElementById('btn-already-menu');
+    if (btnAlreadyMenu) btnAlreadyMenu.onclick = () => showScreen('screen-chamber');
     document.getElementById('already-other-chamber').textContent = other;
     document.getElementById('btn-already-other').onclick = () => initGame(other, false);
     document.getElementById('btn-already-freeplay-chamber').textContent = chamber;
@@ -933,7 +936,9 @@
     const other    = target.chamber === 'Senate' ? 'House' : 'Senate';
     const freeplay = state.freeplay;
 
-    const freeplayBtn         = document.getElementById('btn-play-freeplay');
+    // Main menu button — cleanest way to start a new game
+    const btnMainMenu = document.getElementById('btn-main-menu');
+    if (btnMainMenu) btnMainMenu.onclick = () => showScreen('screen-chamber');
     const freeplayChamberSpan = document.getElementById('freeplay-chamber');
     const otherChamberSpan    = document.getElementById('other-chamber');
     const btnPlayOther        = document.getElementById('btn-play-other');
