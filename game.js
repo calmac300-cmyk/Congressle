@@ -584,6 +584,11 @@ const CRGame = (() => {
   function resetStreak() {
     try {
       localStorage.removeItem(STREAK_KEY);
+      // Also clear today's daily sessions so puzzles can be replayed
+      const d = new Date();
+      const dateKey = `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
+      localStorage.removeItem(`crg_Senate_${dateKey}`);
+      localStorage.removeItem(`crg_House_${dateKey}`);
     } catch(e) {}
   }
 

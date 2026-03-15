@@ -154,12 +154,11 @@
   let geojsonLayer = null;
   let stateData = {};   // state abbrev -> { layer, candidates[] }
 
+  let _currentMapChamber = null;  // track which chamber the map is showing
+
   async function initGame(chamber, freeplay = false) {
     const state = CRGame.startGame(chamber, freeplay);
 
-    // Get the active target's display data without exposing identity
-    // getCurrentTarget is safe — it returns the target object for descriptions
-    // but the game only exposes it fully via state.target on game over
     const activeTarget = CRGame.getCurrentTarget();
     _targetDescriptions = activeTarget ? (activeTarget.vote_summaries     || {}) : {};
     _targetDisplayNames = activeTarget ? (activeTarget.vote_display_names || {}) : {};
@@ -170,28 +169,34 @@
     document.getElementById('guess-counter').textContent =
       `${state.guessCount} / ${state.maxGuesses}`;
 
-    // Reset UI panels
+    // Reset UI panels fully — including clearing any previous game over state
     document.getElementById('guesses-list').innerHTML =
       '<p class="no-guesses-yet">Your guesses will appear here.</p>';
+    document.getElementById('votes-list').innerHTML = '';
     document.getElementById('search-input').value = '';
     document.getElementById('search-dropdown').classList.add('hidden');
     document.getElementById('btn-submit').disabled = true;
+    document.getElementById('gameover-target').innerHTML = '';
+    document.getElementById('gameover-votes').innerHTML = '';
     selectedLegislator = null;
 
     renderVotes(state);
 
-    // If game was already in progress or over, restore the full UI
     if (state.guessCount > 0) {
       renderGuesses(state);
     }
 
     showScreen('screen-game');
 
-    // Init map (only once)
+    // Init map once; force layer rebuild when chamber changes
     if (!map) await initMap();
+    if (_currentMapChamber !== chamber) {
+      // Remove existing layer to force fresh load for new chamber
+      if (geojsonLayer) { map.removeLayer(geojsonLayer); geojsonLayer = null; }
+      _currentMapChamber = chamber;
+    }
     await updateMap();
 
-    // If already game over, jump straight to reveal
     if (state.gameOver) {
       setTimeout(() => showGameOver(state), 300);
     }

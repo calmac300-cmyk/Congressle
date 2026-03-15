@@ -1394,6 +1394,8 @@ body {
 
 /* ----------------------------------------------------------
    Fix help button z-index (sits above map controls)
+   Leaflet zoom controls default to z-index 1000
+   Modal overlay must be above that
 ---------------------------------------------------------- */
 .game-header {
   z-index: 200;
@@ -1402,6 +1404,10 @@ body {
 .btn-help-icon {
   position: relative;
   z-index: 201;
+}
+
+.modal-overlay {
+  z-index: 1100;  /* above Leaflet's 1000 */
 }
 
 /* ----------------------------------------------------------
