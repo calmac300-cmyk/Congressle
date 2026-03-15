@@ -491,7 +491,9 @@
     if (districtLayerCache[congress]) return districtLayerCache[congress];
     const padded = String(congress).padStart(3, '0');
     try {
-      const res  = await fetch('districts/districts' + padded + '.json');
+      // Build absolute URL relative to the page — works on GitHub Pages subfolders
+      const pageBase = window.location.href.split('?')[0].replace(/\/[^/]*$/, '/');
+      const res  = await fetch(pageBase + 'districts/districts' + padded + '.json');
       if (!res.ok) throw new Error('Not found');
       const data = await res.json();
       districtLayerCache[congress] = data;
@@ -929,16 +931,20 @@
     const other    = target.chamber === 'Senate' ? 'House' : 'Senate';
     const freeplay = state.freeplay;
 
-    document.getElementById('freeplay-chamber').textContent = target.chamber;
-    document.getElementById('btn-play-freeplay').onclick = () => initGame(target.chamber, true);
-    document.getElementById('btn-play-freeplay').style.display = '';
+    const freeplayBtn  = document.getElementById('btn-play-freeplay');
+    const freeplayChamberSpan = document.getElementById('freeplay-chamber');
+
+    if (freeplayChamberSpan) freeplayChamberSpan.textContent = target.chamber;
+    if (freeplayBtn) {
+      freeplayBtn.onclick = () => initGame(target.chamber, true);
+      freeplayBtn.style.display = '';
+    }
 
     if (freeplay) {
       document.getElementById('other-chamber').textContent = 'Again';
       document.getElementById('btn-play-other').textContent = 'Play Again';
       document.getElementById('btn-play-other').onclick = () => initGame(target.chamber, true);
-      // Hide second freeplay button when already in freeplay to avoid duplicate
-      document.getElementById('btn-play-freeplay').style.display = 'none';
+      if (freeplayBtn) freeplayBtn.style.display = 'none';
     } else {
       document.getElementById('other-chamber').textContent = other;
       document.getElementById('btn-play-other').textContent = 'Play ' + other;
