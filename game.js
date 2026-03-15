@@ -495,11 +495,18 @@ const CRGame = (() => {
 
   function getViableCandidates() {
     if (!_chamber || _allLegislators.length === 0) return [];
-    // Only include legislators who have at least one signal vote —
-    // candidates with no votes can never be the answer and pollute the map
+
+    // Filter to legislators who overlap with the target's era (±15 congresses)
+    // This prevents ancient at-large reps from lighting up modern-era puzzle maps
+    const targetFirst = _target ? _target.first_congress : 1;
+    const targetLast  = _target ? _target.last_congress  : 119;
+    const ERA_BUFFER  = 15;
+
     const pool = _allLegislators.filter(l =>
       l.chamber === _chamber &&
-      Object.keys(l.votes || {}).length > 0
+      Object.keys(l.votes || {}).length > 0 &&
+      l.last_congress  >= (targetFirst - ERA_BUFFER) &&
+      l.first_congress <= (targetLast  + ERA_BUFFER)
     );
     const eliminated = getEliminatedStates();
 
