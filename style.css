@@ -1707,3 +1707,16 @@ body {
   line-height: 1.5;
   min-height: 2.5rem;
 }
+
+/* ----------------------------------------------------------
+   Leaderboard play count
+---------------------------------------------------------- */
+.lb-play-count {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: var(--ink-faint);
+  text-align: center;
+  padding: 0.5rem 0 0.75rem;
+  text-transform: uppercase;
+}

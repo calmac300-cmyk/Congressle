@@ -252,17 +252,26 @@ const CRGame = (() => {
   function search(query, limit = 10) {
     if (!query || query.trim().length < 2) return [];
     const q = query.trim().toUpperCase();
-    const pool = _allLegislators.filter(l => l.chamber === _chamber);
+
+    // Filter pool to era-relevant legislators — same logic as getViableCandidates
+    // so the dropdown doesn't show 19th century reps for a modern puzzle
+    const targetFirst = _target ? _target.first_congress : 1;
+    const targetLast  = _target ? _target.last_congress  : 119;
+    const ERA_BUFFER  = 15;
+
+    const pool = _allLegislators.filter(l =>
+      l.chamber === _chamber &&
+      Object.keys(l.votes || {}).length > 0 &&
+      l.last_congress  >= (targetFirst - ERA_BUFFER) &&
+      l.first_congress <= (targetLast  + ERA_BUFFER)
+    );
 
     return pool
       .map(l => {
         const name = l.name.toUpperCase();
-        // Exact start match scores highest
         if (name.startsWith(q))          return { l, score: 3 };
-        // Last name match (before comma) scores next
         const lastName = name.split(',')[0];
         if (lastName.startsWith(q))      return { l, score: 2 };
-        // Substring anywhere scores lowest
         if (name.includes(q))            return { l, score: 1 };
         return { l, score: 0 };
       })
@@ -538,25 +547,41 @@ const CRGame = (() => {
   }
 
   // Normalise district code for map matching.
-  // Rather than a hardcoded list, detect at-large dynamically:
-  // if a state has only ONE House member in the viable pool for this congress,
-  // and that member has district_code 1, treat them as district 0 (GeoJSON at-large code).
-  // Truly at-large states use DISTRICT=0 in GeoJSON but district_code=1 in Voteview.
-  // States with multiple genuine districts use matching numbers in both.
+  // Some states oscillate between at-large (GeoJSON DISTRICT=0) and
+  // multi-district across different congresses.
+  // Voteview codes at-large members as district_code=1; GeoJSON uses DISTRICT=0.
+  // We use the target's last_congress to determine which GeoJSON file is loaded,
+  // then normalise based on what that era's boundaries actually look like.
 
-  // Known at-large states that consistently use 0 in GeoJSON and 1 in Voteview
-  // across all congresses in our range — only truly single-member states
-  const AT_LARGE_STATES = new Set(['AK', 'DE', 'VT', 'WY', 'NV']);
+  // States that are at-large (single rep, GeoJSON DISTRICT=0) in modern congresses
+  // Congress 90+ — verified from GeoJSON files
+  const ALWAYS_AT_LARGE   = new Set(['AK', 'DE', 'VT', 'WY']);
+  // States at-large in recent congresses but had multiple districts historically
+  const MODERN_AT_LARGE   = new Set(['ND', 'SD', 'MT']);  // at-large from ~C103+
+  const MODERN_AT_LARGE_FROM_CONGRESS = 103;
 
-  function normaliseDistrictForMap(state, districtCode) {
+  function normaliseDistrictForMap(state, districtCode, targetLastCongress) {
     const dc = String(districtCode || '0');
-    // For confirmed at-large states, map Voteview's 1 -> GeoJSON's 0
-    if (AT_LARGE_STATES.has(state) && (dc === '1' || dc === '0')) return '0';
+    const congress = targetLastCongress || 119;
+
+    // Always at-large states — map dc=1 to GeoJSON=0
+    if (ALWAYS_AT_LARGE.has(state) && (dc === '1' || dc === '0')) return '0';
+
+    // States that became at-large in modern congresses
+    if (MODERN_AT_LARGE.has(state) && congress >= MODERN_AT_LARGE_FROM_CONGRESS) {
+      if (dc === '1' || dc === '0') return '0';
+    }
+
     return dc;
   }
 
   function getDistrictCodeForMap(legislator) {
-    return normaliseDistrictForMap(legislator.state, legislator.district_code);
+    const targetCongress = _target ? _target.last_congress : null;
+    return normaliseDistrictForMap(
+      legislator.state,
+      legislator.district_code,
+      targetCongress
+    );
   }
 
   // ----------------------------------------------------------

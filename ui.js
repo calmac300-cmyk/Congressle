@@ -256,11 +256,17 @@
     try {
       let rows = [];
       if (tab === 'daily-senate') {
-        rows = await window.CRSupabase.getDailyLeaderboard('Senate', puzzleDate);
-        renderDailyLeaderboard(content, rows, 'Senate', puzzleDate);
+        const [lbRows, playCount] = await Promise.all([
+          window.CRSupabase.getDailyLeaderboard('Senate', puzzleDate),
+          window.CRSupabase.getPlayCount(puzzleDate, 'Senate'),
+        ]);
+        renderDailyLeaderboard(content, lbRows, 'Senate', playCount);
       } else if (tab === 'daily-house') {
-        rows = await window.CRSupabase.getDailyLeaderboard('House', puzzleDate);
-        renderDailyLeaderboard(content, rows, 'House', puzzleDate);
+        const [lbRows, playCount] = await Promise.all([
+          window.CRSupabase.getDailyLeaderboard('House', puzzleDate),
+          window.CRSupabase.getPlayCount(puzzleDate, 'House'),
+        ]);
+        renderDailyLeaderboard(content, lbRows, 'House', playCount);
       } else {
         rows = await window.CRSupabase.getAllTimeLeaderboard();
         renderAllTimeLeaderboard(content, rows);
@@ -270,12 +276,15 @@
     }
   }
 
-  function renderDailyLeaderboard(el, rows, chamber, date) {
+  function renderDailyLeaderboard(el, rows, chamber, playCount) {
+    const countLine = (playCount !== null && playCount !== undefined)
+      ? '<div class="lb-play-count">' + playCount + ' player' + (playCount !== 1 ? 's' : '') + ' played today\'s ' + chamber + ' puzzle</div>'
+      : '';
     if (rows.length === 0) {
-      el.innerHTML = '<div class="lb-empty">No results yet for today\'s ' + chamber + ' puzzle.<br>Be the first!</div>';
+      el.innerHTML = countLine + '<div class="lb-empty">No completed results yet.<br>Be the first to finish!</div>';
       return;
     }
-    el.innerHTML = '<table class="lb-table">' +
+    el.innerHTML = countLine + '<table class="lb-table">' +
       '<thead><tr><th>#</th><th>Name</th><th>Guesses</th></tr></thead>' +
       '<tbody>' +
       rows.map((r, i) => {
@@ -475,7 +484,6 @@
       const gen = myGeneration;
       setTimeout(() => {
         if (_gameGeneration === gen) showGameOver(state);
-        else console.log('[initGame timeout] stale, skipping');
       }, 300);
     }
   }
@@ -664,7 +672,6 @@
       const gen = _gameGeneration;
       setTimeout(() => {
         if (_gameGeneration === gen) showGameOver(state);
-        else console.log('[handleSubmit timeout] stale, skipping');
       }, 800);
     }
   }
@@ -1114,10 +1121,6 @@
   // ----------------------------------------------------------
   function showGameOver(state) {
     const target = state.target || CRGame.getCurrentTarget();
-
-    console.log('[showGameOver] called, target:', target ? target.name : 'NULL',
-                'gameOver:', state.gameOver, 'won:', state.won,
-                'generation check passed');
 
     if (!target) {
       return;
