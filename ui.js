@@ -155,8 +155,11 @@
   let stateData = {};   // state abbrev -> { layer, candidates[] }
 
   let _currentMapChamber = null;  // track which chamber the map is showing
+  let _gameGeneration    = 0;     // incremented on each new game to cancel stale timeouts
 
   async function initGame(chamber, freeplay = false) {
+    _gameGeneration++;             // invalidate any pending setTimeout from previous game
+    const myGeneration = _gameGeneration;
     const state = CRGame.startGame(chamber, freeplay);
 
     const activeTarget = CRGame.getCurrentTarget();
@@ -198,7 +201,8 @@
     await updateMap();
 
     if (state.gameOver) {
-      setTimeout(() => showGameOver(state), 300);
+      const gen = myGeneration;
+      setTimeout(() => { if (_gameGeneration === gen) showGameOver(state); }, 300);
     }
   }
 
@@ -373,7 +377,8 @@
     await updateMap();
 
     if (state.gameOver) {
-      setTimeout(() => showGameOver(state), 800);
+      const gen = _gameGeneration;
+      setTimeout(() => { if (_gameGeneration === gen) showGameOver(state); }, 800);
     }
   }
 
@@ -894,14 +899,20 @@
       });
     };
 
-    // Other chamber / play again buttons
+    // Other chamber / play again / freeplay buttons
     const other    = target.chamber === 'Senate' ? 'House' : 'Senate';
     const freeplay = state.freeplay;
+
+    document.getElementById('freeplay-chamber').textContent = target.chamber;
+    document.getElementById('btn-play-freeplay').onclick = () => initGame(target.chamber, true);
+    document.getElementById('btn-play-freeplay').style.display = '';
 
     if (freeplay) {
       document.getElementById('other-chamber').textContent = 'Again';
       document.getElementById('btn-play-other').textContent = 'Play Again';
       document.getElementById('btn-play-other').onclick = () => initGame(target.chamber, true);
+      // Hide second freeplay button when already in freeplay to avoid duplicate
+      document.getElementById('btn-play-freeplay').style.display = 'none';
     } else {
       document.getElementById('other-chamber').textContent = other;
       document.getElementById('btn-play-other').textContent = 'Play ' + other;

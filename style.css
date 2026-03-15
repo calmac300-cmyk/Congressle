@@ -1448,3 +1448,27 @@ body {
     display: none;
   }
 }
+
+/* ----------------------------------------------------------
+   Freeplay button on game over screen
+---------------------------------------------------------- */
+.btn-freeplay-gameover {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.7rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: none;
+  border: 1px dashed var(--rule);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.15s;
+  letter-spacing: 0.03em;
+}
+.btn-freeplay-gameover:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  border-style: solid;
+}
